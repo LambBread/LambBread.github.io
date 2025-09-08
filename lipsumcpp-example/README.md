@@ -8,3 +8,4 @@ These are live examples for [the lipsum-cpp repo](https://github.com/LambBread/l
 - [GenerateParagraphs](https://lambbread.github.io/lipsumcpp-example/GenerateParagraphs.html)
 - [GenerateSentences](https://lambbread.github.io/lipsumcpp-example/GenerateSentences.html)
 - [GenerateDefaultLipsumSentence](https://lambbread.github.io/lipsumcpp-example/GenerateDefaultLipsumSentence.html)
+- [HTMLify](https://lambbread.github.io/lipsumcpp-example/HTMLify.html)
