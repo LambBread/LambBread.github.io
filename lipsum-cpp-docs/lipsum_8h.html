@@ -80,7 +80,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>C wrapper over <a class="el" href="lipsum_8hpp.html" title="Main header of lipsum-hpp.">lipsum.hpp</a>.  
+<p>C wrapper over <a class="el" href="lipsum_8hpp.html" title="Main header of lipsum-cpp.">lipsum.hpp</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -116,9 +116,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ab3e3d526ad08ee5fcbf53e43178a33fb" id="r_ab3e3d526ad08ee5fcbf53e43178a33fb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#ab3e3d526ad08ee5fcbf53e43178a33fb">lpsm_GenerateSentences</a> (int sentCount, int minWord, int maxWord, bool useLipsum)</td></tr>
 <tr class="memdesc:ab3e3d526ad08ee5fcbf53e43178a33fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate multiple random sentences at once.  <br /></td></tr>
 <tr class="separator:ab3e3d526ad08ee5fcbf53e43178a33fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3dda6e048d4c8bc1b1706dfb582c3f9" id="r_aa3dda6e048d4c8bc1b1706dfb582c3f9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#aa3dda6e048d4c8bc1b1706dfb582c3f9">lpsm_HTMLify</a> (const char *str)</td></tr>
+<tr class="memdesc:aa3dda6e048d4c8bc1b1706dfb582c3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn a string into HTML paragraph tags.  <br /></td></tr>
+<tr class="separator:aa3dda6e048d4c8bc1b1706dfb582c3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C wrapper over <a class="el" href="lipsum_8hpp.html" title="Main header of lipsum-hpp.">lipsum.hpp</a>. </p>
+<div class="textblock"><p>C wrapper over <a class="el" href="lipsum_8hpp.html" title="Main header of lipsum-cpp.">lipsum.hpp</a>. </p>
 <p>This contains the C wrapper over lipsum-cpp. It requires being built as a static library in order to function.</p>
 <dl class="section author"><dt>Author</dt><dd>LambBread from github.com </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -382,6 +385,33 @@ Functions</h2></td></tr>
 <p>Generate a random word. </p>
 <p>This function generates a random word from a predefined list.</p>
 <dl class="section return"><dt>Returns</dt><dd>const char* Returns the random word. </dd></dl>
+
+</div>
+</div>
+<a id="aa3dda6e048d4c8bc1b1706dfb582c3f9" name="aa3dda6e048d4c8bc1b1706dfb582c3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3dda6e048d4c8bc1b1706dfb582c3f9">&#9670;&#160;</a></span>lpsm_HTMLify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * lpsm_HTMLify </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turn a string into HTML paragraph tags. </p>
+<dl class="section return"><dt>Returns</dt><dd>const char* The HTML-ified string.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string inputted. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

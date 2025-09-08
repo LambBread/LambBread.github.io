@@ -80,9 +80,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Main header of lipsum-hpp.  
+<p>Main header of lipsum-cpp.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
@@ -92,17 +92,17 @@ Include dependency graph for lipsum.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="lipsum_8hpp__incl.png" border="0" usemap="#asrc_2lipsum_8hpp" alt=""/></div>
 <map name="asrc_2lipsum_8hpp" id="asrc_2lipsum_8hpp">
-<area shape="rect" title="Main header of lipsum&#45;hpp." alt="" coords="157,5,274,31"/>
-<area shape="rect" title=" " alt="" coords="5,79,68,104"/>
-<area shape="poly" title=" " alt="" coords="188,33,79,76,77,71,186,28"/>
-<area shape="rect" title=" " alt="" coords="93,79,151,104"/>
-<area shape="poly" title=" " alt="" coords="202,33,150,72,146,68,199,29"/>
-<area shape="rect" title=" " alt="" coords="175,79,255,104"/>
-<area shape="poly" title=" " alt="" coords="218,31,218,65,213,65,213,31"/>
-<area shape="rect" title=" " alt="" coords="279,79,351,104"/>
-<area shape="poly" title=" " alt="" coords="233,29,289,68,286,73,230,33"/>
-<area shape="rect" title=" " alt="" coords="376,79,441,104"/>
-<area shape="poly" title=" " alt="" coords="247,28,365,71,364,76,245,33"/>
+<area shape="rect" title="Main header of lipsum&#45;cpp." alt="" coords="168,5,285,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,80,104"/>
+<area shape="poly" title=" " alt="" coords="198,33,87,76,85,71,196,28"/>
+<area shape="rect" title=" " alt="" coords="104,79,163,104"/>
+<area shape="poly" title=" " alt="" coords="213,33,161,72,158,68,210,29"/>
+<area shape="rect" title=" " alt="" coords="187,79,267,104"/>
+<area shape="poly" title=" " alt="" coords="229,31,229,65,224,65,224,31"/>
+<area shape="rect" title=" " alt="" coords="291,79,363,104"/>
+<area shape="poly" title=" " alt="" coords="244,29,301,68,298,73,241,33"/>
+<area shape="rect" title=" " alt="" coords="387,79,453,104"/>
+<area shape="poly" title=" " alt="" coords="259,28,377,71,375,76,257,33"/>
 </map>
 </div>
 </div>
@@ -110,6 +110,9 @@ Include dependency graph for lipsum.hpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9563955f371ff9dbf5a50a29c9e1f854" id="r_a9563955f371ff9dbf5a50a29c9e1f854"><td class="memItemLeft" align="right" valign="top"><a id="a9563955f371ff9dbf5a50a29c9e1f854" name="a9563955f371ff9dbf5a50a29c9e1f854"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>lipsum::internal::HandleHTMLEntity</b> (const std::string &amp;str)</td></tr>
+<tr class="separator:a9563955f371ff9dbf5a50a29c9e1f854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65e2d9988838f2f1058d0dcac9edf2fa" id="r_a65e2d9988838f2f1058d0dcac9edf2fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8hpp.html#a65e2d9988838f2f1058d0dcac9edf2fa">lipsum::GenerateWord</a> ()</td></tr>
 <tr class="memdesc:a65e2d9988838f2f1058d0dcac9edf2fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random word.  <br /></td></tr>
 <tr class="separator:a65e2d9988838f2f1058d0dcac9edf2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,9 +131,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a70dd1edd162a6065f4d0b1cf1dc19f2f" id="r_a70dd1edd162a6065f4d0b1cf1dc19f2f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8hpp.html#a70dd1edd162a6065f4d0b1cf1dc19f2f">lipsum::GenerateSentences</a> (int sentCount=6, int minWord=4, int maxWord=12, bool useLipsum=true)</td></tr>
 <tr class="memdesc:a70dd1edd162a6065f4d0b1cf1dc19f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate multiple random sentences at once.  <br /></td></tr>
 <tr class="separator:a70dd1edd162a6065f4d0b1cf1dc19f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94ccac7ba18d09270ae9124e6608132" id="r_ad94ccac7ba18d09270ae9124e6608132"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8hpp.html#ad94ccac7ba18d09270ae9124e6608132">lipsum::HTMLify</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:ad94ccac7ba18d09270ae9124e6608132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn a string into HTML paragraph tags.  <br /></td></tr>
+<tr class="separator:ad94ccac7ba18d09270ae9124e6608132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Main header of lipsum-hpp. </p>
+<div class="textblock"><p>Main header of lipsum-cpp. </p>
 <p>This contains the declarations of functions as well as definitions if LIPSUM_IMPLEMENTATION is defined</p>
 <dl class="section author"><dt>Author</dt><dd>LambBread from github.com </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -392,6 +398,33 @@ Functions</h2></td></tr>
 <p>Generate a random word. </p>
 <p>This function generates a random word from a predefined list.</p>
 <dl class="section return"><dt>Returns</dt><dd>std::string Returns the random word. </dd></dl>
+
+</div>
+</div>
+<a id="ad94ccac7ba18d09270ae9124e6608132" name="ad94ccac7ba18d09270ae9124e6608132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94ccac7ba18d09270ae9124e6608132">&#9670;&#160;</a></span>HTMLify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::HTMLify </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turn a string into HTML paragraph tags. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string The HTML-ified string.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string inputted. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
