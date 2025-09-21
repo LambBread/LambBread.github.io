@@ -9,3 +9,4 @@ These are live examples for [the lipsum-cpp repo](https://github.com/LambBread/l
 - [GenerateSentences](https://lambbread.github.io/lipsumcpp-example/GenerateSentences.html)
 - [GenerateDefaultLipsumSentence](https://lambbread.github.io/lipsumcpp-example/GenerateDefaultLipsumSentence.html)
 - [HTMLify](https://lambbread.github.io/lipsumcpp-example/HTMLify.html)
+- [CWrapper](https://lambbread.github.io/lipsumcpp-example/CWrapper.html)
