@@ -1,0 +1,5 @@
+<map id="rayapp::Layer" name="rayapp::Layer">
+<area shape="rect" id="Node000001" title="A generic portion of an app that runs every frame." alt="" coords="5,5,116,31"/>
+<area shape="rect" id="Node000002" href="$classrayapp_1_1App.html" title="Base class for apps." alt="" coords="11,79,111,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,44,63,79,58,79,58,44"/>
+</map>
