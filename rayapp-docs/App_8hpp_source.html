@@ -87,36 +87,37 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="Layer_8hpp.html">Layer.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>rayapp</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classrayapp_1_1App.html">   21</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classrayapp_1_1App.html">App</a> : <span class="keyword">public</span> <a class="code hl_class" href="classrayapp_1_1Layer.html">Layer</a></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classrayapp_1_1App.html#a4757d5b200a0fcff28a9d50682ee1a61">   27</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classrayapp_1_1App.html#a4757d5b200a0fcff28a9d50682ee1a61">~App</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classrayapp_1_1App.html#a48ad5436b59192404ca05631d095ebbd">Run</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keyword">const</span> <span class="keywordtype">char</span>* title);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classrayapp_1_1App.html#a48ad5436b59192404ca05631d095ebbd">Run</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keyword">const</span> std::string&amp; title);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classrayapp_1_1App.html#ac82af76e8fa4d904e1df5435bd8181c9">   48</a></span>        std::vector&lt;Layer*&gt; <a class="code hl_variable" href="classrayapp_1_1App.html#ac82af76e8fa4d904e1df5435bd8181c9">m_Layers</a>; </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classrayapp_1_1App.html#ad7fd377380f0bf207b1fe46faad637de">   49</a></span>        <a class="code hl_function" href="classrayapp_1_1App.html#ad7fd377380f0bf207b1fe46faad637de">App</a>() = <span class="keywordflow">default</span>; </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    };</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;raylib.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>rayapp</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classrayapp_1_1App.html">   22</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classrayapp_1_1App.html">App</a> : <span class="keyword">public</span> <a class="code hl_class" href="classrayapp_1_1Layer.html">Layer</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classrayapp_1_1App.html#a4757d5b200a0fcff28a9d50682ee1a61">   28</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classrayapp_1_1App.html#a4757d5b200a0fcff28a9d50682ee1a61">~App</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classrayapp_1_1App.html#a48ad5436b59192404ca05631d095ebbd">Run</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keyword">const</span> <span class="keywordtype">char</span>* title);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classrayapp_1_1App.html#a48ad5436b59192404ca05631d095ebbd">Run</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keyword">const</span> std::string&amp; title);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classrayapp_1_1App.html#a0c9bc35012f9feaf7e6c844d240a1610">   49</a></span>        std::vector&lt;std::unique_ptr&lt;Layer&gt;&gt; <a class="code hl_variable" href="classrayapp_1_1App.html#a0c9bc35012f9feaf7e6c844d240a1610">m_Layers</a>; </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classrayapp_1_1App.html#ad7fd377380f0bf207b1fe46faad637de">   50</a></span>        <a class="code hl_function" href="classrayapp_1_1App.html#ad7fd377380f0bf207b1fe46faad637de">App</a>() = <span class="keywordflow">default</span>; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    };</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
-<div class="foldopen" id="foldopen00067" data-start="" data-end="">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="App_8hpp.html#a3d4390467669befa98e54fe5d30f8c46">   67</a></span><span class="preprocessor">#define RAYAPP_MAIN(mainapp, width, height, title)\</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">    int main(int argc, char** argv)\</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">    {\</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">        mainapp app;\</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">        app.Run((width), (height), (title));\</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">        return 0;\</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">    }</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="foldopen" id="foldopen00068" data-start="" data-end="">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="App_8hpp.html#a3d4390467669befa98e54fe5d30f8c46">   68</a></span><span class="preprocessor">#define RAYAPP_MAIN(mainapp, width, height, title)\</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">    int main(int argc, char** argv)\</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">    {\</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">        mainapp app;\</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">        app.Run((width), (height), (title));\</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">        return 0;\</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">    }</span></div>
 </div>
 <div class="ttc" id="aLayer_8hpp_html"><div class="ttname"><a href="Layer_8hpp.html">Layer.hpp</a></div><div class="ttdoc">Declaration of the class Layer.</div></div>
-<div class="ttc" id="aclassrayapp_1_1App_html"><div class="ttname"><a href="classrayapp_1_1App.html">rayapp::App</a></div><div class="ttdoc">Base class for apps.</div><div class="ttdef"><b>Definition</b> App.hpp:22</div></div>
+<div class="ttc" id="aclassrayapp_1_1App_html"><div class="ttname"><a href="classrayapp_1_1App.html">rayapp::App</a></div><div class="ttdoc">Base class for apps.</div><div class="ttdef"><b>Definition</b> App.hpp:23</div></div>
+<div class="ttc" id="aclassrayapp_1_1App_html_a0c9bc35012f9feaf7e6c844d240a1610"><div class="ttname"><a href="classrayapp_1_1App.html#a0c9bc35012f9feaf7e6c844d240a1610">rayapp::App::m_Layers</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; Layer &gt; &gt; m_Layers</div><div class="ttdoc">Layers that may be used in derived classes.</div><div class="ttdef"><b>Definition</b> App.hpp:49</div></div>
 <div class="ttc" id="aclassrayapp_1_1App_html_a4757d5b200a0fcff28a9d50682ee1a61"><div class="ttname"><a href="classrayapp_1_1App.html#a4757d5b200a0fcff28a9d50682ee1a61">rayapp::App::~App</a></div><div class="ttdeci">virtual ~App() override=default</div><div class="ttdoc">Destructor for App.</div></div>
-<div class="ttc" id="aclassrayapp_1_1App_html_a48ad5436b59192404ca05631d095ebbd"><div class="ttname"><a href="classrayapp_1_1App.html#a48ad5436b59192404ca05631d095ebbd">rayapp::App::Run</a></div><div class="ttdeci">void Run(int width, int height, const char *title)</div><div class="ttdoc">Start the app.</div><div class="ttdef"><b>Definition</b> App.cpp:12</div></div>
-<div class="ttc" id="aclassrayapp_1_1App_html_ac82af76e8fa4d904e1df5435bd8181c9"><div class="ttname"><a href="classrayapp_1_1App.html#ac82af76e8fa4d904e1df5435bd8181c9">rayapp::App::m_Layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_Layers</div><div class="ttdoc">Layers that may be used in derived classes.</div><div class="ttdef"><b>Definition</b> App.hpp:48</div></div>
+<div class="ttc" id="aclassrayapp_1_1App_html_a48ad5436b59192404ca05631d095ebbd"><div class="ttname"><a href="classrayapp_1_1App.html#a48ad5436b59192404ca05631d095ebbd">rayapp::App::Run</a></div><div class="ttdeci">void Run(int width, int height, const char *title)</div><div class="ttdoc">Start the app.</div><div class="ttdef"><b>Definition</b> App.cpp:20</div></div>
 <div class="ttc" id="aclassrayapp_1_1App_html_ad7fd377380f0bf207b1fe46faad637de"><div class="ttname"><a href="classrayapp_1_1App.html#ad7fd377380f0bf207b1fe46faad637de">rayapp::App::App</a></div><div class="ttdeci">App()=default</div><div class="ttdoc">Constructor for App. Not intended for construction.</div></div>
 <div class="ttc" id="aclassrayapp_1_1Layer_html"><div class="ttname"><a href="classrayapp_1_1Layer.html">rayapp::Layer</a></div><div class="ttdoc">A generic portion of an app that runs every frame.</div><div class="ttdef"><b>Definition</b> Layer.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->

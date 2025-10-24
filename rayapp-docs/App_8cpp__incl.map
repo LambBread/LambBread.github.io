@@ -1,16 +1,18 @@
 <map id="src/rayapp/App.cpp" name="src/rayapp/App.cpp">
-<area shape="rect" id="Node000001" title="Definition of the class App." alt="" coords="193,5,340,31"/>
-<area shape="rect" id="Node000002" href="$App_8hpp.html" title="Declaration of the class App." alt="" coords="192,79,267,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,32,244,68,239,65,258,30"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="285,152,355,177"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="274,30,314,138,309,140,269,32"/>
+<area shape="rect" id="Node000001" title="Definition of the class App." alt="" coords="240,5,387,31"/>
+<area shape="rect" id="Node000002" href="$App_8hpp.html" title="Declaration of the class App." alt="" coords="239,79,313,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,32,291,68,286,65,305,30"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="387,152,458,177"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="324,30,408,139,403,142,320,33"/>
 <area shape="rect" id="Node000003" href="$Layer_8hpp.html" title="Declaration of the class Layer." alt="" coords="5,152,91,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="201,107,91,149,89,144,199,102"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,107,99,150,97,145,239,101"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="115,152,173,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="217,106,170,145,167,141,214,102"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="256,106,179,148,176,143,254,102"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="198,152,261,177"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="232,104,232,138,227,138,227,104"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="246,102,296,141,293,145,242,106"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="271,106,247,142,242,139,266,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="285,152,363,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="286,103,311,139,306,142,282,106"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="301,102,388,144,385,148,298,106"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="25,225,71,251"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="51,178,51,212,45,212,45,178"/>
 </map>

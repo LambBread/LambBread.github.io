@@ -154,7 +154,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab758ca9711a856e9597df7e664815115" id="r_ab758ca9711a856e9597df7e664815115"><td class="memItemLeft" align="right" valign="top"><a id="ab758ca9711a856e9597df7e664815115" name="ab758ca9711a856e9597df7e664815115"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_Enabled</b> = false</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_Enabled</b> = true</td></tr>
 <tr class="memdesc:ab758ca9711a856e9597df7e664815115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag representing if the layer is enabled. <br /></td></tr>
 <tr class="separator:ab758ca9711a856e9597df7e664815115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2767bf40eb866203fd6c07543c561778" id="r_a2767bf40eb866203fd6c07543c561778"><td class="memItemLeft" align="right" valign="top"><a id="a2767bf40eb866203fd6c07543c561778" name="a2767bf40eb866203fd6c07543c561778"></a>
@@ -323,7 +323,7 @@ std::any&#160;</td><td class="memItemRight" valign="bottom"><b>m_Data</b></td></
 </div><div class="memdoc">
 
 <p>Runs before InitWindow(). </p>
-<p>Can be overridden with custom code, but overriding is optional. Runs before InitWindow() is called.</p>
+<p>Can be overridden with custom code, but overriding is optional. Runs before InitWindow() is called. Useful for adding to m_Layers before an app runs.</p>
 <dl class="section return"><dt>Returns</dt><dd>void This function does not return a value. </dd></dl>
 
 </div>
@@ -410,6 +410,7 @@ std::any&#160;</td><td class="memItemRight" valign="bottom"><b>m_Data</b></td></
 </div><div class="memdoc">
 
 <p>Runs when <a class="el" href="classrayapp_1_1Layer.html#a8402bf0cea0bca65302419e188d0e1bf" title="Disable the layer.">Disable()</a> is called. </p>
+<p>Can be overridden with custom code, but overriding is optional. Runs when <a class="el" href="classrayapp_1_1Layer.html#a8402bf0cea0bca65302419e188d0e1bf" title="Disable the layer.">Disable()</a> is called.</p>
 <dl class="section return"><dt>Returns</dt><dd>void This function does not return a value. </dd></dl>
 
 </div>
@@ -467,6 +468,7 @@ std::any&#160;</td><td class="memItemRight" valign="bottom"><b>m_Data</b></td></
 </div><div class="memdoc">
 
 <p>Runs when <a class="el" href="classrayapp_1_1Layer.html#a6a39acd8c3695588c9862d5593777776" title="Enable the layer.">Enable()</a> is called. </p>
+<p>Can be overridden with custom code, but overriding is optional. Runs when <a class="el" href="classrayapp_1_1Layer.html#a6a39acd8c3695588c9862d5593777776" title="Enable the layer.">Enable()</a> is called.</p>
 <dl class="section return"><dt>Returns</dt><dd>void This function does not return a value. </dd></dl>
 
 </div>
