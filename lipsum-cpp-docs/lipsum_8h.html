@@ -126,9 +126,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a05219e9ca68f6a23d475a37f088589fa" id="r_a05219e9ca68f6a23d475a37f088589fa"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a05219e9ca68f6a23d475a37f088589fa">lpsm_GenerateSentences</a> (int sentCount, int minWord, int maxWord, int minFrag, int maxFrag, bool useLipsum)</td></tr>
 <tr class="memdesc:a05219e9ca68f6a23d475a37f088589fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate multiple random sentences at once.  <br /></td></tr>
 <tr class="separator:a05219e9ca68f6a23d475a37f088589fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d4e5645182f7a0e1b9dfe22fa710e6" id="r_ae6d4e5645182f7a0e1b9dfe22fa710e6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#ae6d4e5645182f7a0e1b9dfe22fa710e6">lpsm_HTMLify</a> (char *str)</td></tr>
-<tr class="memdesc:ae6d4e5645182f7a0e1b9dfe22fa710e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn a string into HTML paragraph tags.  <br /></td></tr>
-<tr class="separator:ae6d4e5645182f7a0e1b9dfe22fa710e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad523679c8d3e6d306b0d01114065d80" id="r_aad523679c8d3e6d306b0d01114065d80"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#aad523679c8d3e6d306b0d01114065d80">lpsm_HTMLify</a> (const char *str)</td></tr>
+<tr class="memdesc:aad523679c8d3e6d306b0d01114065d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn a string into HTML paragraph tags.  <br /></td></tr>
+<tr class="separator:aad523679c8d3e6d306b0d01114065d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a070fb806bcd71a00fd467bf42e285ed7" id="r_a070fb806bcd71a00fd467bf42e285ed7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a070fb806bcd71a00fd467bf42e285ed7">lpsm_DeleteString</a> (char *str)</td></tr>
 <tr class="memdesc:a070fb806bcd71a00fd467bf42e285ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a string returned by a function.  <br /></td></tr>
 <tr class="separator:a070fb806bcd71a00fd467bf42e285ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +159,6 @@ Functions</h2></td></tr>
 
 <p>Delete a string returned by a function. </p>
 <p>Since pointers allocated with new[] cannot be deallocated with free(), this function handles the deallocation.</p>
-<dl class="section return"><dt>Returns</dt><dd>void This function does not return a value.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string to delete. </td></tr>
@@ -189,7 +188,7 @@ Functions</h2></td></tr>
 
 <p>Generate the beginning Lorem Ipsum sentence. </p>
 <p>Returns the sentence "Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-<dl class="section return"><dt>Returns</dt><dd>char* Returns the default Lorem Ipsum sentence. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The default Lorem Ipsum sentence. </dd></dl>
 
 </div>
 </div>
@@ -251,15 +250,15 @@ Functions</h2></td></tr>
 
 <p>Generate a random paragraph. </p>
 <p>This function generates a random paragraph starting with a tab character and ending in a line break, with each sentence separated by a space.</p>
-<dl class="section return"><dt>Returns</dt><dd>char* Returns the random paragraph.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random paragraph.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">minSent</td><td>Minimum number of sentences in the paragraph.</td></tr>
-    <tr><td class="paramname">maxSent</td><td>Maximum number of sentences in the paragraph.</td></tr>
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in each sentence fragment.</td></tr>
-    <tr><td class="paramname">maxWord</td><td>Maximum number of words in each sentence fragment.</td></tr>
-    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence.</td></tr>
-    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence.</td></tr>
+    <tr><td class="paramname">minSent</td><td>Minimum number of sentences in the paragraph. </td></tr>
+    <tr><td class="paramname">maxSent</td><td>Maximum number of sentences in the paragraph. </td></tr>
+    <tr><td class="paramname">minWord</td><td>Minimum number of words in each sentence fragment. </td></tr>
+    <tr><td class="paramname">maxWord</td><td>Maximum number of words in each sentence fragment. </td></tr>
+    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
+    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." text should start the paragraph. </td></tr>
   </table>
   </dd>
@@ -333,16 +332,16 @@ Functions</h2></td></tr>
 
 <p>Generate several random paragraphs at once. </p>
 <p>This function generates several random paragraphs, each separated by a line break. Formerly known as lpsm_GenerateParagraphList().</p>
-<dl class="section return"><dt>Returns</dt><dd>char* Returns the random paragraphs.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random paragraphs.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">paraCount</td><td>The number of paragraphs.</td></tr>
-    <tr><td class="paramname">minSent</td><td>Minimum number of sentences in each paragraph.</td></tr>
-    <tr><td class="paramname">maxSent</td><td>Maximum number of sentences in each paragraph.</td></tr>
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in each sentence fragment.</td></tr>
-    <tr><td class="paramname">maxWord</td><td>Maximum number of words in each sentence fragment.</td></tr>
-    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence.</td></tr>
-    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence.</td></tr>
+    <tr><td class="paramname">paraCount</td><td>The number of paragraphs. </td></tr>
+    <tr><td class="paramname">minSent</td><td>Minimum number of sentences in each paragraph. </td></tr>
+    <tr><td class="paramname">maxSent</td><td>Maximum number of sentences in each paragraph. </td></tr>
+    <tr><td class="paramname">minWord</td><td>Minimum number of words in each sentence fragment. </td></tr>
+    <tr><td class="paramname">maxWord</td><td>Maximum number of words in each sentence fragment. </td></tr>
+    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
+    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." text should start the first paragraph. </td></tr>
   </table>
   </dd>
@@ -390,12 +389,12 @@ Functions</h2></td></tr>
 
 <p>Generate a random sentence. </p>
 <p>This function generates a sentence starting with a capital letter and ending with a period, sometimes containing a comma.</p>
-<dl class="section return"><dt>Returns</dt><dd>char* Returns the random sentence.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random sentence.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in the sentence fragment.</td></tr>
-    <tr><td class="paramname">maxWord</td><td>Maximum number of words in the sentence fragment.</td></tr>
-    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in the sentence.</td></tr>
+    <tr><td class="paramname">minWord</td><td>Minimum number of words in the sentence fragment. </td></tr>
+    <tr><td class="paramname">maxWord</td><td>Maximum number of words in the sentence fragment. </td></tr>
+    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in the sentence. </td></tr>
     <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in the sentence. </td></tr>
   </table>
   </dd>
@@ -430,10 +429,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate a random sentence fragment. </p>
-<dl class="section return"><dt>Returns</dt><dd>char* Returns the random sentence fragment.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random sentence fragment.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in the fragment.</td></tr>
+    <tr><td class="paramname">minWord</td><td>Minimum number of words in the fragment. </td></tr>
     <tr><td class="paramname">maxWord</td><td>Maximum number of words in the fragment. </td></tr>
   </table>
   </dd>
@@ -493,14 +492,14 @@ Functions</h2></td></tr>
 
 <p>Generate multiple random sentences at once. </p>
 <p>Generate multiple random sentences separated with spaces. Does not add a tab character before the sentences nor a line break after.</p>
-<dl class="section return"><dt>Returns</dt><dd>char* Returns the random sentences.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random sentences.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sentCount</td><td>The number of sentences.</td></tr>
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in each sentence fragment.</td></tr>
-    <tr><td class="paramname">maxWord</td><td>Maximum number of words in each sentence fragment.</td></tr>
-    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence.</td></tr>
-    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence.</td></tr>
+    <tr><td class="paramname">sentCount</td><td>The number of sentences. </td></tr>
+    <tr><td class="paramname">minWord</td><td>Minimum number of words in each sentence fragment. </td></tr>
+    <tr><td class="paramname">maxWord</td><td>Maximum number of words in each sentence fragment. </td></tr>
+    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
+    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." sentence should be the first sentence. </td></tr>
   </table>
   </dd>
@@ -526,12 +525,12 @@ Functions</h2></td></tr>
 
 <p>Generate a random word. </p>
 <p>This function generates a random word from a predefined list.</p>
-<dl class="section return"><dt>Returns</dt><dd>char* Returns the random word. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random word. </dd></dl>
 
 </div>
 </div>
-<a id="ae6d4e5645182f7a0e1b9dfe22fa710e6" name="ae6d4e5645182f7a0e1b9dfe22fa710e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6d4e5645182f7a0e1b9dfe22fa710e6">&#9670;&#160;</a></span>lpsm_HTMLify()</h2>
+<a id="aad523679c8d3e6d306b0d01114065d80" name="aad523679c8d3e6d306b0d01114065d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad523679c8d3e6d306b0d01114065d80">&#9670;&#160;</a></span>lpsm_HTMLify()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,7 +538,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">char * lpsm_HTMLify </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
           <td></td>
         </tr>
