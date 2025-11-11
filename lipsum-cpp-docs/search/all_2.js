@@ -1,16 +1,4 @@
 var searchData=
 [
-  ['lipsum_2ecpp_0',['lipsum.cpp',['../lipsum_8cpp.html',1,'']]],
-  ['lipsum_2eh_1',['lipsum.h',['../lipsum_8h.html',1,'']]],
-  ['lipsum_2ehpp_2',['lipsum.hpp',['../lipsum_8hpp.html',1,'']]],
-  ['lipsum_2einl_3',['lipsum.inl',['../lipsum_8inl.html',1,'']]],
-  ['lipsum_5fh_2ecpp_4',['lipsum_h.cpp',['../lipsum__h_8cpp.html',1,'']]],
-  ['lpsm_5fdeletestring_5',['lpsm_deletestring',['../lipsum_8h.html#a070fb806bcd71a00fd467bf42e285ed7',1,'lpsm_DeleteString(char *str):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a070fb806bcd71a00fd467bf42e285ed7',1,'lpsm_DeleteString(char *str):&#160;lipsum_h.cpp']]],
-  ['lpsm_5fgeneratedefaultlipsumsentence_6',['lpsm_generatedefaultlipsumsentence',['../lipsum_8h.html#a7d80487d1aad4f3e2fc0b8bc9b098bbb',1,'lpsm_GenerateDefaultLipsumSentence(void):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a7d80487d1aad4f3e2fc0b8bc9b098bbb',1,'lpsm_GenerateDefaultLipsumSentence(void):&#160;lipsum_h.cpp']]],
-  ['lpsm_5fgenerateparagraph_7',['lpsm_generateparagraph',['../lipsum__h_8cpp.html#af4a7593060377012e6ab1191c9db53b1',1,'lpsm_GenerateParagraph(int minSent, int maxSent, int minWord, int maxWord, bool useLipsum, float ratio):&#160;lipsum_h.cpp'],['../lipsum_8h.html#af4a7593060377012e6ab1191c9db53b1',1,'lpsm_GenerateParagraph(int minSent, int maxSent, int minWord, int maxWord, bool useLipsum, float ratio):&#160;lipsum_h.cpp']]],
-  ['lpsm_5fgenerateparagraphs_8',['lpsm_generateparagraphs',['../lipsum_8h.html#a1b38f7ed7873e239952cf40ace3ffbcb',1,'lpsm_GenerateParagraphs(int paraCount, int minSent, int maxSent, int minWord, int maxWord, bool useLipsum, float ratio):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a1b38f7ed7873e239952cf40ace3ffbcb',1,'lpsm_GenerateParagraphs(int paraCount, int minSent, int maxSent, int minWord, int maxWord, bool useLipsum, float ratio):&#160;lipsum_h.cpp']]],
-  ['lpsm_5fgeneratesentence_9',['lpsm_generatesentence',['../lipsum_8h.html#aa10e55a3b41cf679360b8c5d8e52bc02',1,'lpsm_GenerateSentence(int minWord, int maxWord, float ratio):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#aa10e55a3b41cf679360b8c5d8e52bc02',1,'lpsm_GenerateSentence(int minWord, int maxWord, float ratio):&#160;lipsum_h.cpp']]],
-  ['lpsm_5fgeneratesentences_10',['lpsm_generatesentences',['../lipsum_8h.html#ab0832dc1989f736a8f026adfc351694a',1,'lpsm_GenerateSentences(int sentCount, int minWord, int maxWord, bool useLipsum, float ratio):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#ab0832dc1989f736a8f026adfc351694a',1,'lpsm_GenerateSentences(int sentCount, int minWord, int maxWord, bool useLipsum, float ratio):&#160;lipsum_h.cpp']]],
-  ['lpsm_5fgenerateword_11',['lpsm_generateword',['../lipsum_8h.html#a1ce54b5424b10f01df90fc7d276165dc',1,'lpsm_GenerateWord(void):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a1ce54b5424b10f01df90fc7d276165dc',1,'lpsm_GenerateWord(void):&#160;lipsum_h.cpp']]],
-  ['lpsm_5fhtmlify_12',['lpsm_htmlify',['../lipsum_8h.html#ae6d4e5645182f7a0e1b9dfe22fa710e6',1,'lpsm_HTMLify(char *str):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#ae6d4e5645182f7a0e1b9dfe22fa710e6',1,'lpsm_HTMLify(char *str):&#160;lipsum_h.cpp']]]
+  ['htmlify_0',['HTMLify',['../namespacelipsum.html#ad94ccac7ba18d09270ae9124e6608132',1,'lipsum']]]
 ];

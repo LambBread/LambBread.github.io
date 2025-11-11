@@ -10,3 +10,4 @@ These are live examples for [the lipsum-cpp repo](https://github.com/LambBread/l
 - [GenerateDefaultLipsumSentence](https://lambbread.github.io/lipsumcpp-example/GenerateDefaultLipsumSentence.html)
 - [HTMLify](https://lambbread.github.io/lipsumcpp-example/HTMLify.html)
 - [CWrapper](https://lambbread.github.io/lipsumcpp-example/CWrapper.html)
+- [GenerateSentenceFragment](https://lambbread.github.io/lipsumcpp-example/GenerateSentenceFragment.html)
