@@ -74,18 +74,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="preprocessor">#ifndef LIPSUM_BUILD_STATIC</span></div>
-<div class="line"><span class="preprocessor">#define LIPSUM_IMPLEMENTATION </span><span class="comment">//not necessary for static library builds</span></div>
+<div class="line"><span class="preprocessor">#define LIPSUM_IMPLEMENTATION </span><span class="comment">//only for header-only usage</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="lipsum_8hpp.html">lipsum.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">//generate a random word</span></div>
-<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#a65e2d9988838f2f1058d0dcac9edf2fa">lpsm::GenerateWord</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    <span class="comment">//generate a random word with random seed</span></div>
+<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#a15c41255ae66001800e7ffcc30086594">lpsm::GenerateWord</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    <span class="comment">//generate a random word with seed 69</span></div>
+<div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="namespacelipsum.html#a15c41255ae66001800e7ffcc30086594">lpsm::GenerateWord</a>(69) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="alipsum_8hpp_html"><div class="ttname"><a href="lipsum_8hpp.html">lipsum.hpp</a></div><div class="ttdoc">Main header of lipsum-cpp.</div></div>
-<div class="ttc" id="anamespacelipsum_html_a65e2d9988838f2f1058d0dcac9edf2fa"><div class="ttname"><a href="namespacelipsum.html#a65e2d9988838f2f1058d0dcac9edf2fa">lipsum::GenerateWord</a></div><div class="ttdeci">std::string GenerateWord()</div><div class="ttdoc">Generate a random word.</div></div>
+<div class="ttc" id="anamespacelipsum_html_a15c41255ae66001800e7ffcc30086594"><div class="ttname"><a href="namespacelipsum.html#a15c41255ae66001800e7ffcc30086594">lipsum::GenerateWord</a></div><div class="ttdeci">LIPSUM_API std::string GenerateWord(int seed=0)</div><div class="ttdoc">Generate a random word.</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

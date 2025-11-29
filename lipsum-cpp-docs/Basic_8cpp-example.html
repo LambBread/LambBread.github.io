@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lipsum-cpp: GenerateParagraphs.cpp</title>
+<title>lipsum-cpp: Basic.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">GenerateParagraphs.cpp</div></div>
+  <div class="headertitle"><div class="title">Basic.cpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="preprocessor">#ifndef LIPSUM_BUILD_STATIC</span></div>
@@ -78,31 +78,32 @@ $(function() {
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="lipsum_8hpp.html">lipsum.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">//generate 5 paragraphs </span></div>
-<div class="line">    <span class="comment">//of 5-8 sentences </span></div>
-<div class="line">    <span class="comment">//of 1-3 sentence fragments</span></div>
-<div class="line">    <span class="comment">//of 4-9 words, </span></div>
-<div class="line">    <span class="comment">//starting with &quot;Lorem ipsum...&quot; and random seed (default)</span></div>
-<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#aa9f8a40c273cd9ab3ab6d09a0d1e956b">lpsm::GenerateParagraphs</a>();</div>
-<div class="line">    <span class="comment">//generate 10 paragraphs </span></div>
-<div class="line">    <span class="comment">//of 7-10 sentences </span></div>
-<div class="line">    <span class="comment">//of 3-6 sentence fragments </span></div>
-<div class="line">    <span class="comment">//of 6-9 words, </span></div>
-<div class="line">    <span class="comment">//not starting with &quot;Lorem ipsum...&quot;, and seed 69</span></div>
-<div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="namespacelipsum.html#aa9f8a40c273cd9ab3ab6d09a0d1e956b">lpsm::GenerateParagraphs</a>(</div>
-<div class="line">        10, </div>
-<div class="line">        <a id="_a1" name="_a1"></a><a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(6, 9),</div>
-<div class="line">        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(3, 6),</div>
-<div class="line">        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(7, 10),</div>
-<div class="line">        <span class="keyword">false</span>, 69</div>
-<div class="line">    );</div>
+<div class="line">    <span class="comment">// Create a generator with random seed.</span></div>
+<div class="line">    <a id="_a0" name="_a0"></a><a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a> generator;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Generate 3 paragraphs.</span></div>
+<div class="line">    std::cout &lt;&lt; generator.<a id="a1" name="a1"></a><a class="code hl_function" href="classlipsum_1_1Generator.html#afe118671993dcce93ff04d9fb5a2c2d2">paragraph</a>(3, <span class="keyword">true</span>);</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// Generate 6 sentences.</span></div>
+<div class="line">    std::cout &lt;&lt; generator.<a id="a2" name="a2"></a><a class="code hl_function" href="classlipsum_1_1Generator.html#a4b3ef2f529fbd6ac55c1d118d2187226">sentence</a>(6, <span class="keyword">true</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// Generate a sentence fragment.</span></div>
+<div class="line">    std::cout &lt;&lt; generator.<a id="a3" name="a3"></a><a class="code hl_function" href="classlipsum_1_1Generator.html#a8977e3cc0486d3723554f67122607e49">sentence_fragment</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// Generate a word.</span></div>
+<div class="line">    std::cout &lt;&lt; generator.<a id="a4" name="a4"></a><a class="code hl_function" href="classlipsum_1_1Generator.html#a61aadb9a332925042a2c653db956abb9">word</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html"><div class="ttname"><a href="classlipsum_1_1Generator.html">lipsum::Generator</a></div><div class="ttdoc">OOP layer over lipsum-cpp.</div><div class="ttdef"><b>Definition</b> lipsum.hpp:115</div></div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html_a4b3ef2f529fbd6ac55c1d118d2187226"><div class="ttname"><a href="classlipsum_1_1Generator.html#a4b3ef2f529fbd6ac55c1d118d2187226">lipsum::Generator::sentence</a></div><div class="ttdeci">std::string sentence(int num=1, bool useLipsum=true)</div><div class="ttdoc">Generate sentences.</div></div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html_a61aadb9a332925042a2c653db956abb9"><div class="ttname"><a href="classlipsum_1_1Generator.html#a61aadb9a332925042a2c653db956abb9">lipsum::Generator::word</a></div><div class="ttdeci">std::string word()</div><div class="ttdoc">Generate a word.</div></div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html_a8977e3cc0486d3723554f67122607e49"><div class="ttname"><a href="classlipsum_1_1Generator.html#a8977e3cc0486d3723554f67122607e49">lipsum::Generator::sentence_fragment</a></div><div class="ttdeci">std::string sentence_fragment()</div><div class="ttdoc">Generate a sentence fragment.</div></div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html_afe118671993dcce93ff04d9fb5a2c2d2"><div class="ttname"><a href="classlipsum_1_1Generator.html#afe118671993dcce93ff04d9fb5a2c2d2">lipsum::Generator::paragraph</a></div><div class="ttdeci">std::string paragraph(int num=1, bool useLipsum=true)</div><div class="ttdoc">Generate paragraphs.</div></div>
 <div class="ttc" id="alipsum_8hpp_html"><div class="ttname"><a href="lipsum_8hpp.html">lipsum.hpp</a></div><div class="ttdoc">Main header of lipsum-cpp.</div></div>
-<div class="ttc" id="anamespacelipsum_html_aa9f8a40c273cd9ab3ab6d09a0d1e956b"><div class="ttname"><a href="namespacelipsum.html#aa9f8a40c273cd9ab3ab6d09a0d1e956b">lipsum::GenerateParagraphs</a></div><div class="ttdeci">LIPSUM_API std::string GenerateParagraphs(int paraCount=5, const ArgVec2 &amp;word=ArgVec2(4, 9), const ArgVec2 &amp;frag=ArgVec2(1, 3), const ArgVec2 &amp;sent=ArgVec2(5, 8), bool useLipsum=true, int seed=0)</div><div class="ttdoc">Generate several random paragraphs at once.</div></div>
-<div class="ttc" id="astructlipsum_1_1ArgVec2_html"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></div><div class="ttdoc">Store data for inputting into functions.</div><div class="ttdef"><b>Definition</b> lipsum.hpp:83</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
