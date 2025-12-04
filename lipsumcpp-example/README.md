@@ -13,3 +13,4 @@ These are live examples for [the lipsum-cpp repo](https://github.com/LambBread/l
 - [GenerateSentenceFragment](https://lambbread.github.io/lipsumcpp-example/GenerateSentenceFragment.html)
 - [FuncsX](https://lambbread.github.io/lipsumcpp-example/FuncsX.html)
 - [Basic](https://lambbread.github.io/lipsumcpp-example/Basic.html)
+- [GenerateWords](https://lambbread.github.io/lipsumcpp-example/GenerateWords.html)

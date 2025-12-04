@@ -88,12 +88,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6bfc6cab5afb5cda672ce11ea45006fd" id="r_a6bfc6cab5afb5cda672ce11ea45006fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a6bfc6cab5afb5cda672ce11ea45006fd">Generator</a> (int seed=0)</td></tr>
-<tr class="memdesc:a6bfc6cab5afb5cda672ce11ea45006fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>.  <br /></td></tr>
-<tr class="separator:a6bfc6cab5afb5cda672ce11ea45006fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61aadb9a332925042a2c653db956abb9" id="r_a61aadb9a332925042a2c653db956abb9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a61aadb9a332925042a2c653db956abb9">word</a> ()</td></tr>
-<tr class="memdesc:a61aadb9a332925042a2c653db956abb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a word.  <br /></td></tr>
-<tr class="separator:a61aadb9a332925042a2c653db956abb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2d6f8549ff587c4326f92a4eb7ae12" id="r_ada2d6f8549ff587c4326f92a4eb7ae12"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ada2d6f8549ff587c4326f92a4eb7ae12">words</a> (int num=1)</td></tr>
+<tr class="memdesc:ada2d6f8549ff587c4326f92a4eb7ae12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a word.  <br /></td></tr>
+<tr class="separator:ada2d6f8549ff587c4326f92a4eb7ae12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b3ef2f529fbd6ac55c1d118d2187226" id="r_a4b3ef2f529fbd6ac55c1d118d2187226"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a4b3ef2f529fbd6ac55c1d118d2187226">sentence</a> (int num=1, bool useLipsum=true)</td></tr>
 <tr class="memdesc:a4b3ef2f529fbd6ac55c1d118d2187226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate sentences.  <br /></td></tr>
 <tr class="separator:a4b3ef2f529fbd6ac55c1d118d2187226"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,29 +106,7 @@ Public Member Functions</h2></td></tr>
 <p>This provides a more user-friendly object-oriented layer over lipsum-cpp. It uses mainly default arguments. It is not exposed in the C wrapper. Unlike most of the codebase which uses PascalCase, the functions in this class use snake_case. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Basic_8cpp-example.html#_a0">Basic.cpp</a>.</dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6bfc6cab5afb5cda672ce11ea45006fd" name="a6bfc6cab5afb5cda672ce11ea45006fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bfc6cab5afb5cda672ce11ea45006fd">&#9670;&#160;</a></span>Generator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">lipsum::Generator::Generator </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>seed</em> = <code>0</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>. </p>
-<p>This function sets the internal variable 'seed' to a user-specified value. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afe118671993dcce93ff04d9fb5a2c2d2" name="afe118671993dcce93ff04d9fb5a2c2d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe118671993dcce93ff04d9fb5a2c2d2">&#9670;&#160;</a></span>paragraph()</h2>
 
@@ -237,23 +212,30 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a61aadb9a332925042a2c653db956abb9" name="a61aadb9a332925042a2c653db956abb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61aadb9a332925042a2c653db956abb9">&#9670;&#160;</a></span>word()</h2>
+<a id="ada2d6f8549ff587c4326f92a4eb7ae12" name="ada2d6f8549ff587c4326f92a4eb7ae12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada2d6f8549ff587c4326f92a4eb7ae12">&#9670;&#160;</a></span>words()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string lipsum::Generator::word </td>
+          <td class="memname">std::string lipsum::Generator::words </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em> = <code>1</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Generate a word. </p>
-<p>This function generates a word based off the seed.</p>
+<p>This function generates num words based off the seed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>The number of words. By default 1.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random word. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Basic_8cpp-example.html#a4">Basic.cpp</a>.</dd>
 </dl>
