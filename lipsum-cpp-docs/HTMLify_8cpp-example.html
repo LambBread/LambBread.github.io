@@ -74,13 +74,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="preprocessor">#ifndef LIPSUM_BUILD_STATIC</span></div>
-<div class="line"><span class="preprocessor">#define LIPSUM_IMPLEMENTATION </span><span class="comment">//only for header-only usage</span></div>
+<div class="line"><span class="preprocessor">#    define LIPSUM_IMPLEMENTATION </span><span class="comment">// only for header-only usage</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="lipsum_8hpp.html">lipsum.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="lipsum_8hpp.html">lipsum.hpp</a>&quot;</span></div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#ae8fd794d85eaa6bac06b101fdfab1a9a">lpsm::HTMLify</a>(<span class="stringliteral">&quot;This is a paragraph.\n&amp;&amp;This is another paragraph.&quot;</span>);</div>
+<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#ae8fd794d85eaa6bac06b101fdfab1a9a">lpsm::HTMLify</a>(</div>
+<div class="line">            <span class="stringliteral">&quot;This is a paragraph.\n&amp;&amp;This is another paragraph.&quot;</span>);</div>
 <div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="namespacelipsum.html#ae8fd794d85eaa6bac06b101fdfab1a9a">lpsm::HTMLify</a>(<a id="a1" name="a1"></a><a class="code hl_function" href="namespacelipsum.html#a4c086f652a5f1d1b584b8c3c9fe8cca5">lpsm::GenerateParagraphs</a>());</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
