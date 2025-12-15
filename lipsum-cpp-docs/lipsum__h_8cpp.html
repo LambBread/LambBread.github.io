@@ -114,6 +114,18 @@ Include dependency graph for lipsum_h.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a47b6c5520427d30fe0d5033fe84996b3" id="r_a47b6c5520427d30fe0d5033fe84996b3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a47b6c5520427d30fe0d5033fe84996b3">lpsm_gen_word</a> (int num)</td></tr>
+<tr class="memdesc:a47b6c5520427d30fe0d5033fe84996b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate words.  <br /></td></tr>
+<tr class="separator:a47b6c5520427d30fe0d5033fe84996b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a262def44ed28084f53da3cafc6ccfc" id="r_a2a262def44ed28084f53da3cafc6ccfc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a2a262def44ed28084f53da3cafc6ccfc">lpsm_gen_sentence</a> (int num, bool useLipsum)</td></tr>
+<tr class="memdesc:a2a262def44ed28084f53da3cafc6ccfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate sentences.  <br /></td></tr>
+<tr class="separator:a2a262def44ed28084f53da3cafc6ccfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48df2227971987a416a8dde773c9bf8" id="r_af48df2227971987a416a8dde773c9bf8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#af48df2227971987a416a8dde773c9bf8">lpsm_gen_sentence_fragment</a> (void)</td></tr>
+<tr class="memdesc:af48df2227971987a416a8dde773c9bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a sentence fragment.  <br /></td></tr>
+<tr class="separator:af48df2227971987a416a8dde773c9bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e9a96d0d474274d83011ff46b8e57c" id="r_a49e9a96d0d474274d83011ff46b8e57c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a49e9a96d0d474274d83011ff46b8e57c">lpsm_gen_paragraph</a> (int num, bool useLipsum)</td></tr>
+<tr class="memdesc:a49e9a96d0d474274d83011ff46b8e57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate paragraphs.  <br /></td></tr>
+<tr class="separator:a49e9a96d0d474274d83011ff46b8e57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeced6d4c9c23cef7fd332e2de7fb1bf" id="r_aaeced6d4c9c23cef7fd332e2de7fb1bf"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#aaeced6d4c9c23cef7fd332e2de7fb1bf">lpsm_GenerateSentence</a> (int minWord, int maxWord, int minFrag, int maxFrag)</td></tr>
 <tr class="memdesc:aaeced6d4c9c23cef7fd332e2de7fb1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random sentence.  <br /></td></tr>
 <tr class="separator:aaeced6d4c9c23cef7fd332e2de7fb1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +186,134 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a49e9a96d0d474274d83011ff46b8e57c" name="a49e9a96d0d474274d83011ff46b8e57c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e9a96d0d474274d83011ff46b8e57c">&#9670;&#160;</a></span>lpsm_gen_paragraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_gen_paragraph </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useLipsum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate paragraphs. </p>
+<p>This function generates multiple paragraphs with default arguments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>The number of paragraphs. </td></tr>
+    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the paragraph(s).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random paragraph(s). </dd></dl>
+
+</div>
+</div>
+<a id="a2a262def44ed28084f53da3cafc6ccfc" name="a2a262def44ed28084f53da3cafc6ccfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a262def44ed28084f53da3cafc6ccfc">&#9670;&#160;</a></span>lpsm_gen_sentence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_gen_sentence </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useLipsum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate sentences. </p>
+<p>This function generates multiple sentences with default arguments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>The number of sentences. </td></tr>
+    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the sentence(s).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random sentence(s). </dd></dl>
+
+</div>
+</div>
+<a id="af48df2227971987a416a8dde773c9bf8" name="af48df2227971987a416a8dde773c9bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48df2227971987a416a8dde773c9bf8">&#9670;&#160;</a></span>lpsm_gen_sentence_fragment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_gen_sentence_fragment </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a sentence fragment. </p>
+<p>This function generates a sentence fragment with default arguments.</p>
+<dl class="section return"><dt>Returns</dt><dd>char* The random sentence fragment. </dd></dl>
+
+</div>
+</div>
+<a id="a47b6c5520427d30fe0d5033fe84996b3" name="a47b6c5520427d30fe0d5033fe84996b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b6c5520427d30fe0d5033fe84996b3">&#9670;&#160;</a></span>lpsm_gen_word()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_gen_word </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate words. </p>
+<p>This function generates multiple words.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>The number of words.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random word. </dd></dl>
 
 </div>
 </div>

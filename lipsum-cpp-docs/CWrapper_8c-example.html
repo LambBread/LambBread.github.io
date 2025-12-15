@@ -79,23 +79,28 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
+<div class="line">    <span class="comment">// Generate 5 words.</span></div>
+<div class="line">    <span class="keywordtype">char</span>* generatedWords = <a id="a0" name="a0"></a><a class="code hl_function" href="lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353">lpsm_gen_word</a>(5);</div>
 <div class="line">    <span class="comment">// generate a paragraph with 4-9 words per sentence fragment,</span></div>
 <div class="line">    <span class="comment">// 1-3 sentence fragments per sentence,</span></div>
 <div class="line">    <span class="comment">// 5-8 sentences per paragraph,</span></div>
 <div class="line">    <span class="comment">// start with &quot;Lorem ipsum...&quot;</span></div>
-<div class="line">    <span class="keywordtype">char</span>* generatedParagraph = <a id="a0" name="a0"></a><a class="code hl_function" href="lipsum_8h.html#a85c867c3fa2839158f8d9a3a4a1787ab">lpsm_GenerateParagraph</a>(4, 9, 1, 3, 5, 8, <span class="keyword">true</span>);</div>
-<div class="line">    <span class="keywordtype">char</span>* htmlified          = <a id="a1" name="a1"></a><a class="code hl_function" href="lipsum_8h.html#a8638fe5d087b4487db47b5c23c7c4616">lpsm_HTMLify</a>(</div>
+<div class="line">    <span class="keywordtype">char</span>* generatedParagraph = <a id="a1" name="a1"></a><a class="code hl_function" href="lipsum_8h.html#a85c867c3fa2839158f8d9a3a4a1787ab">lpsm_GenerateParagraph</a>(4, 9, 1, 3, 5, 8, <span class="keyword">true</span>);</div>
+<div class="line">    <span class="keywordtype">char</span>* htmlified          = <a id="a2" name="a2"></a><a class="code hl_function" href="lipsum_8h.html#a8638fe5d087b4487db47b5c23c7c4616">lpsm_HTMLify</a>(</div>
 <div class="line">            <span class="stringliteral">&quot;This is a paragraph\n\n&amp;&amp; And this is &lt;&lt;another paragraph.&gt;&gt;\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, generatedWords);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;%s&quot;</span>, generatedParagraph);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;%s&quot;</span>, htmlified);</div>
-<div class="line">    <a id="a2" name="a2"></a><a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(generatedParagraph);</div>
+<div class="line">    <a id="a3" name="a3"></a><a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(generatedParagraph);</div>
 <div class="line">    <a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(htmlified);</div>
+<div class="line">    <a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(generatedWords);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="alipsum_8h_html"><div class="ttname"><a href="lipsum_8h.html">lipsum.h</a></div><div class="ttdoc">C wrapper over lipsum.hpp.</div></div>
-<div class="ttc" id="alipsum_8h_html_a315e803d2566be8e0a97389317fe620c"><div class="ttname"><a href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a></div><div class="ttdeci">LIPSUMC_API void lpsm_DeleteString(char *str)</div><div class="ttdoc">Delete a string returned by a function.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:100</div></div>
-<div class="ttc" id="alipsum_8h_html_a85c867c3fa2839158f8d9a3a4a1787ab"><div class="ttname"><a href="lipsum_8h.html#a85c867c3fa2839158f8d9a3a4a1787ab">lpsm_GenerateParagraph</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateParagraph(int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum)</div><div class="ttdoc">Generate a random paragraph.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:29</div></div>
-<div class="ttc" id="alipsum_8h_html_a8638fe5d087b4487db47b5c23c7c4616"><div class="ttname"><a href="lipsum_8h.html#a8638fe5d087b4487db47b5c23c7c4616">lpsm_HTMLify</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_HTMLify(const char *str)</div><div class="ttdoc">Turn a string into HTML paragraph tags.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:95</div></div>
+<div class="ttc" id="alipsum_8h_html_a315e803d2566be8e0a97389317fe620c"><div class="ttname"><a href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a></div><div class="ttdeci">LIPSUMC_API void lpsm_DeleteString(char *str)</div><div class="ttdoc">Delete a string returned by a function.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:124</div></div>
+<div class="ttc" id="alipsum_8h_html_a85c867c3fa2839158f8d9a3a4a1787ab"><div class="ttname"><a href="lipsum_8h.html#a85c867c3fa2839158f8d9a3a4a1787ab">lpsm_GenerateParagraph</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateParagraph(int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum)</div><div class="ttdoc">Generate a random paragraph.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:53</div></div>
+<div class="ttc" id="alipsum_8h_html_a8638fe5d087b4487db47b5c23c7c4616"><div class="ttname"><a href="lipsum_8h.html#a8638fe5d087b4487db47b5c23c7c4616">lpsm_HTMLify</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_HTMLify(const char *str)</div><div class="ttdoc">Turn a string into HTML paragraph tags.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:119</div></div>
+<div class="ttc" id="alipsum_8h_html_a8c98ca12ed3e9a471bdf563bded5c353"><div class="ttname"><a href="lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353">lpsm_gen_word</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_gen_word(int num)</div><div class="ttdoc">Generate words.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:22</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
