@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.1</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -81,7 +81,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>C wrapper over <a class="el" href="lipsum_8hpp.html" title="Main header of lipsum-cpp.">lipsum.hpp</a>.  
+<p>C wrapper over lipsum-cpp.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -89,7 +89,7 @@ Include dependency graph for lipsum.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="lipsum_8h__incl.png" border="0" usemap="#asrc_2lipsum_8h" alt=""/></div>
 <map name="asrc_2lipsum_8h" id="asrc_2lipsum_8h">
-<area shape="rect" title="C wrapper over lipsum.hpp." alt="" coords="5,5,107,31"/>
+<area shape="rect" title="C wrapper over lipsum&#45;cpp." alt="" coords="5,5,107,31"/>
 <area shape="rect" title=" " alt="" coords="15,79,97,104"/>
 <area shape="poly" title=" " alt="" coords="59,31,59,65,53,65,53,31"/>
 </map>
@@ -99,7 +99,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="lipsum_8h__dep__incl.png" border="0" usemap="#asrc_2lipsum_8hdep" alt=""/></div>
 <map name="asrc_2lipsum_8hdep" id="asrc_2lipsum_8hdep">
-<area shape="rect" title="C wrapper over lipsum.hpp." alt="" coords="20,5,121,31"/>
+<area shape="rect" title="C wrapper over lipsum&#45;cpp." alt="" coords="20,5,121,31"/>
 <area shape="rect" href="lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="5,79,136,104"/>
 <area shape="poly" title=" " alt="" coords="73,44,73,79,68,79,68,44"/>
 </map>
@@ -112,7 +112,7 @@ Macros</h2></td></tr>
 <tr class="memitem:aa6df47d8e0eec07ea4c022e71554048a" id="r_aa6df47d8e0eec07ea4c022e71554048a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a></td></tr>
 <tr class="memdesc:aa6df47d8e0eec07ea4c022e71554048a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for shared libraries.  <br /></td></tr>
 <tr class="separator:aa6df47d8e0eec07ea4c022e71554048a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601348306cd604e009bac97a762089aa" id="r_a601348306cd604e009bac97a762089aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a601348306cd604e009bac97a762089aa">LIPSUM_CPP_VERSION_C</a>&#160;&#160;&#160;&quot;0.3.0&quot;</td></tr>
+<tr class="memitem:a601348306cd604e009bac97a762089aa" id="r_a601348306cd604e009bac97a762089aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a601348306cd604e009bac97a762089aa">LIPSUM_CPP_VERSION_C</a>&#160;&#160;&#160;&quot;0.3.1&quot;</td></tr>
 <tr class="memdesc:a601348306cd604e009bac97a762089aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current version of lipsum-cpp.  <br /></td></tr>
 <tr class="separator:a601348306cd604e009bac97a762089aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -136,9 +136,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7c5ca473d42cca6c4a494626ef17fd95" id="r_a7c5ca473d42cca6c4a494626ef17fd95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a7c5ca473d42cca6c4a494626ef17fd95">lpsm_gen_md_text</a> (int numElements)</td></tr>
 <tr class="memdesc:a7c5ca473d42cca6c4a494626ef17fd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown document.  <br /></td></tr>
 <tr class="separator:a7c5ca473d42cca6c4a494626ef17fd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452546ded8bc62c051d447a9d1d41f8d" id="r_a452546ded8bc62c051d447a9d1d41f8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a452546ded8bc62c051d447a9d1d41f8d">lpsm_CountSentences</a> (const char *str)</td></tr>
-<tr class="memdesc:a452546ded8bc62c051d447a9d1d41f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentences in a string.  <br /></td></tr>
-<tr class="separator:a452546ded8bc62c051d447a9d1d41f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2782e1a80b62a40d3ba7c17a7c28c710" id="r_a2782e1a80b62a40d3ba7c17a7c28c710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a2782e1a80b62a40d3ba7c17a7c28c710">lpsm_GenerateSentenceFragment</a> (int minWord, int maxWord)</td></tr>
+<tr class="memdesc:a2782e1a80b62a40d3ba7c17a7c28c710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random sentence fragment.  <br /></td></tr>
+<tr class="separator:a2782e1a80b62a40d3ba7c17a7c28c710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a595a69b39e29d7a28d1cef4791b591cb" id="r_a595a69b39e29d7a28d1cef4791b591cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a595a69b39e29d7a28d1cef4791b591cb">lpsm_GenerateSentence</a> (int minWord, int maxWord, int minFrag, int maxFrag)</td></tr>
 <tr class="memdesc:a595a69b39e29d7a28d1cef4791b591cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random sentence.  <br /></td></tr>
 <tr class="separator:a595a69b39e29d7a28d1cef4791b591cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,16 +163,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a8638fe5d087b4487db47b5c23c7c4616" id="r_a8638fe5d087b4487db47b5c23c7c4616"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a8638fe5d087b4487db47b5c23c7c4616">lpsm_HTMLify</a> (const char *str)</td></tr>
 <tr class="memdesc:a8638fe5d087b4487db47b5c23c7c4616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn a string into HTML paragraph tags.  <br /></td></tr>
 <tr class="separator:a8638fe5d087b4487db47b5c23c7c4616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452546ded8bc62c051d447a9d1d41f8d" id="r_a452546ded8bc62c051d447a9d1d41f8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a452546ded8bc62c051d447a9d1d41f8d">lpsm_CountSentences</a> (const char *str)</td></tr>
+<tr class="memdesc:a452546ded8bc62c051d447a9d1d41f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentences in a string.  <br /></td></tr>
+<tr class="separator:a452546ded8bc62c051d447a9d1d41f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a315e803d2566be8e0a97389317fe620c" id="r_a315e803d2566be8e0a97389317fe620c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a> (char *str)</td></tr>
 <tr class="memdesc:a315e803d2566be8e0a97389317fe620c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a string returned by a function.  <br /></td></tr>
 <tr class="separator:a315e803d2566be8e0a97389317fe620c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2782e1a80b62a40d3ba7c17a7c28c710" id="r_a2782e1a80b62a40d3ba7c17a7c28c710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a2782e1a80b62a40d3ba7c17a7c28c710">lpsm_GenerateSentenceFragment</a> (int minWord, int maxWord)</td></tr>
-<tr class="memdesc:a2782e1a80b62a40d3ba7c17a7c28c710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random sentence fragment.  <br /></td></tr>
-<tr class="separator:a2782e1a80b62a40d3ba7c17a7c28c710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C wrapper over <a class="el" href="lipsum_8hpp.html" title="Main header of lipsum-cpp.">lipsum.hpp</a>. </p>
-<p>This contains the C wrapper over lipsum-cpp. It requires being built as a static or shared library in order to function.</p>
+<div class="textblock"><p>C wrapper over lipsum-cpp. </p>
+<p>This contains the C wrapper over lipsum-cpp. It requires being built as a static or shared library in order to function. This file is under the BSD Zero-Clause License.</p>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2025 LambBread</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>LambBread from github.com </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a601348306cd604e009bac97a762089aa" name="a601348306cd604e009bac97a762089aa"></a>
@@ -182,7 +183,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LIPSUM_CPP_VERSION_C&#160;&#160;&#160;&quot;0.3.0&quot;</td>
+          <td class="memname">#define LIPSUM_CPP_VERSION_C&#160;&#160;&#160;&quot;0.3.1&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -861,6 +862,7 @@ elit."</p>
 
 <p>Turn a string into HTML paragraph tags. </p>
 <p>Add &lt;p&gt; and &lt;/p&gt; around the paragraphs and handle HTML entities like &amp;, &lt;, &gt;, etc. This function is deprecated.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use a Markdown parser instead.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>char* The HTML-ified string.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

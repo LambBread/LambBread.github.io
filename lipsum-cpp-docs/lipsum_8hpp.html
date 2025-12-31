@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.1</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -75,10 +75,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">lipsum.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -90,22 +87,46 @@ $(function() {
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="core_8hpp_source.html">lipsum/core.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="internal_8hpp_source.html">lipsum/internal.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="argvec2_8hpp_source.html">lipsum/argvec2.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="generator_8hpp_source.html">lipsum/generator.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="core__funcs_8hpp_source.html">lipsum/core_funcs.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="core__xfuncs_8hpp_source.html">lipsum/core_xfuncs.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="misc_8hpp_source.html">lipsum/misc.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="markdown_8hpp_source.html">lipsum/markdown.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for lipsum.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="lipsum_8hpp__incl.png" border="0" usemap="#asrc_2lipsum_8hpp" alt=""/></div>
 <map name="asrc_2lipsum_8hpp" id="asrc_2lipsum_8hpp">
-<area shape="rect" title="Main header of lipsum&#45;cpp." alt="" coords="170,5,287,31"/>
+<area shape="rect" title="Main header of lipsum&#45;cpp." alt="" coords="626,5,743,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,71,104"/>
-<area shape="poly" title=" " alt="" coords="199,33,83,76,81,71,197,28"/>
+<area shape="poly" title=" " alt="" coords="626,25,393,42,242,59,85,81,84,76,241,53,393,37,626,20"/>
 <area shape="rect" title=" " alt="" coords="95,79,167,104"/>
-<area shape="poly" title=" " alt="" coords="215,33,160,72,157,68,211,29"/>
+<area shape="poly" title=" " alt="" coords="626,27,432,46,309,62,181,81,180,76,308,56,432,41,626,21"/>
 <area shape="rect" title=" " alt="" coords="191,79,266,104"/>
-<area shape="poly" title=" " alt="" coords="231,31,231,65,226,65,226,31"/>
+<area shape="poly" title=" " alt="" coords="626,29,474,50,280,81,279,76,473,44,625,24"/>
 <area shape="rect" title=" " alt="" coords="290,79,349,104"/>
-<area shape="poly" title=" " alt="" coords="245,29,295,68,292,72,242,33"/>
+<area shape="poly" title=" " alt="" coords="626,31,509,52,363,81,362,76,508,46,625,26"/>
 <area shape="rect" title=" " alt="" coords="373,79,436,104"/>
-<area shape="poly" title=" " alt="" coords="258,28,364,71,362,76,256,33"/>
+<area shape="poly" title=" " alt="" coords="639,33,450,81,449,76,638,28"/>
+<area shape="rect" href="core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="460,79,587,104"/>
+<area shape="poly" title=" " alt="" coords="660,33,563,75,561,71,658,28"/>
+<area shape="rect" href="internal_8hpp.html" title="lipsum::internal" alt="" coords="611,79,759,104"/>
+<area shape="poly" title=" " alt="" coords="687,31,687,65,682,65,682,31"/>
+<area shape="rect" href="argvec2_8hpp.html" title="lipsum::ArgVec2" alt="" coords="783,79,933,104"/>
+<area shape="poly" title=" " alt="" coords="714,28,818,71,816,76,712,33"/>
+<area shape="rect" href="generator_8hpp.html" title="lpsm::Generator" alt="" coords="958,79,1118,104"/>
+<area shape="poly" title=" " alt="" coords="742,28,968,73,967,79,741,33"/>
+<area shape="rect" href="core__funcs_8hpp.html" title="Core functions of lipsum&#45;cpp." alt="" coords="1142,79,1310,104"/>
+<area shape="poly" title=" " alt="" coords="744,24,1129,75,1128,80,743,30"/>
+<area shape="rect" href="core__xfuncs_8hpp.html" title="Core &quot;X&quot; functions of lipsum&#45;cpp." alt="" coords="1334,79,1510,104"/>
+<area shape="poly" title=" " alt="" coords="744,22,1320,76,1320,81,743,27"/>
+<area shape="rect" href="misc_8hpp.html" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="1535,79,1664,104"/>
+<area shape="poly" title=" " alt="" coords="744,19,1070,38,1292,54,1521,76,1521,81,1292,60,1070,43,744,25"/>
+<area shape="rect" href="markdown_8hpp.html" title="Markdown functions of lipsum&#45;cpp." alt="" coords="1688,79,1855,104"/>
+<area shape="poly" title=" " alt="" coords="744,19,1130,38,1398,54,1675,76,1674,81,1398,60,1130,43,743,24"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -113,161 +134,28 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="lipsum_8hpp__dep__incl.png" border="0" usemap="#asrc_2lipsum_8hppdep" alt=""/></div>
 <map name="asrc_2lipsum_8hppdep" id="asrc_2lipsum_8hppdep">
-<area shape="rect" title="Main header of lipsum&#45;cpp." alt="" coords="78,5,195,31"/>
-<area shape="rect" href="lipsum_8cpp.html" title="Source file when building lipsum&#45;cpp as static library." alt="" coords="5,79,121,104"/>
-<area shape="poly" title=" " alt="" coords="117,42,77,80,73,77,113,38"/>
-<area shape="rect" href="lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="146,79,277,104"/>
-<area shape="poly" title=" " alt="" coords="160,38,201,77,197,80,157,42"/>
+<area shape="rect" title="Main header of lipsum&#45;cpp." alt="" coords="96,5,213,31"/>
+<area shape="rect" href="lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="5,79,136,104"/>
+<area shape="poly" title=" " alt="" coords="132,42,86,80,83,76,129,38"/>
+<area shape="rect" href="lipsum__static_8cpp.html" title="Source file when building lipsum&#45;cpp as static or shared library." alt="" coords="161,79,319,104"/>
+<area shape="poly" title=" " alt="" coords="180,37,228,76,224,80,177,41"/>
 </map>
 </div>
 </div>
 <p><a href="lipsum_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store data for inputting into functions.  <a href="structlipsum_1_1ArgVec2.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html">lipsum::Generator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">OOP layer over lipsum-cpp.  <a href="classlipsum_1_1Generator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacelipsum" id="r_namespacelipsum"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html">lipsum</a></td></tr>
 <tr class="memdesc:namespacelipsum"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the main namespace of lipsum-cpp. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacelipsum_1_1internal" id="r_namespacelipsum_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html">lipsum::internal</a></td></tr>
-<tr class="memdesc:namespacelipsum_1_1internal"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace contains functions only used internally by other functions. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a0adfd271eb64cc975010c6324a1a6614" id="r_a0adfd271eb64cc975010c6324a1a6614"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8hpp.html#a0adfd271eb64cc975010c6324a1a6614">LIPSUM_CPP_VERSION</a>&#160;&#160;&#160;&quot;0.3.0&quot;</td></tr>
-<tr class="memdesc:a0adfd271eb64cc975010c6324a1a6614"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current version of lipsum-cpp.  <br /></td></tr>
-<tr class="separator:a0adfd271eb64cc975010c6324a1a6614"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cba6c9f4b913ff7f5d2879fc6de6f35" id="r_a7cba6c9f4b913ff7f5d2879fc6de6f35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a></td></tr>
-<tr class="memdesc:a7cba6c9f4b913ff7f5d2879fc6de6f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for shared libraries.  <br /></td></tr>
-<tr class="separator:a7cba6c9f4b913ff7f5d2879fc6de6f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aeb24aa1b77d895bc9d314d3e4f0cb81e" id="r_aeb24aa1b77d895bc9d314d3e4f0cb81e"><td class="memItemLeft" align="right" valign="top"><a id="aeb24aa1b77d895bc9d314d3e4f0cb81e" name="aeb24aa1b77d895bc9d314d3e4f0cb81e"></a>
-<a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><b>lipsum::internal::HandleHTMLEntity</b> (const std::string &amp;str)</td></tr>
-<tr class="separator:aeb24aa1b77d895bc9d314d3e4f0cb81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2fade1ea96c7aa97fbcfc98bf564a28" id="r_ae2fade1ea96c7aa97fbcfc98bf564a28"><td class="memItemLeft" align="right" valign="top"><a id="ae2fade1ea96c7aa97fbcfc98bf564a28" name="ae2fade1ea96c7aa97fbcfc98bf564a28"></a>
-<a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><b>lipsum::internal::RandomNumber</b> (int min, int max)</td></tr>
-<tr class="separator:ae2fade1ea96c7aa97fbcfc98bf564a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33ff1d042f71d6208b718ff77ff5cf8d" id="r_a33ff1d042f71d6208b718ff77ff5cf8d"><td class="memTemplParams" colspan="2"><a id="a33ff1d042f71d6208b718ff77ff5cf8d" name="a33ff1d042f71d6208b718ff77ff5cf8d"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a33ff1d042f71d6208b718ff77ff5cf8d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::ToString</b> (const T &amp;x)</td></tr>
-<tr class="separator:a33ff1d042f71d6208b718ff77ff5cf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab195ea9987501bd24ebfbd85f0099833" id="r_ab195ea9987501bd24ebfbd85f0099833"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#ab195ea9987501bd24ebfbd85f0099833">lipsum::GenerateWord</a> ()</td></tr>
-<tr class="memdesc:ab195ea9987501bd24ebfbd85f0099833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random word.  <br /></td></tr>
-<tr class="separator:ab195ea9987501bd24ebfbd85f0099833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3cacffa9328c8a008282530e20a5dde" id="r_ad3cacffa9328c8a008282530e20a5dde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#ad3cacffa9328c8a008282530e20a5dde">lipsum::GenerateWords</a> (int wordCount=6)</td></tr>
-<tr class="memdesc:ad3cacffa9328c8a008282530e20a5dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a specified number of random words.  <br /></td></tr>
-<tr class="separator:ad3cacffa9328c8a008282530e20a5dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08f8cee4582279520a99eb4c35ee6657" id="r_a08f8cee4582279520a99eb4c35ee6657"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a08f8cee4582279520a99eb4c35ee6657">lipsum::GenerateSentenceFragment</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 9))</td></tr>
-<tr class="memdesc:a08f8cee4582279520a99eb4c35ee6657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a fragment of a sentence without punctuation.  <br /></td></tr>
-<tr class="separator:a08f8cee4582279520a99eb4c35ee6657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99efbe8138c7cc1e3babfcfa754096e2" id="r_a99efbe8138c7cc1e3babfcfa754096e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a99efbe8138c7cc1e3babfcfa754096e2">lipsum::GenerateSentenceFragmentX</a> (int minWord=4, int maxWord=9)</td></tr>
-<tr class="memdesc:a99efbe8138c7cc1e3babfcfa754096e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a fragment of a sentence without punctuation.  <br /></td></tr>
-<tr class="separator:a99efbe8138c7cc1e3babfcfa754096e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20edb60fcb980c243f6df64f7f07d066" id="r_a20edb60fcb980c243f6df64f7f07d066"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a20edb60fcb980c243f6df64f7f07d066">lipsum::GenerateSentence</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 9), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 3))</td></tr>
-<tr class="memdesc:a20edb60fcb980c243f6df64f7f07d066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random sentence.  <br /></td></tr>
-<tr class="separator:a20edb60fcb980c243f6df64f7f07d066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa09bf19efc57fbddf1ad87c49d08439c" id="r_aa09bf19efc57fbddf1ad87c49d08439c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#aa09bf19efc57fbddf1ad87c49d08439c">lipsum::GenerateSentenceX</a> (int minWord=4, int maxWord=9, int minFrag=1, int maxFrag=3)</td></tr>
-<tr class="memdesc:aa09bf19efc57fbddf1ad87c49d08439c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random sentence.  <br /></td></tr>
-<tr class="separator:aa09bf19efc57fbddf1ad87c49d08439c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b61a8d64771358a87213652290c955c" id="r_a5b61a8d64771358a87213652290c955c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a5b61a8d64771358a87213652290c955c">lipsum::GenerateParagraph</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 9), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 3), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;sent=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(5, 8), bool useLipsum=true)</td></tr>
-<tr class="memdesc:a5b61a8d64771358a87213652290c955c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random paragraph.  <br /></td></tr>
-<tr class="separator:a5b61a8d64771358a87213652290c955c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51eed06484ccbad4e16e9117c8e7418c" id="r_a51eed06484ccbad4e16e9117c8e7418c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a51eed06484ccbad4e16e9117c8e7418c">lipsum::GenerateParagraphX</a> (int minWord=4, int maxWord=9, int minFrag=1, int maxFrag=3, int minSent=5, int maxSent=8, bool useLipsum=true)</td></tr>
-<tr class="memdesc:a51eed06484ccbad4e16e9117c8e7418c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random paragraph.  <br /></td></tr>
-<tr class="separator:a51eed06484ccbad4e16e9117c8e7418c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c086f652a5f1d1b584b8c3c9fe8cca5" id="r_a4c086f652a5f1d1b584b8c3c9fe8cca5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a4c086f652a5f1d1b584b8c3c9fe8cca5">lipsum::GenerateParagraphs</a> (int paraCount=5, const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 9), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 3), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;sent=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(5, 8), bool useLipsum=true)</td></tr>
-<tr class="memdesc:a4c086f652a5f1d1b584b8c3c9fe8cca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate several random paragraphs at once.  <br /></td></tr>
-<tr class="separator:a4c086f652a5f1d1b584b8c3c9fe8cca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e533bd06ad02541c0b323ccdac98ca4" id="r_a8e533bd06ad02541c0b323ccdac98ca4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a8e533bd06ad02541c0b323ccdac98ca4">lipsum::GenerateParagraphsX</a> (int paraCount=5, int minWord=4, int maxWord=9, int minFrag=1, int maxFrag=3, int minSent=5, int maxSent=8, bool useLipsum=true)</td></tr>
-<tr class="memdesc:a8e533bd06ad02541c0b323ccdac98ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate several random paragraphs at once.  <br /></td></tr>
-<tr class="separator:a8e533bd06ad02541c0b323ccdac98ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe1239e7e2e650a37e5fdf33c4bf754" id="r_a7fe1239e7e2e650a37e5fdf33c4bf754"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a7fe1239e7e2e650a37e5fdf33c4bf754">lipsum::GenerateDefaultLipsumSentence</a> ()</td></tr>
-<tr class="memdesc:a7fe1239e7e2e650a37e5fdf33c4bf754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the beginning Lorem Ipsum sentence.  <br /></td></tr>
-<tr class="separator:a7fe1239e7e2e650a37e5fdf33c4bf754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e68800511b1a4222a45548f7654f56" id="r_a32e68800511b1a4222a45548f7654f56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a32e68800511b1a4222a45548f7654f56">lipsum::GenerateSentences</a> (int sentCount=6, const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 9), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 3), bool useLipsum=true)</td></tr>
-<tr class="memdesc:a32e68800511b1a4222a45548f7654f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate multiple random sentences at once.  <br /></td></tr>
-<tr class="separator:a32e68800511b1a4222a45548f7654f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed346c6ebd22a1faaf03862433c9cdfa" id="r_aed346c6ebd22a1faaf03862433c9cdfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#aed346c6ebd22a1faaf03862433c9cdfa">lipsum::GenerateSentencesX</a> (int sentCount=6, int minWord=4, int maxWord=9, int minFrag=1, int maxFrag=3, bool useLipsum=true)</td></tr>
-<tr class="memdesc:aed346c6ebd22a1faaf03862433c9cdfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate multiple random sentences at once.  <br /></td></tr>
-<tr class="separator:aed346c6ebd22a1faaf03862433c9cdfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8fd794d85eaa6bac06b101fdfab1a9a" id="r_ae8fd794d85eaa6bac06b101fdfab1a9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#ae8fd794d85eaa6bac06b101fdfab1a9a">lipsum::HTMLify</a> (const std::string &amp;str)</td></tr>
-<tr class="memdesc:ae8fd794d85eaa6bac06b101fdfab1a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn a string into HTML paragraph tags.  <br /></td></tr>
-<tr class="separator:ae8fd794d85eaa6bac06b101fdfab1a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77a7f9876387435b93a01b36f5e5b550" id="r_a77a7f9876387435b93a01b36f5e5b550"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a77a7f9876387435b93a01b36f5e5b550">lipsum::HTMLify</a> (const char *str)</td></tr>
-<tr class="separator:a77a7f9876387435b93a01b36f5e5b550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b21f6fe924df2f14533a9efd20e9327" id="r_a0b21f6fe924df2f14533a9efd20e9327"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a0b21f6fe924df2f14533a9efd20e9327">lipsum::CountSentences</a> (const std::string &amp;str)</td></tr>
-<tr class="memdesc:a0b21f6fe924df2f14533a9efd20e9327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentences in a string.  <br /></td></tr>
-<tr class="separator:a0b21f6fe924df2f14533a9efd20e9327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ee2341f25213f67cec7e5ccdd865b18" id="r_a0ee2341f25213f67cec7e5ccdd865b18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a0ee2341f25213f67cec7e5ccdd865b18">lipsum::GenerateMarkdownHeader</a> (int level=1, const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5))</td></tr>
-<tr class="memdesc:a0ee2341f25213f67cec7e5ccdd865b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown header.  <br /></td></tr>
-<tr class="separator:a0ee2341f25213f67cec7e5ccdd865b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c9d5268937cc477a21c2e3733e7983" id="r_a65c9d5268937cc477a21c2e3733e7983"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a65c9d5268937cc477a21c2e3733e7983">lipsum::GenerateMarkdownEmphasis</a> (bool isBold=true, const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 8), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 2))</td></tr>
-<tr class="memdesc:a65c9d5268937cc477a21c2e3733e7983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random emphasized sentence.  <br /></td></tr>
-<tr class="separator:a65c9d5268937cc477a21c2e3733e7983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3772161579cd4648a5e08c908020d67" id="r_ac3772161579cd4648a5e08c908020d67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#ac3772161579cd4648a5e08c908020d67">lipsum::GenerateMarkdownLink</a> (const std::string &amp;url=std::string(&quot;https://example.com/&quot;), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 8), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 2), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;wordURL=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5))</td></tr>
-<tr class="memdesc:ac3772161579cd4648a5e08c908020d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown link.  <br /></td></tr>
-<tr class="separator:ac3772161579cd4648a5e08c908020d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f51d60c7c7f2a5412fa5280adfbaba7" id="r_a0f51d60c7c7f2a5412fa5280adfbaba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a0f51d60c7c7f2a5412fa5280adfbaba7">lipsum::GenerateMarkdownList</a> (bool ordered=false, const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 8), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 2), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;point=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(3, 5))</td></tr>
-<tr class="memdesc:a0f51d60c7c7f2a5412fa5280adfbaba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown list.  <br /></td></tr>
-<tr class="separator:a0f51d60c7c7f2a5412fa5280adfbaba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ace284b86044c788874cf05cc89c46b" id="r_a1ace284b86044c788874cf05cc89c46b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a1ace284b86044c788874cf05cc89c46b">lipsum::GenerateMarkdownParagraph</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 9), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 3), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;sent=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(5, 8), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;wordFmt=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 8), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;fragFmt=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 2), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;wordLink=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5), const std::string &amp;linkURL=std::string(&quot;https://example.com/&quot;), bool useLipsum=true)</td></tr>
-<tr class="memdesc:a1ace284b86044c788874cf05cc89c46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random formatted paragraph.  <br /></td></tr>
-<tr class="separator:a1ace284b86044c788874cf05cc89c46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1972488342232a332129259067722fd3" id="r_a1972488342232a332129259067722fd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a1972488342232a332129259067722fd3">lipsum::GenerateMarkdownText</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 9), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 3), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;sent=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(5, 8), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;point=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(3, 5), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;wordFmt=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 8), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;fragFmt=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 2), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;wordHead=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;level=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 4), const std::string &amp;linkURL=std::string(&quot;https://example.com/&quot;), int numElements=15)</td></tr>
-<tr class="memdesc:a1972488342232a332129259067722fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown document.  <br /></td></tr>
-<tr class="separator:a1972488342232a332129259067722fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main header of lipsum-cpp. </p>
-<p>This contains the declarations of functions as well as definitions if LIPSUM_IMPLEMENTATION is defined.</p>
-<dl class="section author"><dt>Author</dt><dd>LambBread from github.com </dd></dl>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a7cba6c9f4b913ff7f5d2879fc6de6f35" name="a7cba6c9f4b913ff7f5d2879fc6de6f35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cba6c9f4b913ff7f5d2879fc6de6f35">&#9670;&#160;</a></span>LIPSUM_API</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LIPSUM_API</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Macro for shared libraries. </p>
-<p>This macro helps with shared libraries on Windows by exporting or importing functions. </p>
-
-</div>
-</div>
-<a id="a0adfd271eb64cc975010c6324a1a6614" name="a0adfd271eb64cc975010c6324a1a6614"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0adfd271eb64cc975010c6324a1a6614">&#9670;&#160;</a></span>LIPSUM_CPP_VERSION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LIPSUM_CPP_VERSION&#160;&#160;&#160;&quot;0.3.0&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The current version of lipsum-cpp. </p>
-<p>This macro stores the current version of lipsum-cpp. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This contains the declarations of functions as well as definitions if LIPSUM_IMPLEMENTATION is defined. This file is under the BSD Zero-Clause License.</p>
+<dl class="section author"><dt>Author</dt><dd>LambBread from github.com</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2025 LambBread </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
