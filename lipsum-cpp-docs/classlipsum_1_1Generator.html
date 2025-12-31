@@ -100,13 +100,77 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe118671993dcce93ff04d9fb5a2c2d2" id="r_afe118671993dcce93ff04d9fb5a2c2d2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#afe118671993dcce93ff04d9fb5a2c2d2">paragraph</a> (int num=1, bool useLipsum=true)</td></tr>
 <tr class="memdesc:afe118671993dcce93ff04d9fb5a2c2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate paragraphs.  <br /></td></tr>
 <tr class="separator:afe118671993dcce93ff04d9fb5a2c2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bd3638fa51518c88255754f4e7797c" id="r_a29bd3638fa51518c88255754f4e7797c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a29bd3638fa51518c88255754f4e7797c">md_paragraph</a> (bool useLipsum=true)</td></tr>
+<tr class="memdesc:a29bd3638fa51518c88255754f4e7797c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown paragraph.  <br /></td></tr>
+<tr class="separator:a29bd3638fa51518c88255754f4e7797c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9d99194fac2cfb0d979bbe9bead123" id="r_a4a9d99194fac2cfb0d979bbe9bead123"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a4a9d99194fac2cfb0d979bbe9bead123">md_text</a> (int numElements=15)</td></tr>
+<tr class="memdesc:a4a9d99194fac2cfb0d979bbe9bead123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown document.  <br /></td></tr>
+<tr class="separator:a4a9d99194fac2cfb0d979bbe9bead123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>OOP layer over lipsum-cpp. </p>
 <p>This provides a more user-friendly object-oriented layer over lipsum-cpp. It uses mainly default arguments. Unlike most of the codebase which uses PascalCase, the functions in this class use snake_case. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Basic_8cpp-example.html#_a0">Basic.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Basic_8cpp-example.html#_a0">Basic.cpp</a>, and <a class="el" href="Markdown_8cpp-example.html#_a0">Markdown.cpp</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a29bd3638fa51518c88255754f4e7797c" name="a29bd3638fa51518c88255754f4e7797c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bd3638fa51518c88255754f4e7797c">&#9670;&#160;</a></span>md_paragraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::md_paragraph </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useLipsum</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a Markdown paragraph. </p>
+<p>This function generates a paragraph in Markdown format with default arguments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the paragraph. By default true.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown paragraph. </dd></dl>
+
+</div>
+</div>
+<a id="a4a9d99194fac2cfb0d979bbe9bead123" name="a4a9d99194fac2cfb0d979bbe9bead123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9d99194fac2cfb0d979bbe9bead123">&#9670;&#160;</a></span>md_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::md_text </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numElements</em> = <code>15</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a Markdown document. </p>
+<p>This function generates a document in Markdown format with default arguments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numElements</td><td>The number of elements (paragraph, list, heading) in the document. By default 15.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown document. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Markdown_8cpp-example.html#a1">Markdown.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
 <a id="afe118671993dcce93ff04d9fb5a2c2d2" name="afe118671993dcce93ff04d9fb5a2c2d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe118671993dcce93ff04d9fb5a2c2d2">&#9670;&#160;</a></span>paragraph()</h2>
 

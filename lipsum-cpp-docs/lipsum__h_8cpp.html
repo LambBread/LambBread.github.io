@@ -126,9 +126,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a49e9a96d0d474274d83011ff46b8e57c" id="r_a49e9a96d0d474274d83011ff46b8e57c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a49e9a96d0d474274d83011ff46b8e57c">lpsm_gen_paragraph</a> (int num, bool useLipsum)</td></tr>
 <tr class="memdesc:a49e9a96d0d474274d83011ff46b8e57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate paragraphs.  <br /></td></tr>
 <tr class="separator:a49e9a96d0d474274d83011ff46b8e57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4acdf6e259efb4950a8a8fda29d5c0" id="r_a9c4acdf6e259efb4950a8a8fda29d5c0"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a9c4acdf6e259efb4950a8a8fda29d5c0">lpsm_gen_md_paragraph</a> (bool useLipsum)</td></tr>
+<tr class="memdesc:a9c4acdf6e259efb4950a8a8fda29d5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown paragraph.  <br /></td></tr>
+<tr class="separator:a9c4acdf6e259efb4950a8a8fda29d5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6740ec69f8d5472a01be9997ec190918" id="r_a6740ec69f8d5472a01be9997ec190918"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a6740ec69f8d5472a01be9997ec190918">lpsm_gen_md_text</a> (int numElements)</td></tr>
+<tr class="memdesc:a6740ec69f8d5472a01be9997ec190918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown document.  <br /></td></tr>
+<tr class="separator:a6740ec69f8d5472a01be9997ec190918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeced6d4c9c23cef7fd332e2de7fb1bf" id="r_aaeced6d4c9c23cef7fd332e2de7fb1bf"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#aaeced6d4c9c23cef7fd332e2de7fb1bf">lpsm_GenerateSentence</a> (int minWord, int maxWord, int minFrag, int maxFrag)</td></tr>
 <tr class="memdesc:aaeced6d4c9c23cef7fd332e2de7fb1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random sentence.  <br /></td></tr>
 <tr class="separator:aaeced6d4c9c23cef7fd332e2de7fb1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7534afa7fc98deb556f9db6b339318e7" id="r_a7534afa7fc98deb556f9db6b339318e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a7534afa7fc98deb556f9db6b339318e7">lpsm_CountSentences</a> (const char *str)</td></tr>
+<tr class="memdesc:a7534afa7fc98deb556f9db6b339318e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentences in a string.  <br /></td></tr>
+<tr class="separator:a7534afa7fc98deb556f9db6b339318e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a939888352a337f836ea8fbc053314d84" id="r_a939888352a337f836ea8fbc053314d84"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a939888352a337f836ea8fbc053314d84">lpsm_GenerateParagraph</a> (int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum)</td></tr>
 <tr class="memdesc:a939888352a337f836ea8fbc053314d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random paragraph.  <br /></td></tr>
 <tr class="separator:a939888352a337f836ea8fbc053314d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +171,34 @@ Functions</h2></td></tr>
 <p>This file defines all the functions declared in <a class="el" href="lipsum_8h.html" title="C wrapper over lipsum.hpp.">lipsum.h</a>.</p>
 <dl class="section author"><dt>Author</dt><dd>LambBread from github.com </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7534afa7fc98deb556f9db6b339318e7" name="a7534afa7fc98deb556f9db6b339318e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7534afa7fc98deb556f9db6b339318e7">&#9670;&#160;</a></span>lpsm_CountSentences()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lpsm_CountSentences </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of sentences in a string. </p>
+<p>Count the number of periods in a string, ignoring usage in Markdown URLs.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string inputted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int The number of sentences. </dd></dl>
+
+</div>
+</div>
 <a id="a070fb806bcd71a00fd467bf42e285ed7" name="a070fb806bcd71a00fd467bf42e285ed7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a070fb806bcd71a00fd467bf42e285ed7">&#9670;&#160;</a></span>lpsm_DeleteString()</h2>
 
@@ -186,6 +223,62 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9c4acdf6e259efb4950a8a8fda29d5c0" name="a9c4acdf6e259efb4950a8a8fda29d5c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4acdf6e259efb4950a8a8fda29d5c0">&#9670;&#160;</a></span>lpsm_gen_md_paragraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_gen_md_paragraph </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useLipsum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a Markdown paragraph. </p>
+<p>This function generates a paragraph in Markdown format with default arguments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the paragraph.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random Markdown paragraph. </dd></dl>
+
+</div>
+</div>
+<a id="a6740ec69f8d5472a01be9997ec190918" name="a6740ec69f8d5472a01be9997ec190918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6740ec69f8d5472a01be9997ec190918">&#9670;&#160;</a></span>lpsm_gen_md_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_gen_md_text </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numElements</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a Markdown document. </p>
+<p>This function generates a document in Markdown format with default arguments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numElements</td><td>The number of elements (paragraph, list, heading) in the document.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random Markdown document. </dd></dl>
 
 </div>
 </div>
@@ -720,7 +813,7 @@ elit."</p>
 </div><div class="memdoc">
 
 <p>Turn a string into HTML paragraph tags. </p>
-<p>Add &lt;p&gt; and &lt;/p&gt; around the paragraphs and handle HTML entities like &amp;, &lt;, &gt;, etc.</p>
+<p>Add &lt;p&gt; and &lt;/p&gt; around the paragraphs and handle HTML entities like &amp;, &lt;, &gt;, etc. This function is deprecated.</p>
 <dl class="section return"><dt>Returns</dt><dd>char* The HTML-ified string.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

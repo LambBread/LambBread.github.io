@@ -1,4 +1,32 @@
 var searchData=
 [
-  ['paragraph_0',['paragraph',['../classlipsum_1_1Generator.html#afe118671993dcce93ff04d9fb5a2c2d2',1,'lipsum::Generator']]]
+  ['lipsum_0',['lipsum',['../namespacelipsum.html',1,'']]],
+  ['lipsum_2ecpp_1',['lipsum.cpp',['../lipsum_8cpp.html',1,'']]],
+  ['lipsum_2eh_2',['lipsum.h',['../lipsum_8h.html',1,'']]],
+  ['lipsum_2ehpp_3',['lipsum.hpp',['../lipsum_8hpp.html',1,'']]],
+  ['lipsum_2einl_4',['lipsum.inl',['../lipsum_8inl.html',1,'']]],
+  ['lipsum_3a_3ainternal_5',['internal',['../namespacelipsum_1_1internal.html',1,'lipsum']]],
+  ['lipsum_5fapi_6',['LIPSUM_API',['../lipsum_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35',1,'lipsum.hpp']]],
+  ['lipsum_5fcpp_5fversion_7',['LIPSUM_CPP_VERSION',['../lipsum_8hpp.html#a0adfd271eb64cc975010c6324a1a6614',1,'lipsum.hpp']]],
+  ['lipsum_5fcpp_5fversion_5fc_8',['LIPSUM_CPP_VERSION_C',['../lipsum_8h.html#a601348306cd604e009bac97a762089aa',1,'lipsum.h']]],
+  ['lipsum_5fh_2ecpp_9',['lipsum_h.cpp',['../lipsum__h_8cpp.html',1,'']]],
+  ['lipsumc_5fapi_10',['LIPSUMC_API',['../lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a',1,'lipsum.h']]],
+  ['list_11',['Deprecated List',['../deprecated.html',1,'']]],
+  ['lpsm_5fcountsentences_12',['lpsm_countsentences',['../lipsum__h_8cpp.html#a7534afa7fc98deb556f9db6b339318e7',1,'lpsm_CountSentences(const char *str):&#160;lipsum_h.cpp'],['../lipsum_8h.html#a452546ded8bc62c051d447a9d1d41f8d',1,'lpsm_CountSentences(const char *str):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fdeletestring_13',['lpsm_deletestring',['../lipsum_8h.html#a315e803d2566be8e0a97389317fe620c',1,'lpsm_DeleteString(char *str):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a070fb806bcd71a00fd467bf42e285ed7',1,'lpsm_DeleteString(char *str):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgen_5fmd_5fparagraph_14',['lpsm_gen_md_paragraph',['../lipsum__h_8cpp.html#a9c4acdf6e259efb4950a8a8fda29d5c0',1,'lpsm_gen_md_paragraph(bool useLipsum):&#160;lipsum_h.cpp'],['../lipsum_8h.html#ac93f427af8a1ae9ab9f9bc4c3113eb4c',1,'lpsm_gen_md_paragraph(bool useLipsum):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgen_5fmd_5ftext_15',['lpsm_gen_md_text',['../lipsum__h_8cpp.html#a6740ec69f8d5472a01be9997ec190918',1,'lpsm_gen_md_text(int numElements):&#160;lipsum_h.cpp'],['../lipsum_8h.html#a7c5ca473d42cca6c4a494626ef17fd95',1,'lpsm_gen_md_text(int numElements):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgen_5fparagraph_16',['lpsm_gen_paragraph',['../lipsum__h_8cpp.html#a49e9a96d0d474274d83011ff46b8e57c',1,'lpsm_gen_paragraph(int num, bool useLipsum):&#160;lipsum_h.cpp'],['../lipsum_8h.html#a7a827b4237dbe58116cdc8f51eef0d13',1,'lpsm_gen_paragraph(int num, bool useLipsum):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgen_5fsentence_17',['lpsm_gen_sentence',['../lipsum__h_8cpp.html#a2a262def44ed28084f53da3cafc6ccfc',1,'lpsm_gen_sentence(int num, bool useLipsum):&#160;lipsum_h.cpp'],['../lipsum_8h.html#a2fabd07de5a74e8bda5dd9940f9db0f3',1,'lpsm_gen_sentence(int num, bool useLipsum):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgen_5fsentence_5ffragment_18',['lpsm_gen_sentence_fragment',['../lipsum__h_8cpp.html#af48df2227971987a416a8dde773c9bf8',1,'lpsm_gen_sentence_fragment(void):&#160;lipsum_h.cpp'],['../lipsum_8h.html#a9ebc6e7f53e24098136dfb68d1d7f27f',1,'lpsm_gen_sentence_fragment(void):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgen_5fword_19',['lpsm_gen_word',['../lipsum__h_8cpp.html#a47b6c5520427d30fe0d5033fe84996b3',1,'lpsm_gen_word(int num):&#160;lipsum_h.cpp'],['../lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353',1,'lpsm_gen_word(int num):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgeneratedefaultlipsumsentence_20',['lpsm_generatedefaultlipsumsentence',['../lipsum__h_8cpp.html#a7d80487d1aad4f3e2fc0b8bc9b098bbb',1,'lpsm_GenerateDefaultLipsumSentence(void):&#160;lipsum_h.cpp'],['../lipsum_8h.html#a61416be3b4a454794d82f1abf3f21381',1,'lpsm_GenerateDefaultLipsumSentence(void):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgenerateparagraph_21',['lpsm_generateparagraph',['../lipsum__h_8cpp.html#a939888352a337f836ea8fbc053314d84',1,'lpsm_GenerateParagraph(int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum):&#160;lipsum_h.cpp'],['../lipsum_8h.html#a85c867c3fa2839158f8d9a3a4a1787ab',1,'lpsm_GenerateParagraph(int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgenerateparagraphs_22',['lpsm_generateparagraphs',['../lipsum_8h.html#a2e98874b5f1c1c2d44f91226b9150b55',1,'lpsm_GenerateParagraphs(int paraCount, int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a98495f7be85a85f0c35fa24575d65476',1,'lpsm_GenerateParagraphs(int paraCount, int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgeneratesentence_23',['lpsm_generatesentence',['../lipsum_8h.html#a595a69b39e29d7a28d1cef4791b591cb',1,'lpsm_GenerateSentence(int minWord, int maxWord, int minFrag, int maxFrag):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#aaeced6d4c9c23cef7fd332e2de7fb1bf',1,'lpsm_GenerateSentence(int minWord, int maxWord, int minFrag, int maxFrag):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgeneratesentencefragment_24',['lpsm_generatesentencefragment',['../lipsum_8h.html#a2782e1a80b62a40d3ba7c17a7c28c710',1,'lpsm_GenerateSentenceFragment(int minWord, int maxWord):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a9f855f7a100d013fde8b2393ede4a9d5',1,'lpsm_GenerateSentenceFragment(int minWord, int maxWord):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgeneratesentences_25',['lpsm_generatesentences',['../lipsum_8h.html#aec3e411ddc791a2e91501ea883869277',1,'lpsm_GenerateSentences(int sentCount, int minWord, int maxWord, int minFrag, int maxFrag, bool useLipsum):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a05219e9ca68f6a23d475a37f088589fa',1,'lpsm_GenerateSentences(int sentCount, int minWord, int maxWord, int minFrag, int maxFrag, bool useLipsum):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgenerateword_26',['lpsm_generateword',['../lipsum_8h.html#a77841f14324d9bc9860b1f63b96862ec',1,'lpsm_GenerateWord(void):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a1ce54b5424b10f01df90fc7d276165dc',1,'lpsm_GenerateWord(void):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fgeneratewords_27',['lpsm_generatewords',['../lipsum_8h.html#a1899867c7a3d109b4e4520cc0671341c',1,'lpsm_GenerateWords(int wordCount):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#a48f74bc2284c59292ef45b58f456203c',1,'lpsm_GenerateWords(int wordCount):&#160;lipsum_h.cpp']]],
+  ['lpsm_5fhtmlify_28',['lpsm_htmlify',['../lipsum_8h.html#a8638fe5d087b4487db47b5c23c7c4616',1,'lpsm_HTMLify(const char *str):&#160;lipsum_h.cpp'],['../lipsum__h_8cpp.html#aad523679c8d3e6d306b0d01114065d80',1,'lpsm_HTMLify(const char *str):&#160;lipsum_h.cpp']]]
 ];
