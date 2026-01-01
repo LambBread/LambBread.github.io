@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.2</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -112,9 +112,12 @@ Macros</h2></td></tr>
 <tr class="memitem:aa6df47d8e0eec07ea4c022e71554048a" id="r_aa6df47d8e0eec07ea4c022e71554048a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a></td></tr>
 <tr class="memdesc:aa6df47d8e0eec07ea4c022e71554048a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for shared libraries.  <br /></td></tr>
 <tr class="separator:aa6df47d8e0eec07ea4c022e71554048a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601348306cd604e009bac97a762089aa" id="r_a601348306cd604e009bac97a762089aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a601348306cd604e009bac97a762089aa">LIPSUM_CPP_VERSION_C</a>&#160;&#160;&#160;&quot;0.3.1&quot;</td></tr>
+<tr class="memitem:a601348306cd604e009bac97a762089aa" id="r_a601348306cd604e009bac97a762089aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a601348306cd604e009bac97a762089aa">LIPSUM_CPP_VERSION_C</a>&#160;&#160;&#160;&quot;0.3.2&quot;</td></tr>
 <tr class="memdesc:a601348306cd604e009bac97a762089aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current version of lipsum-cpp.  <br /></td></tr>
 <tr class="separator:a601348306cd604e009bac97a762089aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a2d357100ff6cddd82c18e76fad7a4" id="r_a55a2d357100ff6cddd82c18e76fad7a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a55a2d357100ff6cddd82c18e76fad7a4">lpsm_LipsumVersion</a>()&#160;&#160;&#160;<a class="el" href="lipsum_8h.html#a601348306cd604e009bac97a762089aa">LIPSUM_CPP_VERSION_C</a></td></tr>
+<tr class="memdesc:a55a2d357100ff6cddd82c18e76fad7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current version of lipsum-cpp.  <br /></td></tr>
+<tr class="separator:a55a2d357100ff6cddd82c18e76fad7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -169,6 +172,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a315e803d2566be8e0a97389317fe620c" id="r_a315e803d2566be8e0a97389317fe620c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a> (char *str)</td></tr>
 <tr class="memdesc:a315e803d2566be8e0a97389317fe620c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a string returned by a function.  <br /></td></tr>
 <tr class="separator:a315e803d2566be8e0a97389317fe620c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd12f639ec6deee8c032731deaf9f39" id="r_acbd12f639ec6deee8c032731deaf9f39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#acbd12f639ec6deee8c032731deaf9f39">lpsm_GenerateText</a> (int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, int minPara, int maxPara, bool useLipsum)</td></tr>
+<tr class="memdesc:acbd12f639ec6deee8c032731deaf9f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random number of random paragraphs.  <br /></td></tr>
+<tr class="separator:acbd12f639ec6deee8c032731deaf9f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>C wrapper over lipsum-cpp. </p>
@@ -183,12 +189,13 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LIPSUM_CPP_VERSION_C&#160;&#160;&#160;&quot;0.3.1&quot;</td>
+          <td class="memname">#define LIPSUM_CPP_VERSION_C&#160;&#160;&#160;&quot;0.3.2&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The current version of lipsum-cpp. </p>
+<dl class="section since"><dt>Since</dt><dd>0.2.1</dd></dl>
 <p>This macro stores the current version of lipsum-cpp. </p>
 
 </div>
@@ -206,7 +213,29 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Macro for shared libraries. </p>
+<dl class="section since"><dt>Since</dt><dd>0.1.2</dd></dl>
 <p>This macro helps with shared libraries on Windows by exporting or importing functions. </p>
+
+</div>
+</div>
+<a id="a55a2d357100ff6cddd82c18e76fad7a4" name="a55a2d357100ff6cddd82c18e76fad7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a2d357100ff6cddd82c18e76fad7a4">&#9670;&#160;</a></span>lpsm_LipsumVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define lpsm_LipsumVersion</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="lipsum_8h.html#a601348306cd604e009bac97a762089aa">LIPSUM_CPP_VERSION_C</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the current version of lipsum-cpp. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.2</dd></dl>
+<p>This macro function simply expands to LIPSUM_CPP_VERSION_C. </p>
 
 </div>
 </div>
@@ -228,6 +257,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Count the number of sentences in a string. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
 <p>Count the number of periods in a string, ignoring usage in Markdown URLs.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -256,6 +286,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Delete a string returned by a function. </p>
+<dl class="section since"><dt>Since</dt><dd>0.0.8</dd></dl>
 <p>Since pointers allocated with new[] cannot be deallocated with free(), this function handles the deallocation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -285,6 +316,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate a Markdown paragraph. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
 <p>This function generates a paragraph in Markdown format with default arguments.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -313,6 +345,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate a Markdown document. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
 <p>This function generates a document in Markdown format with default arguments.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -353,6 +386,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate paragraphs. </p>
+<dl class="section since"><dt>Since</dt><dd>0.2.3</dd></dl>
 <p>This function generates multiple paragraphs with default arguments.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -392,6 +426,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate sentences. </p>
+<dl class="section since"><dt>Since</dt><dd>0.2.3</dd></dl>
 <p>This function generates multiple sentences with default arguments.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -421,6 +456,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate a sentence fragment. </p>
+<dl class="section since"><dt>Since</dt><dd>0.2.3</dd></dl>
 <p>This function generates a sentence fragment with default arguments.</p>
 <dl class="section return"><dt>Returns</dt><dd>char* The random sentence fragment. </dd></dl>
 
@@ -443,6 +479,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate words. </p>
+<dl class="section since"><dt>Since</dt><dd>0.2.3</dd></dl>
 <p>This function generates multiple words.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -473,6 +510,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate the beginning Lorem Ipsum sentence. </p>
+<dl class="section since"><dt>Since</dt><dd>0.0.5</dd></dl>
 <p>Returns the sentence "Lorem ipsum dolor sit amet, consectetur adipiscing
 elit."</p>
 <dl class="section return"><dt>Returns</dt><dd>char* The default Lorem Ipsum sentence. </dd></dl>
@@ -536,6 +574,7 @@ elit."</p>
 </div><div class="memdoc">
 
 <p>Generate a random paragraph. </p>
+<dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
 <p>This function generates a random paragraph starting with a tab character and ending in a line break, with each sentence separated by a space.</p>
 <dl class="section return"><dt>Returns</dt><dd>char* The random paragraph.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -618,6 +657,7 @@ elit."</p>
 </div><div class="memdoc">
 
 <p>Generate several random paragraphs at once. </p>
+<dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
 <p>This function generates several random paragraphs, each separated by a line break. Formerly known as lpsm_GenerateParagraphList().</p>
 <dl class="section return"><dt>Returns</dt><dd>char* The random paragraphs.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -675,6 +715,7 @@ elit."</p>
 </div><div class="memdoc">
 
 <p>Generate a random sentence. </p>
+<dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
 <p>This function generates a sentence starting with a capital letter and ending with a period, sometimes containing a comma.</p>
 <dl class="section return"><dt>Returns</dt><dd>char* The random sentence.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -716,6 +757,7 @@ elit."</p>
 </div><div class="memdoc">
 
 <p>Generate a random sentence fragment. </p>
+<dl class="section since"><dt>Since</dt><dd>0.1.0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>char* The random sentence fragment.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -778,6 +820,7 @@ elit."</p>
 </div><div class="memdoc">
 
 <p>Generate multiple random sentences at once. </p>
+<dl class="section since"><dt>Since</dt><dd>0.0.5</dd></dl>
 <p>Generate multiple random sentences separated with spaces. Does not add a tab character before the sentences nor a line break after.</p>
 <dl class="section return"><dt>Returns</dt><dd>char* The random sentences.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -788,6 +831,94 @@ elit."</p>
     <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." sentence should be the first sentence. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acbd12f639ec6deee8c032731deaf9f39" name="acbd12f639ec6deee8c032731deaf9f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd12f639ec6deee8c032731deaf9f39">&#9670;&#160;</a></span>lpsm_GenerateText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateText </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxWord</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minFrag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxFrag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minSent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxSent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minPara</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxPara</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useLipsum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random number of random paragraphs. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.2</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random text.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. </td></tr>
+    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in a sentence fragment. </td></tr>
+    <tr><td class="paramname">minFrag</td><td>The minimum possible number of sentence fragments in a sentence. </td></tr>
+    <tr><td class="paramname">maxFrag</td><td>The maximum possible number of sentence fragments in a sentence. </td></tr>
+    <tr><td class="paramname">minSent</td><td>The minimum possible number of sentences in a paragraph. </td></tr>
+    <tr><td class="paramname">maxSent</td><td>The maximum possible number of sentences in a paragraph. </td></tr>
+    <tr><td class="paramname">minPara</td><td>The minimum possible number of paragraphs in the text. </td></tr>
+    <tr><td class="paramname">maxPara</td><td>The maximum possible number of paragraphs in the text. </td></tr>
+    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the first paragraph. </td></tr>
   </table>
   </dd>
 </dl>
@@ -811,6 +942,7 @@ elit."</p>
 </div><div class="memdoc">
 
 <p>Generate a random word. </p>
+<dl class="section since"><dt>Since</dt><dd>0.0.3</dd></dl>
 <p>This function generates a random word from a predefined list.</p>
 <dl class="section return"><dt>Returns</dt><dd>char* The random word. </dd></dl>
 
@@ -833,6 +965,7 @@ elit."</p>
 </div><div class="memdoc">
 
 <p>Generate a specified number of random words. </p>
+<dl class="section since"><dt>Since</dt><dd>0.2.2</dd></dl>
 <p>This function generates a sentence fragment with exactly wordCount words.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -861,6 +994,7 @@ elit."</p>
 </div><div class="memdoc">
 
 <p>Turn a string into HTML paragraph tags. </p>
+<dl class="section since"><dt>Since</dt><dd>0.0.6</dd></dl>
 <p>Add &lt;p&gt; and &lt;/p&gt; around the paragraphs and handle HTML entities like &amp;, &lt;, &gt;, etc. This function is deprecated.</p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use a Markdown parser instead.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>char* The HTML-ified string.</dd></dl>

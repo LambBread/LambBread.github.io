@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['internal_2ehpp_0',['internal.hpp',['../internal_8hpp.html',1,'']]],
-  ['internal_2einl_1',['internal.inl',['../internal_8inl.html',1,'']]]
+  ['htmlify_0',['htmlify',['../namespacelipsum.html#ad94ccac7ba18d09270ae9124e6608132',1,'lipsum::HTMLify(const std::string &amp;str)'],['../namespacelipsum.html#a05e2e9093a43e61b604ab566bd19b6b3',1,'lipsum::HTMLify(const char *str)']]]
 ];

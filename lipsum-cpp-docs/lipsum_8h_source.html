@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.2</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -86,90 +86,102 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef LIPSUM_H</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define LIPSUM_H</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef LIPSUM_BUILD_SHARED</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#    ifdef _WIN32</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#        ifdef LIPSUM_EXPORT_SHARED</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#            define LIPSUMC_API __declspec(dllexport)</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#        else</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#            define LIPSUMC_API __declspec(dllimport)</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#        endif</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#    else</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#        define LIPSUMC_API</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#    endif</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">   37</a></span><span class="preprocessor">#    define LIPSUMC_API</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#ifndef LIPSUM_BUILD_STATIC</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#    error Cannot use C wrapper without building a static or shared library.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="lipsum_8h.html#a601348306cd604e009bac97a762089aa">   48</a></span><span class="preprocessor">#define LIPSUM_CPP_VERSION_C &quot;0.3.1&quot;</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353">lpsm_gen_word</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#ifdef LIPSUM_BUILD_SHARED</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#    ifdef _WIN32</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#        ifdef LIPSUM_EXPORT_SHARED</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#            define LIPSUMC_API __declspec(dllexport)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#        else</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#            define LIPSUMC_API __declspec(dllimport)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#        endif</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#    else</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#        define LIPSUMC_API</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#    endif</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">   39</a></span><span class="preprocessor">#    define LIPSUMC_API</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#ifndef LIPSUM_BUILD_STATIC</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#    error Cannot use C wrapper without building a static or shared library.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="lipsum_8h.html#a601348306cd604e009bac97a762089aa">   52</a></span><span class="preprocessor">#define LIPSUM_CPP_VERSION_C &quot;0.3.2&quot;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="lipsum_8h.html#a55a2d357100ff6cddd82c18e76fad7a4">   61</a></span><span class="preprocessor">#define lpsm_LipsumVersion() LIPSUM_CPP_VERSION_C</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a2fabd07de5a74e8bda5dd9940f9db0f3">lpsm_gen_sentence</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">bool</span> useLipsum);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a9ebc6e7f53e24098136dfb68d1d7f27f">lpsm_gen_sentence_fragment</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a7a827b4237dbe58116cdc8f51eef0d13">lpsm_gen_paragraph</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">bool</span> useLipsum);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#ac93f427af8a1ae9ab9f9bc4c3113eb4c">lpsm_gen_md_paragraph</a>(<span class="keywordtype">bool</span> useLipsum);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a7c5ca473d42cca6c4a494626ef17fd95">lpsm_gen_md_text</a>(<span class="keywordtype">int</span> numElements);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a2782e1a80b62a40d3ba7c17a7c28c710">lpsm_GenerateSentenceFragment</a>(<span class="keywordtype">int</span> minWord, <span class="keywordtype">int</span> maxWord);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353">lpsm_gen_word</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a2fabd07de5a74e8bda5dd9940f9db0f3">lpsm_gen_sentence</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">bool</span> useLipsum);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a9ebc6e7f53e24098136dfb68d1d7f27f">lpsm_gen_sentence_fragment</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a7a827b4237dbe58116cdc8f51eef0d13">lpsm_gen_paragraph</a>(<span class="keywordtype">int</span> num, <span class="keywordtype">bool</span> useLipsum);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#ac93f427af8a1ae9ab9f9bc4c3113eb4c">lpsm_gen_md_paragraph</a>(<span class="keywordtype">bool</span> useLipsum);</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>*</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <a class="code hl_function" href="lipsum_8h.html#a595a69b39e29d7a28d1cef4791b591cb">lpsm_GenerateSentence</a>(<span class="keywordtype">int</span> minWord, <span class="keywordtype">int</span> maxWord, <span class="keywordtype">int</span> minFrag, <span class="keywordtype">int</span> maxFrag);</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a85c867c3fa2839158f8d9a3a4a1787ab">lpsm_GenerateParagraph</a>(<span class="keywordtype">int</span>  minWord,</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                                             <span class="keywordtype">int</span>  maxWord,</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                                             <span class="keywordtype">int</span>  minFrag,</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                                             <span class="keywordtype">int</span>  maxFrag,</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                                             <span class="keywordtype">int</span>  minSent,</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                                             <span class="keywordtype">int</span>  maxSent,</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                                             <span class="keywordtype">bool</span> useLipsum);</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a2e98874b5f1c1c2d44f91226b9150b55">lpsm_GenerateParagraphs</a>(<span class="keywordtype">int</span>  paraCount,</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                                              <span class="keywordtype">int</span>  minWord,</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                                              <span class="keywordtype">int</span>  maxWord,</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                                              <span class="keywordtype">int</span>  minFrag,</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                                              <span class="keywordtype">int</span>  maxFrag,</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                                              <span class="keywordtype">int</span>  minSent,</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                                              <span class="keywordtype">int</span>  maxSent,</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                                              <span class="keywordtype">bool</span> useLipsum);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a77841f14324d9bc9860b1f63b96862ec">lpsm_GenerateWord</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a1899867c7a3d109b4e4520cc0671341c">lpsm_GenerateWords</a>(<span class="keywordtype">int</span> wordCount);</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a61416be3b4a454794d82f1abf3f21381">lpsm_GenerateDefaultLipsumSentence</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#aec3e411ddc791a2e91501ea883869277">lpsm_GenerateSentences</a>(<span class="keywordtype">int</span>  sentCount,</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                                             <span class="keywordtype">int</span>  minWord,</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                                             <span class="keywordtype">int</span>  maxWord,</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                                             <span class="keywordtype">int</span>  minFrag,</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                                             <span class="keywordtype">int</span>  maxFrag,</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                                             <span class="keywordtype">bool</span> useLipsum);</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a8638fe5d087b4487db47b5c23c7c4616">lpsm_HTMLify</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">int</span> <a class="code hl_function" href="lipsum_8h.html#a452546ded8bc62c051d447a9d1d41f8d">lpsm_CountSentences</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">void</span> <a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>}</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a7c5ca473d42cca6c4a494626ef17fd95">lpsm_gen_md_text</a>(<span class="keywordtype">int</span> numElements);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a2782e1a80b62a40d3ba7c17a7c28c710">lpsm_GenerateSentenceFragment</a>(<span class="keywordtype">int</span> minWord, <span class="keywordtype">int</span> maxWord);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>*</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <a class="code hl_function" href="lipsum_8h.html#a595a69b39e29d7a28d1cef4791b591cb">lpsm_GenerateSentence</a>(<span class="keywordtype">int</span> minWord, <span class="keywordtype">int</span> maxWord, <span class="keywordtype">int</span> minFrag, <span class="keywordtype">int</span> maxFrag);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a85c867c3fa2839158f8d9a3a4a1787ab">lpsm_GenerateParagraph</a>(<span class="keywordtype">int</span>  minWord,</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                                             <span class="keywordtype">int</span>  maxWord,</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                                             <span class="keywordtype">int</span>  minFrag,</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                                             <span class="keywordtype">int</span>  maxFrag,</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                                             <span class="keywordtype">int</span>  minSent,</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                                             <span class="keywordtype">int</span>  maxSent,</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                                             <span class="keywordtype">bool</span> useLipsum);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a2e98874b5f1c1c2d44f91226b9150b55">lpsm_GenerateParagraphs</a>(<span class="keywordtype">int</span>  paraCount,</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                                              <span class="keywordtype">int</span>  minWord,</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                                              <span class="keywordtype">int</span>  maxWord,</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                                              <span class="keywordtype">int</span>  minFrag,</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                                              <span class="keywordtype">int</span>  maxFrag,</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                                              <span class="keywordtype">int</span>  minSent,</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                                              <span class="keywordtype">int</span>  maxSent,</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                                              <span class="keywordtype">bool</span> useLipsum);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a77841f14324d9bc9860b1f63b96862ec">lpsm_GenerateWord</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a1899867c7a3d109b4e4520cc0671341c">lpsm_GenerateWords</a>(<span class="keywordtype">int</span> wordCount);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a61416be3b4a454794d82f1abf3f21381">lpsm_GenerateDefaultLipsumSentence</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#aec3e411ddc791a2e91501ea883869277">lpsm_GenerateSentences</a>(<span class="keywordtype">int</span>  sentCount,</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                                             <span class="keywordtype">int</span>  minWord,</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                                             <span class="keywordtype">int</span>  maxWord,</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                                             <span class="keywordtype">int</span>  minFrag,</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                                             <span class="keywordtype">int</span>  maxFrag,</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                                             <span class="keywordtype">bool</span> useLipsum);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#a8638fe5d087b4487db47b5c23c7c4616">lpsm_HTMLify</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">int</span> <a class="code hl_function" href="lipsum_8h.html#a452546ded8bc62c051d447a9d1d41f8d">lpsm_CountSentences</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">void</span> <a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <a class="code hl_define" href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> <span class="keywordtype">char</span>* <a class="code hl_function" href="lipsum_8h.html#acbd12f639ec6deee8c032731deaf9f39">lpsm_GenerateText</a>(<span class="keywordtype">int</span>  minWord,</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                                        <span class="keywordtype">int</span>  maxWord,</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                                        <span class="keywordtype">int</span>  minFrag,</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>                                        <span class="keywordtype">int</span>  maxFrag,</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>                                        <span class="keywordtype">int</span>  minSent,</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                                        <span class="keywordtype">int</span>  maxSent,</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                                        <span class="keywordtype">int</span>  minPara,</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                                        <span class="keywordtype">int</span>  maxPara,</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                                        <span class="keywordtype">bool</span> useLipsum);</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>}</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="alipsum_8h_html_a1899867c7a3d109b4e4520cc0671341c"><div class="ttname"><a href="lipsum_8h.html#a1899867c7a3d109b4e4520cc0671341c">lpsm_GenerateWords</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateWords(int wordCount)</div><div class="ttdoc">Generate a specified number of random words.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:114</div></div>
 <div class="ttc" id="alipsum_8h_html_a2782e1a80b62a40d3ba7c17a7c28c710"><div class="ttname"><a href="lipsum_8h.html#a2782e1a80b62a40d3ba7c17a7c28c710">lpsm_GenerateSentenceFragment</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateSentenceFragment(int minWord, int maxWord)</div><div class="ttdoc">Generate a random sentence fragment.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:149</div></div>
 <div class="ttc" id="alipsum_8h_html_a2e98874b5f1c1c2d44f91226b9150b55"><div class="ttname"><a href="lipsum_8h.html#a2e98874b5f1c1c2d44f91226b9150b55">lpsm_GenerateParagraphs</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateParagraphs(int paraCount, int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum)</div><div class="ttdoc">Generate several random paragraphs at once.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:90</div></div>
@@ -185,8 +197,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="alipsum_8h_html_a8638fe5d087b4487db47b5c23c7c4616"><div class="ttname"><a href="lipsum_8h.html#a8638fe5d087b4487db47b5c23c7c4616">lpsm_HTMLify</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_HTMLify(const char *str)</div><div class="ttdoc">Turn a string into HTML paragraph tags.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:139</div></div>
 <div class="ttc" id="alipsum_8h_html_a8c98ca12ed3e9a471bdf563bded5c353"><div class="ttname"><a href="lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353">lpsm_gen_word</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_gen_word(int num)</div><div class="ttdoc">Generate words.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:25</div></div>
 <div class="ttc" id="alipsum_8h_html_a9ebc6e7f53e24098136dfb68d1d7f27f"><div class="ttname"><a href="lipsum_8h.html#a9ebc6e7f53e24098136dfb68d1d7f27f">lpsm_gen_sentence_fragment</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_gen_sentence_fragment(void)</div><div class="ttdoc">Generate a sentence fragment.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:37</div></div>
-<div class="ttc" id="alipsum_8h_html_aa6df47d8e0eec07ea4c022e71554048a"><div class="ttname"><a href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a></div><div class="ttdeci">#define LIPSUMC_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> lipsum.h:37</div></div>
+<div class="ttc" id="alipsum_8h_html_aa6df47d8e0eec07ea4c022e71554048a"><div class="ttname"><a href="lipsum_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a></div><div class="ttdeci">#define LIPSUMC_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> lipsum.h:39</div></div>
 <div class="ttc" id="alipsum_8h_html_ac93f427af8a1ae9ab9f9bc4c3113eb4c"><div class="ttname"><a href="lipsum_8h.html#ac93f427af8a1ae9ab9f9bc4c3113eb4c">lpsm_gen_md_paragraph</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_gen_md_paragraph(bool useLipsum)</div><div class="ttdoc">Generate a Markdown paragraph.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:49</div></div>
+<div class="ttc" id="alipsum_8h_html_acbd12f639ec6deee8c032731deaf9f39"><div class="ttname"><a href="lipsum_8h.html#acbd12f639ec6deee8c032731deaf9f39">lpsm_GenerateText</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateText(int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, int minPara, int maxPara, bool useLipsum)</div><div class="ttdoc">Generate a random number of random paragraphs.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:154</div></div>
 <div class="ttc" id="alipsum_8h_html_aec3e411ddc791a2e91501ea883869277"><div class="ttname"><a href="lipsum_8h.html#aec3e411ddc791a2e91501ea883869277">lpsm_GenerateSentences</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateSentences(int sentCount, int minWord, int maxWord, int minFrag, int maxFrag, bool useLipsum)</div><div class="ttdoc">Generate multiple random sentences at once.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:124</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

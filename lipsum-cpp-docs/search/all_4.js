@@ -1,4 +1,28 @@
 var searchData=
 [
-  ['htmlify_0',['htmlify',['../namespacelipsum.html#ad94ccac7ba18d09270ae9124e6608132',1,'lipsum::HTMLify(const std::string &amp;str)'],['../namespacelipsum.html#a05e2e9093a43e61b604ab566bd19b6b3',1,'lipsum::HTMLify(const char *str)']]]
+  ['generatedefaultlipsumsentence_0',['GenerateDefaultLipsumSentence',['../namespacelipsum.html#acb9f05ef38b7b4e53fba81b239459ddb',1,'lipsum']]],
+  ['generatemarkdownemphasis_1',['GenerateMarkdownEmphasis',['../namespacelipsum.html#a20184bbf0cb301cbd8a27d1f87f081b1',1,'lipsum']]],
+  ['generatemarkdownheader_2',['GenerateMarkdownHeader',['../namespacelipsum.html#a25c982ef2694774fc20904d7f2c977b0',1,'lipsum']]],
+  ['generatemarkdownlink_3',['GenerateMarkdownLink',['../namespacelipsum.html#a068d80fb22cd4e5970fe5555ee0b291f',1,'lipsum']]],
+  ['generatemarkdownlist_4',['GenerateMarkdownList',['../namespacelipsum.html#ab783b971b24df1f2fecf0f25d503c540',1,'lipsum']]],
+  ['generatemarkdownparagraph_5',['GenerateMarkdownParagraph',['../namespacelipsum.html#a3e3ea96193625a953114a4ed43972d21',1,'lipsum']]],
+  ['generatemarkdownparagraphs_6',['GenerateMarkdownParagraphs',['../namespacelipsum.html#a3a8818dd5674a619a96ea60d9755116f',1,'lipsum']]],
+  ['generatemarkdowntext_7',['GenerateMarkdownText',['../namespacelipsum.html#aab9bf88aa3865d4a027609a5bfbc769e',1,'lipsum']]],
+  ['generateparagraph_8',['GenerateParagraph',['../namespacelipsum.html#a5c6dc6cff10b6218c537d4bc956fced7',1,'lipsum']]],
+  ['generateparagraphs_9',['GenerateParagraphs',['../namespacelipsum.html#a73c4cbeee88a86f03f838b5407ecaddb',1,'lipsum']]],
+  ['generateparagraphsx_10',['GenerateParagraphsX',['../namespacelipsum.html#a9beea5a312ac6acbe9f1ee7e8f185795',1,'lipsum']]],
+  ['generateparagraphx_11',['GenerateParagraphX',['../namespacelipsum.html#ae96f884b88129fbd5ac0f2517cf75650',1,'lipsum']]],
+  ['generatesentence_12',['GenerateSentence',['../namespacelipsum.html#afed7d5774f487ebb419538532394f149',1,'lipsum']]],
+  ['generatesentencefragment_13',['GenerateSentenceFragment',['../namespacelipsum.html#a4f8c2d0593152bc639b392e43320d24f',1,'lipsum']]],
+  ['generatesentencefragmentx_14',['GenerateSentenceFragmentX',['../namespacelipsum.html#a53d2fd01929ada4afdd8545f0d4df2da',1,'lipsum']]],
+  ['generatesentences_15',['GenerateSentences',['../namespacelipsum.html#a4a6a914841e67178eb2b6fe071acdb43',1,'lipsum']]],
+  ['generatesentencesx_16',['GenerateSentencesX',['../namespacelipsum.html#a658a65e357f26d61e8ad9ff3ac2f8ffd',1,'lipsum']]],
+  ['generatesentencex_17',['GenerateSentenceX',['../namespacelipsum.html#a508fe2a2cec2e15b5135671890e695b9',1,'lipsum']]],
+  ['generatetext_18',['GenerateText',['../namespacelipsum.html#acdb258db383e38887011134b1e6e0156',1,'lipsum']]],
+  ['generatetextx_19',['GenerateTextX',['../namespacelipsum.html#a8b351133c5dde877db8746be59a69789',1,'lipsum']]],
+  ['generateword_20',['GenerateWord',['../namespacelipsum.html#a65e2d9988838f2f1058d0dcac9edf2fa',1,'lipsum']]],
+  ['generatewords_21',['GenerateWords',['../namespacelipsum.html#a1c408cffadb25cb1ed60a009de287fba',1,'lipsum']]],
+  ['generator_22',['Generator',['../classlipsum_1_1Generator.html',1,'lipsum']]],
+  ['generator_2ehpp_23',['generator.hpp',['../generator_8hpp.html',1,'']]],
+  ['generator_2einl_24',['generator.inl',['../generator_8inl.html',1,'']]]
 ];

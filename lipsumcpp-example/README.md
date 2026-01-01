@@ -15,3 +15,4 @@ These are live examples for [the lipsum-cpp repo](https://github.com/LambBread/l
 - [Basic](https://lambbread.github.io/lipsumcpp-example/Basic.html)
 - [GenerateWords](https://lambbread.github.io/lipsumcpp-example/GenerateWords.html)
 - [Advanced](https://lambbread.github.io/lipsumcpp-example/Advanced.html)
+- [JSBinding](https://lambbread.github.io/lipsumcpp-example/JSBinding.html)
