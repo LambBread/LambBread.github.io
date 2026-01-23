@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.3</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.4</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -76,7 +76,6 @@ $(function() {
 <div class="fragment"><div class="line"><span class="preprocessor">#ifndef LIPSUM_BUILD_STATIC</span></div>
 <div class="line"><span class="preprocessor">#    define LIPSUM_IMPLEMENTATION </span><span class="comment">// only for header-only usage</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="lipsum_8hpp.html">lipsum.hpp</a>&quot;</span></div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
@@ -97,10 +96,13 @@ $(function() {
 <div class="line">                                          <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(3, 6),</div>
 <div class="line">                                          <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(7, 10),</div>
 <div class="line">                                          <span class="keyword">false</span>);</div>
+<div class="line">    <span class="comment">// equivalent statement</span></div>
+<div class="line">    std::cout &lt;&lt; <a id="a2" name="a2"></a><a class="code hl_function" href="namespacelipsum.html#a9beea5a312ac6acbe9f1ee7e8f185795">lpsm::GenerateParagraphsX</a>(10, 6, 9, 3, 6, 7, 10, <span class="keyword">false</span>);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="alipsum_8hpp_html"><div class="ttname"><a href="lipsum_8hpp.html">lipsum.hpp</a></div><div class="ttdoc">Main header of lipsum-cpp.</div></div>
 <div class="ttc" id="anamespacelipsum_html_a73c4cbeee88a86f03f838b5407ecaddb"><div class="ttname"><a href="namespacelipsum.html#a73c4cbeee88a86f03f838b5407ecaddb">lipsum::GenerateParagraphs</a></div><div class="ttdeci">LIPSUM_API std::string GenerateParagraphs(int paraCount=5, const ArgVec2 &amp;word=ArgVec2(4, 9), const ArgVec2 &amp;frag=ArgVec2(1, 3), const ArgVec2 &amp;sent=ArgVec2(5, 8), bool useLipsum=true)</div><div class="ttdoc">Generate several random paragraphs at once.</div><div class="ttdef"><b>Definition</b> core_funcs.inl:142</div></div>
+<div class="ttc" id="anamespacelipsum_html_a9beea5a312ac6acbe9f1ee7e8f185795"><div class="ttname"><a href="namespacelipsum.html#a9beea5a312ac6acbe9f1ee7e8f185795">lipsum::GenerateParagraphsX</a></div><div class="ttdeci">LIPSUM_API std::string GenerateParagraphsX(int paraCount=5, int minWord=4, int maxWord=9, int minFrag=1, int maxFrag=3, int minSent=5, int maxSent=8, bool useLipsum=true)</div><div class="ttdoc">Generate several random paragraphs at once.</div><div class="ttdef"><b>Definition</b> xfuncs.inl:70</div></div>
 <div class="ttc" id="astructlipsum_1_1ArgVec2_html"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></div><div class="ttdoc">Store data for inputting into functions.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:27</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

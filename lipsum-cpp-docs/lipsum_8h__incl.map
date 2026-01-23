@@ -1,5 +1,7 @@
 <map id="src/lipsum.h" name="src/lipsum.h">
-<area shape="rect" id="Node000001" title="C wrapper over lipsum&#45;cpp." alt="" coords="5,5,107,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="15,79,97,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,31,59,65,53,65,53,31"/>
+<area shape="rect" id="Node000001" title="C wrapper over lipsum&#45;cpp." alt="" coords="45,5,147,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,88,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,33,65,69,60,66,86,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="112,79,179,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,29,132,66,127,69,102,33"/>
 </map>

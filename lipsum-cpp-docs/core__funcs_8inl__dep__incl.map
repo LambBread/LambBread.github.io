@@ -1,9 +1,0 @@
-<map id="src/lipsum/core_funcs.inl" name="src/lipsum/core_funcs.inl">
-<area shape="rect" id="Node000001" title="Core functions of lipsum&#45;cpp." alt="" coords="45,5,228,31"/>
-<area shape="rect" id="Node000002" href="$lipsum_8hpp.html" title="Main header of lipsum&#45;cpp." alt="" coords="78,79,195,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,44,139,79,134,79,134,44"/>
-<area shape="rect" id="Node000003" href="$lipsum_8cpp.html" title="Source file when building lipsum&#45;cpp as static library." alt="" coords="5,152,121,177"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,116,77,154,73,150,113,112"/>
-<area shape="rect" id="Node000004" href="$lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="146,152,277,177"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="160,111,201,150,197,154,157,115"/>
-</map>

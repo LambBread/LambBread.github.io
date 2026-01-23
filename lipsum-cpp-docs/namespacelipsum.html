@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.3</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.4</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -164,6 +164,18 @@ Functions</h2></td></tr>
 <tr class="memitem:aab9bf88aa3865d4a027609a5bfbc769e" id="r_aab9bf88aa3865d4a027609a5bfbc769e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#aab9bf88aa3865d4a027609a5bfbc769e">GenerateMarkdownText</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 9), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 3), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;sent=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(5, 8), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;point=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(3, 5), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;wordFmt=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(4, 8), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;fragFmt=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(1, 2), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;wordHead=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5), const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;level=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 4), const std::string &amp;linkURL=std::string(&quot;https://example.com/&quot;), int numElements=15)</td></tr>
 <tr class="memdesc:aab9bf88aa3865d4a027609a5bfbc769e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown document.  <br /></td></tr>
 <tr class="separator:aab9bf88aa3865d4a027609a5bfbc769e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab610b00b390d4c0ad8af81536ef9e1cf" id="r_ab610b00b390d4c0ad8af81536ef9e1cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#ab610b00b390d4c0ad8af81536ef9e1cf">GenerateMarkdownHeaderX</a> (int level=1, int minWord=2, int maxWord=5)</td></tr>
+<tr class="memdesc:ab610b00b390d4c0ad8af81536ef9e1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown header.  <br /></td></tr>
+<tr class="separator:ab610b00b390d4c0ad8af81536ef9e1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af65eb01576b510a84bafc915ce60c3af" id="r_af65eb01576b510a84bafc915ce60c3af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#af65eb01576b510a84bafc915ce60c3af">GenerateMarkdownEmphasisX</a> (bool isBold=true, int minWord=4, int maxWord=8, int minFrag=1, int maxFrag=2)</td></tr>
+<tr class="memdesc:af65eb01576b510a84bafc915ce60c3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random emphasized sentence.  <br /></td></tr>
+<tr class="separator:af65eb01576b510a84bafc915ce60c3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8be9d52e35502a6ea14e868eb3cac8" id="r_aee8be9d52e35502a6ea14e868eb3cac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#aee8be9d52e35502a6ea14e868eb3cac8">GenerateMarkdownLinkX</a> (const std::string &amp;url=std::string(&quot;https://example.com/&quot;), int minWord=4, int maxWord=8, int minFrag=1, int maxFrag=2, int minWordURL=2, int maxWordURL=5)</td></tr>
+<tr class="memdesc:aee8be9d52e35502a6ea14e868eb3cac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown link.  <br /></td></tr>
+<tr class="separator:aee8be9d52e35502a6ea14e868eb3cac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918f6264f5c65206387aaf73e56957d1" id="r_a918f6264f5c65206387aaf73e56957d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a918f6264f5c65206387aaf73e56957d1">GenerateMarkdownListX</a> (bool ordered=false, int minWord=4, int maxWord=8, int minFrag=1, int maxFrag=2, int minPoint=3, int maxPoint=5)</td></tr>
+<tr class="memdesc:a918f6264f5c65206387aaf73e56957d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown list.  <br /></td></tr>
+<tr class="separator:a918f6264f5c65206387aaf73e56957d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad94ccac7ba18d09270ae9124e6608132" id="r_ad94ccac7ba18d09270ae9124e6608132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#ad94ccac7ba18d09270ae9124e6608132">HTMLify</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:ad94ccac7ba18d09270ae9124e6608132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn a string into HTML paragraph tags.  <br /></td></tr>
 <tr class="separator:ad94ccac7ba18d09270ae9124e6608132"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,7 +209,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Count the number of sentences in a string. </p>
-<p>Count the number of periods in a string, ignoring usage in Markdown URLs.</p>
+<p>Count the number of periods in a string, ignoring usage in Markdown URLs. (i.e. in parentheses)</p>
 <dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -206,7 +218,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int The number of sentences. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a9">Advanced.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a9">Advanced.cpp</a>, and <a class="el" href="Misc_8cpp-example.html#a1">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -270,7 +282,7 @@ elit."</p>
 
 <p>Generate a random emphasized sentence. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
-<p>Generate a random sentence in Markdown format that is either bold or italic. This function is not exposed in the C wrapper.</p>
+<p>Generate a random sentence in Markdown format that is either bold or italic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">isBold</td><td>Whether the sentence is bold or italic. By default true. (bold) </td></tr>
@@ -280,6 +292,71 @@ elit."</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random emphasized sentence. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateMarkdownEmphasis_8cpp-example.html#a0">GenerateMarkdownEmphasis.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="af65eb01576b510a84bafc915ce60c3af" name="af65eb01576b510a84bafc915ce60c3af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af65eb01576b510a84bafc915ce60c3af">&#9670;&#160;</a></span>GenerateMarkdownEmphasisX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::GenerateMarkdownEmphasisX </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isBold</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minWord</em> = <code>4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxWord</em> = <code>8</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minFrag</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxFrag</em> = <code>2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random emphasized sentence. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.4</dd></dl>
+<p>This function only differs from the function of the similar name in that it uses minimum and maximum values instead of <a class="el" href="structlipsum_1_1ArgVec2.html" title="Store data for inputting into functions.">lipsum::ArgVec2</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isBold</td><td>Whether the sentence is bold or italic. By default true. (bold) </td></tr>
+    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. By default 4. </td></tr>
+    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in a sentence fragment. By default 8. </td></tr>
+    <tr><td class="paramname">minFrag</td><td>The minimum possible number of sentence fragments in the sentence. By default 1. </td></tr>
+    <tr><td class="paramname">maxFrag</td><td>The maximum possible number of sentence fragments in the sentence. By default 2.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random emphasized sentence. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateMarkdownEmphasis_8cpp-example.html#a2">GenerateMarkdownEmphasis.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -311,7 +388,7 @@ elit."</p>
 
 <p>Generate a random Markdown header. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
-<p>Generate a random Markdown header. This function is not exposed in the C wrapper.</p>
+<p>Generate a random Markdown header.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">level</td><td>The level of the heading. By default 1. </td></tr>
@@ -320,6 +397,57 @@ elit."</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random heading. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateMarkdownHeader_8cpp-example.html#a0">GenerateMarkdownHeader.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ab610b00b390d4c0ad8af81536ef9e1cf" name="ab610b00b390d4c0ad8af81536ef9e1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab610b00b390d4c0ad8af81536ef9e1cf">&#9670;&#160;</a></span>GenerateMarkdownHeaderX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::GenerateMarkdownHeaderX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minWord</em> = <code>2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxWord</em> = <code>5</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random Markdown header. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.4</dd></dl>
+<p>This function only differs from the function of the similar name in that it uses minimum and maximum values instead of <a class="el" href="structlipsum_1_1ArgVec2.html" title="Store data for inputting into functions.">lipsum::ArgVec2</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The level of the heading. By default 1. </td></tr>
+    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in the heading. By default 2. </td></tr>
+    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in the heading. By default 5.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random heading. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateMarkdownHeader_8cpp-example.html#a2">GenerateMarkdownHeader.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -363,7 +491,7 @@ elit."</p>
 
 <p>Generate a random Markdown link. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
-<p>Generate a random link in Markdown format. This function is not exposed in the C wrapper.</p>
+<p>Generate a random link in Markdown format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">url</td><td>The URL to base the link off of. By default <a href="https://example.com/">https://example.com/</a>. </td></tr>
@@ -376,6 +504,81 @@ elit."</p>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random link. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a6">Advanced.cpp</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="aee8be9d52e35502a6ea14e868eb3cac8" name="aee8be9d52e35502a6ea14e868eb3cac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8be9d52e35502a6ea14e868eb3cac8">&#9670;&#160;</a></span>GenerateMarkdownLinkX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::GenerateMarkdownLinkX </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>url</em> = <code>std::string(&quot;https://example.com/&quot;)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minWord</em> = <code>4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxWord</em> = <code>8</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minFrag</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxFrag</em> = <code>2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minWordURL</em> = <code>2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxWordURL</em> = <code>5</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random Markdown link. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.4</dd></dl>
+<p>This function only differs from the function of the similar name in that it uses minimum and maximum values instead of <a class="el" href="structlipsum_1_1ArgVec2.html" title="Store data for inputting into functions.">lipsum::ArgVec2</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>The URL to base the link off of. By default <a href="https://example.com/">https://example.com/</a>. </td></tr>
+    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. By default 4. </td></tr>
+    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in a sentence fragment. By default 8. </td></tr>
+    <tr><td class="paramname">minFrag</td><td>The minimum possible number of sentence fragments in the sentence. By default 1. </td></tr>
+    <tr><td class="paramname">maxFrag</td><td>The maximum possible number of sentence fragments in the sentence. By default 2. </td></tr>
+    <tr><td class="paramname">minWordURL</td><td>The minimum possible number of words at the end of the URL. By default 2. </td></tr>
+    <tr><td class="paramname">maxWordURL</td><td>The maximum possible number of words at the end of the URL. By default 5.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random link. </dd></dl>
 
 </div>
 </div>
@@ -419,7 +622,7 @@ elit."</p>
 
 <p>Generate a random Markdown list. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
-<p>Generate a random ordered or unordered list in Markdown format. This function is not exposed in the C wrapper.</p>
+<p>Generate a random ordered or unordered list in Markdown format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ordered</td><td>Whether the list is ordered or unordered. By default false. (unordered) </td></tr>
@@ -432,6 +635,81 @@ elit."</p>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown list. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a3">Advanced.cpp</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="a918f6264f5c65206387aaf73e56957d1" name="a918f6264f5c65206387aaf73e56957d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918f6264f5c65206387aaf73e56957d1">&#9670;&#160;</a></span>GenerateMarkdownListX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::GenerateMarkdownListX </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ordered</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minWord</em> = <code>4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxWord</em> = <code>8</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minFrag</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxFrag</em> = <code>2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minPoint</em> = <code>3</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxPoint</em> = <code>5</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random Markdown list. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.4</dd></dl>
+<p>This function only differs from the function of the similar name in that it uses minimum and maximum values instead of <a class="el" href="structlipsum_1_1ArgVec2.html" title="Store data for inputting into functions.">lipsum::ArgVec2</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ordered</td><td>Whether the list is ordered or unordered. By default false. (unordered) </td></tr>
+    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. By default 4. </td></tr>
+    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in a sentence fragment. By default 8. </td></tr>
+    <tr><td class="paramname">minFrag</td><td>The minimum possible number of sentence fragments in a point. By default 1. </td></tr>
+    <tr><td class="paramname">maxFrag</td><td>The maximum possible number of sentence fragments in a point. By default 2. </td></tr>
+    <tr><td class="paramname">minPoint</td><td>The minimum possible number of points in the list. By default 3. </td></tr>
+    <tr><td class="paramname">maxPoint</td><td>The maximum possible number of points in the list. By default 5.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown list. </dd></dl>
 
 </div>
 </div>
@@ -900,6 +1178,8 @@ elit."</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random paragraphs. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateParagraphs_8cpp-example.html#a2">GenerateParagraphs.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -975,7 +1255,7 @@ elit."</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random paragraph. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FuncsX_8cpp-example.html#a0">FuncsX.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateParagraph_8cpp-example.html#a2">GenerateParagraph.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -1090,6 +1370,8 @@ elit."</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random sentence fragment. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateSentenceFragment_8cpp-example.html#a2">GenerateSentenceFragment.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -1213,6 +1495,8 @@ elit."</p>
   </table>
   </dd>
 </dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateSentences_8cpp-example.html#a2">GenerateSentences.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -1267,6 +1551,8 @@ elit."</p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random sentence. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateSentence_8cpp-example.html#a2">GenerateSentence.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -1327,6 +1613,8 @@ elit."</p>
     <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the first paragraph. By default true. </td></tr>
   </table>
   </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateText_8cpp-example.html#a0">GenerateText.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -1416,6 +1704,8 @@ elit."</p>
     <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the first paragraph. By default true. </td></tr>
   </table>
   </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateText_8cpp-example.html#a2">GenerateText.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -1555,6 +1845,8 @@ elit."</p>
 <p>Return the macro LIPSUM_CPP_VERSION.</p>
 <dl class="section since"><dt>Since</dt><dd>0.3.2</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The current version of lipsum-cpp. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a0">Misc.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
