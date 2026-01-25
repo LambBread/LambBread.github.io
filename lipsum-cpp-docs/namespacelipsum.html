@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.4</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.5</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -777,7 +777,7 @@ elit."</p>
 
 <p>Generate a random formatted paragraph. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
-<p>Generate a paragraph in Markdown format with bold, italic, and links. This function is not exposed in the C wrapper.</p>
+<p>Generate a paragraph in Markdown format with bold, italic, and links.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">word</td><td>The minimum and maximum possible number of words in a sentence fragment. By default 4 to 9. </td></tr>
@@ -787,7 +787,7 @@ elit."</p>
     <tr><td class="paramname">fragFmt</td><td>The minimum and maximum possible number of sentence fragments in a formatted sentence. By default 1 to 2. </td></tr>
     <tr><td class="paramname">wordLink</td><td>The minimum and maximum possible number of words in a link URL. By default 2 to 5. </td></tr>
     <tr><td class="paramname">linkURL</td><td>The URL to base links off of. By default <a href="https://example.com/">https://example.com/</a>. </td></tr>
-    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the paragraph.</td></tr>
+    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the paragraph. By default true.</td></tr>
   </table>
   </dd>
 </dl>
@@ -865,7 +865,7 @@ elit."</p>
 
 <p>Generate multiple random formatted paragraphs. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.2</dd></dl>
-<p>Generate multiple paragraphs in Markdown format with bold, italic, and links. This function is not exposed in the C wrapper.</p>
+<p>Generate multiple paragraphs in Markdown format with bold, italic, and links.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">paraCount</td><td>The number of paragraphs. By default 5. </td></tr>
@@ -876,7 +876,7 @@ elit."</p>
     <tr><td class="paramname">fragFmt</td><td>The minimum and maximum possible number of sentence fragments in a formatted sentence. By default 1 to 2. </td></tr>
     <tr><td class="paramname">wordLink</td><td>The minimum and maximum possible number of words in a link URL. By default 2 to 5. </td></tr>
     <tr><td class="paramname">linkURL</td><td>The URL to base links off of. By default <a href="https://example.com/">https://example.com/</a>. </td></tr>
-    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the paragraph.</td></tr>
+    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the first paragraph. By default true.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1082,7 +1082,7 @@ elit."</p>
 
 <p>Generate several random paragraphs at once. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
-<p>This function generates several random paragraphs, each separated by a line break. Formerly known as lipsum::GenerateParagraphList().</p>
+<p>This function generates several random paragraphs, each separated by a line break. Formerly known as GenerateParagraphList().</p>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random paragraphs.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
