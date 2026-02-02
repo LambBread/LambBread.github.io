@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['paragraph_0',['paragraph',['../classlipsum_1_1Generator.html#afe118671993dcce93ff04d9fb5a2c2d2',1,'lipsum::Generator']]]
+  ['roll_0',['Roll',['../structlipsum_1_1ArgVec2.html#a29bc7f3a54de5e1f11af0f66cf587b0f',1,'lipsum::ArgVec2']]]
 ];

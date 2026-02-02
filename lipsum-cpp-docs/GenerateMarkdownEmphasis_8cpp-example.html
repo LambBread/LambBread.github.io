@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.5</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.6</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -80,21 +80,25 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">// generate bold sentence of 1-2 sentence fragments of 4-8 words (default)</span></div>
-<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#a20184bbf0cb301cbd8a27d1f87f081b1">lpsm::GenerateMarkdownEmphasis</a>();</div>
+<div class="line">    <span class="comment">// generate bold sentence of 1-2 sentence fragments of 4-8 words, in</span></div>
+<div class="line">    <span class="comment">// Markdown (default)</span></div>
+<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#acc8bb26a4f5fb87be47c133689cc9359">lpsm::GenerateMarkdownEmphasis</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// generate italic sentence of 3-6 sentence fragments of 6-9 words</span></div>
-<div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="namespacelipsum.html#a20184bbf0cb301cbd8a27d1f87f081b1">lpsm::GenerateMarkdownEmphasis</a>(<span class="keyword">false</span>,</div>
+<div class="line">    <span class="comment">// generate italic sentence of 3-6 sentence fragments of 6-9 words, in HTML</span></div>
+<div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="namespacelipsum.html#acc8bb26a4f5fb87be47c133689cc9359">lpsm::GenerateMarkdownEmphasis</a>(<span class="keyword">false</span>,</div>
 <div class="line">                                                <a id="_a1" name="_a1"></a><a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(6, 9),</div>
-<div class="line">                                                <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(3, 6));</div>
+<div class="line">                                                <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(3, 6),</div>
+<div class="line">                                                <span class="keyword">true</span>)</div>
+<div class="line">              &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// equivalent statement</span></div>
-<div class="line">    std::cout &lt;&lt; <a id="a2" name="a2"></a><a class="code hl_function" href="namespacelipsum.html#af65eb01576b510a84bafc915ce60c3af">lpsm::GenerateMarkdownEmphasisX</a>(<span class="keyword">false</span>, 6, 9, 3, 6);</div>
+<div class="line">    std::cout &lt;&lt; <a id="a2" name="a2"></a><a class="code hl_function" href="namespacelipsum.html#a4c3f6720f29962b2a6eb839d6b827ccd">lpsm::GenerateMarkdownEmphasisX</a>(<span class="keyword">false</span>, 6, 9, 3, 6, <span class="keyword">true</span>)</div>
+<div class="line">              &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="alipsum_8hpp_html"><div class="ttname"><a href="lipsum_8hpp.html">lipsum.hpp</a></div><div class="ttdoc">Main header of lipsum-cpp.</div></div>
-<div class="ttc" id="anamespacelipsum_html_a20184bbf0cb301cbd8a27d1f87f081b1"><div class="ttname"><a href="namespacelipsum.html#a20184bbf0cb301cbd8a27d1f87f081b1">lipsum::GenerateMarkdownEmphasis</a></div><div class="ttdeci">LIPSUM_API std::string GenerateMarkdownEmphasis(bool isBold=true, const ArgVec2 &amp;word=ArgVec2(4, 8), const ArgVec2 &amp;frag=ArgVec2(1, 2))</div><div class="ttdoc">Generate a random emphasized sentence.</div><div class="ttdef"><b>Definition</b> markdown.inl:166</div></div>
-<div class="ttc" id="anamespacelipsum_html_af65eb01576b510a84bafc915ce60c3af"><div class="ttname"><a href="namespacelipsum.html#af65eb01576b510a84bafc915ce60c3af">lipsum::GenerateMarkdownEmphasisX</a></div><div class="ttdeci">LIPSUM_API std::string GenerateMarkdownEmphasisX(bool isBold=true, int minWord=4, int maxWord=8, int minFrag=1, int maxFrag=2)</div><div class="ttdoc">Generate a random emphasized sentence.</div><div class="ttdef"><b>Definition</b> xfuncs.inl:21</div></div>
+<div class="ttc" id="anamespacelipsum_html_a4c3f6720f29962b2a6eb839d6b827ccd"><div class="ttname"><a href="namespacelipsum.html#a4c3f6720f29962b2a6eb839d6b827ccd">lipsum::GenerateMarkdownEmphasisX</a></div><div class="ttdeci">LIPSUM_API std::string GenerateMarkdownEmphasisX(bool isBold=true, int minWord=4, int maxWord=8, int minFrag=1, int maxFrag=2, bool useHtml=false)</div><div class="ttdoc">Generate a random emphasized sentence.</div><div class="ttdef"><b>Definition</b> xfuncs.inl:29</div></div>
+<div class="ttc" id="anamespacelipsum_html_acc8bb26a4f5fb87be47c133689cc9359"><div class="ttname"><a href="namespacelipsum.html#acc8bb26a4f5fb87be47c133689cc9359">lipsum::GenerateMarkdownEmphasis</a></div><div class="ttdeci">LIPSUM_API std::string GenerateMarkdownEmphasis(bool isBold=true, const ArgVec2 &amp;word=ArgVec2(4, 8), const ArgVec2 &amp;frag=ArgVec2(1, 2), bool useHtml=false)</div><div class="ttdoc">Generate a random emphasized sentence.</div><div class="ttdef"><b>Definition</b> markdown.inl:225</div></div>
 <div class="ttc" id="astructlipsum_1_1ArgVec2_html"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></div><div class="ttdoc">Store data for inputting into functions.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:27</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

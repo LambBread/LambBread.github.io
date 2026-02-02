@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['roll_0',['Roll',['../structlipsum_1_1ArgVec2.html#a29bc7f3a54de5e1f11af0f66cf587b0f',1,'lipsum::ArgVec2']]]
+  ['sentence_0',['sentence',['../classlipsum_1_1Generator.html#a4b3ef2f529fbd6ac55c1d118d2187226',1,'lipsum::Generator']]],
+  ['sentence_5ffragment_1',['sentence_fragment',['../classlipsum_1_1Generator.html#a8977e3cc0486d3723554f67122607e49',1,'lipsum::Generator']]]
 ];

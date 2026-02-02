@@ -1,4 +1,4 @@
-# Lipsum-cpp Live Examples
+# lipsum-cpp Live Examples
 
 These are live examples for [the lipsum-cpp repo](https://github.com/LambBread/lipsum-cpp/)
 
@@ -8,11 +8,17 @@ These are live examples for [the lipsum-cpp repo](https://github.com/LambBread/l
 - [GenerateDefaultLipsumSentence](https://lambbread.github.io/lipsumcpp-example/GenerateDefaultLipsumSentence.html)
 - [GenerateMarkdownEmphasis](https://lambbread.github.io/lipsumcpp-example/GenerateMarkdownEmphasis.html)
 - [GenerateMarkdownHeader](https://lambbread.github.io/lipsumcpp-example/GenerateMarkdownHeader.html)
+- [GenerateMarkdownLink](https://lambbread.github.io/lipsumcpp-example/GenerateMarkdownLink.html)
+- [GenerateMarkdownList](https://lambbread.github.io/lipsumcpp-example/GenerateMarkdownList.html)
+- [GenerateMarkdownParagraph](https://lambbread.github.io/lipsumcpp-example/GenerateMarkdownParagraph.html)
+- [GenerateMarkdownParagraphs](https://lambbread.github.io/lipsumcpp-example/GenerateMarkdownParagraphs.html)
+- [GenerateMarkdownText](https://lambbread.github.io/lipsumcpp-example/GenerateMarkdownText.html)
 - [GenerateParagraph](https://lambbread.github.io/lipsumcpp-example/GenerateParagraph.html)
 - [GenerateParagraphs](https://lambbread.github.io/lipsumcpp-example/GenerateParagraphs.html)
 - [GenerateSentence](https://lambbread.github.io/lipsumcpp-example/GenerateSentence.html)
 - [GenerateSentenceFragment](https://lambbread.github.io/lipsumcpp-example/GenerateSentenceFragment.html)
 - [GenerateSentences](https://lambbread.github.io/lipsumcpp-example/GenerateSentences.html)
+- [GenerateSlug](https://lambbread.github.io/lipsumcpp-example/GenerateSlug.html)
 - [GenerateText](https://lambbread.github.io/lipsumcpp-example/GenerateText.html)
 - [GenerateWord](https://lambbread.github.io/lipsumcpp-example/GenerateWord.html)
 - [GenerateWords](https://lambbread.github.io/lipsumcpp-example/GenerateWords.html)
