@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lipsum-cpp: GenerateSlug.cpp</title>
+<title>lipsum-cpp: GenerateURL.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,28 +70,29 @@ $(function() {
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">GenerateSlug.cpp</div></div>
+  <div class="headertitle"><div class="title">GenerateURL.cpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="preprocessor">#ifndef LIPSUM_BUILD_STATIC</span></div>
-<div class="line"><span class="preprocessor">#    define LIPSUM_IMPLEMENTATION </span><span class="comment">// only for header-only usage</span></div>
+<div class="line"><span class="preprocessor">#    define LIPSUM_IMPLEMENTATION</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="lipsum_8hpp.html">lipsum.hpp</a>&quot;</span></div>
+<div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">// generate slug of 2-5 words, separated by hyphen (default)</span></div>
-<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#a14e830469017ad848de4ad4656b04c97">lpsm::GenerateSlug</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">    <span class="comment">// generate slug of 6-9 words, separated by underscore</span></div>
-<div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="namespacelipsum.html#a14e830469017ad848de4ad4656b04c97">lpsm::GenerateSlug</a>(<a id="_a1" name="_a1"></a><a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(6, 9), <span class="charliteral">&#39;_&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    <span class="comment">// generate a URL with 2-5 words at the end (default)</span></div>
+<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#af584b716fcd9bd0e4b32cbfb28588ff6">lpsm::GenerateURL</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// generate a URL with 6-9 words at the end</span></div>
+<div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="namespacelipsum.html#af584b716fcd9bd0e4b32cbfb28588ff6">lpsm::GenerateURL</a>(<a id="_a1" name="_a1"></a><a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(6, 9)) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// equivalent statement</span></div>
-<div class="line">    std::cout &lt;&lt; <a id="a2" name="a2"></a><a class="code hl_function" href="namespacelipsum.html#a6f803a51f84c88daec9de9a04657cc96">lpsm::GenerateSlugX</a>(6, 9, <span class="charliteral">&#39;_&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    std::cout &lt;&lt; <a id="a2" name="a2"></a><a class="code hl_function" href="namespacelipsum.html#a9ceb8fe3754d3f0b861d8ca9d772c739">lpsm::GenerateURLX</a>(6, 9) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="alipsum_8hpp_html"><div class="ttname"><a href="lipsum_8hpp.html">lipsum.hpp</a></div><div class="ttdoc">Main header of lipsum-cpp.</div></div>
-<div class="ttc" id="anamespacelipsum_html_a14e830469017ad848de4ad4656b04c97"><div class="ttname"><a href="namespacelipsum.html#a14e830469017ad848de4ad4656b04c97">lipsum::GenerateSlug</a></div><div class="ttdeci">LIPSUM_API std::string GenerateSlug(const ArgVec2 &amp;word=ArgVec2(2, 5), char separator='-')</div><div class="ttdoc">Generate a slug joined by a specified character.</div><div class="ttdef"><b>Definition</b> core_funcs.inl:22</div></div>
-<div class="ttc" id="anamespacelipsum_html_a6f803a51f84c88daec9de9a04657cc96"><div class="ttname"><a href="namespacelipsum.html#a6f803a51f84c88daec9de9a04657cc96">lipsum::GenerateSlugX</a></div><div class="ttdeci">LIPSUM_API std::string GenerateSlugX(int minWord=2, int maxWord=5, char separator='-')</div><div class="ttdoc">Generate a slug joined by a specified character.</div><div class="ttdef"><b>Definition</b> xfuncs.inl:20</div></div>
+<div class="ttc" id="anamespacelipsum_html_a9ceb8fe3754d3f0b861d8ca9d772c739"><div class="ttname"><a href="namespacelipsum.html#a9ceb8fe3754d3f0b861d8ca9d772c739">lipsum::GenerateURLX</a></div><div class="ttdeci">LIPSUM_API std::string GenerateURLX(int minWord=2, int maxWord=5)</div><div class="ttdoc">Generate a random URL.</div><div class="ttdef"><b>Definition</b> xfuncs.inl:16</div></div>
+<div class="ttc" id="anamespacelipsum_html_af584b716fcd9bd0e4b32cbfb28588ff6"><div class="ttname"><a href="namespacelipsum.html#af584b716fcd9bd0e4b32cbfb28588ff6">lipsum::GenerateURL</a></div><div class="ttdeci">LIPSUM_API std::string GenerateURL(const ArgVec2 &amp;word=ArgVec2(2, 5))</div><div class="ttdoc">Generate a random URL.</div><div class="ttdef"><b>Definition</b> core_funcs.inl:15</div></div>
 <div class="ttc" id="astructlipsum_1_1ArgVec2_html"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></div><div class="ttdoc">Store data for inputting into functions.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:27</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

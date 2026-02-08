@@ -1,5 +1,5 @@
 <map id="src/lipsum/internal.hpp" name="src/lipsum/internal.hpp">
-<area shape="rect" id="Node000001" title="lipsum::internal" alt="" coords="196,5,367,31"/>
+<area shape="rect" id="Node000001" title="Declaration of lipsum::internal." alt="" coords="196,5,367,31"/>
 <area shape="rect" id="Node000002" href="$lipsum_8hpp.html" title="Main header of lipsum&#45;cpp." alt="" coords="223,79,340,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,44,284,79,279,79,279,44"/>
 <area shape="rect" id="Node000003" href="$lipsum__binding__js_8cpp.html" title="JS binding over lipsum&#45;cpp." alt="" coords="5,152,192,192"/>
