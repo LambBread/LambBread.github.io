@@ -5,5 +5,6 @@ var searchData=
   ['core_5ffuncs_2einl_2',['core_funcs.inl',['../core__funcs_8inl.html',1,'']]],
   ['core_5fxfuncs_2ehpp_3',['core_xfuncs.hpp',['../core__xfuncs_8hpp.html',1,'']]],
   ['countsentences_4',['CountSentences',['../namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f',1,'lipsum']]],
-  ['cpp_20js_20binding_5',['lipsum-cpp JS binding',['../md_src_2jsbind_2README.html',1,'']]]
+  ['countwords_5',['CountWords',['../namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e',1,'lipsum']]],
+  ['cpp_20js_20binding_6',['lipsum-cpp JS binding',['../md_src_2jsbind_2README.html',1,'']]]
 ];

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.7</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.8</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -188,6 +188,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6d22cb714b973a24c78db27e03125bff" id="r_a6d22cb714b973a24c78db27e03125bff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a6d22cb714b973a24c78db27e03125bff">GenerateMarkdownListX</a> (bool ordered=false, int minWord=4, int maxWord=8, int minFrag=1, int maxFrag=2, int minPoint=3, int maxPoint=5, bool useHtml=false)</td></tr>
 <tr class="memdesc:a6d22cb714b973a24c78db27e03125bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown list.  <br /></td></tr>
 <tr class="separator:a6d22cb714b973a24c78db27e03125bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3674a1f6d0c8ec15826ba174e7cab97e" id="r_a3674a1f6d0c8ec15826ba174e7cab97e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e">CountWords</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a3674a1f6d0c8ec15826ba174e7cab97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of words in a string.  <br /></td></tr>
+<tr class="separator:a3674a1f6d0c8ec15826ba174e7cab97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a146896373a78c16daaf8f9b20334a38f" id="r_a146896373a78c16daaf8f9b20334a38f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f">CountSentences</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a146896373a78c16daaf8f9b20334a38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentences in a string.  <br /></td></tr>
 <tr class="separator:a146896373a78c16daaf8f9b20334a38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +229,37 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int The number of sentences. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a9">Advanced.cpp</a>, and <a class="el" href="Misc_8cpp-example.html#a1">Misc.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a3674a1f6d0c8ec15826ba174e7cab97e" name="a3674a1f6d0c8ec15826ba174e7cab97e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3674a1f6d0c8ec15826ba174e7cab97e">&#9670;&#160;</a></span>CountWords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lipsum::CountWords </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of words in a string. </p>
+<p>Count the number of words in a string using a naive approach. It counts some Markdown formatting as words.</p>
+<dl class="section since"><dt>Since</dt><dd>0.3.8</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string inputted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int The number of words. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a10">Advanced.cpp</a>, and <a class="el" href="Misc_8cpp-example.html#a2">Misc.cpp</a>.</dd>
 </dl>
 
 </div>

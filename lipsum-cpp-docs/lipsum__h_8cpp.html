@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.7</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.8</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -171,6 +171,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0845c3419f0a629e5148dd1fa1484dbb" id="r_a0845c3419f0a629e5148dd1fa1484dbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a0845c3419f0a629e5148dd1fa1484dbb">lpsm_CountWords</a> (const char *str)</td></tr>
+<tr class="memdesc:a0845c3419f0a629e5148dd1fa1484dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of words in a string.  <br /></td></tr>
+<tr class="separator:a0845c3419f0a629e5148dd1fa1484dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a044a7b9e2a6c7b7c1cbe5064f59bc274" id="r_a044a7b9e2a6c7b7c1cbe5064f59bc274"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum__h_8cpp.html#a044a7b9e2a6c7b7c1cbe5064f59bc274">lpsm_GenerateURL</a> (int minWord, int maxWord)</td></tr>
 <tr class="memdesc:a044a7b9e2a6c7b7c1cbe5064f59bc274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random URL.  <br /></td></tr>
 <tr class="separator:a044a7b9e2a6c7b7c1cbe5064f59bc274"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -511,6 +514,35 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int The number of sentences. </dd></dl>
+
+</div>
+</div>
+<a id="a0845c3419f0a629e5148dd1fa1484dbb" name="a0845c3419f0a629e5148dd1fa1484dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0845c3419f0a629e5148dd1fa1484dbb">&#9670;&#160;</a></span>lpsm_CountWords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lpsm_CountWords </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of words in a string. </p>
+<p>Count the number of words in a string using a naive approach. It counts some Markdown formatting as words.</p>
+<dl class="section since"><dt>Since</dt><dd>0.3.8</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string inputted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int The number of words. </dd></dl>
 
 </div>
 </div>
