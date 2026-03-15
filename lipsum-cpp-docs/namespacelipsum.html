@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.8</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.9</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -98,6 +98,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aba4a05d018b3cb168c957edfb995079a" id="r_aba4a05d018b3cb168c957edfb995079a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#aba4a05d018b3cb168c957edfb995079a">GenerateScramble</a> (int length=16, char min=' ', char max='~')</td></tr>
+<tr class="memdesc:aba4a05d018b3cb168c957edfb995079a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random character scramble.  <br /></td></tr>
+<tr class="separator:aba4a05d018b3cb168c957edfb995079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8084fc5a8ddc84c5c913bb5acb9ac2" id="r_afb8084fc5a8ddc84c5c913bb5acb9ac2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#afb8084fc5a8ddc84c5c913bb5acb9ac2">GeneratePlainURL</a> ()</td></tr>
+<tr class="memdesc:afb8084fc5a8ddc84c5c913bb5acb9ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random plain URL.  <br /></td></tr>
+<tr class="separator:afb8084fc5a8ddc84c5c913bb5acb9ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af584b716fcd9bd0e4b32cbfb28588ff6" id="r_af584b716fcd9bd0e4b32cbfb28588ff6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#af584b716fcd9bd0e4b32cbfb28588ff6">GenerateURL</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5))</td></tr>
 <tr class="memdesc:af584b716fcd9bd0e4b32cbfb28588ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random URL.  <br /></td></tr>
 <tr class="separator:af584b716fcd9bd0e4b32cbfb28588ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1349,6 +1355,79 @@ elit."</p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random paragraph. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateParagraph_8cpp-example.html#a2">GenerateParagraph.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="afb8084fc5a8ddc84c5c913bb5acb9ac2" name="afb8084fc5a8ddc84c5c913bb5acb9ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8084fc5a8ddc84c5c913bb5acb9ac2">&#9670;&#160;</a></span>GeneratePlainURL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::GeneratePlainURL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random plain URL. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.9</dd></dl>
+<p>Generate a URL with a random word followed by a random TLD.</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string The plain URL </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a3">Misc.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="aba4a05d018b3cb168c957edfb995079a" name="aba4a05d018b3cb168c957edfb995079a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4a05d018b3cb168c957edfb995079a">&#9670;&#160;</a></span>GenerateScramble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::GenerateScramble </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em> = <code>16</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>min</em> = <code>'&#160;'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>max</em> = <code>'~'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random character scramble. </p>
+<dl class="section since"><dt>Since</dt><dd>0.3.9</dd></dl>
+<p>Generate a random string of text with random characters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">length</td><td>The number of characters. By default 16. </td></tr>
+    <tr><td class="paramname">min</td><td>The lowest-valued ASCII character that can appear. By default a space. </td></tr>
+    <tr><td class="paramname">max</td><td>The highest-valued ASCII character than can appear. By default a tilde.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The character scramble </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a4">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
