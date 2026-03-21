@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['max_0',['max',['../structlipsum_1_1ArgVec2.html#a1a0f60b6426be7554c4fa18fab100a3f',1,'lipsum::ArgVec2']]],
-  ['min_1',['min',['../structlipsum_1_1ArgVec2.html#a31f5a9414aa74cc4e743710c982cf8ae',1,'lipsum::ArgVec2']]]
+  ['lipsum_5fcpp_5fversion_0',['LIPSUM_CPP_VERSION',['../core_8hpp.html#a12b5cb549d4ca1d08201986506ade9e3',1,'core.hpp']]],
+  ['lipsum_5fcpp_5fversion_5fmajor_1',['LIPSUM_CPP_VERSION_MAJOR',['../core_8hpp.html#afbe11f13657836b6cabba75332b182cc',1,'core.hpp']]],
+  ['lipsum_5fcpp_5fversion_5fminor_2',['LIPSUM_CPP_VERSION_MINOR',['../core_8hpp.html#aeabee292ef71b0fed70b284e981f96a7',1,'core.hpp']]],
+  ['lipsum_5fcpp_5fversion_5fpatch_3',['LIPSUM_CPP_VERSION_PATCH',['../core_8hpp.html#af6195d5b645f66f23e029dc2fec273a0',1,'core.hpp']]]
 ];

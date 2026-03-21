@@ -1,0 +1,5 @@
+<map id="src/lipsum/source.inl" name="src/lipsum/source.inl">
+<area shape="rect" id="Node000001" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="5,5,161,31"/>
+<area shape="rect" id="Node000002" href="$sample_8inl.html" title="File containing all of the words used by lipsum::GenerateWord()" alt="" coords="38,79,129,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,31,86,65,81,65,81,31"/>
+</map>

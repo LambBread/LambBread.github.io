@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.9</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.0</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -77,35 +77,38 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
+<div class="line">    <a class="code hl_typedef" href="lipsum_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source = <a id="a0" name="a0"></a><a class="code hl_function" href="lipsum_8h.html#acb986fb452a40b19c1cb0092dc32f0f5">lpsm_Source</a>(<span class="stringliteral">&quot;default&quot;</span>);</div>
 <div class="line">    <span class="comment">// Generate 5 words.</span></div>
-<div class="line">    <span class="keywordtype">char</span>* generatedWords = <a id="a0" name="a0"></a><a class="code hl_function" href="lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353">lpsm_gen_word</a>(5);</div>
+<div class="line">    <span class="keywordtype">char</span>* generatedWords = <a id="a1" name="a1"></a><a class="code hl_function" href="lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353">lpsm_gen_word</a>(5);</div>
 <div class="line">    <span class="comment">// generate a paragraph with 4-9 words per sentence fragment,</span></div>
 <div class="line">    <span class="comment">// 1-3 sentence fragments per sentence,</span></div>
 <div class="line">    <span class="comment">// 5-8 sentences per paragraph,</span></div>
 <div class="line">    <span class="comment">// start with &quot;Lorem ipsum...&quot;</span></div>
-<div class="line">    <span class="keywordtype">char</span>* generatedParagraph = <a id="a1" name="a1"></a><a class="code hl_function" href="lipsum_8h.html#a85c867c3fa2839158f8d9a3a4a1787ab">lpsm_GenerateParagraph</a>(4, 9, 1, 3, 5, 8, <span class="keyword">true</span>);</div>
+<div class="line">    <span class="keywordtype">char</span>* generatedParagraph =</div>
+<div class="line">            <a id="a2" name="a2"></a><a class="code hl_function" href="lipsum_8h.html#a7c8e93f3486768be1e0bc8bdbe656e90">lpsm_GenerateParagraph</a>(4, 9, 1, 3, 5, 8, <span class="keyword">true</span>, source);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// generate markdown document with 15 elements</span></div>
-<div class="line">    <span class="keywordtype">char</span>* generatedMarkdown = <a id="a2" name="a2"></a><a class="code hl_function" href="lipsum_8h.html#a7c5ca473d42cca6c4a494626ef17fd95">lpsm_gen_md_text</a>(15);</div>
+<div class="line">    <span class="keywordtype">char</span>* generatedMarkdown = <a id="a3" name="a3"></a><a class="code hl_function" href="lipsum_8h.html#a7c5ca473d42cca6c4a494626ef17fd95">lpsm_gen_md_text</a>(15);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// create a lpsm::ArgVec2</span></div>
-<div class="line">    <a class="code hl_typedef" href="lipsum_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a> handle = <a id="a3" name="a3"></a><a class="code hl_function" href="lipsum_8h.html#ad40697fbee942bbffc560a35ee260ac6">lpsm_ArgVec2</a>(4, 10);</div>
+<div class="line">    <a class="code hl_typedef" href="lipsum_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a> handle = <a id="a4" name="a4"></a><a class="code hl_function" href="lipsum_8h.html#ad40697fbee942bbffc560a35ee260ac6">lpsm_ArgVec2</a>(4, 10);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// generate a sentence fragment with 4-10 words</span></div>
-<div class="line">    <span class="keywordtype">char</span>* example = <a id="a4" name="a4"></a><a class="code hl_function" href="lipsum_8h.html#acfd9929711ec7a1617eeffdb557afec9">lpsm_GenerateSentenceFragmentS</a>(handle, <span class="keyword">false</span>);</div>
+<div class="line">    <span class="keywordtype">char</span>* example = <a id="a5" name="a5"></a><a class="code hl_function" href="lipsum_8h.html#af1b1c33ece76039ae7bb77de252d7b9a">lpsm_GenerateSentenceFragmentS</a>(handle, source, <span class="keyword">false</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// temp object, will be deleted in paragraph generation</span></div>
 <div class="line">    <a class="code hl_typedef" href="lipsum_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a> wordAv2 = <a class="code hl_function" href="lipsum_8h.html#ad40697fbee942bbffc560a35ee260ac6">lpsm_ArgVec2</a>(4, 9);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// equivalent to first paragraph generation</span></div>
-<div class="line">    <span class="keywordtype">char</span>* paragraphWithS = <a id="a5" name="a5"></a><a class="code hl_function" href="lipsum_8h.html#abac6daffbeae9e97a5b2c041d1ac6143">lpsm_GenerateParagraphS</a>(wordAv2,</div>
+<div class="line">    <span class="keywordtype">char</span>* paragraphWithS = <a id="a6" name="a6"></a><a class="code hl_function" href="lipsum_8h.html#abfb136553763510caab4c11f5f8ebdd4">lpsm_GenerateParagraphS</a>(wordAv2,</div>
 <div class="line">                                                   <a class="code hl_function" href="lipsum_8h.html#ad40697fbee942bbffc560a35ee260ac6">lpsm_ArgVec2</a>(1, 3),</div>
 <div class="line">                                                   <a class="code hl_function" href="lipsum_8h.html#ad40697fbee942bbffc560a35ee260ac6">lpsm_ArgVec2</a>(5, 8),</div>
 <div class="line">                                                   <span class="keyword">true</span>,</div>
+<div class="line">                                                   source,</div>
 <div class="line">                                                   <span class="keyword">true</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// roll</span></div>
-<div class="line">    printf(<span class="stringliteral">&quot;%d\n&quot;</span>, <a id="a6" name="a6"></a><a class="code hl_function" href="lipsum_8h.html#a1d1044e452c5dff62586ff58c70d6d72">lpsm_ArgVec2Roll</a>(handle));</div>
+<div class="line">    printf(<span class="stringliteral">&quot;%d\n&quot;</span>, <a id="a7" name="a7"></a><a class="code hl_function" href="lipsum_8h.html#a1d1044e452c5dff62586ff58c70d6d72">lpsm_ArgVec2Roll</a>(handle));</div>
 <div class="line"> </div>
 <div class="line">    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, example);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, generatedWords);</div>
@@ -114,8 +117,9 @@ $(function() {
 <div class="line">    printf(<span class="stringliteral">&quot;%s&quot;</span>, paragraphWithS);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// delete stuff</span></div>
-<div class="line">    <a id="a7" name="a7"></a><a class="code hl_function" href="lipsum_8h.html#a155963f2ec55428e6aa615df73f4d8cb">lpsm_ArgVec2Destroy</a>(handle);</div>
-<div class="line">    <a id="a8" name="a8"></a><a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(generatedParagraph);</div>
+<div class="line">    <a id="a8" name="a8"></a><a class="code hl_function" href="lipsum_8h.html#a155963f2ec55428e6aa615df73f4d8cb">lpsm_ArgVec2Destroy</a>(handle);</div>
+<div class="line">    <a id="a9" name="a9"></a><a class="code hl_function" href="lipsum_8h.html#aca15419e9306e5f16ba065158b0ade34">lpsm_SourceDestroy</a>(source);</div>
+<div class="line">    <a id="a10" name="a10"></a><a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(generatedParagraph);</div>
 <div class="line">    <a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(generatedWords);</div>
 <div class="line">    <a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(generatedMarkdown);</div>
 <div class="line">    <a class="code hl_function" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a>(paragraphWithS);</div>
@@ -126,16 +130,19 @@ $(function() {
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="alipsum_8h_html"><div class="ttname"><a href="lipsum_8h.html">lipsum.h</a></div><div class="ttdoc">C wrapper over lipsum-cpp.</div></div>
-<div class="ttc" id="alipsum_8h_html_a155963f2ec55428e6aa615df73f4d8cb"><div class="ttname"><a href="lipsum_8h.html#a155963f2ec55428e6aa615df73f4d8cb">lpsm_ArgVec2Destroy</a></div><div class="ttdeci">LIPSUMC_API void lpsm_ArgVec2Destroy(lpsm_ArgVec2Handle av2)</div><div class="ttdoc">Delete a lpsm::ArgVec2.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:366</div></div>
-<div class="ttc" id="alipsum_8h_html_a1d1044e452c5dff62586ff58c70d6d72"><div class="ttname"><a href="lipsum_8h.html#a1d1044e452c5dff62586ff58c70d6d72">lpsm_ArgVec2Roll</a></div><div class="ttdeci">LIPSUMC_API int lpsm_ArgVec2Roll(lpsm_ArgVec2Handle av2)</div><div class="ttdoc">Run lpsm::ArgVec2::Roll.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:372</div></div>
-<div class="ttc" id="alipsum_8h_html_a315e803d2566be8e0a97389317fe620c"><div class="ttname"><a href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a></div><div class="ttdeci">LIPSUMC_API void lpsm_DeleteString(char *str)</div><div class="ttdoc">Delete a string returned by a function.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:501</div></div>
-<div class="ttc" id="alipsum_8h_html_a7c5ca473d42cca6c4a494626ef17fd95"><div class="ttname"><a href="lipsum_8h.html#a7c5ca473d42cca6c4a494626ef17fd95">lpsm_gen_md_text</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_gen_md_text(int numElements)</div><div class="ttdoc">Generate a Markdown document.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:417</div></div>
-<div class="ttc" id="alipsum_8h_html_a85c867c3fa2839158f8d9a3a4a1787ab"><div class="ttname"><a href="lipsum_8h.html#a85c867c3fa2839158f8d9a3a4a1787ab">lpsm_GenerateParagraph</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateParagraph(int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum)</div><div class="ttdoc">Generate a random paragraph.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:435</div></div>
-<div class="ttc" id="alipsum_8h_html_a8c98ca12ed3e9a471bdf563bded5c353"><div class="ttname"><a href="lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353">lpsm_gen_word</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_gen_word(int num)</div><div class="ttdoc">Generate words.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:387</div></div>
-<div class="ttc" id="alipsum_8h_html_a90d797a502256bad1dbed06a68175016"><div class="ttname"><a href="lipsum_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a></div><div class="ttdeci">void * lpsm_ArgVec2Handle</div><div class="ttdoc">A handle to a lpsm::ArgVec2.</div><div class="ttdef"><b>Definition</b> lipsum.h:73</div></div>
-<div class="ttc" id="alipsum_8h_html_abac6daffbeae9e97a5b2c041d1ac6143"><div class="ttname"><a href="lipsum_8h.html#abac6daffbeae9e97a5b2c041d1ac6143">lpsm_GenerateParagraphS</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateParagraphS(lpsm_ArgVec2Handle word, lpsm_ArgVec2Handle frag, lpsm_ArgVec2Handle sent, bool useLipsum, bool del)</div><div class="ttdoc">Generate a random paragraph.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:107</div></div>
-<div class="ttc" id="alipsum_8h_html_acfd9929711ec7a1617eeffdb557afec9"><div class="ttname"><a href="lipsum_8h.html#acfd9929711ec7a1617eeffdb557afec9">lpsm_GenerateSentenceFragmentS</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateSentenceFragmentS(lpsm_ArgVec2Handle word, bool del)</div><div class="ttdoc">Generate a fragment of a sentence without punctuation.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:88</div></div>
-<div class="ttc" id="alipsum_8h_html_ad40697fbee942bbffc560a35ee260ac6"><div class="ttname"><a href="lipsum_8h.html#ad40697fbee942bbffc560a35ee260ac6">lpsm_ArgVec2</a></div><div class="ttdeci">LIPSUMC_API lpsm_ArgVec2Handle lpsm_ArgVec2(int min, int max)</div><div class="ttdoc">Create a lpsm::ArgVec2.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:361</div></div>
+<div class="ttc" id="alipsum_8h_html_a155963f2ec55428e6aa615df73f4d8cb"><div class="ttname"><a href="lipsum_8h.html#a155963f2ec55428e6aa615df73f4d8cb">lpsm_ArgVec2Destroy</a></div><div class="ttdeci">LIPSUMC_API void lpsm_ArgVec2Destroy(lpsm_ArgVec2Handle av2)</div><div class="ttdoc">Delete a lpsm::ArgVec2.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:445</div></div>
+<div class="ttc" id="alipsum_8h_html_a1d1044e452c5dff62586ff58c70d6d72"><div class="ttname"><a href="lipsum_8h.html#a1d1044e452c5dff62586ff58c70d6d72">lpsm_ArgVec2Roll</a></div><div class="ttdeci">LIPSUMC_API int lpsm_ArgVec2Roll(lpsm_ArgVec2Handle av2)</div><div class="ttdoc">Run lpsm::ArgVec2::Roll.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:451</div></div>
+<div class="ttc" id="alipsum_8h_html_a315e803d2566be8e0a97389317fe620c"><div class="ttname"><a href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a></div><div class="ttdeci">LIPSUMC_API void lpsm_DeleteString(char *str)</div><div class="ttdoc">Delete a string returned by a function.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:593</div></div>
+<div class="ttc" id="alipsum_8h_html_a6e3fdebaa30c4b033a1e8d60ca3ceeba"><div class="ttname"><a href="lipsum_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a></div><div class="ttdeci">void * lpsm_SourceHandle</div><div class="ttdoc">A handle to a lipsum::Source.</div><div class="ttdef"><b>Definition</b> lipsum.h:100</div></div>
+<div class="ttc" id="alipsum_8h_html_a7c5ca473d42cca6c4a494626ef17fd95"><div class="ttname"><a href="lipsum_8h.html#a7c5ca473d42cca6c4a494626ef17fd95">lpsm_gen_md_text</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_gen_md_text(int numElements)</div><div class="ttdoc">Generate a Markdown document.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:496</div></div>
+<div class="ttc" id="alipsum_8h_html_a7c8e93f3486768be1e0bc8bdbe656e90"><div class="ttname"><a href="lipsum_8h.html#a7c8e93f3486768be1e0bc8bdbe656e90">lpsm_GenerateParagraph</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateParagraph(int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum, lpsm_SourceHandle source)</div><div class="ttdoc">Generate a random paragraph.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:520</div></div>
+<div class="ttc" id="alipsum_8h_html_a8c98ca12ed3e9a471bdf563bded5c353"><div class="ttname"><a href="lipsum_8h.html#a8c98ca12ed3e9a471bdf563bded5c353">lpsm_gen_word</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_gen_word(int num)</div><div class="ttdoc">Generate words.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:466</div></div>
+<div class="ttc" id="alipsum_8h_html_a90d797a502256bad1dbed06a68175016"><div class="ttname"><a href="lipsum_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a></div><div class="ttdeci">void * lpsm_ArgVec2Handle</div><div class="ttdoc">A handle to a lipsum::ArgVec2.</div><div class="ttdef"><b>Definition</b> lipsum.h:91</div></div>
+<div class="ttc" id="alipsum_8h_html_abfb136553763510caab4c11f5f8ebdd4"><div class="ttname"><a href="lipsum_8h.html#abfb136553763510caab4c11f5f8ebdd4">lpsm_GenerateParagraphS</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateParagraphS(lpsm_ArgVec2Handle word, lpsm_ArgVec2Handle frag, lpsm_ArgVec2Handle sent, bool useLipsum, lpsm_SourceHandle source, bool del)</div><div class="ttdoc">Generate a random paragraph.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:143</div></div>
+<div class="ttc" id="alipsum_8h_html_aca15419e9306e5f16ba065158b0ade34"><div class="ttname"><a href="lipsum_8h.html#aca15419e9306e5f16ba065158b0ade34">lpsm_SourceDestroy</a></div><div class="ttdeci">LIPSUMC_API void lpsm_SourceDestroy(lpsm_SourceHandle handle)</div><div class="ttdoc">Delete a lipsum::Source.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:61</div></div>
+<div class="ttc" id="alipsum_8h_html_acb986fb452a40b19c1cb0092dc32f0f5"><div class="ttname"><a href="lipsum_8h.html#acb986fb452a40b19c1cb0092dc32f0f5">lpsm_Source</a></div><div class="ttdeci">LIPSUMC_API lpsm_SourceHandle lpsm_Source(const char *path)</div><div class="ttdoc">Constructor of lipsum::Source.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:48</div></div>
+<div class="ttc" id="alipsum_8h_html_ad40697fbee942bbffc560a35ee260ac6"><div class="ttname"><a href="lipsum_8h.html#ad40697fbee942bbffc560a35ee260ac6">lpsm_ArgVec2</a></div><div class="ttdeci">LIPSUMC_API lpsm_ArgVec2Handle lpsm_ArgVec2(int min, int max)</div><div class="ttdoc">Create a lpsm::ArgVec2.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:440</div></div>
+<div class="ttc" id="alipsum_8h_html_af1b1c33ece76039ae7bb77de252d7b9a"><div class="ttname"><a href="lipsum_8h.html#af1b1c33ece76039ae7bb77de252d7b9a">lpsm_GenerateSentenceFragmentS</a></div><div class="ttdeci">LIPSUMC_API char * lpsm_GenerateSentenceFragmentS(lpsm_ArgVec2Handle word, lpsm_SourceHandle source, bool del)</div><div class="ttdoc">Generate a fragment of a sentence without punctuation.</div><div class="ttdef"><b>Definition</b> lipsum_h.cpp:120</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

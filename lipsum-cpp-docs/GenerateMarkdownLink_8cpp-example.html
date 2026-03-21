@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.3.9</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.0</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -82,23 +82,23 @@ $(function() {
 <div class="line">{</div>
 <div class="line">    <span class="comment">// generate link with 1-2 sentence fragments of 4-8</span></div>
 <div class="line">    <span class="comment">// words and URL ending in 2-5 words, in Markdown (default)</span></div>
-<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#a1cec18f5ef3e61e375426e82a002b0e6">lpsm::GenerateMarkdownLink</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    std::cout &lt;&lt; <a id="a0" name="a0"></a><a class="code hl_function" href="namespacelipsum.html#ad65f143c2e1b690790e857a3af37b51f">lpsm::GenerateMarkdownLink</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// generate link with 3-6 sentence fragments of 7-10</span></div>
 <div class="line">    <span class="comment">// words and URL ending in 6-9 words, in HTML</span></div>
-<div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="namespacelipsum.html#a1cec18f5ef3e61e375426e82a002b0e6">lpsm::GenerateMarkdownLink</a>(<a id="_a1" name="_a1"></a><a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(7, 10),</div>
+<div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="namespacelipsum.html#ad65f143c2e1b690790e857a3af37b51f">lpsm::GenerateMarkdownLink</a>(<a id="_a1" name="_a1"></a><a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(7, 10),</div>
 <div class="line">                                            <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(3, 6),</div>
 <div class="line">                                            <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(6, 9),</div>
 <div class="line">                                            <span class="keyword">true</span>)</div>
 <div class="line">              &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// equivalent statement</span></div>
-<div class="line">    std::cout &lt;&lt; <a id="a2" name="a2"></a><a class="code hl_function" href="namespacelipsum.html#a87417bc782df1379b756a9448a6c6061">lpsm::GenerateMarkdownLinkX</a>(7, 10, 3, 6, 6, 9, <span class="keyword">true</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    std::cout &lt;&lt; <a id="a2" name="a2"></a><a class="code hl_function" href="namespacelipsum.html#a8dc1fb56d04daa1ac27122fc2587384f">lpsm::GenerateMarkdownLinkX</a>(7, 10, 3, 6, 6, 9, <span class="keyword">true</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="alipsum_8hpp_html"><div class="ttname"><a href="lipsum_8hpp.html">lipsum.hpp</a></div><div class="ttdoc">Main header of lipsum-cpp.</div></div>
-<div class="ttc" id="anamespacelipsum_html_a1cec18f5ef3e61e375426e82a002b0e6"><div class="ttname"><a href="namespacelipsum.html#a1cec18f5ef3e61e375426e82a002b0e6">lipsum::GenerateMarkdownLink</a></div><div class="ttdeci">LIPSUM_API std::string GenerateMarkdownLink(const ArgVec2 &amp;word=ArgVec2(4, 8), const ArgVec2 &amp;frag=ArgVec2(1, 2), const ArgVec2 &amp;wordURL=ArgVec2(2, 5), bool useHtml=false)</div><div class="ttdoc">Generate a random Markdown link.</div><div class="ttdef"><b>Definition</b> markdown.inl:202</div></div>
-<div class="ttc" id="anamespacelipsum_html_a87417bc782df1379b756a9448a6c6061"><div class="ttname"><a href="namespacelipsum.html#a87417bc782df1379b756a9448a6c6061">lipsum::GenerateMarkdownLinkX</a></div><div class="ttdeci">LIPSUM_API std::string GenerateMarkdownLinkX(int minWord=4, int maxWord=8, int minFrag=1, int maxFrag=2, int minWordURL=2, int maxWordURL=5, bool useHtml=false)</div><div class="ttdoc">Generate a random Markdown link.</div><div class="ttdef"><b>Definition</b> xfuncs.inl:46</div></div>
+<div class="ttc" id="anamespacelipsum_html_a8dc1fb56d04daa1ac27122fc2587384f"><div class="ttname"><a href="namespacelipsum.html#a8dc1fb56d04daa1ac27122fc2587384f">lipsum::GenerateMarkdownLinkX</a></div><div class="ttdeci">LIPSUM_API std::string GenerateMarkdownLinkX(int minWord=4, int maxWord=8, int minFrag=1, int maxFrag=2, int minWordURL=2, int maxWordURL=5, bool useHtml=false, const Source &amp;source=Source())</div><div class="ttdoc">Generate a random Markdown link.</div><div class="ttdef"><b>Definition</b> xfuncs.inl:58</div></div>
+<div class="ttc" id="anamespacelipsum_html_ad65f143c2e1b690790e857a3af37b51f"><div class="ttname"><a href="namespacelipsum.html#ad65f143c2e1b690790e857a3af37b51f">lipsum::GenerateMarkdownLink</a></div><div class="ttdeci">LIPSUM_API std::string GenerateMarkdownLink(const ArgVec2 &amp;word=ArgVec2(4, 8), const ArgVec2 &amp;frag=ArgVec2(1, 2), const ArgVec2 &amp;wordURL=ArgVec2(2, 5), bool useHtml=false, const Source &amp;source=Source())</div><div class="ttdoc">Generate a random Markdown link.</div><div class="ttdef"><b>Definition</b> markdown.inl:214</div></div>
 <div class="ttc" id="astructlipsum_1_1ArgVec2_html"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></div><div class="ttdoc">Store data for inputting into functions.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:27</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
