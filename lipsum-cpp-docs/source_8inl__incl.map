@@ -1,5 +1,9 @@
-<map id="src/lipsum/source.inl" name="src/lipsum/source.inl">
-<area shape="rect" id="Node000001" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="5,5,161,31"/>
-<area shape="rect" id="Node000002" href="$sample_8inl.html" title="File containing all of the words used by lipsum::GenerateWord()" alt="" coords="38,79,129,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,31,86,65,81,65,81,31"/>
+<map id="src/lipsum/core/source.inl" name="src/lipsum/core/source.inl">
+<area shape="rect" id="Node000001" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="21,5,209,31"/>
+<area shape="rect" id="Node000002" href="$internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="5,79,105,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,33,76,70,72,66,103,29"/>
+<area shape="rect" id="Node000004" href="$sample_8inl.html" title="File containing all of the words used by lipsum::GenerateWord()" alt="" coords="130,79,221,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,29,159,66,155,70,123,33"/>
+<area shape="rect" id="Node000003" href="$core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="16,152,95,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,104,58,138,53,138,53,104"/>
 </map>

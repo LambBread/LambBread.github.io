@@ -1,5 +1,5 @@
-<map id="src/lipsum/sample.inl" name="src/lipsum/sample.inl">
-<area shape="rect" id="Node000001" title="File containing all of the words used by lipsum::GenerateWord()" alt="" coords="5,5,167,31"/>
-<area shape="rect" id="Node000002" href="$source_8inl.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="8,79,164,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,44,89,79,83,79,83,44"/>
+<map id="src/lipsum/core/sample.inl" name="src/lipsum/core/sample.inl">
+<area shape="rect" id="Node000001" title="File containing all of the words used by lipsum::GenerateWord()" alt="" coords="5,5,199,31"/>
+<area shape="rect" id="Node000002" href="$source_8inl.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="8,79,196,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,44,105,79,99,79,99,44"/>
 </map>

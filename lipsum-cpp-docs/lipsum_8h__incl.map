@@ -1,7 +1,15 @@
 <map id="src/lipsum.h" name="src/lipsum.h">
-<area shape="rect" id="Node000001" title="C wrapper over lipsum&#45;cpp." alt="" coords="45,5,147,31"/>
+<area shape="rect" id="Node000001" title="C wrapper over lipsum&#45;cpp." alt="" coords="129,5,231,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,79,88,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,33,65,69,60,66,86,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,33,82,74,79,70,157,28"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="112,79,179,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,29,132,66,127,69,102,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,32,159,67,155,65,172,30"/>
+<area shape="rect" id="Node000004" href="$binded_8h.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="149,152,283,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,30,212,138,207,139,180,32"/>
+<area shape="rect" id="Node000006" href="$sfuncs_8h.html" title="S functions of lipsum&#45;cpp C wrapper." alt="" coords="253,79,384,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="203,28,285,70,283,75,201,33"/>
+<area shape="rect" id="Node000005" href="$core_8h.html" title="Core macros for lipsum&#45;cpp C wrapper." alt="" coords="237,225,299,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="227,176,254,213,249,216,222,179"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="304,106,246,146,243,142,301,102"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="318,105,297,178,282,214,277,212,292,176,313,104"/>
 </map>

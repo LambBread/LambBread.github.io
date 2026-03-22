@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.0</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.1</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -88,6 +88,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a06bce7e2b6d946ae23844c2afee9249d" id="r_a06bce7e2b6d946ae23844c2afee9249d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a06bce7e2b6d946ae23844c2afee9249d">Generator</a> ()=default</td></tr>
+<tr class="memdesc:a06bce7e2b6d946ae23844c2afee9249d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>.  <br /></td></tr>
+<tr class="separator:a06bce7e2b6d946ae23844c2afee9249d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511afc093c8e9720d06e605540a75613" id="r_a511afc093c8e9720d06e605540a75613"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a511afc093c8e9720d06e605540a75613">Generator</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a511afc093c8e9720d06e605540a75613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>.  <br /></td></tr>
+<tr class="separator:a511afc093c8e9720d06e605540a75613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68b5cb4d06b114f56fc66a37dea9f232" id="r_a68b5cb4d06b114f56fc66a37dea9f232"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a68b5cb4d06b114f56fc66a37dea9f232">word</a> (int num=1)</td></tr>
 <tr class="memdesc:a68b5cb4d06b114f56fc66a37dea9f232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate words.  <br /></td></tr>
 <tr class="separator:a68b5cb4d06b114f56fc66a37dea9f232"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,9 +117,67 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>OOP layer over lipsum-cpp. </p>
 <dl class="section since"><dt>Since</dt><dd>0.2.0</dd></dl>
 <p>This provides a more user-friendly object-oriented layer over lipsum-cpp. It uses mainly default arguments. Unlike most of the codebase which uses PascalCase, the functions in this class use snake_case. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#_a0">Advanced.cpp</a>, <a class="el" href="Basic_8cpp-example.html#_a0">Basic.cpp</a>, and <a class="el" href="Markdown_8cpp-example.html#_a0">Markdown.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#_a0">Advanced.cpp</a>, <a class="el" href="Basic_8cpp-example.html#_a0">Basic.cpp</a>, <a class="el" href="Markdown_8cpp-example.html#_a0">Markdown.cpp</a>, and <a class="el" href="Source_8cpp-example.html#_a3">Source.cpp</a>.</dd>
 </dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a06bce7e2b6d946ae23844c2afee9249d" name="a06bce7e2b6d946ae23844c2afee9249d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06bce7e2b6d946ae23844c2afee9249d">&#9670;&#160;</a></span>Generator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">lipsum::Generator::Generator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>0.2.0</dd></dl>
+<p>This loads the default lorem ipsum source. </p>
+
+</div>
+</div>
+<a id="a511afc093c8e9720d06e605540a75613" name="a511afc093c8e9720d06e605540a75613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511afc093c8e9720d06e605540a75613">&#9670;&#160;</a></span>Generator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lipsum::Generator::Generator </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.1</dd></dl>
+<p>This loads the specified lorem ipsum source into m_Source.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The filepath of the lorem ipsum source. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a33f095b8a70b8425bd94b82f59ad387b" name="a33f095b8a70b8425bd94b82f59ad387b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33f095b8a70b8425bd94b82f59ad387b">&#9670;&#160;</a></span>md_paragraph()</h2>
 
@@ -182,7 +246,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown document. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Basic_8cpp-example.html#a6">Basic.cpp</a>, and <a class="el" href="Markdown_8cpp-example.html#a1">Markdown.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Basic_8cpp-example.html#a6">Basic.cpp</a>, <a class="el" href="Markdown_8cpp-example.html#a1">Markdown.cpp</a>, and <a class="el" href="Source_8cpp-example.html#a4">Source.cpp</a>.</dd>
 </dl>
 
 </div>

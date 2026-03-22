@@ -1,7 +1,15 @@
-<map id="src/lipsum/internal.hpp" name="src/lipsum/internal.hpp">
-<area shape="rect" id="Node000001" title="Declaration of lipsum::internal." alt="" coords="196,5,367,31"/>
+<map id="src/lipsum/core/internal.hpp" name="src/lipsum/core/internal.hpp">
+<area shape="rect" id="Node000001" title="Declaration of lipsum::internal." alt="" coords="579,5,781,31"/>
 <area shape="rect" id="Node000002" href="$lipsum_8hpp.html" title="Main header of lipsum&#45;cpp." alt="" coords="223,79,340,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,44,284,79,279,79,279,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="603,36,340,82,340,77,602,30"/>
+<area shape="rect" id="Node000006" href="$argvec2_8inl.html" title="Definition of lipsum::ArgVec2." alt="" coords="364,79,561,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="633,37,499,81,497,76,631,32"/>
+<area shape="rect" id="Node000007" href="$source_8inl.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="586,79,774,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="683,44,683,79,677,79,677,44"/>
+<area shape="rect" id="Node000008" href="$core__funcs_8inl.html" title="Core functions of lipsum&#45;cpp." alt="" coords="798,79,981,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="728,33,856,76,855,81,726,38"/>
+<area shape="rect" id="Node000009" href="$markdown_8inl.html" title="Markdown functions of lipsum&#45;cpp." alt="" coords="1005,79,1187,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="760,30,1029,76,1029,81,760,36"/>
 <area shape="rect" id="Node000003" href="$lipsum__binding__js_8cpp.html" title="JS binding over lipsum&#45;cpp." alt="" coords="5,152,192,192"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="243,112,144,154,142,149,241,107"/>
 <area shape="rect" id="Node000004" href="$lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="216,159,347,185"/>

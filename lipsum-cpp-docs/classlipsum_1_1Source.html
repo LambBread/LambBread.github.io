@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.0</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.1</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -94,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d3380c1ce11ae7ae820967e7ddb6079" id="r_a5d3380c1ce11ae7ae820967e7ddb6079"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Source.html#a5d3380c1ce11ae7ae820967e7ddb6079">Source</a> (const std::string &amp;path)</td></tr>
 <tr class="memdesc:a5d3380c1ce11ae7ae820967e7ddb6079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with a path.  <br /></td></tr>
 <tr class="separator:a5d3380c1ce11ae7ae820967e7ddb6079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332d9c0994b274c76128d60538cfd74e" id="r_a332d9c0994b274c76128d60538cfd74e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Source.html#a332d9c0994b274c76128d60538cfd74e">Load</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a332d9c0994b274c76128d60538cfd74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a source and fill the vector.  <br /></td></tr>
+<tr class="separator:a332d9c0994b274c76128d60538cfd74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6025cf7377abf80a0bbac15272d3d6" id="r_a8c6025cf7377abf80a0bbac15272d3d6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Source.html#a8c6025cf7377abf80a0bbac15272d3d6">RandomWord</a> () const</td></tr>
 <tr class="memdesc:a8c6025cf7377abf80a0bbac15272d3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a random word.  <br /></td></tr>
 <tr class="separator:a8c6025cf7377abf80a0bbac15272d3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +166,34 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a332d9c0994b274c76128d60538cfd74e" name="a332d9c0994b274c76128d60538cfd74e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332d9c0994b274c76128d60538cfd74e">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lipsum::Source::Load </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a source and fill the vector. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.1</dd></dl>
+<p>Read from the file specified and fill object m_Words with the unique words from it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>A path to the source file. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8c6025cf7377abf80a0bbac15272d3d6" name="a8c6025cf7377abf80a0bbac15272d3d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c6025cf7377abf80a0bbac15272d3d6">&#9670;&#160;</a></span>RandomWord()</h2>
 
@@ -186,8 +217,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/lipsum/<a class="el" href="source_8hpp_source.html">source.hpp</a></li>
-<li>src/lipsum/<a class="el" href="source_8inl.html">source.inl</a></li>
+<li>src/lipsum/core/<a class="el" href="source_8hpp_source.html">source.hpp</a></li>
+<li>src/lipsum/core/<a class="el" href="source_8inl.html">source.inl</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

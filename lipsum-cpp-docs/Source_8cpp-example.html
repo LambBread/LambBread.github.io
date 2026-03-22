@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.0</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.1</span>
    </div>
    <div id="projectbrief">A C++/C library for generating sample text</div>
   </td>
@@ -81,17 +81,21 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a id="_a0" name="_a0"></a><a class="code hl_class" href="classlipsum_1_1Source.html">lpsm::Source</a> src(<span class="stringliteral">&quot;../../examples/sample.txt&quot;</span>);</div>
+<div class="line">    <a id="_a0" name="_a0"></a><a class="code hl_class" href="classlipsum_1_1Source.html">lpsm::Source</a> src(<span class="stringliteral">&quot;../../examples/catipsum_example.txt&quot;</span>);</div>
 <div class="line">    std::cout &lt;&lt; <a id="a1" name="a1"></a><a class="code hl_function" href="namespacelipsum.html#ad8f57d31a824ad2fee6772ddad517243">lpsm::GenerateParagraph</a>(<a id="_a2" name="_a2"></a><a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(4, 9),</div>
 <div class="line">                                         <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(1, 3),</div>
 <div class="line">                                         <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(5, 8),</div>
 <div class="line">                                         <span class="keyword">false</span>,</div>
 <div class="line">                                         src);</div>
+<div class="line">    <a id="_a3" name="_a3"></a><a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a> gen(<span class="stringliteral">&quot;../../examples/catipsum_example.txt&quot;</span>);</div>
+<div class="line">    std::cout &lt;&lt; gen.<a id="a4" name="a4"></a><a class="code hl_function" href="classlipsum_1_1Generator.html#a4a9d99194fac2cfb0d979bbe9bead123">md_text</a>(20);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html"><div class="ttname"><a href="classlipsum_1_1Generator.html">lipsum::Generator</a></div><div class="ttdoc">OOP layer over lipsum-cpp.</div><div class="ttdef"><b>Definition</b> generator.hpp:30</div></div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html_a4a9d99194fac2cfb0d979bbe9bead123"><div class="ttname"><a href="classlipsum_1_1Generator.html#a4a9d99194fac2cfb0d979bbe9bead123">lipsum::Generator::md_text</a></div><div class="ttdeci">std::string md_text(int numElements=15)</div><div class="ttdoc">Generate a Markdown document.</div><div class="ttdef"><b>Definition</b> generator.inl:40</div></div>
 <div class="ttc" id="aclasslipsum_1_1Source_html"><div class="ttname"><a href="classlipsum_1_1Source.html">lipsum::Source</a></div><div class="ttdoc">Class for multi-source generation.</div><div class="ttdef"><b>Definition</b> source.hpp:25</div></div>
 <div class="ttc" id="alipsum_8hpp_html"><div class="ttname"><a href="lipsum_8hpp.html">lipsum.hpp</a></div><div class="ttdoc">Main header of lipsum-cpp.</div></div>
-<div class="ttc" id="anamespacelipsum_html_ad8f57d31a824ad2fee6772ddad517243"><div class="ttname"><a href="namespacelipsum.html#ad8f57d31a824ad2fee6772ddad517243">lipsum::GenerateParagraph</a></div><div class="ttdeci">LIPSUM_API std::string GenerateParagraph(const ArgVec2 &amp;word=ArgVec2(4, 9), const ArgVec2 &amp;frag=ArgVec2(1, 3), const ArgVec2 &amp;sent=ArgVec2(5, 8), bool useLipsum=true, const Source &amp;source=Source())</div><div class="ttdoc">Generate a random paragraph.</div><div class="ttdef"><b>Definition</b> core_funcs.inl:151</div></div>
+<div class="ttc" id="anamespacelipsum_html_ad8f57d31a824ad2fee6772ddad517243"><div class="ttname"><a href="namespacelipsum.html#ad8f57d31a824ad2fee6772ddad517243">lipsum::GenerateParagraph</a></div><div class="ttdeci">LIPSUM_API std::string GenerateParagraph(const ArgVec2 &amp;word=ArgVec2(4, 9), const ArgVec2 &amp;frag=ArgVec2(1, 3), const ArgVec2 &amp;sent=ArgVec2(5, 8), bool useLipsum=true, const Source &amp;source=Source())</div><div class="ttdoc">Generate a random paragraph.</div><div class="ttdef"><b>Definition</b> core_funcs.inl:152</div></div>
 <div class="ttc" id="astructlipsum_1_1ArgVec2_html"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></div><div class="ttdoc">Store data for inputting into functions.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:27</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

@@ -1,5 +1,7 @@
 <map id="src/lipsum/core_funcs.inl" name="src/lipsum/core_funcs.inl">
 <area shape="rect" id="Node000001" title="Core functions of lipsum&#45;cpp." alt="" coords="5,5,188,31"/>
-<area shape="rect" id="Node000002" href="$sample_8inl.html" title="File containing all of the words used by lipsum::GenerateWord()" alt="" coords="51,79,142,104"/>
+<area shape="rect" id="Node000002" href="$internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="31,79,163,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,31,99,65,94,65,94,31"/>
+<area shape="rect" id="Node000003" href="$core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="57,152,136,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,104,99,138,94,138,94,104"/>
 </map>

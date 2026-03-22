@@ -32,7 +32,7 @@ var searchData=
   ['generateurlx_29',['GenerateURLX',['../namespacelipsum.html#a4a2f26ad1ad7207f840922713919459d',1,'lipsum']]],
   ['generateword_30',['GenerateWord',['../namespacelipsum.html#a780f5bb25e1a949e6b86713d736c0d3f',1,'lipsum']]],
   ['generatewords_31',['GenerateWords',['../namespacelipsum.html#aa76af6b2ca6c3b4191e99ff1357a845e',1,'lipsum']]],
-  ['generator_32',['Generator',['../classlipsum_1_1Generator.html',1,'lipsum']]],
+  ['generator_32',['generator',['../classlipsum_1_1Generator.html#a511afc093c8e9720d06e605540a75613',1,'lipsum::Generator::Generator(const std::string &amp;path)'],['../classlipsum_1_1Generator.html#a06bce7e2b6d946ae23844c2afee9249d',1,'lipsum::Generator::Generator()=default'],['../classlipsum_1_1Generator.html',1,'lipsum::Generator']]],
   ['generator_2ehpp_33',['generator.hpp',['../generator_8hpp.html',1,'']]],
   ['generator_2einl_34',['generator.inl',['../generator_8inl.html',1,'']]]
 ];

@@ -1,0 +1,8 @@
+<map id="src/lipsumc/sfuncs.h" name="src/lipsumc/sfuncs.h">
+<area shape="rect" id="Node000001" title="S functions of lipsum&#45;cpp C wrapper." alt="" coords="5,5,160,31"/>
+<area shape="rect" id="Node000002" href="$core_8h.html" title="Core macros for lipsum&#45;cpp C wrapper." alt="" coords="51,152,114,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,31,74,64,72,104,78,138,73,139,67,104,69,63,76,30"/>
+<area shape="rect" id="Node000003" href="$binded_8h.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="82,79,161,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="91,30,111,65,106,68,87,32"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="117,106,98,141,93,139,113,103"/>
+</map>
