@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['word_0',['word',['../classlipsum_1_1Generator.html#a68b5cb4d06b114f56fc66a37dea9f232',1,'lipsum::Generator']]]
+  ['paragraph_0',['paragraph',['../classlipsum_1_1Generator.html#afe118671993dcce93ff04d9fb5a2c2d2',1,'lipsum::Generator']]]
 ];

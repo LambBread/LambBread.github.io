@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.2</span>
    </div>
-   <div id="projectbrief">A C++/C library for generating sample text</div>
+   <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
  </tr>
  </tbody>
@@ -116,7 +116,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>OOP layer over lipsum-cpp. </p>
 <dl class="section since"><dt>Since</dt><dd>0.2.0</dd></dl>
-<p>This provides a more user-friendly object-oriented layer over lipsum-cpp. It uses mainly default arguments. Unlike most of the codebase which uses PascalCase, the functions in this class use snake_case. </p>
+<p>This provides a more user-friendly object-oriented layer over lipsum-cpp. It uses mainly default arguments. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#_a0">Advanced.cpp</a>, <a class="el" href="Basic_8cpp-example.html#_a0">Basic.cpp</a>, <a class="el" href="Markdown_8cpp-example.html#_a0">Markdown.cpp</a>, and <a class="el" href="Source_8cpp-example.html#_a3">Source.cpp</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -167,7 +167,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.1</dd></dl>
-<p>This loads the specified lorem ipsum source into m_Source.</p>
+<p>This loads the specified lorem ipsum source into m_Source. If path is invalid, it will print a warning and default to the standard lorem-ipsum source.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The filepath of the lorem ipsum source. </td></tr>

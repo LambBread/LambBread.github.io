@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.2</span>
    </div>
-   <div id="projectbrief">A C++/C library for generating sample text</div>
+   <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
  </tr>
  </tbody>
@@ -83,21 +83,27 @@ $(document).ready(function() { init_codefold(0); });
 </div><!--header-->
 <div class="contents">
 <a href="misc_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="core_8hpp.html">core/core.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelipsum.html">lipsum</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e">CountWords</a>(<span class="keyword">const</span> std::string&amp; str);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f">CountSentences</a>(<span class="keyword">const</span> std::string&amp; str);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} <span class="comment">// namespace lipsum</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifndef LIPSUM_MISC_HPP</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#    define LIPSUM_MISC_HPP</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#    include &quot;<a class="code" href="core_8hpp.html">core/core.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelipsum.html">lipsum</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e">CountWords</a>(<span class="keyword">const</span> std::string&amp; str);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f">CountSentences</a>(<span class="keyword">const</span> std::string&amp; str);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>} <span class="comment">// namespace lipsum</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acore_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Core macros for lipsum-cpp.</div></div>
-<div class="ttc" id="acore_8hpp_html_a7cba6c9f4b913ff7f5d2879fc6de6f35"><div class="ttname"><a href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a></div><div class="ttdeci">#define LIPSUM_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> core.hpp:79</div></div>
+<div class="ttc" id="acore_8hpp_html_a7cba6c9f4b913ff7f5d2879fc6de6f35"><div class="ttname"><a href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a></div><div class="ttdeci">#define LIPSUM_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> core.hpp:44</div></div>
 <div class="ttc" id="anamespacelipsum_html"><div class="ttname"><a href="namespacelipsum.html">lipsum</a></div><div class="ttdoc">This is the main namespace of lipsum-cpp.</div></div>
-<div class="ttc" id="anamespacelipsum_html_a146896373a78c16daaf8f9b20334a38f"><div class="ttname"><a href="namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f">lipsum::CountSentences</a></div><div class="ttdeci">LIPSUM_API int CountSentences(const std::string &amp;str)</div><div class="ttdoc">Count the number of sentences in a string.</div><div class="ttdef"><b>Definition</b> misc.inl:32</div></div>
-<div class="ttc" id="anamespacelipsum_html_a3674a1f6d0c8ec15826ba174e7cab97e"><div class="ttname"><a href="namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e">lipsum::CountWords</a></div><div class="ttdeci">LIPSUM_API int CountWords(const std::string &amp;str)</div><div class="ttdoc">Count the number of words in a string.</div><div class="ttdef"><b>Definition</b> misc.inl:20</div></div>
+<div class="ttc" id="anamespacelipsum_html_a146896373a78c16daaf8f9b20334a38f"><div class="ttname"><a href="namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f">lipsum::CountSentences</a></div><div class="ttdeci">LIPSUM_API int CountSentences(const std::string &amp;str)</div><div class="ttdoc">Count the number of sentences in a string.</div><div class="ttdef"><b>Definition</b> misc.inl:34</div></div>
+<div class="ttc" id="anamespacelipsum_html_a3674a1f6d0c8ec15826ba174e7cab97e"><div class="ttname"><a href="namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e">lipsum::CountWords</a></div><div class="ttdeci">LIPSUM_API int CountWords(const std::string &amp;str)</div><div class="ttdoc">Count the number of words in a string.</div><div class="ttdef"><b>Definition</b> misc.inl:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

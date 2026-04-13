@@ -6,10 +6,12 @@
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,32,159,67,155,65,172,30"/>
 <area shape="rect" id="Node000004" href="$binded_8h.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="149,152,283,177"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,30,212,138,207,139,180,32"/>
-<area shape="rect" id="Node000006" href="$sfuncs_8h.html" title="S functions of lipsum&#45;cpp C wrapper." alt="" coords="253,79,384,104"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="203,28,285,70,283,75,201,33"/>
+<area shape="rect" id="Node000007" href="$sfuncs_8h.html" title="S functions of lipsum&#45;cpp C wrapper." alt="" coords="253,79,384,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="203,28,285,70,283,75,201,33"/>
 <area shape="rect" id="Node000005" href="$core_8h.html" title="Core macros for lipsum&#45;cpp C wrapper." alt="" coords="237,225,299,251"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="227,176,254,213,249,216,222,179"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="304,106,246,146,243,142,301,102"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="318,105,297,178,282,214,277,212,292,176,313,104"/>
+<area shape="rect" id="Node000006" href="$version_8h.html" title="Version macros for lipsum&#45;cpp." alt="" coords="227,299,309,324"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="271,251,271,285,265,285,265,251"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="304,106,246,146,243,142,301,102"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="318,105,297,178,282,214,277,212,292,176,313,104"/>
 </map>

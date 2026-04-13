@@ -2,4 +2,6 @@
 <area shape="rect" id="Node000001" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="5,5,157,31"/>
 <area shape="rect" id="Node000002" href="$core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="26,79,137,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,31,84,65,79,65,79,31"/>
+<area shape="rect" id="Node000003" href="$version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="32,152,131,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,104,84,138,79,138,79,104"/>
 </map>

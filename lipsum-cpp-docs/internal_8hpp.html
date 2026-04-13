@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.2</span>
    </div>
-   <div id="projectbrief">A C++/C library for generating sample text</div>
+   <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
  </tr>
  </tbody>
@@ -93,6 +93,8 @@ Include dependency graph for internal.hpp:</div>
 <area shape="rect" title="Declaration of lipsum::internal." alt="" coords="5,5,208,31"/>
 <area shape="rect" href="core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="67,79,146,104"/>
 <area shape="poly" title=" " alt="" coords="109,31,109,65,104,65,104,31"/>
+<area shape="rect" href="version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="57,152,156,177"/>
+<area shape="poly" title=" " alt="" coords="109,104,109,138,104,138,104,104"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -124,15 +126,18 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacelipsum" id="r_namespacelipsum"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html">lipsum</a></td></tr>
-<tr class="memdesc:namespacelipsum"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the main namespace of lipsum-cpp. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacelipsum_1_1internal" id="r_namespacelipsum_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html">lipsum::internal</a></td></tr>
 <tr class="memdesc:namespacelipsum_1_1internal"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace contains functions only used internally by other functions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacelipsum" id="r_namespacelipsum"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html">lipsum</a></td></tr>
+<tr class="memdesc:namespacelipsum"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the main namespace of lipsum-cpp. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:aa769189edf774ffa1726cd5e79e36cf6" id="r_aa769189edf774ffa1726cd5e79e36cf6"><td class="memItemLeft" align="right" valign="top"><a id="aa769189edf774ffa1726cd5e79e36cf6" name="aa769189edf774ffa1726cd5e79e36cf6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIPSUM_CORE_INTERNAL_HPP</b></td></tr>
+<tr class="separator:aa769189edf774ffa1726cd5e79e36cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cf7f83baedc66a4b69d1927675f1f5d" id="r_a4cf7f83baedc66a4b69d1927675f1f5d"><td class="memItemLeft" align="right" valign="top"><a id="a4cf7f83baedc66a4b69d1927675f1f5d" name="a4cf7f83baedc66a4b69d1927675f1f5d"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>LPSM_FLIP_COIN</b>&#160;&#160;&#160;lpsm::internal::RandomNumber&lt;bool&gt;(false, true)</td></tr>
 <tr class="memdesc:a4cf7f83baedc66a4b69d1927675f1f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose between true or false. <br /></td></tr>
@@ -146,22 +151,26 @@ Functions</h2></td></tr>
 <tr class="memitem:a9563955f371ff9dbf5a50a29c9e1f854" id="r_a9563955f371ff9dbf5a50a29c9e1f854"><td class="memItemLeft" align="right" valign="top"><a id="a9563955f371ff9dbf5a50a29c9e1f854" name="a9563955f371ff9dbf5a50a29c9e1f854"></a>
 <a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><b>lipsum::internal::HandleHTMLEntity</b> (const std::string &amp;str)</td></tr>
 <tr class="separator:a9563955f371ff9dbf5a50a29c9e1f854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8e625c3de86178028328f52432698d" id="r_a8d8e625c3de86178028328f52432698d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a8d8e625c3de86178028328f52432698d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">lipsum::internal::LogWarn</a> (const Args &amp;... args)</td></tr>
+<tr class="memdesc:a8d8e625c3de86178028328f52432698d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a warning.  <br /></td></tr>
+<tr class="separator:a8d8e625c3de86178028328f52432698d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37fc250e5668a7429596d04e60a4089e" id="r_a37fc250e5668a7429596d04e60a4089e"><td class="memTemplParams" colspan="2"><a id="a37fc250e5668a7429596d04e60a4089e" name="a37fc250e5668a7429596d04e60a4089e"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a37fc250e5668a7429596d04e60a4089e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::RandomNumber</b> (T min, T max)</td></tr>
 <tr class="separator:a37fc250e5668a7429596d04e60a4089e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2577fb54919de00b804031da03831e54" id="r_a2577fb54919de00b804031da03831e54"><td class="memItemLeft" align="right" valign="top"><a id="a2577fb54919de00b804031da03831e54" name="a2577fb54919de00b804031da03831e54"></a>
 template&lt;&gt; </td></tr>
-<tr class="memitem:a2577fb54919de00b804031da03831e54"><td class="memTemplItemLeft" align="right" valign="top">char&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::RandomNumber</b> (char min, char max)</td></tr>
+<tr class="memitem:a2577fb54919de00b804031da03831e54"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> char&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::RandomNumber</b> (char min, char max)</td></tr>
 <tr class="separator:a2577fb54919de00b804031da03831e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb66c1def8ca08c24f4913868cb75df" id="r_a6bb66c1def8ca08c24f4913868cb75df"><td class="memItemLeft" align="right" valign="top"><a id="a6bb66c1def8ca08c24f4913868cb75df" name="a6bb66c1def8ca08c24f4913868cb75df"></a>
 template&lt;&gt; </td></tr>
-<tr class="memitem:a6bb66c1def8ca08c24f4913868cb75df"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::RandomNumber</b> (bool min, bool max)</td></tr>
+<tr class="memitem:a6bb66c1def8ca08c24f4913868cb75df"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::RandomNumber</b> (bool min, bool max)</td></tr>
 <tr class="separator:a6bb66c1def8ca08c24f4913868cb75df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33ff1d042f71d6208b718ff77ff5cf8d" id="r_a33ff1d042f71d6208b718ff77ff5cf8d"><td class="memTemplParams" colspan="2"><a id="a33ff1d042f71d6208b718ff77ff5cf8d" name="a33ff1d042f71d6208b718ff77ff5cf8d"></a>
+<tr class="memitem:aaea80c5a213c02e60028c01af4b2197b" id="r_aaea80c5a213c02e60028c01af4b2197b"><td class="memTemplParams" colspan="2"><a id="aaea80c5a213c02e60028c01af4b2197b" name="aaea80c5a213c02e60028c01af4b2197b"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a33ff1d042f71d6208b718ff77ff5cf8d"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::ToString</b> (const T &amp;x)</td></tr>
-<tr class="separator:a33ff1d042f71d6208b718ff77ff5cf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea80c5a213c02e60028c01af4b2197b"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::ToString</b> (const T &amp;str)</td></tr>
+<tr class="separator:aaea80c5a213c02e60028c01af4b2197b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of <a class="el" href="namespacelipsum_1_1internal.html" title="This namespace contains functions only used internally by other functions.">lipsum::internal</a>. </p>

@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.2</span>
    </div>
-   <div id="projectbrief">A C++/C library for generating sample text</div>
+   <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
  </tr>
  </tbody>
@@ -85,39 +85,30 @@ $(document).ready(function() { init_codefold(0); });
 <a href="core_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="core_8hpp.html#a12b5cb549d4ca1d08201986506ade9e3">   23</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="core_8hpp.html#a12b5cb549d4ca1d08201986506ade9e3">LIPSUM_CPP_VERSION</a> = <span class="stringliteral">&quot;0.4.1&quot;</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// #define LIPSUM_CPP_VERSION &quot;0.4.0&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="core_8hpp.html#afbe11f13657836b6cabba75332b182cc">   33</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="core_8hpp.html#afbe11f13657836b6cabba75332b182cc">LIPSUM_CPP_VERSION_MAJOR</a> = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// #define LIPSUM_CPP_VERSION_MAJOR 0</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="core_8hpp.html#aeabee292ef71b0fed70b284e981f96a7">   43</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="core_8hpp.html#aeabee292ef71b0fed70b284e981f96a7">LIPSUM_CPP_VERSION_MINOR</a> = 4;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// #define LIPSUM_CPP_VERSION_MINOR 4</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="core_8hpp.html#af6195d5b645f66f23e029dc2fec273a0">   53</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="core_8hpp.html#af6195d5b645f66f23e029dc2fec273a0">LIPSUM_CPP_VERSION_PATCH</a> = 1;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// #define LIPSUM_CPP_VERSION_PATCH 0</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#ifndef __cplusplus</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#    error lipsum.hpp only supports C++, did you mean lipsum.h?</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#ifdef LIPSUM_BUILD_SHARED</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#    ifdef _WIN32</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#        ifdef LIPSUM_EXPORT_SHARED</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#            define LIPSUM_API __declspec(dllexport)</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#        else</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#            define LIPSUM_API __declspec(dllimport)</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#        endif</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#    else</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#        define LIPSUM_API</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#    endif</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">   79</a></span><span class="preprocessor">#    define LIPSUM_API</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="acore_8hpp_html_a12b5cb549d4ca1d08201986506ade9e3"><div class="ttname"><a href="core_8hpp.html#a12b5cb549d4ca1d08201986506ade9e3">LIPSUM_CPP_VERSION</a></div><div class="ttdeci">constexpr const char * LIPSUM_CPP_VERSION</div><div class="ttdoc">The current version of lipsum-cpp.</div><div class="ttdef"><b>Definition</b> core.hpp:23</div></div>
-<div class="ttc" id="acore_8hpp_html_aeabee292ef71b0fed70b284e981f96a7"><div class="ttname"><a href="core_8hpp.html#aeabee292ef71b0fed70b284e981f96a7">LIPSUM_CPP_VERSION_MINOR</a></div><div class="ttdeci">constexpr int LIPSUM_CPP_VERSION_MINOR</div><div class="ttdoc">The minor version of lipsum-cpp.</div><div class="ttdef"><b>Definition</b> core.hpp:43</div></div>
-<div class="ttc" id="acore_8hpp_html_af6195d5b645f66f23e029dc2fec273a0"><div class="ttname"><a href="core_8hpp.html#af6195d5b645f66f23e029dc2fec273a0">LIPSUM_CPP_VERSION_PATCH</a></div><div class="ttdeci">constexpr int LIPSUM_CPP_VERSION_PATCH</div><div class="ttdoc">The patch version of lipsum-cpp.</div><div class="ttdef"><b>Definition</b> core.hpp:53</div></div>
-<div class="ttc" id="acore_8hpp_html_afbe11f13657836b6cabba75332b182cc"><div class="ttname"><a href="core_8hpp.html#afbe11f13657836b6cabba75332b182cc">LIPSUM_CPP_VERSION_MAJOR</a></div><div class="ttdeci">constexpr int LIPSUM_CPP_VERSION_MAJOR</div><div class="ttdoc">The major version of lipsum-cpp.</div><div class="ttdef"><b>Definition</b> core.hpp:33</div></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifndef LIPSUM_CORE_CORE_HPP</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#    define LIPSUM_CORE_CORE_HPP</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#    include &quot;<a class="code" href="version_8hpp.html">version.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#    ifndef __cplusplus</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#        error lipsum.hpp only supports C++, did you mean lipsum.h?</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#    endif</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#    ifdef LIPSUM_BUILD_SHARED</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#        ifdef _WIN32</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#            ifdef LIPSUM_EXPORT_SHARED</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#                define LIPSUM_API __declspec(dllexport)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#            else</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#                define LIPSUM_API __declspec(dllimport)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#            endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#        else</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#            define LIPSUM_API</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#        endif</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#    else</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">   44</a></span><span class="preprocessor">#        define LIPSUM_API</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#    endif</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aversion_8hpp_html"><div class="ttname"><a href="version_8hpp.html">version.hpp</a></div><div class="ttdoc">Version constants for lipsum-cpp.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
