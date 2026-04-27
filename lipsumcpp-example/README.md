@@ -11,7 +11,6 @@ These are live examples for [the lipsum-cpp repo](https://github.com/LambBread/l
 - [GenerateSentences](https://lambbread.github.io/lipsumcpp-example/GenerateSentences.html)
 - [GenerateSlug](https://lambbread.github.io/lipsumcpp-example/GenerateSlug.html)
 - [GenerateText](https://lambbread.github.io/lipsumcpp-example/GenerateText.html)
-- [GenerateURL](https://lambbread.github.io/lipsumcpp-example/GenerateURL.html)
 - [GenerateWord](https://lambbread.github.io/lipsumcpp-example/GenerateWord.html)
 - [GenerateWords](https://lambbread.github.io/lipsumcpp-example/GenerateWords.html)
 - [Generator](https://lambbread.github.io/lipsumcpp-examole/Generator.html)
