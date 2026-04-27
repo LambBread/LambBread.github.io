@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['random_5fword_0',['random_word',['../classlipsum_1_1Source.html#a2eeae1cd56db60190503e2ab87eb2802',1,'lipsum::Source']]],
-  ['roll_1',['roll',['../structlipsum_1_1ArgVec2.html#add4fa7eb2a8c099e73e74fd810be3b53',1,'lipsum::ArgVec2']]]
+  ['md_5fparagraph_0',['md_paragraph',['../classlipsum_1_1Generator.html#a33f095b8a70b8425bd94b82f59ad387b',1,'lipsum::Generator']]],
+  ['md_5ftext_1',['md_text',['../classlipsum_1_1Generator.html#a4a9d99194fac2cfb0d979bbe9bead123',1,'lipsum::Generator']]]
 ];

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.2</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -102,17 +102,21 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="internal_8hpp__dep__incl.png" border="0" usemap="#asrc_2lipsum_2core_2internal_8hppdep" alt=""/></div>
 <map name="asrc_2lipsum_2core_2internal_8hppdep" id="asrc_2lipsum_2core_2internal_8hppdep">
-<area shape="rect" title="Declaration of lipsum::internal." alt="" coords="579,5,781,31"/>
+<area shape="rect" title="Declaration of lipsum::internal." alt="" coords="788,5,991,31"/>
 <area shape="rect" href="lipsum_8hpp.html" title="Main header of lipsum&#45;cpp." alt="" coords="223,79,340,104"/>
-<area shape="poly" title=" " alt="" coords="603,36,340,82,340,77,602,30"/>
+<area shape="poly" title=" " alt="" coords="774,33,577,54,352,81,341,83,340,78,352,76,576,49,774,28"/>
 <area shape="rect" href="argvec2_8inl.html" title="Definition of lipsum::ArgVec2." alt="" coords="364,79,561,104"/>
-<area shape="poly" title=" " alt="" coords="633,37,499,81,497,76,631,32"/>
+<area shape="poly" title=" " alt="" coords="808,36,532,81,531,76,807,30"/>
 <area shape="rect" href="source_8inl.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="586,79,774,104"/>
-<area shape="poly" title=" " alt="" coords="683,44,683,79,677,79,677,44"/>
+<area shape="poly" title=" " alt="" coords="843,38,715,81,713,76,842,33"/>
 <area shape="rect" href="core__funcs_8inl.html" title="Core functions of lipsum&#45;cpp." alt="" coords="798,79,981,104"/>
-<area shape="poly" title=" " alt="" coords="728,33,856,76,855,81,726,38"/>
-<area shape="rect" href="markdown_8inl.html" title="Markdown functions of lipsum&#45;cpp." alt="" coords="1005,79,1187,104"/>
-<area shape="poly" title=" " alt="" coords="760,30,1029,76,1029,81,760,36"/>
+<area shape="poly" title=" " alt="" coords="892,44,892,79,887,79,887,44"/>
+<area shape="rect" href="generator_8inl.html" title="Definition of lipsum::Generator." alt="" coords="1005,79,1179,104"/>
+<area shape="poly" title=" " alt="" coords="935,33,1060,76,1058,81,934,38"/>
+<area shape="rect" href="markdown_8inl.html" title="Markdown functions of lipsum&#45;cpp." alt="" coords="1203,79,1386,104"/>
+<area shape="poly" title=" " alt="" coords="968,30,1230,76,1229,81,967,36"/>
+<area shape="rect" href="misc_8inl.html" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="1411,79,1555,104"/>
+<area shape="poly" title=" " alt="" coords="1005,29,1399,76,1411,78,1410,83,1398,81,1004,35"/>
 <area shape="rect" href="lipsum__binding__js_8cpp.html" title="JS binding over lipsum&#45;cpp." alt="" coords="5,152,192,192"/>
 <area shape="poly" title=" " alt="" coords="243,112,144,154,142,149,241,107"/>
 <area shape="rect" href="lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="216,159,347,185"/>
@@ -139,38 +143,41 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>LIPSUM_CORE_INTERNAL_HPP</b></td></tr>
 <tr class="separator:aa769189edf774ffa1726cd5e79e36cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cf7f83baedc66a4b69d1927675f1f5d" id="r_a4cf7f83baedc66a4b69d1927675f1f5d"><td class="memItemLeft" align="right" valign="top"><a id="a4cf7f83baedc66a4b69d1927675f1f5d" name="a4cf7f83baedc66a4b69d1927675f1f5d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LPSM_FLIP_COIN</b>&#160;&#160;&#160;lpsm::internal::RandomNumber&lt;bool&gt;(false, true)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LPSM_FLIP_COIN</b>&#160;&#160;&#160;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">lpsm::internal::RandomNumber</a>&lt;bool&gt;(false, true)</td></tr>
 <tr class="memdesc:a4cf7f83baedc66a4b69d1927675f1f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose between true or false. <br /></td></tr>
 <tr class="separator:a4cf7f83baedc66a4b69d1927675f1f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a688085113dec332dd31558794fd6d7d2" id="r_a688085113dec332dd31558794fd6d7d2"><td class="memItemLeft" align="right" valign="top"><a id="a688085113dec332dd31558794fd6d7d2" name="a688085113dec332dd31558794fd6d7d2"></a>
-<a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><b>lipsum::internal::GenerateTLD</b> ()</td></tr>
+<tr class="memitem:a688085113dec332dd31558794fd6d7d2" id="r_a688085113dec332dd31558794fd6d7d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a688085113dec332dd31558794fd6d7d2">lipsum::internal::GenerateTLD</a> ()</td></tr>
+<tr class="memdesc:a688085113dec332dd31558794fd6d7d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pick a random TLD.  <br /></td></tr>
 <tr class="separator:a688085113dec332dd31558794fd6d7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9563955f371ff9dbf5a50a29c9e1f854" id="r_a9563955f371ff9dbf5a50a29c9e1f854"><td class="memItemLeft" align="right" valign="top"><a id="a9563955f371ff9dbf5a50a29c9e1f854" name="a9563955f371ff9dbf5a50a29c9e1f854"></a>
-<a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><b>lipsum::internal::HandleHTMLEntity</b> (const std::string &amp;str)</td></tr>
+<tr class="memitem:a9563955f371ff9dbf5a50a29c9e1f854" id="r_a9563955f371ff9dbf5a50a29c9e1f854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a9563955f371ff9dbf5a50a29c9e1f854">lipsum::internal::HandleHTMLEntity</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a9563955f371ff9dbf5a50a29c9e1f854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle HTML entities.  <br /></td></tr>
 <tr class="separator:a9563955f371ff9dbf5a50a29c9e1f854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8e625c3de86178028328f52432698d" id="r_a8d8e625c3de86178028328f52432698d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a8d8e625c3de86178028328f52432698d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">lipsum::internal::LogWarn</a> (const Args &amp;... args)</td></tr>
 <tr class="memdesc:a8d8e625c3de86178028328f52432698d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a warning.  <br /></td></tr>
 <tr class="separator:a8d8e625c3de86178028328f52432698d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37fc250e5668a7429596d04e60a4089e" id="r_a37fc250e5668a7429596d04e60a4089e"><td class="memTemplParams" colspan="2"><a id="a37fc250e5668a7429596d04e60a4089e" name="a37fc250e5668a7429596d04e60a4089e"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a37fc250e5668a7429596d04e60a4089e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::RandomNumber</b> (T min, T max)</td></tr>
+<tr class="memitem:a37fc250e5668a7429596d04e60a4089e" id="r_a37fc250e5668a7429596d04e60a4089e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a37fc250e5668a7429596d04e60a4089e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">lipsum::internal::RandomNumber</a> (T min, T max)</td></tr>
+<tr class="memdesc:a37fc250e5668a7429596d04e60a4089e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random number.  <br /></td></tr>
 <tr class="separator:a37fc250e5668a7429596d04e60a4089e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2577fb54919de00b804031da03831e54" id="r_a2577fb54919de00b804031da03831e54"><td class="memItemLeft" align="right" valign="top"><a id="a2577fb54919de00b804031da03831e54" name="a2577fb54919de00b804031da03831e54"></a>
-template&lt;&gt; </td></tr>
-<tr class="memitem:a2577fb54919de00b804031da03831e54"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> char&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::RandomNumber</b> (char min, char max)</td></tr>
+<tr class="memitem:a2577fb54919de00b804031da03831e54" id="r_a2577fb54919de00b804031da03831e54"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a2577fb54919de00b804031da03831e54"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> char&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a2577fb54919de00b804031da03831e54">lipsum::internal::RandomNumber</a> (char min, char max)</td></tr>
+<tr class="memdesc:a2577fb54919de00b804031da03831e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for char.  <br /></td></tr>
 <tr class="separator:a2577fb54919de00b804031da03831e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb66c1def8ca08c24f4913868cb75df" id="r_a6bb66c1def8ca08c24f4913868cb75df"><td class="memItemLeft" align="right" valign="top"><a id="a6bb66c1def8ca08c24f4913868cb75df" name="a6bb66c1def8ca08c24f4913868cb75df"></a>
-template&lt;&gt; </td></tr>
-<tr class="memitem:a6bb66c1def8ca08c24f4913868cb75df"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::RandomNumber</b> (bool min, bool max)</td></tr>
+<tr class="memitem:a6bb66c1def8ca08c24f4913868cb75df" id="r_a6bb66c1def8ca08c24f4913868cb75df"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a6bb66c1def8ca08c24f4913868cb75df"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a6bb66c1def8ca08c24f4913868cb75df">lipsum::internal::RandomNumber</a> (bool min, bool max)</td></tr>
+<tr class="memdesc:a6bb66c1def8ca08c24f4913868cb75df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for bool.  <br /></td></tr>
 <tr class="separator:a6bb66c1def8ca08c24f4913868cb75df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaea80c5a213c02e60028c01af4b2197b" id="r_aaea80c5a213c02e60028c01af4b2197b"><td class="memTemplParams" colspan="2"><a id="aaea80c5a213c02e60028c01af4b2197b" name="aaea80c5a213c02e60028c01af4b2197b"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aaea80c5a213c02e60028c01af4b2197b"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lipsum::internal::ToString</b> (const T &amp;str)</td></tr>
-<tr class="separator:aaea80c5a213c02e60028c01af4b2197b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedab19bcab90edbe5c75525dd94d552a" id="r_aedab19bcab90edbe5c75525dd94d552a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#aedab19bcab90edbe5c75525dd94d552a">lipsum::internal::WeightedRandomIdx</a> (const std::vector&lt; int &gt; &amp;weights)</td></tr>
+<tr class="memdesc:aedab19bcab90edbe5c75525dd94d552a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose a random index based off weights.  <br /></td></tr>
+<tr class="separator:aedab19bcab90edbe5c75525dd94d552a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08bc68d8b0434edc0c6382c15e7c413" id="r_ac08bc68d8b0434edc0c6382c15e7c413"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac08bc68d8b0434edc0c6382c15e7c413"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#ac08bc68d8b0434edc0c6382c15e7c413">lipsum::internal::ToString</a> (const T &amp;param)</td></tr>
+<tr class="memdesc:ac08bc68d8b0434edc0c6382c15e7c413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an object to a string.  <br /></td></tr>
+<tr class="separator:ac08bc68d8b0434edc0c6382c15e7c413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of <a class="el" href="namespacelipsum_1_1internal.html" title="This namespace contains functions only used internally by other functions.">lipsum::internal</a>. </p>

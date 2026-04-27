@@ -1,21 +1,28 @@
 <map id="src/lipsum/generator.inl" name="src/lipsum/generator.inl">
-<area shape="rect" id="Node000001" title="Definition of lipsum::Generator." alt="" coords="95,5,270,31"/>
-<area shape="rect" id="Node000002" href="$argvec2_8hpp.html" title="Declaration of lipsum::ArgVec2." alt="" coords="173,152,307,177"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,30,212,103,229,139,224,141,207,105,183,32"/>
-<area shape="rect" id="Node000005" href="$core__funcs_8hpp.html" title="Core functions of lipsum&#45;cpp." alt="" coords="25,79,145,104"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="168,33,114,72,111,68,165,29"/>
-<area shape="rect" id="Node000007" href="$markdown_8hpp.html" title="Markdown functions of lipsum&#45;cpp." alt="" coords="221,79,339,104"/>
-<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="200,29,254,68,251,72,197,33"/>
-<area shape="rect" id="Node000003" href="$core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="123,225,202,251"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,179,187,218,184,214,226,175"/>
-<area shape="rect" id="Node000004" href="$version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="113,299,212,324"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="165,251,165,285,160,285,160,251"/>
-<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="111,102,203,144,201,149,109,106"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="63,106,40,120,20,138,9,157,9,166,13,176,32,196,57,211,84,222,111,229,109,234,82,227,54,216,29,201,8,179,3,167,4,155,16,134,37,116,60,102"/>
-<area shape="rect" id="Node000006" href="$source_8hpp.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="23,152,148,177"/>
-<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="88,104,88,138,83,138,83,104"/>
-<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="99,175,141,214,138,218,96,179"/>
-<area shape="poly" id="edge11_Node000007_Node000002" title=" " alt="" coords="276,106,255,141,251,139,271,103"/>
-<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="295,102,309,118,321,137,328,158,322,179,300,201,274,217,244,228,216,235,215,229,243,223,271,213,297,197,318,176,322,158,317,139,304,121,291,106"/>
-<area shape="poly" id="edge12_Node000007_Node000006" title=" " alt="" coords="249,107,131,150,129,145,248,102"/>
+<area shape="rect" id="Node000001" title="Definition of lipsum::Generator." alt="" coords="207,5,381,31"/>
+<area shape="rect" id="Node000002" href="$internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="5,152,137,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,33,208,53,157,81,120,111,91,143,87,139,117,108,154,76,206,48,256,28"/>
+<area shape="rect" id="Node000005" href="$core__funcs_8hpp.html" title="Core functions of lipsum&#45;cpp." alt="" coords="167,79,287,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="285,33,249,70,246,67,281,29"/>
+<area shape="rect" id="Node000008" href="$formats_8hpp.html" title="JSON/XML functions of lipsum&#45;cpp." alt="" coords="311,79,413,104"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="307,29,343,67,339,70,303,33"/>
+<area shape="rect" id="Node000009" href="$markdown_8hpp.html" title="Markdown functions of lipsum&#45;cpp." alt="" coords="437,79,556,104"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="327,28,452,72,450,77,326,33"/>
+<area shape="rect" id="Node000003" href="$core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="319,225,397,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,175,306,221,305,226,117,180"/>
+<area shape="rect" id="Node000004" href="$version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="309,299,407,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="361,251,361,285,355,285,355,251"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="220,105,201,139,197,158,203,176,223,197,249,213,278,223,306,229,305,235,276,228,247,217,220,201,198,179,192,159,196,138,216,103"/>
+<area shape="rect" id="Node000006" href="$argvec2_8hpp.html" title="Declaration of lipsum::ArgVec2." alt="" coords="213,152,348,177"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="238,103,266,140,262,143,234,106"/>
+<area shape="rect" id="Node000007" href="$source_8hpp.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="373,152,498,177"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="262,101,389,145,388,150,260,107"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="295,175,337,214,333,218,291,179"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="425,179,383,218,379,214,421,175"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="414,99,455,110,493,126,507,136,517,149,519,163,512,179,492,201,466,216,438,227,411,234,410,229,437,222,464,211,488,196,508,176,513,162,512,151,504,140,491,131,454,115,412,104"/>
+<area shape="poly" id="edge12_Node000008_Node000006" title=" " alt="" coords="351,106,306,145,302,141,347,102"/>
+<area shape="poly" id="edge13_Node000008_Node000007" title=" " alt="" coords="376,102,415,140,412,144,372,106"/>
+<area shape="poly" id="edge15_Node000009_Node000003" title=" " alt="" coords="511,103,524,118,535,138,541,159,535,179,509,204,478,221,444,231,412,237,411,232,443,226,476,216,506,200,530,176,536,158,531,140,519,121,507,106"/>
+<area shape="poly" id="edge16_Node000009_Node000006" title=" " alt="" coords="463,107,329,150,328,145,461,101"/>
+<area shape="poly" id="edge17_Node000009_Node000007" title=" " alt="" coords="489,106,456,143,452,140,485,103"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="lipsum::Generator" name="lipsum::Generator">
+<area shape="rect" id="Node000001" title="OOP layer over lipsum&#45;cpp." alt="" coords="73,240,211,265"/>
+<area shape="rect" id="Node000002" href="$structlipsum_1_1ArgVec2.html" title="Store data for inputting into functions." alt="" coords="5,5,132,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,45,67,80,69,124,78,171,96,215,107,228,121,238,118,242,103,231,92,217,73,173,64,125,62,80,63,44"/>
+<area shape="rect" id="Node000003" href="$classlipsum_1_1Source.html" title="Class for multi&#45;source generation." alt="" coords="156,5,275,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,44,220,80,217,125,207,172,188,217,177,231,164,242,161,238,173,227,184,215,202,171,211,124,215,80,215,44"/>
+</map>

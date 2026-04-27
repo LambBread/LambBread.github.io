@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.2</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -84,7 +84,32 @@ $(function() {
 
 <p>Miscellaneous functions of lipsum-cpp.  
 <a href="#details">More...</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="internal_8hpp_source.html">core/internal.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="core__funcs_8hpp_source.html">core_funcs.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for misc.inl:</div>
+<div class="dyncontent">
+<div class="center"><img src="misc_8inl__incl.png" border="0" usemap="#asrc_2lipsum_2misc_8inl" alt=""/></div>
+<map name="asrc_2lipsum_2misc_8inl" id="asrc_2lipsum_2misc_8inl">
+<area shape="rect" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="74,5,218,31"/>
+<area shape="rect" href="internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="5,79,137,104"/>
+<area shape="poly" title=" " alt="" coords="136,33,95,71,92,67,132,29"/>
+<area shape="rect" href="core__funcs_8hpp.html" title="Core functions of lipsum&#45;cpp." alt="" coords="163,79,283,104"/>
+<area shape="poly" title=" " alt="" coords="160,29,202,67,199,71,157,33"/>
+<area shape="rect" href="core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="132,225,211,251"/>
+<area shape="poly" title=" " alt="" coords="82,103,158,213,154,216,77,106"/>
+<area shape="rect" href="version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="122,299,221,324"/>
+<area shape="poly" title=" " alt="" coords="174,251,174,285,169,285,169,251"/>
+<area shape="poly" title=" " alt="" coords="199,106,170,126,157,138,147,153,143,168,145,183,157,213,153,215,140,185,138,167,142,151,153,135,167,121,196,102"/>
+<area shape="rect" href="argvec2_8hpp.html" title="Declaration of lipsum::ArgVec2." alt="" coords="157,152,292,177"/>
+<area shape="poly" title=" " alt="" coords="226,104,227,138,222,139,221,104"/>
+<area shape="rect" href="source_8hpp.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="317,152,442,177"/>
+<area shape="poly" title=" " alt="" coords="249,102,342,144,340,149,247,106"/>
+<area shape="poly" title=" " alt="" coords="218,179,190,216,186,213,214,176"/>
+<area shape="poly" title=" " alt="" coords="347,180,219,223,217,218,345,175"/>
+</map>
+</div>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacelipsum" id="r_namespacelipsum"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html">lipsum</a></td></tr>
@@ -93,6 +118,21 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:acb9f05ef38b7b4e53fba81b239459ddb" id="r_acb9f05ef38b7b4e53fba81b239459ddb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#acb9f05ef38b7b4e53fba81b239459ddb">lipsum::GenerateDefaultLipsumSentence</a> ()</td></tr>
+<tr class="memdesc:acb9f05ef38b7b4e53fba81b239459ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the beginning Lorem Ipsum sentence.  <br /></td></tr>
+<tr class="separator:acb9f05ef38b7b4e53fba81b239459ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4a05d018b3cb168c957edfb995079a" id="r_aba4a05d018b3cb168c957edfb995079a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#aba4a05d018b3cb168c957edfb995079a">lipsum::GenerateScramble</a> (int length=16, char min=' ', char max='~')</td></tr>
+<tr class="memdesc:aba4a05d018b3cb168c957edfb995079a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random character scramble.  <br /></td></tr>
+<tr class="separator:aba4a05d018b3cb168c957edfb995079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b05dec2395e130f0de0be16e2c282e" id="r_a74b05dec2395e130f0de0be16e2c282e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a74b05dec2395e130f0de0be16e2c282e">lipsum::GeneratePlainURL</a> (const <a class="el" href="classlipsum_1_1Source.html">Source</a> &amp;source=<a class="el" href="classlipsum_1_1Source.html">Source</a>())</td></tr>
+<tr class="memdesc:a74b05dec2395e130f0de0be16e2c282e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random plain URL.  <br /></td></tr>
+<tr class="separator:a74b05dec2395e130f0de0be16e2c282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751ad3ebb4e7a6a5583c4517dc3a96d9" id="r_a751ad3ebb4e7a6a5583c4517dc3a96d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a751ad3ebb4e7a6a5583c4517dc3a96d9">lipsum::GenerateURL</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5), const <a class="el" href="classlipsum_1_1Source.html">Source</a> &amp;source=<a class="el" href="classlipsum_1_1Source.html">Source</a>())</td></tr>
+<tr class="memdesc:a751ad3ebb4e7a6a5583c4517dc3a96d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random URL.  <br /></td></tr>
+<tr class="separator:a751ad3ebb4e7a6a5583c4517dc3a96d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bffc0df40c1d1d0ec6ae9865d27e134" id="r_a7bffc0df40c1d1d0ec6ae9865d27e134"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a7bffc0df40c1d1d0ec6ae9865d27e134">lipsum::GenerateSlug</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5), char separator='-', const <a class="el" href="classlipsum_1_1Source.html">Source</a> &amp;source=<a class="el" href="classlipsum_1_1Source.html">Source</a>())</td></tr>
+<tr class="memdesc:a7bffc0df40c1d1d0ec6ae9865d27e134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a slug joined by a specified character.  <br /></td></tr>
+<tr class="separator:a7bffc0df40c1d1d0ec6ae9865d27e134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3674a1f6d0c8ec15826ba174e7cab97e" id="r_a3674a1f6d0c8ec15826ba174e7cab97e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e">lipsum::CountWords</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a3674a1f6d0c8ec15826ba174e7cab97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of words in a string.  <br /></td></tr>
 <tr class="separator:a3674a1f6d0c8ec15826ba174e7cab97e"><td class="memSeparator" colspan="2">&#160;</td></tr>

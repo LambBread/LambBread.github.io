@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.2</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -89,6 +89,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="core__funcs_8hpp_source.html">lipsum/core_funcs.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="markdown_8hpp_source.html">lipsum/markdown.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="core__xfuncs_8hpp_source.html">lipsum/core_xfuncs.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="formats_8hpp_source.html">lipsum/formats.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="md__xfuncs_8hpp_source.html">lipsum/md_xfuncs.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="misc_8hpp_source.html">lipsum/misc.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -96,70 +97,78 @@ Include dependency graph for lipsum.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="lipsum_8hpp__incl.png" border="0" usemap="#asrc_2lipsum_8hpp" alt=""/></div>
 <map name="asrc_2lipsum_8hpp" id="asrc_2lipsum_8hpp">
-<area shape="rect" title="Main header of lipsum&#45;cpp." alt="" coords="1349,5,1467,31"/>
-<area shape="rect" href="stdincludes_8hpp.html" title="Standard library includes of lipsum&#45;cpp." alt="" coords="550,79,754,104"/>
-<area shape="poly" title=" " alt="" coords="1350,27,768,82,767,77,1349,22"/>
-<area shape="rect" href="internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="823,79,1003,104"/>
-<area shape="poly" title=" " alt="" coords="1350,30,1006,79,1006,74,1349,25"/>
-<area shape="rect" href="generator_8hpp.html" title="Declaration of lipsum::Generator." alt="" coords="1423,79,1583,104"/>
-<area shape="poly" title=" " alt="" coords="1425,29,1478,68,1475,72,1422,33"/>
-<area shape="rect" href="core__funcs_8hpp.html" title="Core functions of lipsum&#45;cpp." alt="" coords="1799,79,1967,104"/>
-<area shape="poly" title=" " alt="" coords="1467,25,1793,74,1792,79,1466,31"/>
-<area shape="rect" href="markdown_8hpp.html" title="Markdown functions of lipsum&#45;cpp." alt="" coords="1607,79,1774,104"/>
-<area shape="poly" title=" " alt="" coords="1454,28,1633,73,1631,78,1453,33"/>
-<area shape="rect" href="core__xfuncs_8hpp.html" title="Core &quot;X&quot; functions of lipsum&#45;cpp." alt="" coords="1028,79,1204,104"/>
-<area shape="poly" title=" " alt="" coords="1362,33,1177,78,1176,73,1360,28"/>
-<area shape="rect" href="md__xfuncs_8hpp.html" title="Markdown &quot;X&quot; functions of lipsum&#45;cpp." alt="" coords="1229,79,1398,104"/>
-<area shape="poly" title=" " alt="" coords="1394,33,1341,72,1338,68,1391,29"/>
-<area shape="rect" href="misc_8hpp.html" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="1991,79,2121,104"/>
-<area shape="poly" title=" " alt="" coords="1467,22,1687,43,1978,76,1977,81,1687,49,1467,27"/>
-<area shape="rect" title=" " alt="" coords="1179,152,1264,177"/>
-<area shape="poly" title=" " alt="" coords="754,99,946,120,1166,149,1166,149,1165,155,1165,155,945,125,754,105"/>
-<area shape="rect" title=" " alt="" coords="5,152,61,177"/>
-<area shape="poly" title=" " alt="" coords="550,100,335,118,207,134,76,155,75,149,206,128,335,113,550,95"/>
-<area shape="rect" title=" " alt="" coords="86,152,151,177"/>
-<area shape="poly" title=" " alt="" coords="550,104,374,123,166,154,165,149,373,117,549,98"/>
-<area shape="rect" title=" " alt="" coords="175,152,249,177"/>
-<area shape="poly" title=" " alt="" coords="565,107,427,127,263,155,262,149,426,121,564,101"/>
-<area shape="rect" title=" " alt="" coords="273,152,353,177"/>
-<area shape="poly" title=" " alt="" coords="596,107,368,154,367,149,595,101"/>
-<area shape="rect" title=" " alt="" coords="378,152,449,177"/>
-<area shape="poly" title=" " alt="" coords="614,107,463,151,461,146,613,101"/>
-<area shape="rect" title=" " alt="" coords="473,152,545,177"/>
-<area shape="poly" title=" " alt="" coords="630,106,546,148,544,143,628,102"/>
-<area shape="rect" title=" " alt="" coords="569,152,644,177"/>
-<area shape="poly" title=" " alt="" coords="647,106,624,142,619,139,642,103"/>
-<area shape="rect" title=" " alt="" coords="668,152,727,177"/>
-<area shape="poly" title=" " alt="" coords="662,103,685,139,680,142,657,106"/>
-<area shape="rect" title=" " alt="" coords="751,152,843,177"/>
-<area shape="poly" title=" " alt="" coords="677,102,763,144,760,148,674,106"/>
-<area shape="rect" title=" " alt="" coords="868,152,983,177"/>
-<area shape="poly" title=" " alt="" coords="697,101,869,146,867,151,695,107"/>
-<area shape="rect" title=" " alt="" coords="1007,152,1070,177"/>
-<area shape="poly" title=" " alt="" coords="728,101,849,121,994,149,993,155,848,127,727,107"/>
-<area shape="rect" title=" " alt="" coords="1094,152,1154,177"/>
-<area shape="poly" title=" " alt="" coords="754,101,904,120,1081,150,1080,155,904,125,754,106"/>
-<area shape="rect" href="core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="1563,225,1642,251"/>
-<area shape="poly" title=" " alt="" coords="1004,101,1156,123,1226,136,1277,150,1299,162,1321,175,1381,194,1443,209,1550,228,1549,233,1441,215,1380,200,1319,180,1297,167,1275,154,1225,141,1155,128,1003,106"/>
-<area shape="rect" href="version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="1553,299,1652,324"/>
-<area shape="poly" title=" " alt="" coords="1605,251,1605,285,1600,285,1600,251"/>
-<area shape="poly" title=" " alt="" coords="1525,102,1553,122,1580,150,1594,181,1602,211,1597,213,1589,183,1575,154,1550,126,1522,106"/>
-<area shape="rect" href="source_8hpp.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="1440,152,1565,177"/>
-<area shape="poly" title=" " alt="" coords="1505,104,1505,138,1500,138,1500,104"/>
-<area shape="poly" title=" " alt="" coords="1520,175,1577,215,1574,219,1517,180"/>
-<area shape="poly" title=" " alt="" coords="1882,105,1868,142,1856,162,1839,179,1795,206,1747,223,1699,233,1656,238,1656,233,1698,228,1745,218,1793,201,1836,175,1851,159,1863,140,1877,104"/>
-<area shape="poly" title=" " alt="" coords="1822,107,1578,152,1577,147,1821,101"/>
-<area shape="rect" href="argvec2_8hpp.html" title="Declaration of lipsum::ArgVec2." alt="" coords="1691,152,1826,177"/>
-<area shape="poly" title=" " alt="" coords="1864,106,1792,147,1789,143,1861,102"/>
-<area shape="poly" title=" " alt="" coords="1735,180,1642,222,1640,217,1733,175"/>
-<area shape="poly" title=" " alt="" coords="1686,106,1619,215,1614,212,1681,103"/>
-<area shape="poly" title=" " alt="" coords="1661,107,1547,149,1545,144,1660,102"/>
-<area shape="poly" title=" " alt="" coords="1704,102,1740,140,1736,144,1700,106"/>
-<area shape="poly" title=" " alt="" coords="1160,101,1321,149,1385,175,1472,201,1551,222,1549,227,1471,206,1383,180,1319,155,1159,107"/>
-<area shape="poly" title=" " alt="" coords="1179,101,1427,147,1426,152,1178,107"/>
-<area shape="poly" title=" " alt="" coords="1328,102,1371,137,1429,175,1491,202,1551,221,1549,226,1489,207,1427,180,1368,142,1325,106"/>
-<area shape="poly" title=" " alt="" coords="1345,102,1460,144,1458,149,1343,107"/>
-<area shape="poly" title=" " alt="" coords="2036,106,1962,142,1868,180,1755,211,1656,231,1655,225,1754,205,1866,175,1960,137,2033,102"/>
+<area shape="rect" title="Main header of lipsum&#45;cpp." alt="" coords="1587,5,1704,31"/>
+<area shape="rect" href="stdincludes_8hpp.html" title="Standard library includes of lipsum&#45;cpp." alt="" coords="613,79,817,104"/>
+<area shape="poly" title=" " alt="" coords="1587,26,830,84,830,79,1586,21"/>
+<area shape="rect" href="internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="2339,79,2519,104"/>
+<area shape="poly" title=" " alt="" coords="1705,21,2326,76,2326,81,1704,27"/>
+<area shape="rect" href="generator_8hpp.html" title="Declaration of lipsum::Generator." alt="" coords="1377,79,1537,104"/>
+<area shape="poly" title=" " alt="" coords="1616,33,1502,76,1500,71,1614,28"/>
+<area shape="rect" href="core__funcs_8hpp.html" title="Core functions of lipsum&#45;cpp." alt="" coords="1561,79,1729,104"/>
+<area shape="poly" title=" " alt="" coords="1648,31,1648,65,1643,65,1643,31"/>
+<area shape="rect" href="markdown_8hpp.html" title="Markdown functions of lipsum&#45;cpp." alt="" coords="1754,79,1921,104"/>
+<area shape="poly" title=" " alt="" coords="1677,28,1794,71,1792,76,1675,33"/>
+<area shape="rect" href="core__xfuncs_8hpp.html" title="Core &quot;X&quot; functions of lipsum&#45;cpp." alt="" coords="1945,79,2121,104"/>
+<area shape="poly" title=" " alt="" coords="1705,27,1958,74,1957,79,1704,33"/>
+<area shape="rect" href="formats_8hpp.html" title="JSON/XML functions of lipsum&#45;cpp." alt="" coords="1049,79,1199,104"/>
+<area shape="poly" title=" " alt="" coords="1587,30,1213,81,1212,75,1586,25"/>
+<area shape="rect" href="md__xfuncs_8hpp.html" title="Markdown &quot;X&quot; functions of lipsum&#45;cpp." alt="" coords="2146,79,2315,104"/>
+<area shape="poly" title=" " alt="" coords="1704,24,2132,75,2132,81,1704,29"/>
+<area shape="rect" href="misc_8hpp.html" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="1223,79,1353,104"/>
+<area shape="poly" title=" " alt="" coords="1588,33,1360,79,1359,73,1587,28"/>
+<area shape="rect" title=" " alt="" coords="911,152,996,177"/>
+<area shape="poly" title=" " alt="" coords="754,101,902,145,901,151,752,107"/>
+<area shape="rect" title=" " alt="" coords="1020,152,1076,177"/>
+<area shape="poly" title=" " alt="" coords="778,101,1007,149,1006,154,777,107"/>
+<area shape="rect" title=" " alt="" coords="1101,152,1166,177"/>
+<area shape="poly" title=" " alt="" coords="800,101,931,121,1087,149,1086,155,930,126,799,107"/>
+<area shape="rect" title=" " alt="" coords="1190,152,1263,177"/>
+<area shape="poly" title=" " alt="" coords="817,100,982,119,1177,149,1176,154,981,125,817,105"/>
+<area shape="rect" title=" " alt="" coords="5,152,85,177"/>
+<area shape="poly" title=" " alt="" coords="613,101,382,120,242,135,99,155,99,149,242,130,381,115,612,96"/>
+<area shape="rect" title=" " alt="" coords="110,152,181,177"/>
+<area shape="poly" title=" " alt="" coords="613,103,423,123,195,155,194,149,422,117,612,98"/>
+<area shape="rect" title=" " alt="" coords="205,152,277,177"/>
+<area shape="poly" title=" " alt="" coords="614,107,466,126,291,155,290,149,465,121,614,101"/>
+<area shape="rect" title=" " alt="" coords="301,152,376,177"/>
+<area shape="poly" title=" " alt="" coords="647,107,390,154,389,149,646,101"/>
+<area shape="rect" title=" " alt="" coords="400,152,459,177"/>
+<area shape="poly" title=" " alt="" coords="667,107,473,155,472,155,471,150,471,149,666,102"/>
+<area shape="rect" title=" " alt="" coords="483,152,575,177"/>
+<area shape="poly" title=" " alt="" coords="686,107,573,149,571,145,684,102"/>
+<area shape="rect" title=" " alt="" coords="600,152,715,177"/>
+<area shape="poly" title=" " alt="" coords="707,106,677,143,673,139,703,103"/>
+<area shape="rect" title=" " alt="" coords="739,152,802,177"/>
+<area shape="poly" title=" " alt="" coords="726,103,755,140,751,143,722,106"/>
+<area shape="rect" title=" " alt="" coords="826,152,886,177"/>
+<area shape="poly" title=" " alt="" coords="739,102,822,143,820,148,736,106"/>
+<area shape="rect" href="core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="1673,225,1751,251"/>
+<area shape="poly" title=" " alt="" coords="2373,107,1765,229,1764,224,2372,101"/>
+<area shape="rect" href="version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="1663,299,1761,324"/>
+<area shape="poly" title=" " alt="" coords="1715,251,1715,285,1709,285,1709,251"/>
+<area shape="poly" title=" " alt="" coords="1475,102,1525,136,1589,175,1674,217,1672,222,1587,180,1522,140,1472,106"/>
+<area shape="rect" href="argvec2_8hpp.html" title="Declaration of lipsum::ArgVec2." alt="" coords="1390,152,1525,177"/>
+<area shape="poly" title=" " alt="" coords="1460,104,1460,138,1455,138,1455,104"/>
+<area shape="rect" href="source_8hpp.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="1600,152,1725,177"/>
+<area shape="poly" title=" " alt="" coords="1491,101,1617,145,1616,150,1489,107"/>
+<area shape="poly" title=" " alt="" coords="1499,175,1660,220,1659,225,1498,180"/>
+<area shape="poly" title=" " alt="" coords="1673,176,1698,213,1694,216,1669,179"/>
+<area shape="poly" title=" " alt="" coords="1679,102,1712,121,1728,134,1740,151,1744,167,1743,184,1731,215,1726,213,1738,183,1739,168,1735,153,1724,138,1709,125,1677,107"/>
+<area shape="poly" title=" " alt="" coords="1616,107,1502,149,1500,144,1614,102"/>
+<area shape="poly" title=" " alt="" coords="1651,104,1659,138,1654,140,1646,105"/>
+<area shape="poly" title=" " alt="" coords="1829,106,1733,217,1729,213,1825,103"/>
+<area shape="poly" title=" " alt="" coords="1777,107,1533,152,1532,147,1776,101"/>
+<area shape="poly" title=" " alt="" coords="1810,106,1705,149,1703,144,1808,102"/>
+<area shape="poly" title=" " alt="" coords="2009,107,1751,222,1749,217,2006,102"/>
+<area shape="poly" title=" " alt="" coords="1974,107,1737,152,1736,147,1973,101"/>
+<area shape="poly" title=" " alt="" coords="1155,102,1277,150,1307,163,1337,175,1424,196,1512,212,1659,230,1659,235,1512,217,1423,201,1335,180,1305,168,1275,154,1153,107"/>
+<area shape="poly" title=" " alt="" coords="1178,101,1391,146,1390,152,1177,107"/>
+<area shape="poly" title=" " alt="" coords="1199,100,1587,151,1586,156,1199,105"/>
+<area shape="poly" title=" " alt="" coords="2190,107,1765,225,1764,220,2189,102"/>
+<area shape="poly" title=" " alt="" coords="2146,106,1739,156,1739,151,2145,101"/>
+<area shape="poly" title=" " alt="" coords="1299,102,1332,139,1354,159,1380,175,1452,203,1528,220,1599,230,1659,234,1659,239,1599,235,1527,226,1451,208,1377,180,1351,163,1328,143,1295,106"/>
+<area shape="poly" title=" " alt="" coords="1316,102,1418,144,1416,149,1314,106"/>
+<area shape="poly" title=" " alt="" coords="1349,101,1589,147,1588,152,1348,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">

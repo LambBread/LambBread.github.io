@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.2</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -93,7 +93,7 @@ Include dependency graph for source.inl:</div>
 <area shape="rect" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="21,5,209,31"/>
 <area shape="rect" href="internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="5,79,105,104"/>
 <area shape="poly" title=" " alt="" coords="107,33,76,70,72,66,103,29"/>
-<area shape="rect" href="sample_8inl.html" title="File containing all of the words used by lipsum::GenerateWord()" alt="" coords="130,79,221,104"/>
+<area shape="rect" href="sample_8inl.html" title="File containing all of the words used by lipsum::Source." alt="" coords="130,79,221,104"/>
 <area shape="poly" title=" " alt="" coords="127,29,159,66,155,70,123,33"/>
 <area shape="rect" href="core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="16,152,95,177"/>
 <area shape="poly" title=" " alt="" coords="58,104,58,138,53,138,53,104"/>
@@ -107,13 +107,55 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacelipsum" id="r_namespacelipsum"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html">lipsum</a></td></tr>
 <tr class="memdesc:namespacelipsum"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the main namespace of lipsum-cpp. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a68bc83c62eb422f546048c1f0ca7f664" id="r_a68bc83c62eb422f546048c1f0ca7f664"><td class="memItemLeft" align="right" valign="top"><a id="a68bc83c62eb422f546048c1f0ca7f664" name="a68bc83c62eb422f546048c1f0ca7f664"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIPSUM_CORE_SOURCE_INL</b></td></tr>
+<tr class="separator:a68bc83c62eb422f546048c1f0ca7f664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417f618e0b15a0bdc7fbae0ac7b20b0e" id="r_a417f618e0b15a0bdc7fbae0ac7b20b0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="source_8inl.html#a417f618e0b15a0bdc7fbae0ac7b20b0e">LPSM_SOURCE_CUSTOM_IPSUM</a>(ipsum,  name)</td></tr>
+<tr class="separator:a417f618e0b15a0bdc7fbae0ac7b20b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Mutli-source generation for lipsum-cpp. </p>
 <p>This defines <a class="el" href="classlipsum_1_1Source.html" title="Class for multi-source generation.">lipsum::Source</a>. This file is under the BSD Zero-Clause License.</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2026 LambBread</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>LambBread from github.com </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a417f618e0b15a0bdc7fbae0ac7b20b0e" name="a417f618e0b15a0bdc7fbae0ac7b20b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a417f618e0b15a0bdc7fbae0ac7b20b0e">&#9670;&#160;</a></span>LPSM_SOURCE_CUSTOM_IPSUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPSM_SOURCE_CUSTOM_IPSUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ipsum, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">if</span> (currentLoaded == name)                                             \</div>
+<div class="line">        {                                                                      \</div>
+<div class="line">            idx = internal::RandomNumber&lt;int&gt;(0, ipsum.size() - 1);            \</div>
+<div class="line">            <span class="keywordflow">return</span> {ipsum.at(idx)};                                            \</div>
+<div class="line">        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8

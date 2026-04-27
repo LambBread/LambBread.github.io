@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['lipsum_2eh_0',['lipsum.h',['../lipsum_8h.html',1,'']]],
-  ['lipsum_2ehpp_1',['lipsum.hpp',['../lipsum_8hpp.html',1,'']]],
-  ['lipsum_5fbinding_5fjs_2ecpp_2',['lipsum_binding_js.cpp',['../lipsum__binding__js_8cpp.html',1,'']]],
-  ['lipsum_5fh_2ecpp_3',['lipsum_h.cpp',['../lipsum__h_8cpp.html',1,'']]],
-  ['lipsum_5fstatic_2ecpp_4',['lipsum_static.cpp',['../lipsum__static_8cpp.html',1,'']]]
+  ['internal_2ehpp_0',['internal.hpp',['../internal_8hpp.html',1,'']]],
+  ['internal_2einl_1',['internal.inl',['../internal_8inl.html',1,'']]]
 ];

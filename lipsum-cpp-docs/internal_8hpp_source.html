@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.2</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -94,54 +94,68 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelipsum_1_1internal.html">lipsum::internal</a></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string GenerateTLD();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string HandleHTMLEntity(<span class="keyword">const</span> std::string&amp; str);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">   60</a></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt; <span class="keywordtype">void</span> <a class="code hl_function" href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">LogWarn</a>(<span class="keyword">const</span> Args&amp;... args)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        std::ostringstream oss;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        oss &lt;&lt; <span class="stringliteral">&quot;lipsum-cpp WARNING -- &quot;</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        ((oss &lt;&lt; args), ...);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        oss &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        std::string message = oss.str();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#    ifndef __EMSCRIPTEN__</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;\033[33m&quot;</span> &lt;&lt; message &lt;&lt; <span class="stringliteral">&quot;\033[0m&quot;</span>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#    else</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        emscripten_console_warn(message.c_str());</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#    endif</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string <a class="code hl_function" href="namespacelipsum_1_1internal.html#a688085113dec332dd31558794fd6d7d2">GenerateTLD</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string <a class="code hl_function" href="namespacelipsum_1_1internal.html#a9563955f371ff9dbf5a50a29c9e1f854">HandleHTMLEntity</a>(<span class="keyword">const</span> std::string&amp; str);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">   85</a></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt; <span class="keywordtype">void</span> <a class="code hl_function" href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">LogWarn</a>(<span class="keyword">const</span> Args&amp;... args)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        std::ostringstream oss;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        oss &lt;&lt; <span class="stringliteral">&quot;lipsum-cpp WARNING -- &quot;</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        ((oss &lt;&lt; args), ...);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        oss &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        std::string message = oss.str();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#    ifndef __EMSCRIPTEN__</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;\033[33m&quot;</span> &lt;&lt; message &lt;&lt; <span class="stringliteral">&quot;\033[0m&quot;</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#    else</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        emscripten_console_warn(message.c_str());</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#    endif</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T RandomNumber(T min, T max)</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">static</span> <span class="keyword">thread_local</span> std::mt19937 gen(std::random_device{}());</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_integral_v&lt;T&gt;)</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            std::uniform_int_distribution&lt;T&gt; dist(min, max);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">return</span> dist(gen);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            std::uniform_real_distribution&lt;T&gt; dist(min, max);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">return</span> dist(gen);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">template</span> &lt;&gt; <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <span class="keywordtype">char</span> RandomNumber(<span class="keywordtype">char</span> min, <span class="keywordtype">char</span> max);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">template</span> &lt;&gt; <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <span class="keywordtype">bool</span> RandomNumber(<span class="keywordtype">bool</span> min, <span class="keywordtype">bool</span> max);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; std::string ToString(<span class="keyword">const</span> T&amp; str)</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        std::ostringstream oss;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        oss &lt;&lt; str;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> oss.str();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>} <span class="comment">// namespace lipsum::internal</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">  116</a></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T <a class="code hl_function" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">RandomNumber</a>(T min, T max)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keyword">static</span> <span class="keyword">thread_local</span> std::mt19937 gen(std::random_device{}());</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_integral_v&lt;T&gt;)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            std::uniform_int_distribution&lt;T&gt; dist(min, max);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">return</span> dist(gen);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            std::uniform_real_distribution&lt;T&gt; dist(min, max);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            <span class="keywordflow">return</span> dist(gen);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
+</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keyword">template</span> &lt;&gt; <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <span class="keywordtype">char</span> <a class="code hl_function" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">RandomNumber</a>(<span class="keywordtype">char</span> min, <span class="keywordtype">char</span> max);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keyword">template</span> &lt;&gt; <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">RandomNumber</a>(<span class="keywordtype">bool</span> min, <span class="keywordtype">bool</span> max);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacelipsum_1_1internal.html#aedab19bcab90edbe5c75525dd94d552a">WeightedRandomIdx</a>(<span class="keyword">const</span> std::vector&lt;int&gt;&amp; weights);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="namespacelipsum_1_1internal.html#ac08bc68d8b0434edc0c6382c15e7c413">  186</a></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; std::string <a class="code hl_function" href="namespacelipsum_1_1internal.html#ac08bc68d8b0434edc0c6382c15e7c413">ToString</a>(<span class="keyword">const</span> T&amp; param)</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        std::ostringstream oss;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        oss &lt;&lt; param;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">return</span> oss.str();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    }</div>
+</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>} <span class="comment">// namespace lipsum::internal</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acore_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Core macros for lipsum-cpp.</div></div>
 <div class="ttc" id="acore_8hpp_html_a7cba6c9f4b913ff7f5d2879fc6de6f35"><div class="ttname"><a href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a></div><div class="ttdeci">#define LIPSUM_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> core.hpp:44</div></div>
 <div class="ttc" id="anamespacelipsum_1_1internal_html"><div class="ttname"><a href="namespacelipsum_1_1internal.html">lipsum::internal</a></div><div class="ttdoc">This namespace contains functions only used internally by other functions.</div></div>
-<div class="ttc" id="anamespacelipsum_1_1internal_html_a8d8e625c3de86178028328f52432698d"><div class="ttname"><a href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">lipsum::internal::LogWarn</a></div><div class="ttdeci">void LogWarn(const Args &amp;... args)</div><div class="ttdoc">Log a warning.</div><div class="ttdef"><b>Definition</b> internal.hpp:60</div></div>
+<div class="ttc" id="anamespacelipsum_1_1internal_html_a37fc250e5668a7429596d04e60a4089e"><div class="ttname"><a href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">lipsum::internal::RandomNumber</a></div><div class="ttdeci">T RandomNumber(T min, T max)</div><div class="ttdoc">Generate a random number.</div><div class="ttdef"><b>Definition</b> internal.hpp:116</div></div>
+<div class="ttc" id="anamespacelipsum_1_1internal_html_a688085113dec332dd31558794fd6d7d2"><div class="ttname"><a href="namespacelipsum_1_1internal.html#a688085113dec332dd31558794fd6d7d2">lipsum::internal::GenerateTLD</a></div><div class="ttdeci">LIPSUM_API std::string GenerateTLD()</div><div class="ttdoc">Pick a random TLD.</div><div class="ttdef"><b>Definition</b> internal.inl:40</div></div>
+<div class="ttc" id="anamespacelipsum_1_1internal_html_a8d8e625c3de86178028328f52432698d"><div class="ttname"><a href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">lipsum::internal::LogWarn</a></div><div class="ttdeci">void LogWarn(const Args &amp;... args)</div><div class="ttdoc">Log a warning.</div><div class="ttdef"><b>Definition</b> internal.hpp:85</div></div>
+<div class="ttc" id="anamespacelipsum_1_1internal_html_a9563955f371ff9dbf5a50a29c9e1f854"><div class="ttname"><a href="namespacelipsum_1_1internal.html#a9563955f371ff9dbf5a50a29c9e1f854">lipsum::internal::HandleHTMLEntity</a></div><div class="ttdeci">LIPSUM_API std::string HandleHTMLEntity(const std::string &amp;str)</div><div class="ttdoc">Handle HTML entities.</div><div class="ttdef"><b>Definition</b> internal.inl:54</div></div>
+<div class="ttc" id="anamespacelipsum_1_1internal_html_ac08bc68d8b0434edc0c6382c15e7c413"><div class="ttname"><a href="namespacelipsum_1_1internal.html#ac08bc68d8b0434edc0c6382c15e7c413">lipsum::internal::ToString</a></div><div class="ttdeci">std::string ToString(const T &amp;param)</div><div class="ttdoc">Convert an object to a string.</div><div class="ttdef"><b>Definition</b> internal.hpp:186</div></div>
+<div class="ttc" id="anamespacelipsum_1_1internal_html_aedab19bcab90edbe5c75525dd94d552a"><div class="ttname"><a href="namespacelipsum_1_1internal.html#aedab19bcab90edbe5c75525dd94d552a">lipsum::internal::WeightedRandomIdx</a></div><div class="ttdeci">LIPSUM_API int WeightedRandomIdx(const std::vector&lt; int &gt; &amp;weights)</div><div class="ttdoc">Choose a random index based off weights.</div><div class="ttdef"><b>Definition</b> internal.inl:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
