@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.5</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -1008,7 +1008,6 @@ elit."</p>
 <p>Generate a random paragraph. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
 <p>This function generates a random paragraph starting with a tab character and ending in a line break, with each sentence separated by a space.</p>
-<dl class="section return"><dt>Returns</dt><dd>char* The random paragraph.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">minSent</td><td>Minimum number of sentences in the paragraph. </td></tr>
@@ -1018,10 +1017,11 @@ elit."</p>
     <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." text should start the paragraph. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words. </td></tr>
+    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random paragraph. </dd></dl>
 
 </div>
 </div>
@@ -1096,7 +1096,6 @@ elit."</p>
 <p>Generate several random paragraphs at once. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
 <p>This function generates several random paragraphs, each separated by a line break. Formerly known as lpsm_GenerateParagraphList().</p>
-<dl class="section return"><dt>Returns</dt><dd>char* The random paragraphs.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">paraCount</td><td>The number of paragraphs. </td></tr>
@@ -1107,10 +1106,11 @@ elit."</p>
     <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." text should start the first paragraph. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words. </td></tr>
+    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random paragraphs. </dd></dl>
 
 </div>
 </div>
@@ -1237,17 +1237,17 @@ elit."</p>
 <p>Generate a random sentence. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
 <p>This function generates a sentence starting with a capital letter and ending with a period, sometimes containing a comma.</p>
-<dl class="section return"><dt>Returns</dt><dd>char* The random sentence.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">minWord</td><td>Minimum number of words in the sentence fragment. </td></tr>
     <tr><td class="paramname">maxWord</td><td>Maximum number of words in the sentence fragment. </td></tr>
     <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in the sentence. </td></tr>
     <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in the sentence. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words. </td></tr>
+    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random sentence. </dd></dl>
 
 </div>
 </div>
@@ -1285,15 +1285,15 @@ elit."</p>
 
 <p>Generate a random sentence fragment. </p>
 <dl class="section since"><dt>Since</dt><dd>0.1.0</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random sentence fragment.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">minWord</td><td>Minimum number of words in the fragment. </td></tr>
     <tr><td class="paramname">maxWord</td><td>Maximum number of words in the fragment. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words. </td></tr>
+    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random sentence fragment. </dd></dl>
 
 </div>
 </div>
@@ -1356,7 +1356,6 @@ elit."</p>
 <p>Generate multiple random sentences at once. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.5</dd></dl>
 <p>Generate multiple random sentences separated with spaces. Does not add a tab character before the sentences nor a line break after.</p>
-<dl class="section return"><dt>Returns</dt><dd>char* The random sentences.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sentCount</td><td>The number of sentences. </td></tr>
@@ -1365,10 +1364,11 @@ elit."</p>
     <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." sentence should be the first sentence. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words. </td></tr>
+    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random sentences. </dd></dl>
 
 </div>
 </div>
@@ -1502,7 +1502,6 @@ elit."</p>
 
 <p>Generate a random number of random paragraphs. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.2</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random text.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. </td></tr>
@@ -1514,10 +1513,11 @@ elit."</p>
     <tr><td class="paramname">minPara</td><td>The minimum possible number of paragraphs in the text. </td></tr>
     <tr><td class="paramname">maxPara</td><td>The maximum possible number of paragraphs in the text. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the first paragraph. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words. </td></tr>
+    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The random text. </dd></dl>
 
 </div>
 </div>

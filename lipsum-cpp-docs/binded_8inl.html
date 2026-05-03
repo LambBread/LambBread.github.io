@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.5</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -125,6 +125,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aec02e5b60032162a573cee8667049d14" id="r_aec02e5b60032162a573cee8667049d14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#aec02e5b60032162a573cee8667049d14">lpsm_GeneratorDestroy</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</td></tr>
 <tr class="memdesc:aec02e5b60032162a573cee8667049d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">lipsum::Generator</a>.  <br /></td></tr>
 <tr class="separator:aec02e5b60032162a573cee8667049d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200ed74f9544589497bb21e8146ac5f8" id="r_a200ed74f9544589497bb21e8146ac5f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#a200ed74f9544589497bb21e8146ac5f8">lpsm_Generator_load_source</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, const char *path)</td></tr>
+<tr class="memdesc:a200ed74f9544589497bb21e8146ac5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload a source.  <br /></td></tr>
+<tr class="separator:a200ed74f9544589497bb21e8146ac5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6d04aa91ab502f8ef767afa113bd76" id="r_a6d6d04aa91ab502f8ef767afa113bd76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#a6d6d04aa91ab502f8ef767afa113bd76">lpsm_Generator_change_setting</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, const char *setting, int minValue, int maxValue)</td></tr>
+<tr class="memdesc:a6d6d04aa91ab502f8ef767afa113bd76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a setting.  <br /></td></tr>
+<tr class="separator:a6d6d04aa91ab502f8ef767afa113bd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a862898cb9f071fef899d452da59e7e14" id="r_a862898cb9f071fef899d452da59e7e14"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#a862898cb9f071fef899d452da59e7e14">lpsm_Generator_word</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, int num)</td></tr>
 <tr class="memdesc:a862898cb9f071fef899d452da59e7e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate words.  <br /></td></tr>
 <tr class="separator:a862898cb9f071fef899d452da59e7e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +146,18 @@ Functions</h2></td></tr>
 <tr class="memitem:af911f6d07ab9f482f2d1cf96020ceeab" id="r_af911f6d07ab9f482f2d1cf96020ceeab"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#af911f6d07ab9f482f2d1cf96020ceeab">lpsm_Generator_text</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, bool useLipsum)</td></tr>
 <tr class="memdesc:af911f6d07ab9f482f2d1cf96020ceeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random number of random paragraphs.  <br /></td></tr>
 <tr class="separator:af911f6d07ab9f482f2d1cf96020ceeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053ddbc96872e3c7fda5d9eb7fba2dba" id="r_a053ddbc96872e3c7fda5d9eb7fba2dba"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#a053ddbc96872e3c7fda5d9eb7fba2dba">lpsm_Generator_scramble</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, int length, char minChar, char maxChar)</td></tr>
+<tr class="memdesc:a053ddbc96872e3c7fda5d9eb7fba2dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random character scramble.  <br /></td></tr>
+<tr class="separator:a053ddbc96872e3c7fda5d9eb7fba2dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7db376e00f762f7dfbb411005cda7be" id="r_ad7db376e00f762f7dfbb411005cda7be"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#ad7db376e00f762f7dfbb411005cda7be">lpsm_Generator_url</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</td></tr>
+<tr class="memdesc:ad7db376e00f762f7dfbb411005cda7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a URL.  <br /></td></tr>
+<tr class="separator:ad7db376e00f762f7dfbb411005cda7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a88961bf3ef343003ef1954d84a4762" id="r_a6a88961bf3ef343003ef1954d84a4762"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#a6a88961bf3ef343003ef1954d84a4762">lpsm_Generator_plain_url</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</td></tr>
+<tr class="memdesc:a6a88961bf3ef343003ef1954d84a4762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a plain URL.  <br /></td></tr>
+<tr class="separator:a6a88961bf3ef343003ef1954d84a4762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4252e70fddc11a2d9bad82d0428e0e46" id="r_a4252e70fddc11a2d9bad82d0428e0e46"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#a4252e70fddc11a2d9bad82d0428e0e46">lpsm_Generator_slug</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, char separator)</td></tr>
+<tr class="memdesc:a4252e70fddc11a2d9bad82d0428e0e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a slug.  <br /></td></tr>
+<tr class="separator:a4252e70fddc11a2d9bad82d0428e0e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57232cf88350a501e4e656d366f7733e" id="r_a57232cf88350a501e4e656d366f7733e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8inl.html#a57232cf88350a501e4e656d366f7733e">lpsm_Generator_md_paragraph</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, int num, bool useLipsum)</td></tr>
 <tr class="memdesc:a57232cf88350a501e4e656d366f7733e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown paragraph.  <br /></td></tr>
 <tr class="separator:a57232cf88350a501e4e656d366f7733e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,7 +366,61 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>lpsm_GeneratorHandle The <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">lipsum::Generator</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>lpsm_GeneratorHandle The <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">lipsum::Generator</a>.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlipsum_1_1Source.html#addcccd703e85d0c6d0224f06ec55bbf4" title="Load a source and fill the vector.">lipsum::Source::load</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6d6d04aa91ab502f8ef767afa113bd76" name="a6d6d04aa91ab502f8ef767afa113bd76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6d04aa91ab502f8ef767afa113bd76">&#9670;&#160;</a></span>lpsm_Generator_change_setting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lpsm_Generator_change_setting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>setting</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change a setting. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>Change a setting for generation. Valid setting names include "word", "frag", "sent", "para", "point", "wordFmt", "fragFmt", "wordURL", "level", and "jsonLength". If an invalid setting name is used, raise a warning and ignore.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use. </td></tr>
+    <tr><td class="paramname">setting</td><td>The name of the setting. </td></tr>
+    <tr><td class="paramname">minValue</td><td>The new minimum value of the setting. </td></tr>
+    <tr><td class="paramname">maxValue</td><td>The new maximum value of the setting. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -486,6 +558,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a200ed74f9544589497bb21e8146ac5f8" name="a200ed74f9544589497bb21e8146ac5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200ed74f9544589497bb21e8146ac5f8">&#9670;&#160;</a></span>lpsm_Generator_load_source()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lpsm_Generator_load_source </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reload a source. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>This reloads the specified lorem ipsum source into m_Source. If path is invalid, it will print a warning and default to the standard lorem-ipsum source.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use. </td></tr>
+    <tr><td class="paramname">path</td><td>The filepath or name of the lorem ipsum source.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlipsum_1_1Source.html#addcccd703e85d0c6d0224f06ec55bbf4" title="Load a source and fill the vector.">lipsum::Source::load</a> </dd></dl>
+
+</div>
+</div>
 <a id="a57232cf88350a501e4e656d366f7733e" name="a57232cf88350a501e4e656d366f7733e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57232cf88350a501e4e656d366f7733e">&#9670;&#160;</a></span>lpsm_Generator_md_paragraph()</h2>
 
@@ -620,6 +732,89 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6a88961bf3ef343003ef1954d84a4762" name="a6a88961bf3ef343003ef1954d84a4762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a88961bf3ef343003ef1954d84a4762">&#9670;&#160;</a></span>lpsm_Generator_plain_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_Generator_plain_url </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a plain URL. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>Generate a URL with a random word followed by a random TLD.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The plain URL. </dd></dl>
+
+</div>
+</div>
+<a id="a053ddbc96872e3c7fda5d9eb7fba2dba" name="a053ddbc96872e3c7fda5d9eb7fba2dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053ddbc96872e3c7fda5d9eb7fba2dba">&#9670;&#160;</a></span>lpsm_Generator_scramble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_Generator_scramble </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>minChar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>maxChar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random character scramble. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>Generate a random string of text with random characters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use. </td></tr>
+    <tr><td class="paramname">length</td><td>The number of characters. </td></tr>
+    <tr><td class="paramname">minChar</td><td>The lowest-valued ASCII character that can appear. </td></tr>
+    <tr><td class="paramname">maxChar</td><td>The highest-valued ASCII character than can appear.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The character scramble. </dd></dl>
+
+</div>
+</div>
 <a id="a1c0ffe5fb27d003692290d5637b18e35" name="a1c0ffe5fb27d003692290d5637b18e35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c0ffe5fb27d003692290d5637b18e35">&#9670;&#160;</a></span>lpsm_Generator_sentence()</h2>
 
@@ -696,6 +891,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4252e70fddc11a2d9bad82d0428e0e46" name="a4252e70fddc11a2d9bad82d0428e0e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4252e70fddc11a2d9bad82d0428e0e46">&#9670;&#160;</a></span>lpsm_Generator_slug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_Generator_slug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>separator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a slug. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>This function generates a sentence fragment with the spaces replaced with the specified separator character.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use. </td></tr>
+    <tr><td class="paramname">separator</td><td>The separator character.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The slug. </dd></dl>
+
+</div>
+</div>
 <a id="af911f6d07ab9f482f2d1cf96020ceeab" name="af911f6d07ab9f482f2d1cf96020ceeab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af911f6d07ab9f482f2d1cf96020ceeab">&#9670;&#160;</a></span>lpsm_Generator_text()</h2>
 
@@ -733,6 +968,35 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>char* The random text. </dd></dl>
+
+</div>
+</div>
+<a id="ad7db376e00f762f7dfbb411005cda7be" name="ad7db376e00f762f7dfbb411005cda7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7db376e00f762f7dfbb411005cda7be">&#9670;&#160;</a></span>lpsm_Generator_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * lpsm_Generator_url </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a URL. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>Generate a URL starting in <a href="https://">https://</a>, followed by a random word, followed by a random TLD, followed by a slash and a random HTML id as a slug separated by hyphens.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The URL. </dd></dl>
 
 </div>
 </div>
@@ -864,6 +1128,7 @@ Functions</h2></td></tr>
 <p>Create a <a class="el" href="classlipsum_1_1Source.html" title="Class for multi-source generation.">lipsum::Source</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.0</dd></dl>
 <p>This function creates a pointer pointing to a <a class="el" href="classlipsum_1_1Source.html" title="Class for multi-source generation.">lipsum::Source</a>.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The lpsm_SourceHandle must be manually deleted with <a class="el" href="binded_8h.html#aca15419e9306e5f16ba065158b0ade34" title="Delete a lipsum::Source.">lpsm_SourceDestroy()</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path entered into <a class="el" href="classlipsum_1_1Source.html#a4b399e003e1e54400a28699648dfb025" title="Default constructor.">lipsum::Source::Source</a>. If path is set to any of the built-in sources by <a class="el" href="classlipsum_1_1Source.html#a5d3380c1ce11ae7ae820967e7ddb6079" title="Constructor with a path.">lipsum::Source::Source(const
@@ -871,7 +1136,6 @@ std::string&amp;)</a>, it will use the specified built-in source.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>The lpsm_SourceHandle must be manually deleted with <a class="el" href="binded_8h.html#aca15419e9306e5f16ba065158b0ade34" title="Delete a lipsum::Source.">lpsm_SourceDestroy()</a>.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>lpsm_SourceHandle A handle to the object. </dd></dl>
 
 </div>

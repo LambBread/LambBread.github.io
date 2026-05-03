@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.5</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -190,8 +190,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Log a warning. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.2</dd></dl>
-<p>Log a warning to the console coloured yellow, starting with "lipsum-cpp WARNING -- " and the message, ending in a newline. If in Emscripten environment, use JavaScript console.warn() instead.</p>
-<dl class="section note"><dt>Note</dt><dd>This function uses ANSI escape codes. The default Windows terminal on older versions of Windows (&lt; Windows 10 1511) does not support ANSI escape codes. The default Windows terminal on newer versions of Windows (&gt;= Windows 10 1511) has support for ANSI escape codes, but one may have to manually enable them with SetConsoleMode(..., ENABLE_VIRTUAL_TERMINAL_PROCESSING).</dd></dl>
+<p>Log a warning to the console coloured yellow using ANSI escape codes, starting with "lipsum-cpp WARNING -- " and the message, ending in a newline. If in Emscripten environment, use JavaScript console.warn() instead. If in Windows environment, use <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">SetConsoleTextAttribute()</a> instead.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Args</td><td>The arguments' types. All must be printable with std::ostream, or else the code will fail to compile.</td></tr>

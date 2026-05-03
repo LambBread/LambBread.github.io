@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.5</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -94,6 +94,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html">Generator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">OOP layer over lipsum-cpp.  <a href="classlipsum_1_1Generator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlipsum_1_1GeneratorSettings.html">GeneratorSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">lipsum::Generator</a>.  <a href="structlipsum_1_1GeneratorSettings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Source.html">Source</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for multi-source generation.  <a href="classlipsum_1_1Source.html#details">More...</a><br /></td></tr>
@@ -255,8 +258,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Count the number of sentences in a string. </p>
-<p>Count the number of periods in a string, ignoring usage in Markdown URLs. (i.e. in parentheses)</p>
 <dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
+<p>Count the number of periods in a string, ignoring usage in Markdown URLs. (i.e. in parentheses)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string inputted.</td></tr>
@@ -286,8 +289,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Count the number of words in a string. </p>
-<p>Count the number of words in a string using a naive approach. It counts some Markdown formatting as words.</p>
 <dl class="section since"><dt>Since</dt><dd>0.3.8</dd></dl>
+<p>Count the number of words in a string using a naive approach.</p>
+<dl class="section note"><dt>Note</dt><dd>Some formatting will be counted as words.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string inputted.</td></tr>
@@ -1663,7 +1667,6 @@ ipsum..." sample.</td></tr>
 <p>Generate a random paragraph. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.1</dd></dl>
 <p>This function generates a random paragraph starting with a tab character and ending in a line break, with each sentence separated by a space.</p>
-<dl class="section return"><dt>Returns</dt><dd>std::string The random paragraph.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sent</td><td>The minimum and maximum possible number of sentences in the paragraph. By default 5 to 8. </td></tr>
@@ -1671,10 +1674,11 @@ ipsum..." sample.</td></tr>
     <tr><td class="paramname">word</td><td>The minimum and maximum possible number of words in a sentence fragment. By default 4 to 9. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." text should start the paragraph. By default true. </td></tr>
     <tr><td class="paramname">source</td><td>The source for words. By default the standard "Lorem
-ipsum..." sample. </td></tr>
+ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random paragraph. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateParagraph_8cpp-example.html#a0">GenerateParagraph.cpp</a>, and <a class="el" href="Source_8cpp-example.html#a1">Source.cpp</a>.</dd>
 </dl>
 
@@ -1733,7 +1737,6 @@ ipsum..." sample. </td></tr>
 <p>Generate several random paragraphs at once. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
 <p>This function generates several random paragraphs, each separated by a line break. Formerly known as GenerateParagraphList().</p>
-<dl class="section return"><dt>Returns</dt><dd>std::string The random paragraphs.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">paraCount</td><td>The number of paragraphs. By default 5. </td></tr>
@@ -1742,10 +1745,11 @@ ipsum..." sample. </td></tr>
     <tr><td class="paramname">sent</td><td>The minimum and maximum total number of sentences in a paragraph. By default 5 to 8. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." text should start the first paragraph. By default true. </td></tr>
     <tr><td class="paramname">source</td><td>The source for words. By default the standard "Lorem
-ipsum..." sample. </td></tr>
+ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random paragraphs. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a7">Advanced.cpp</a>, and <a class="el" href="GenerateParagraphs_8cpp-example.html#a0">GenerateParagraphs.cpp</a>.</dd>
 </dl>
 
@@ -1954,7 +1958,7 @@ ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string The plain URL </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The plain URL. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a7">Misc.cpp</a>.</dd>
 </dl>
 
@@ -2003,7 +2007,7 @@ ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string The character scramble </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The character scramble. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a11">Misc.cpp</a>.</dd>
 </dl>
 
@@ -2044,16 +2048,16 @@ ipsum..." sample.</td></tr>
 <p>Generate a random sentence. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.1</dd></dl>
 <p>This function generates a sentence starting with a capital letter and ending with a period, often containing commas, semicolons, and dashes.</p>
-<dl class="section return"><dt>Returns</dt><dd>std::string The random sentence.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">word</td><td>The minimum and maximum possible number of words in a sentence fragment. By default 4 to 9. </td></tr>
     <tr><td class="paramname">frag</td><td>The minimum and maximum possible number of sentence fragments in the sentence. By default 1 to 3. </td></tr>
     <tr><td class="paramname">source</td><td>The source for words. By default the standard "Lorem
-ipsum..." sample. </td></tr>
+ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random sentence. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a8">Advanced.cpp</a>, and <a class="el" href="GenerateSentence_8cpp-example.html#a0">GenerateSentence.cpp</a>.</dd>
 </dl>
 
@@ -2199,7 +2203,6 @@ ipsum..." sample.</td></tr>
 <p>Generate multiple random sentences at once. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.5</dd></dl>
 <p>Generate multiple random sentences separated with spaces. Does not add a tab character before the sentences nor a line break after.</p>
-<dl class="section return"><dt>Returns</dt><dd>std::string The random sentences.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sentCount</td><td>The number of sentences. By default 6. </td></tr>
@@ -2207,10 +2210,11 @@ ipsum..." sample.</td></tr>
     <tr><td class="paramname">frag</td><td>The minimum and maximum possible number of sentence fragments in a sentence. By default 1 to 3. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." sentence should be the first sentence. By default true. </td></tr>
     <tr><td class="paramname">source</td><td>The source for words. By default the standard "Lorem
-ipsum..." sample. </td></tr>
+ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random sentences. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateSentences_8cpp-example.html#a0">GenerateSentences.cpp</a>.</dd>
 </dl>
 
@@ -2284,10 +2288,11 @@ ipsum..." sample. </td></tr>
     <tr><td class="paramname">maxFrag</td><td>The maximum possible number of sentence fragments in a sentence. By default 3. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." sentence should be the first sentence. By default true. </td></tr>
     <tr><td class="paramname">source</td><td>The source for words. By default the standard "Lorem
-ipsum..." sample. </td></tr>
+ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random sentences. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateSentences_8cpp-example.html#a2">GenerateSentences.cpp</a>.</dd>
 </dl>
 
@@ -2517,7 +2522,6 @@ ipsum..." sample.</td></tr>
 <p>Generate a random number of random paragraphs. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.2</dd></dl>
 <p>Generate a random number of random paragraphs separated by line breaks.</p>
-<dl class="section return"><dt>Returns</dt><dd>std::string The random text.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">word</td><td>The minimum and maximum possible number of words in a sentence fragment. By default 4 to 9. </td></tr>
@@ -2526,10 +2530,11 @@ ipsum..." sample.</td></tr>
     <tr><td class="paramname">para</td><td>The minimum and maximum possible number of paragraphs in the text. By default 1 to 4. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the first paragraph. By default true. </td></tr>
     <tr><td class="paramname">source</td><td>The source for words. By default the standard "Lorem
-ipsum..." sample. </td></tr>
+ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random text. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateText_8cpp-example.html#a0">GenerateText.cpp</a>.</dd>
 </dl>
 
@@ -2612,7 +2617,6 @@ ipsum..." sample. </td></tr>
 <p>Generate a random number of random paragraphs. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.2</dd></dl>
 <p>This function only differs from the function of the similar name in that it uses minimum and maximum values instead of <a class="el" href="structlipsum_1_1ArgVec2.html" title="Store data for inputting into functions.">lipsum::ArgVec2</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>std::string The random text.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. By default 4. </td></tr>
@@ -2625,10 +2629,11 @@ ipsum..." sample. </td></tr>
     <tr><td class="paramname">maxPara</td><td>The maximum possible number of paragraphs in the text. By default 4. </td></tr>
     <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the first paragraph. By default true. </td></tr>
     <tr><td class="paramname">source</td><td>The source for words. By default the standard "Lorem
-ipsum..." sample. </td></tr>
+ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random text. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GenerateText_8cpp-example.html#a2">GenerateText.cpp</a>.</dd>
 </dl>
 

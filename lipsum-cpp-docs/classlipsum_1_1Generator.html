@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.4</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.5</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -91,11 +91,13 @@ Collaboration diagram for lipsum::Generator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlipsum_1_1Generator__coll__graph.png" border="0" usemap="#alipsum_1_1Generator_coll__map" alt="Collaboration graph"/></div>
 <map name="alipsum_1_1Generator_coll__map" id="alipsum_1_1Generator_coll__map">
-<area shape="rect" title="OOP layer over lipsum&#45;cpp." alt="" coords="73,240,211,265"/>
-<area shape="rect" href="structlipsum_1_1ArgVec2.html" title="Store data for inputting into functions." alt="" coords="5,5,132,31"/>
-<area shape="poly" title=" " alt="" coords="69,45,67,80,69,124,78,171,96,215,107,228,121,238,118,242,103,231,92,217,73,173,64,125,62,80,63,44"/>
-<area shape="rect" href="classlipsum_1_1Source.html" title="Class for multi&#45;source generation." alt="" coords="156,5,275,31"/>
-<area shape="poly" title=" " alt="" coords="220,44,220,80,217,125,207,172,188,217,177,231,164,242,161,238,173,227,184,215,202,171,211,124,215,80,215,44"/>
+<area shape="rect" title="OOP layer over lipsum&#45;cpp." alt="" coords="121,328,260,353"/>
+<area shape="rect" href="structlipsum_1_1GeneratorSettings.html" title="Settings for lipsum::Generator." alt="" coords="5,240,197,265"/>
+<area shape="poly" title=" " alt="" coords="125,273,180,326,176,329,121,277"/>
+<area shape="rect" href="structlipsum_1_1ArgVec2.html" title="Store data for inputting into functions." alt="" coords="38,5,165,31"/>
+<area shape="poly" title=" " alt="" coords="104,45,104,240,99,240,99,45"/>
+<area shape="rect" href="classlipsum_1_1Source.html" title="Class for multi&#45;source generation." alt="" coords="222,240,341,265"/>
+<area shape="poly" title=" " alt="" coords="264,278,236,306,208,330,204,326,233,302,260,274"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -107,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a511afc093c8e9720d06e605540a75613" id="r_a511afc093c8e9720d06e605540a75613"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a511afc093c8e9720d06e605540a75613">Generator</a> (const std::string &amp;path)</td></tr>
 <tr class="memdesc:a511afc093c8e9720d06e605540a75613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>.  <br /></td></tr>
 <tr class="separator:a511afc093c8e9720d06e605540a75613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8914f9f4960d0bc43d1021b6598423b0" id="r_a8914f9f4960d0bc43d1021b6598423b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a8914f9f4960d0bc43d1021b6598423b0">load_source</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a8914f9f4960d0bc43d1021b6598423b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload a source.  <br /></td></tr>
+<tr class="separator:a8914f9f4960d0bc43d1021b6598423b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03cc902bec04e1d3a7625e4c0035ff62" id="r_a03cc902bec04e1d3a7625e4c0035ff62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a03cc902bec04e1d3a7625e4c0035ff62">change_setting</a> (const std::string &amp;setting, const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;value)</td></tr>
 <tr class="memdesc:a03cc902bec04e1d3a7625e4c0035ff62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a setting.  <br /></td></tr>
 <tr class="separator:a03cc902bec04e1d3a7625e4c0035ff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +133,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a898b4fca9157502e29aed476856f0981" id="r_a898b4fca9157502e29aed476856f0981"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a898b4fca9157502e29aed476856f0981">text</a> (bool useLipsum=true)</td></tr>
 <tr class="memdesc:a898b4fca9157502e29aed476856f0981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random number of random paragraphs.  <br /></td></tr>
 <tr class="separator:a898b4fca9157502e29aed476856f0981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42737d0f826cda0e71959b73755436fd" id="r_a42737d0f826cda0e71959b73755436fd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a42737d0f826cda0e71959b73755436fd">scramble</a> (int length=16, char minChar=' ', char maxChar='~')</td></tr>
+<tr class="memdesc:a42737d0f826cda0e71959b73755436fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random character scramble.  <br /></td></tr>
+<tr class="separator:a42737d0f826cda0e71959b73755436fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04645c27687a2ac37bce78a2aaaaea4" id="r_ab04645c27687a2ac37bce78a2aaaaea4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ab04645c27687a2ac37bce78a2aaaaea4">url</a> ()</td></tr>
+<tr class="memdesc:ab04645c27687a2ac37bce78a2aaaaea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a URL.  <br /></td></tr>
+<tr class="separator:ab04645c27687a2ac37bce78a2aaaaea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7a0f6314f35761d26a7d555eb314c8" id="r_a3f7a0f6314f35761d26a7d555eb314c8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a3f7a0f6314f35761d26a7d555eb314c8">plain_url</a> ()</td></tr>
+<tr class="memdesc:a3f7a0f6314f35761d26a7d555eb314c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a plain URL.  <br /></td></tr>
+<tr class="separator:a3f7a0f6314f35761d26a7d555eb314c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef423f23aa62a4b4349488c19f636ba" id="r_aeef423f23aa62a4b4349488c19f636ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aeef423f23aa62a4b4349488c19f636ba">slug</a> (char separator='-')</td></tr>
+<tr class="memdesc:aeef423f23aa62a4b4349488c19f636ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a slug.  <br /></td></tr>
+<tr class="separator:aeef423f23aa62a4b4349488c19f636ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33f095b8a70b8425bd94b82f59ad387b" id="r_a33f095b8a70b8425bd94b82f59ad387b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a33f095b8a70b8425bd94b82f59ad387b">md_paragraph</a> (int num=1, bool useLipsum=true)</td></tr>
 <tr class="memdesc:a33f095b8a70b8425bd94b82f59ad387b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown paragraph.  <br /></td></tr>
 <tr class="separator:a33f095b8a70b8425bd94b82f59ad387b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,36 +166,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:afd6ea5deb324c29b4b27882adf25ced8" id="r_afd6ea5deb324c29b4b27882adf25ced8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#afd6ea5deb324c29b4b27882adf25ced8">m_Word</a> {4, 9}</td></tr>
-<tr class="memdesc:afd6ea5deb324c29b4b27882adf25ced8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of words in a sentence fragment.  <br /></td></tr>
-<tr class="separator:afd6ea5deb324c29b4b27882adf25ced8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af24f8bcfbb25aad82c79a2fd4e08bded" id="r_af24f8bcfbb25aad82c79a2fd4e08bded"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#af24f8bcfbb25aad82c79a2fd4e08bded">m_Frag</a> {1, 3}</td></tr>
-<tr class="memdesc:af24f8bcfbb25aad82c79a2fd4e08bded"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of sentence fragments in a sentence.  <br /></td></tr>
-<tr class="separator:af24f8bcfbb25aad82c79a2fd4e08bded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aada93958d497752baf1e3171e8371daa" id="r_aada93958d497752baf1e3171e8371daa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aada93958d497752baf1e3171e8371daa">m_Sent</a> {5, 8}</td></tr>
-<tr class="memdesc:aada93958d497752baf1e3171e8371daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of sentences in a paragraph.  <br /></td></tr>
-<tr class="separator:aada93958d497752baf1e3171e8371daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a099f11e398247e20da539681e58b5a48" id="r_a099f11e398247e20da539681e58b5a48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a099f11e398247e20da539681e58b5a48">m_Para</a> {1, 4}</td></tr>
-<tr class="memdesc:a099f11e398247e20da539681e58b5a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of paragraphs in a text.  <br /></td></tr>
-<tr class="separator:a099f11e398247e20da539681e58b5a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f4d84c215e78168d12585a555ed448" id="r_a96f4d84c215e78168d12585a555ed448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a96f4d84c215e78168d12585a555ed448">m_Point</a> {3, 5}</td></tr>
-<tr class="memdesc:a96f4d84c215e78168d12585a555ed448"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of points in lists.  <br /></td></tr>
-<tr class="separator:a96f4d84c215e78168d12585a555ed448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9a675ce0661e7a4c4e0accf0ea39647" id="r_ab9a675ce0661e7a4c4e0accf0ea39647"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ab9a675ce0661e7a4c4e0accf0ea39647">m_WordURL</a> {2, 5}</td></tr>
-<tr class="memdesc:ab9a675ce0661e7a4c4e0accf0ea39647"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of words at the end of a URL or in a heading.  <br /></td></tr>
-<tr class="separator:ab9a675ce0661e7a4c4e0accf0ea39647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a635dcf3a43a1d04276208a1d25096689" id="r_a635dcf3a43a1d04276208a1d25096689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a635dcf3a43a1d04276208a1d25096689">m_WordFmt</a> {4, 8}</td></tr>
-<tr class="memdesc:a635dcf3a43a1d04276208a1d25096689"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of words in a sentence fragment in formatted sentences.  <br /></td></tr>
-<tr class="separator:a635dcf3a43a1d04276208a1d25096689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0364e2512c08f819e28476cc90c5f84" id="r_af0364e2512c08f819e28476cc90c5f84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#af0364e2512c08f819e28476cc90c5f84">m_FragFmt</a> {1, 2}</td></tr>
-<tr class="memdesc:af0364e2512c08f819e28476cc90c5f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of sentence fragments in a formatted sentence.  <br /></td></tr>
-<tr class="separator:af0364e2512c08f819e28476cc90c5f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7727ada86a0694a9fc95ea08a5a4d947" id="r_a7727ada86a0694a9fc95ea08a5a4d947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a7727ada86a0694a9fc95ea08a5a4d947">m_Level</a> {2, 4}</td></tr>
-<tr class="memdesc:a7727ada86a0694a9fc95ea08a5a4d947"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible heading levels, excluding the main heading.  <br /></td></tr>
-<tr class="separator:a7727ada86a0694a9fc95ea08a5a4d947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fbda7e9d826a6b0277ed3493a36198a" id="r_a6fbda7e9d826a6b0277ed3493a36198a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a6fbda7e9d826a6b0277ed3493a36198a">m_JsonLength</a> {2, 5}</td></tr>
-<tr class="memdesc:a6fbda7e9d826a6b0277ed3493a36198a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of items in JSON objects and arrays.  <br /></td></tr>
-<tr class="separator:a6fbda7e9d826a6b0277ed3493a36198a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6aab7907c23bf00b1ef6076b247486" id="r_a2e6aab7907c23bf00b1ef6076b247486"><td class="memItemLeft" align="right" valign="top"><a id="a2e6aab7907c23bf00b1ef6076b247486" name="a2e6aab7907c23bf00b1ef6076b247486"></a>
+<a class="el" href="structlipsum_1_1GeneratorSettings.html">GeneratorSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Settings</b></td></tr>
+<tr class="memdesc:a2e6aab7907c23bf00b1ef6076b247486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for generation. <br /></td></tr>
+<tr class="separator:a2e6aab7907c23bf00b1ef6076b247486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99f03adc413d1df93456be8597ef4e48" id="r_a99f03adc413d1df93456be8597ef4e48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlipsum_1_1Source.html">Source</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a99f03adc413d1df93456be8597ef4e48">m_Source</a></td></tr>
 <tr class="memdesc:a99f03adc413d1df93456be8597ef4e48"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classlipsum_1_1Source.html" title="Class for multi-source generation.">Source</a> used for generation.  <br /></td></tr>
 <tr class="separator:a99f03adc413d1df93456be8597ef4e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,7 +364,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random HTML paragraph. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a4">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a8">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -404,7 +395,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random HTML document. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a5">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a9">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -446,8 +437,37 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random JSON object or array. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a7">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a11">GeneratorFormats.cpp</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="a8914f9f4960d0bc43d1021b6598423b0" name="a8914f9f4960d0bc43d1021b6598423b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8914f9f4960d0bc43d1021b6598423b0">&#9670;&#160;</a></span>load_source()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lipsum::Generator::load_source </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reload a source. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>This reloads the specified lorem ipsum source into m_Source. If path is invalid, it will print a warning and default to the standard lorem-ipsum source.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The filepath or name of the lorem ipsum source.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlipsum_1_1Source.html#addcccd703e85d0c6d0224f06ec55bbf4" title="Load a source and fill the vector.">lipsum::Source::load</a> </dd></dl>
 
 </div>
 </div>
@@ -488,7 +508,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown paragraph. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a2">Advanced.cpp</a>, and <a class="el" href="GeneratorFormats_8cpp-example.html#a2">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a2">Advanced.cpp</a>, and <a class="el" href="GeneratorFormats_8cpp-example.html#a6">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -519,7 +539,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown document. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a3">GeneratorFormats.cpp</a>, and <a class="el" href="Source_8cpp-example.html#a4">Source.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a7">GeneratorFormats.cpp</a>, and <a class="el" href="Source_8cpp-example.html#a4">Source.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -562,6 +582,79 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random paragraph(s). </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Generator_8cpp-example.html#a4">Generator.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a3f7a0f6314f35761d26a7d555eb314c8" name="a3f7a0f6314f35761d26a7d555eb314c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f7a0f6314f35761d26a7d555eb314c8">&#9670;&#160;</a></span>plain_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::plain_url </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a plain URL. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>Generate a URL with a random word followed by a random TLD.</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string The plain URL. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a3">GeneratorFormats.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a42737d0f826cda0e71959b73755436fd" name="a42737d0f826cda0e71959b73755436fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42737d0f826cda0e71959b73755436fd">&#9670;&#160;</a></span>scramble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::scramble </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em> = <code>16</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>minChar</em> = <code>'&#160;'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>maxChar</em> = <code>'~'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random character scramble. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>Generate a random string of text with random characters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">length</td><td>The number of characters. By default 16. </td></tr>
+    <tr><td class="paramname">minChar</td><td>The lowest-valued ASCII character that can appear. By default a space. </td></tr>
+    <tr><td class="paramname">maxChar</td><td>The highest-valued ASCII character than can appear. By default a tilde.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The character scramble. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a5">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -632,6 +725,37 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aeef423f23aa62a4b4349488c19f636ba" name="aeef423f23aa62a4b4349488c19f636ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef423f23aa62a4b4349488c19f636ba">&#9670;&#160;</a></span>slug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::slug </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>separator</em> = <code>'-'</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a slug. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>This function generates a sentence fragment with the spaces replaced with the specified separator character.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">separator</td><td>The separator character. By default a hyphen.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The slug. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a4">GeneratorFormats.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
 <a id="a898b4fca9157502e29aed476856f0981" name="a898b4fca9157502e29aed476856f0981"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a898b4fca9157502e29aed476856f0981">&#9670;&#160;</a></span>text()</h2>
 
@@ -659,6 +783,30 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random text. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Generator_8cpp-example.html#a5">Generator.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ab04645c27687a2ac37bce78a2aaaaea4" name="ab04645c27687a2ac37bce78a2aaaaea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04645c27687a2ac37bce78a2aaaaea4">&#9670;&#160;</a></span>url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::url </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a URL. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
+<p>Generate a URL starting in <a href="https://">https://</a>, followed by a random word, followed by a random TLD, followed by a slash and a random HTML id as a slug separated by hyphens.</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string The URL. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a2">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -720,187 +868,12 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random XML document. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a6">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a10">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af24f8bcfbb25aad82c79a2fd4e08bded" name="af24f8bcfbb25aad82c79a2fd4e08bded"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af24f8bcfbb25aad82c79a2fd4e08bded">&#9670;&#160;</a></span>m_Frag</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_Frag {1, 3}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible number of sentence fragments in a sentence. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
-
-</div>
-</div>
-<a id="af0364e2512c08f819e28476cc90c5f84" name="af0364e2512c08f819e28476cc90c5f84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0364e2512c08f819e28476cc90c5f84">&#9670;&#160;</a></span>m_FragFmt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_FragFmt {1, 2}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible number of sentence fragments in a formatted sentence. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
-
-</div>
-</div>
-<a id="a6fbda7e9d826a6b0277ed3493a36198a" name="a6fbda7e9d826a6b0277ed3493a36198a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fbda7e9d826a6b0277ed3493a36198a">&#9670;&#160;</a></span>m_JsonLength</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_JsonLength {2, 5}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible number of items in JSON objects and arrays. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
-
-</div>
-</div>
-<a id="a7727ada86a0694a9fc95ea08a5a4d947" name="a7727ada86a0694a9fc95ea08a5a4d947"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7727ada86a0694a9fc95ea08a5a4d947">&#9670;&#160;</a></span>m_Level</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_Level {2, 4}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible heading levels, excluding the main heading. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
-
-</div>
-</div>
-<a id="a099f11e398247e20da539681e58b5a48" name="a099f11e398247e20da539681e58b5a48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a099f11e398247e20da539681e58b5a48">&#9670;&#160;</a></span>m_Para</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_Para {1, 4}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible number of paragraphs in a text. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
-
-</div>
-</div>
-<a id="a96f4d84c215e78168d12585a555ed448" name="a96f4d84c215e78168d12585a555ed448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96f4d84c215e78168d12585a555ed448">&#9670;&#160;</a></span>m_Point</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_Point {3, 5}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible number of points in lists. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
-
-</div>
-</div>
-<a id="aada93958d497752baf1e3171e8371daa" name="aada93958d497752baf1e3171e8371daa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aada93958d497752baf1e3171e8371daa">&#9670;&#160;</a></span>m_Sent</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_Sent {5, 8}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible number of sentences in a paragraph. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
-
-</div>
-</div>
 <a id="a99f03adc413d1df93456be8597ef4e48" name="a99f03adc413d1df93456be8597ef4e48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99f03adc413d1df93456be8597ef4e48">&#9670;&#160;</a></span>m_Source</h2>
 
@@ -924,81 +897,6 @@ Private Attributes</h2></td></tr>
 <p><a class="el" href="classlipsum_1_1Source.html" title="Class for multi-source generation.">Source</a> used for generation. </p>
 <p>This is the source passed into functions. By default the default lorem-ipsum source from <a class="el" href="sample_8inl.html" title="File containing all of the words used by lipsum::Source.">sample.inl</a>.</p>
 <dl class="section since"><dt>Since</dt><dd>0.4.1 </dd></dl>
-
-</div>
-</div>
-<a id="afd6ea5deb324c29b4b27882adf25ced8" name="afd6ea5deb324c29b4b27882adf25ced8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd6ea5deb324c29b4b27882adf25ced8">&#9670;&#160;</a></span>m_Word</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_Word {4, 9}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible number of words in a sentence fragment. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
-
-</div>
-</div>
-<a id="a635dcf3a43a1d04276208a1d25096689" name="a635dcf3a43a1d04276208a1d25096689"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a635dcf3a43a1d04276208a1d25096689">&#9670;&#160;</a></span>m_WordFmt</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_WordFmt {4, 8}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible number of words in a sentence fragment in formatted sentences. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
-
-</div>
-</div>
-<a id="ab9a675ce0661e7a4c4e0accf0ea39647" name="ab9a675ce0661e7a4c4e0accf0ea39647"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9a675ce0661e7a4c4e0accf0ea39647">&#9670;&#160;</a></span>m_WordURL</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> lipsum::Generator::m_WordURL {2, 5}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The minimum and maximum possible number of words at the end of a URL or in a heading. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4 </dd></dl>
 
 </div>
 </div>

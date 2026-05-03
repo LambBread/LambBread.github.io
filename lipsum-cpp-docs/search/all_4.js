@@ -45,5 +45,6 @@ var searchData=
   ['generatexmldocumentx_42',['GenerateXMLDocumentX',['../namespacelipsum.html#a2a8e4da1499cf3f68016749350e823d7',1,'lipsum']]],
   ['generator_43',['generator',['../classlipsum_1_1Generator.html#a511afc093c8e9720d06e605540a75613',1,'lipsum::Generator::Generator(const std::string &amp;path)'],['../classlipsum_1_1Generator.html#a06bce7e2b6d946ae23844c2afee9249d',1,'lipsum::Generator::Generator()=default'],['../classlipsum_1_1Generator.html',1,'lipsum::Generator']]],
   ['generator_2ehpp_44',['generator.hpp',['../generator_8hpp.html',1,'']]],
-  ['generator_2einl_45',['generator.inl',['../generator_8inl.html',1,'']]]
+  ['generator_2einl_45',['generator.inl',['../generator_8inl.html',1,'']]],
+  ['generatorsettings_46',['GeneratorSettings',['../structlipsum_1_1GeneratorSettings.html',1,'lipsum']]]
 ];

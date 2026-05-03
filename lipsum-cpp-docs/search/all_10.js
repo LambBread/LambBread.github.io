@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['version_2eh_0',['version.h',['../version_8h.html',1,'']]],
-  ['version_2ehpp_1',['version.hpp',['../version_8hpp.html',1,'']]]
+  ['url_0',['url',['../classlipsum_1_1Generator.html#ab04645c27687a2ac37bce78a2aaaaea4',1,'lipsum::Generator']]]
 ];
