@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.5</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -73,8 +73,33 @@ $(function() {
   <div class="headertitle"><div class="title">lipsum-cpp CLI</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> This is a CLI tool for lipsum-cpp. It contains subcommands for every <code>lpsm::Generator</code> function. For more info, type <code>lpsmcpp-cli help</code>. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> This is a CLI tool for lipsum-cpp. It contains subcommands for every <code>lpsm::Generator</code> function. For more info, type <code>lpsmcpp-cli help</code>.</p>
+<div class="fragment"><div class="line">Usage: lpsmcpp-cli &lt;subcommand&gt; [&lt;arguments&gt;] [&lt;options&gt;]</div>
+<div class="line"> </div>
+<div class="line">Options include:</div>
+<div class="line">  --help, -h - Show this help</div>
+<div class="line">  --version, -v - Show the current version of lipsum-cpp.</div>
+<div class="line">  --word=&lt;min,max&gt;, -w - The min and max words per sentence fragment.</div>
+<div class="line">  --frag=&lt;min,max&gt;, -f - The min and max sentence fragments per sentence.</div>
+<div class="line">  --sent=&lt;min,max&gt;, -s - The min and max sentences per paragraph.</div>
+<div class="line">  --para=&lt;min,max&gt;, -p - The min and max paragraphs per text.</div>
+<div class="line">  --point=&lt;min,max&gt;, -P - The min and max points per list.</div>
+<div class="line">  --wordURL=&lt;min,max&gt;, -u - The min and max words in headings, in slugs, and at the end of URLs.</div>
+<div class="line">  --wordFmt=&lt;min,max&gt;, -W - The min and max words per formatted sentence fragment.</div>
+<div class="line">  --fragFmt=&lt;min,max&gt;, -F - The min and max sentence fragments per formatted sentence.</div>
+<div class="line">  --level=&lt;min,max&gt;, -l - The min and max levels of headings.</div>
+<div class="line">  --jsonLength=&lt;min,max&gt;, -j - The min and max amount of items in JSON objects.</div>
+<div class="line">  --source=&lt;source&gt;, -S - Load specified source.</div>
+<div class="line">      &lt;source&gt; may be a path to a file or a built-in source.</div>
+<div class="line">      Built in sources include: default/lorem, cat, dog/doggo, corpo/corporate.</div>
+<div class="line"> </div>
+<div class="line">Subcommands include:</div>
+<div class="line">  help, word, fragment, sentence, paragraph, text,</div>
+<div class="line">  url, plain_url, slug, md_paragraph, md_text, md_header,</div>
+<div class="line">  md_emphasis, md_link, md_list, xml, json</div>
+<div class="line"> </div>
+<div class="line">For more information, type lpsmcpp-cli help &lt;subcommand&gt;.</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

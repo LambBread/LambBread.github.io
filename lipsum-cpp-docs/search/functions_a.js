@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['text_0',['text',['../classlipsum_1_1Generator.html#a898b4fca9157502e29aed476856f0981',1,'lipsum::Generator']]],
-  ['tostring_1',['ToString',['../namespacelipsum_1_1internal.html#ac08bc68d8b0434edc0c6382c15e7c413',1,'lipsum::internal']]]
+  ['scramble_0',['scramble',['../classlipsum_1_1Generator.html#a42737d0f826cda0e71959b73755436fd',1,'lipsum::Generator']]],
+  ['sentence_1',['sentence',['../classlipsum_1_1Generator.html#a4b3ef2f529fbd6ac55c1d118d2187226',1,'lipsum::Generator']]],
+  ['slug_2',['slug',['../classlipsum_1_1Generator.html#aeef423f23aa62a4b4349488c19f636ba',1,'lipsum::Generator']]],
+  ['source_3',['source',['../classlipsum_1_1Source.html#a4b399e003e1e54400a28699648dfb025',1,'lipsum::Source::Source()=default'],['../classlipsum_1_1Source.html#a5d3380c1ce11ae7ae820967e7ddb6079',1,'lipsum::Source::Source(const std::string &amp;path)']]]
 ];

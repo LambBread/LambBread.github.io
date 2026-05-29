@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['scramble_0',['scramble',['../classlipsum_1_1Generator.html#a42737d0f826cda0e71959b73755436fd',1,'lipsum::Generator']]],
-  ['sentence_1',['sentence',['../classlipsum_1_1Generator.html#a4b3ef2f529fbd6ac55c1d118d2187226',1,'lipsum::Generator']]],
-  ['sentence_5ffragment_2',['sentence_fragment',['../classlipsum_1_1Generator.html#a8977e3cc0486d3723554f67122607e49',1,'lipsum::Generator']]],
-  ['slug_3',['slug',['../classlipsum_1_1Generator.html#aeef423f23aa62a4b4349488c19f636ba',1,'lipsum::Generator']]],
-  ['source_4',['source',['../classlipsum_1_1Source.html#a4b399e003e1e54400a28699648dfb025',1,'lipsum::Source::Source()=default'],['../classlipsum_1_1Source.html#a5d3380c1ce11ae7ae820967e7ddb6079',1,'lipsum::Source::Source(const std::string &amp;path)']]]
+  ['random_5fword_0',['random_word',['../classlipsum_1_1Source.html#a2eeae1cd56db60190503e2ab87eb2802',1,'lipsum::Source']]],
+  ['randomnumber_1',['randomnumber',['../namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e',1,'lipsum::internal::RandomNumber(T min, T max)'],['../namespacelipsum_1_1internal.html#a9836311a3550845e6f58418e34e04409',1,'lipsum::internal::RandomNumber(char min, char max)'],['../namespacelipsum_1_1internal.html#aa8d31ca7e199b92ede4459bdaf6308f1',1,'lipsum::internal::RandomNumber(bool min, bool max)']]],
+  ['roll_2',['roll',['../structlipsum_1_1ArgVec2.html#add4fa7eb2a8c099e73e74fd810be3b53',1,'lipsum::ArgVec2']]]
 ];

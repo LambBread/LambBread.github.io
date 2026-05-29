@@ -1,0 +1,13 @@
+<map id="src/lipsum/generatorsettings.hpp" name="src/lipsum/generatorsettings.hpp">
+<area shape="rect" id="Node000001" title="Struct lipsum::GeneratorSettings." alt="" coords="163,5,399,31"/>
+<area shape="rect" id="Node000002" href="$generator_8hpp.html" title="Declaration of lipsum::Generator." alt="" coords="190,79,373,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,44,284,79,279,79,279,44"/>
+<area shape="rect" id="Node000003" href="$lipsum_8hpp.html" title="Main header of lipsum&#45;cpp." alt="" coords="223,152,340,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,118,284,152,279,152,279,118"/>
+<area shape="rect" id="Node000004" href="$lipsum__binding__js_8cpp.html" title="JS binding over lipsum&#45;cpp." alt="" coords="5,225,192,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="243,185,144,228,142,223,241,180"/>
+<area shape="rect" id="Node000005" href="$lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="216,233,347,258"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="284,191,284,232,279,232,279,191"/>
+<area shape="rect" id="Node000006" href="$lipsum__static_8cpp.html" title="Source file when building lipsum&#45;cpp as static or shared library." alt="" coords="371,233,530,258"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="319,181,427,230,425,235,317,185"/>
+</map>

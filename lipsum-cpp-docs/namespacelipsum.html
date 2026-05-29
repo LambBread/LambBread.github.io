@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.5</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -233,14 +233,93 @@ Functions</h2></td></tr>
 <tr class="memitem:a3674a1f6d0c8ec15826ba174e7cab97e" id="r_a3674a1f6d0c8ec15826ba174e7cab97e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e">CountWords</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a3674a1f6d0c8ec15826ba174e7cab97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of words in a string.  <br /></td></tr>
 <tr class="separator:a3674a1f6d0c8ec15826ba174e7cab97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac473d7ec4215a6b1eda5e3df5b4411" id="r_a1ac473d7ec4215a6b1eda5e3df5b4411"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a1ac473d7ec4215a6b1eda5e3df5b4411">CountSentenceFragments</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a1ac473d7ec4215a6b1eda5e3df5b4411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentence fragments in a string.  <br /></td></tr>
+<tr class="separator:a1ac473d7ec4215a6b1eda5e3df5b4411"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a146896373a78c16daaf8f9b20334a38f" id="r_a146896373a78c16daaf8f9b20334a38f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f">CountSentences</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a146896373a78c16daaf8f9b20334a38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentences in a string.  <br /></td></tr>
 <tr class="separator:a146896373a78c16daaf8f9b20334a38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241e88692e5fc66b5f097a645d140189" id="r_a241e88692e5fc66b5f097a645d140189"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a241e88692e5fc66b5f097a645d140189">CountParagraphs</a> (const std::string &amp;str, int format=0)</td></tr>
+<tr class="memdesc:a241e88692e5fc66b5f097a645d140189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of paragraphs or elements in a string.  <br /></td></tr>
+<tr class="separator:a241e88692e5fc66b5f097a645d140189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the main namespace of lipsum-cpp. </p>
 <p>This namespace contains all the code for the C++ usage of lipsum-cpp. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a241e88692e5fc66b5f097a645d140189" name="a241e88692e5fc66b5f097a645d140189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a241e88692e5fc66b5f097a645d140189">&#9670;&#160;</a></span>CountParagraphs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lipsum::CountParagraphs </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of paragraphs or elements in a string. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.6</dd></dl>
+<p>Count the number of tab characters in a non-formatted string, double newlines in Markdown/HTML strings, and elements in HTML strings.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string inputted. </td></tr>
+    <tr><td class="paramname">format</td><td>The format the string is in. By default 0. (non-formatted) Valid options include 0 (non-formatted), 1 (Markdown/HTML), and 2. (HTML)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int The number of paragraphs. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a8">Misc.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ac473d7ec4215a6b1eda5e3df5b4411" name="a1ac473d7ec4215a6b1eda5e3df5b4411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac473d7ec4215a6b1eda5e3df5b4411">&#9670;&#160;</a></span>CountSentenceFragments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lipsum::CountSentenceFragments </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of sentence fragments in a string. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.6</dd></dl>
+<p>Count the number of commas, semicolons, and hyphens in a string, excluding usage in Markdown. (i.e. hyphen at start of line, or in parentheses)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string inputted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int The number of sentence fragments. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a7">Misc.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
 <a id="a146896373a78c16daaf8f9b20334a38f" name="a146896373a78c16daaf8f9b20334a38f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a146896373a78c16daaf8f9b20334a38f">&#9670;&#160;</a></span>CountSentences()</h2>
 
@@ -267,7 +346,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int The number of sentences. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a9">Advanced.cpp</a>, and <a class="el" href="Misc_8cpp-example.html#a5">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a9">Advanced.cpp</a>, and <a class="el" href="Misc_8cpp-example.html#a6">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -290,8 +369,7 @@ Functions</h2></td></tr>
 
 <p>Count the number of words in a string. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.8</dd></dl>
-<p>Count the number of words in a string using a naive approach.</p>
-<dl class="section note"><dt>Note</dt><dd>Some formatting will be counted as words.</dd></dl>
+<p>Count the number of words in a string using alphanumeric characters, hyphens, plus-signs, and apostrophes, excluding words within parentheses.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string inputted.</td></tr>
@@ -299,7 +377,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int The number of words. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a10">Advanced.cpp</a>, and <a class="el" href="Misc_8cpp-example.html#a6">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a10">Advanced.cpp</a>, and <a class="el" href="Misc_8cpp-example.html#a11">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -324,7 +402,7 @@ Functions</h2></td></tr>
 <p>Returns the sentence "Lorem ipsum dolor sit amet, consectetur adipiscing
 elit."</p>
 <dl class="section return"><dt>Returns</dt><dd>std::string The default Lorem Ipsum sentence. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a12">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a17">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -942,7 +1020,7 @@ ipsum..." sample.</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random heading. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Markdown_8cpp-example.html#a4">Markdown.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a1">Advanced.cpp</a>, and <a class="el" href="Markdown_8cpp-example.html#a4">Markdown.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -1508,7 +1586,7 @@ ipsum..." sample.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string The random paragraph. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random paragraphs. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Markdown_8cpp-example.html#a11">Markdown.cpp</a>.</dd>
 </dl>
 
@@ -1959,7 +2037,7 @@ ipsum..." sample.</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The plain URL. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a7">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a12">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -2008,7 +2086,7 @@ ipsum..." sample.</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The character scramble. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a11">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a16">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -2407,7 +2485,7 @@ ipsum..." sample.</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The slug. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a13">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a18">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -2464,7 +2542,7 @@ ipsum..." sample.</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The slug. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a14">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a19">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -2677,7 +2755,7 @@ ipsum..." sample.</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The URL. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a8">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a13">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -2727,7 +2805,7 @@ ipsum..." sample.</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The URL. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a10">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Misc_8cpp-example.html#a15">Misc.cpp</a>.</dd>
 </dl>
 
 </div>

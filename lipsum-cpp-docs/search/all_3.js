@@ -4,5 +4,6 @@ var searchData=
   ['formats_2ehpp_1',['formats.hpp',['../formats_8hpp.html',1,'']]],
   ['formats_2einl_2',['formats.inl',['../formats_8inl.html',1,'']]],
   ['frag_3',['frag',['../structlipsum_1_1GeneratorSettings.html#a5cbc3128d186c6fb5734cb8e4b9ef975',1,'lipsum::GeneratorSettings']]],
-  ['fragfmt_4',['fragFmt',['../structlipsum_1_1GeneratorSettings.html#a47601942f022b4318f040ac8b9abec2f',1,'lipsum::GeneratorSettings']]]
+  ['fragfmt_4',['fragFmt',['../structlipsum_1_1GeneratorSettings.html#a47601942f022b4318f040ac8b9abec2f',1,'lipsum::GeneratorSettings']]],
+  ['fragment_5',['fragment',['../classlipsum_1_1Generator.html#ae126e6208c7234db9059cbbb4c282c64',1,'lipsum::Generator']]]
 ];

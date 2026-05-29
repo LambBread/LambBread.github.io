@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.5</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -151,9 +151,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a569d152d3cda5bd9cb4d006567a3b103" id="r_a569d152d3cda5bd9cb4d006567a3b103"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a569d152d3cda5bd9cb4d006567a3b103">lpsm_CountWords</a> (const char *str)</td></tr>
 <tr class="memdesc:a569d152d3cda5bd9cb4d006567a3b103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of words in a string.  <br /></td></tr>
 <tr class="separator:a569d152d3cda5bd9cb4d006567a3b103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b0d379da3a82330f45d61ab3b51a8d" id="r_a64b0d379da3a82330f45d61ab3b51a8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a64b0d379da3a82330f45d61ab3b51a8d">lpsm_CountSentenceFragments</a> (const char *str)</td></tr>
+<tr class="memdesc:a64b0d379da3a82330f45d61ab3b51a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentence fragments in a string.  <br /></td></tr>
+<tr class="separator:a64b0d379da3a82330f45d61ab3b51a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452546ded8bc62c051d447a9d1d41f8d" id="r_a452546ded8bc62c051d447a9d1d41f8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a452546ded8bc62c051d447a9d1d41f8d">lpsm_CountSentences</a> (const char *str)</td></tr>
 <tr class="memdesc:a452546ded8bc62c051d447a9d1d41f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentences in a string.  <br /></td></tr>
 <tr class="separator:a452546ded8bc62c051d447a9d1d41f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e3009cec6844867dcf6985a9a62a1e" id="r_ac0e3009cec6844867dcf6985a9a62a1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#ac0e3009cec6844867dcf6985a9a62a1e">lpsm_CountParagraphs</a> (const char *str, int format)</td></tr>
+<tr class="memdesc:ac0e3009cec6844867dcf6985a9a62a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of paragraphs or elements in a string.  <br /></td></tr>
+<tr class="separator:ac0e3009cec6844867dcf6985a9a62a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a315e803d2566be8e0a97389317fe620c" id="r_a315e803d2566be8e0a97389317fe620c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a> (char *str)</td></tr>
 <tr class="memdesc:a315e803d2566be8e0a97389317fe620c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a string returned by a function.  <br /></td></tr>
 <tr class="separator:a315e803d2566be8e0a97389317fe620c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +215,75 @@ Functions</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2026 LambBread</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>LambBread from github.com </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ac0e3009cec6844867dcf6985a9a62a1e" name="ac0e3009cec6844867dcf6985a9a62a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e3009cec6844867dcf6985a9a62a1e">&#9670;&#160;</a></span>lpsm_CountParagraphs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int lpsm_CountParagraphs </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of paragraphs or elements in a string. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.6</dd></dl>
+<p>Count the number of tab characters in a non-formatted string, double newlines in Markdown/HTML strings, and elements in HTML strings.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string inputted. </td></tr>
+    <tr><td class="paramname">format</td><td>The format the string is in. Valid options include 0 (non-formatted), 1 (Markdown/HTML), and 2. (HTML)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int The number of paragraphs. </dd></dl>
+
+</div>
+</div>
+<a id="a64b0d379da3a82330f45d61ab3b51a8d" name="a64b0d379da3a82330f45d61ab3b51a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b0d379da3a82330f45d61ab3b51a8d">&#9670;&#160;</a></span>lpsm_CountSentenceFragments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int lpsm_CountSentenceFragments </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of sentence fragments in a string. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.6</dd></dl>
+<p>Count the number of commas, semicolons, and hyphens in a string, excluding usage in Markdown. (i.e. hyphen at start of line, or in parentheses)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string inputted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int The number of sentence fragments. </dd></dl>
+
+</div>
+</div>
 <a id="a452546ded8bc62c051d447a9d1d41f8d" name="a452546ded8bc62c051d447a9d1d41f8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a452546ded8bc62c051d447a9d1d41f8d">&#9670;&#160;</a></span>lpsm_CountSentences()</h2>
 

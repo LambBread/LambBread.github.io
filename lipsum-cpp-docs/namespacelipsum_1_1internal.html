@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.5</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
    </div>
    <div id="projectbrief">A library written in C++ for generating sample text.</div>
   </td>
@@ -75,6 +75,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#concepts">Concepts</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">lipsum::internal Namespace Reference</div></div>
 </div><!--header-->
@@ -83,6 +84,21 @@ $(function() {
 <p>This namespace contains functions only used internally by other functions.  
 <a href="namespacelipsum_1_1internal.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptlipsum_1_1internal_1_1ToStringable.html">ToStringable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can std::to_string() be called with T? <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptlipsum_1_1internal_1_1Streamable.html">Streamable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can std::ostream take T? <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptlipsum_1_1internal_1_1IsInt.html">IsInt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is T an int? <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptlipsum_1_1internal_1_1UniformDistributionType.html">UniformDistributionType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can std::uniform_int_distribution or std::uniform_real_distribution be constructed with T? <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a688085113dec332dd31558794fd6d7d2" id="r_a688085113dec332dd31558794fd6d7d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a688085113dec332dd31558794fd6d7d2">GenerateTLD</a> ()</td></tr>
@@ -95,25 +111,27 @@ Functions</h2></td></tr>
 <tr class="memitem:a8d8e625c3de86178028328f52432698d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">LogWarn</a> (<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">const</a> <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">Args</a> &amp;... <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">args</a>)</td></tr>
 <tr class="memdesc:a8d8e625c3de86178028328f52432698d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a warning.  <br /></td></tr>
 <tr class="separator:a8d8e625c3de86178028328f52432698d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37fc250e5668a7429596d04e60a4089e" id="r_a37fc250e5668a7429596d04e60a4089e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a37fc250e5668a7429596d04e60a4089e" id="r_a37fc250e5668a7429596d04e60a4089e"><td class="memTemplParams" colspan="2">template&lt;UniformDistributionType T&gt; </td></tr>
 <tr class="memitem:a37fc250e5668a7429596d04e60a4089e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">RandomNumber</a> (T min, T max)</td></tr>
 <tr class="memdesc:a37fc250e5668a7429596d04e60a4089e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random number.  <br /></td></tr>
 <tr class="separator:a37fc250e5668a7429596d04e60a4089e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2577fb54919de00b804031da03831e54" id="r_a2577fb54919de00b804031da03831e54"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a2577fb54919de00b804031da03831e54"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> char&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a2577fb54919de00b804031da03831e54">RandomNumber</a> (char min, char max)</td></tr>
-<tr class="memdesc:a2577fb54919de00b804031da03831e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for char.  <br /></td></tr>
-<tr class="separator:a2577fb54919de00b804031da03831e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb66c1def8ca08c24f4913868cb75df" id="r_a6bb66c1def8ca08c24f4913868cb75df"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a6bb66c1def8ca08c24f4913868cb75df"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a6bb66c1def8ca08c24f4913868cb75df">RandomNumber</a> (bool min, bool max)</td></tr>
-<tr class="memdesc:a6bb66c1def8ca08c24f4913868cb75df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for bool.  <br /></td></tr>
-<tr class="separator:a6bb66c1def8ca08c24f4913868cb75df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9836311a3550845e6f58418e34e04409" id="r_a9836311a3550845e6f58418e34e04409"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a9836311a3550845e6f58418e34e04409">RandomNumber</a> (char min, char max)</td></tr>
+<tr class="memdesc:a9836311a3550845e6f58418e34e04409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for char.  <br /></td></tr>
+<tr class="separator:a9836311a3550845e6f58418e34e04409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d31ca7e199b92ede4459bdaf6308f1" id="r_aa8d31ca7e199b92ede4459bdaf6308f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#aa8d31ca7e199b92ede4459bdaf6308f1">RandomNumber</a> (bool min, bool max)</td></tr>
+<tr class="memdesc:aa8d31ca7e199b92ede4459bdaf6308f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for bool.  <br /></td></tr>
+<tr class="separator:aa8d31ca7e199b92ede4459bdaf6308f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedab19bcab90edbe5c75525dd94d552a" id="r_aedab19bcab90edbe5c75525dd94d552a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#aedab19bcab90edbe5c75525dd94d552a">WeightedRandomIdx</a> (<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">const</a> std::vector&lt; <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">int</a> &gt; &amp;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">weights</a>)</td></tr>
 <tr class="memdesc:aedab19bcab90edbe5c75525dd94d552a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose a random index based off weights.  <br /></td></tr>
 <tr class="separator:aedab19bcab90edbe5c75525dd94d552a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac08bc68d8b0434edc0c6382c15e7c413" id="r_ac08bc68d8b0434edc0c6382c15e7c413"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">typename</a> <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">T</a> &gt; </td></tr>
+<tr class="memitem:ac08bc68d8b0434edc0c6382c15e7c413" id="r_ac08bc68d8b0434edc0c6382c15e7c413"><td class="memTemplParams" colspan="2">template&lt;Streamable T&gt; </td></tr>
 <tr class="memitem:ac08bc68d8b0434edc0c6382c15e7c413"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#ac08bc68d8b0434edc0c6382c15e7c413">ToString</a> (<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">const</a> <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">T</a> &amp;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">param</a>)</td></tr>
 <tr class="memdesc:ac08bc68d8b0434edc0c6382c15e7c413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an object to a string.  <br /></td></tr>
 <tr class="separator:ac08bc68d8b0434edc0c6382c15e7c413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebcc91112c7dffed743f89df9cc4e93" id="r_abebcc91112c7dffed743f89df9cc4e93"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">typename</a> <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">T</a> &gt; </td></tr>
+<tr class="memitem:abebcc91112c7dffed743f89df9cc4e93"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#abebcc91112c7dffed743f89df9cc4e93">ToType</a> (<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">const</a> std::string &amp;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">input</a>)</td></tr>
+<tr class="memdesc:abebcc91112c7dffed743f89df9cc4e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to an object.  <br /></td></tr>
+<tr class="separator:abebcc91112c7dffed743f89df9cc4e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This namespace contains functions only used internally by other functions. </p>
@@ -159,7 +177,7 @@ Functions</h2></td></tr>
 
 <p>Handle HTML entities. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.6</dd></dl>
-<p>This function handles HTML entities by converting quotation marks, apostrophes, less-than signs, greater-than signs, and ampersands to their corresponding HTML entities.</p>
+<p>Handle HTML entities by converting quotation marks, apostrophes, less-than signs, greater-than signs, and ampersands to their corresponding HTML entities.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string to handle.</td></tr>
@@ -206,13 +224,11 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a6bb66c1def8ca08c24f4913868cb75df" name="a6bb66c1def8ca08c24f4913868cb75df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bb66c1def8ca08c24f4913868cb75df">&#9670;&#160;</a></span>RandomNumber() <span class="overload">[1/3]</span></h2>
+<a id="aa8d31ca7e199b92ede4459bdaf6308f1" name="aa8d31ca7e199b92ede4459bdaf6308f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d31ca7e199b92ede4459bdaf6308f1">&#9670;&#160;</a></span>RandomNumber() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool lipsum::internal::RandomNumber </td>
@@ -234,9 +250,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Specialization of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for bool. </p>
+<p>Overload of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for bool. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.9</dd></dl>
-<p>This is a specialization of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for bool.</p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">min</td><td>The minimum value. </td></tr>
@@ -248,13 +264,11 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a2577fb54919de00b804031da03831e54" name="a2577fb54919de00b804031da03831e54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2577fb54919de00b804031da03831e54">&#9670;&#160;</a></span>RandomNumber() <span class="overload">[2/3]</span></h2>
+<a id="a9836311a3550845e6f58418e34e04409" name="a9836311a3550845e6f58418e34e04409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9836311a3550845e6f58418e34e04409">&#9670;&#160;</a></span>RandomNumber() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">char lipsum::internal::RandomNumber </td>
@@ -276,9 +290,9 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Specialization of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for char. </p>
+<p>Overload of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for char. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.9</dd></dl>
-<p>This is a specialization of <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e" title="Generate a random number.">RandomNumber()</a> for char.</p>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">min</td><td>The minimum value. </td></tr>
@@ -296,7 +310,7 @@ template&lt;&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;UniformDistributionType T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">T lipsum::internal::RandomNumber </td>
@@ -323,7 +337,7 @@ template&lt;typename T &gt; </div>
 <p>Generate a random number between min and max, inclusive. If T is an integer, use std::uniform_int_distribution. Else, use std::uniform_real_distribution.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of the random number. Must be an integer or floating-point type, else compilation will likely fail.</td></tr>
+    <tr><td class="paramname">T</td><td>The type of the random number. Must be a uniform-distribution type, i.e. ints (excluding chars and bool) and floats.</td></tr>
   </table>
   </dd>
 </dl>
@@ -344,7 +358,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">typename</a> <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">T</a> &gt; </div>
+template&lt;Streamable T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::string lipsum::internal::ToString </td>
@@ -358,7 +372,13 @@ template&lt;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7
 
 <p>Convert an object to a string. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
-<p>This function converts the parameter passed into a string using std::stringstream.</p>
+<p>This function converts the parameter passed into a string using std::stringstream or std::to_string().</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type being converted. Must be printable using std::stringstream or convertable using std::to_string().</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">param</td><td>The parameter being converted.</td></tr>
@@ -366,6 +386,43 @@ template&lt;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The parameter as a string. </dd></dl>
+
+</div>
+</div>
+<a id="abebcc91112c7dffed743f89df9cc4e93" name="abebcc91112c7dffed743f89df9cc4e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebcc91112c7dffed743f89df9cc4e93">&#9670;&#160;</a></span>ToType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">typename</a> <a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">T</a> lipsum::internal::ToType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a string to an object. </p>
+<dl class="section since"><dt>Since</dt><dd>0.4.6</dd></dl>
+<p>This function converts the string passed into the specified type. If T is std::string, return input. If T is bool, return based on if input is true/1 or false/0. If T is char, get first character of the string or a null character if the string is empty. If T is an integer type, convert using std::from_chars(). Else, convert using std::stringstream.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type being converted to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>The string being converted.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>T The string as the type. </dd></dl>
 
 </div>
 </div>
