@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
    </div>
-   <div id="projectbrief">A library written in C++ for generating sample text.</div>
+   <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
  </tr>
  </tbody>
@@ -77,6 +77,7 @@ $(function() {
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">misc.hpp File Reference</div></div>
 </div><!--header-->
@@ -110,13 +111,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="misc_8hpp__dep__incl.png" border="0" usemap="#asrc_2lipsum_2misc_8hppdep" alt=""/></div>
 <map name="asrc_2lipsum_2misc_8hppdep" id="asrc_2lipsum_2misc_8hppdep">
-<area shape="rect" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="380,5,532,31"/>
+<area shape="rect" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="205,5,357,31"/>
 <area shape="rect" href="lipsum_8hpp.html" title="Main header of lipsum&#45;cpp." alt="" coords="223,79,340,104"/>
-<area shape="poly" title=" " alt="" coords="416,38,311,81,309,76,414,33"/>
-<area shape="rect" href="core__funcs_8inl.html" title="Core functions of lipsum&#45;cpp." alt="" coords="365,79,547,104"/>
-<area shape="poly" title=" " alt="" coords="459,44,459,79,453,79,453,44"/>
-<area shape="rect" href="markdown_8inl.html" title="Markdown functions of lipsum&#45;cpp." alt="" coords="571,79,754,104"/>
-<area shape="poly" title=" " alt="" coords="503,33,630,76,628,81,501,38"/>
+<area shape="poly" title=" " alt="" coords="284,44,284,79,279,79,279,44"/>
 <area shape="rect" href="lipsum__binding__js_8cpp.html" title="JS binding over lipsum&#45;cpp." alt="" coords="5,152,192,192"/>
 <area shape="poly" title=" " alt="" coords="243,112,144,154,142,149,241,107"/>
 <area shape="rect" href="lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="216,159,347,185"/>
@@ -134,23 +131,20 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacelipsum"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the main namespace of lipsum-cpp. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a491831a1fd8351be2442229ae8f4568d" id="r_a491831a1fd8351be2442229ae8f4568d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a491831a1fd8351be2442229ae8f4568d">lipsum::CountParaMethod</a> : int { <b>Plain</b> = 0
+, <b>Markdown</b>
+, <b>HTML</b>
+ }</td></tr>
+<tr class="memdesc:a491831a1fd8351be2442229ae8f4568d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of methods used in <a class="el" href="namespacelipsum.html#aa031f26a230de40cbdfdfc42c7424ad2" title="Count the number of paragraphs or elements in a string.">lpsm::CountParagraphs()</a>  <a href="namespacelipsum.html#a491831a1fd8351be2442229ae8f4568d">More...</a><br /></td></tr>
+<tr class="separator:a491831a1fd8351be2442229ae8f4568d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:acb9f05ef38b7b4e53fba81b239459ddb" id="r_acb9f05ef38b7b4e53fba81b239459ddb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#acb9f05ef38b7b4e53fba81b239459ddb">lipsum::GenerateDefaultLipsumSentence</a> ()</td></tr>
 <tr class="memdesc:acb9f05ef38b7b4e53fba81b239459ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the beginning Lorem Ipsum sentence.  <br /></td></tr>
 <tr class="separator:acb9f05ef38b7b4e53fba81b239459ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba4a05d018b3cb168c957edfb995079a" id="r_aba4a05d018b3cb168c957edfb995079a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#aba4a05d018b3cb168c957edfb995079a">lipsum::GenerateScramble</a> (int length=16, char min=' ', char max='~')</td></tr>
-<tr class="memdesc:aba4a05d018b3cb168c957edfb995079a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random character scramble.  <br /></td></tr>
-<tr class="separator:aba4a05d018b3cb168c957edfb995079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b05dec2395e130f0de0be16e2c282e" id="r_a74b05dec2395e130f0de0be16e2c282e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a74b05dec2395e130f0de0be16e2c282e">lipsum::GeneratePlainURL</a> (const <a class="el" href="classlipsum_1_1Source.html">Source</a> &amp;source=<a class="el" href="classlipsum_1_1Source.html">Source</a>())</td></tr>
-<tr class="memdesc:a74b05dec2395e130f0de0be16e2c282e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random plain URL.  <br /></td></tr>
-<tr class="separator:a74b05dec2395e130f0de0be16e2c282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a751ad3ebb4e7a6a5583c4517dc3a96d9" id="r_a751ad3ebb4e7a6a5583c4517dc3a96d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a751ad3ebb4e7a6a5583c4517dc3a96d9">lipsum::GenerateURL</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5), const <a class="el" href="classlipsum_1_1Source.html">Source</a> &amp;source=<a class="el" href="classlipsum_1_1Source.html">Source</a>())</td></tr>
-<tr class="memdesc:a751ad3ebb4e7a6a5583c4517dc3a96d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random URL.  <br /></td></tr>
-<tr class="separator:a751ad3ebb4e7a6a5583c4517dc3a96d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bffc0df40c1d1d0ec6ae9865d27e134" id="r_a7bffc0df40c1d1d0ec6ae9865d27e134"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a7bffc0df40c1d1d0ec6ae9865d27e134">lipsum::GenerateSlug</a> (const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;word=<a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(2, 5), char separator='-', const <a class="el" href="classlipsum_1_1Source.html">Source</a> &amp;source=<a class="el" href="classlipsum_1_1Source.html">Source</a>())</td></tr>
-<tr class="memdesc:a7bffc0df40c1d1d0ec6ae9865d27e134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a slug joined by a specified character.  <br /></td></tr>
-<tr class="separator:a7bffc0df40c1d1d0ec6ae9865d27e134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3674a1f6d0c8ec15826ba174e7cab97e" id="r_a3674a1f6d0c8ec15826ba174e7cab97e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e">lipsum::CountWords</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a3674a1f6d0c8ec15826ba174e7cab97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of words in a string.  <br /></td></tr>
 <tr class="separator:a3674a1f6d0c8ec15826ba174e7cab97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,9 +154,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a146896373a78c16daaf8f9b20334a38f" id="r_a146896373a78c16daaf8f9b20334a38f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f">lipsum::CountSentences</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a146896373a78c16daaf8f9b20334a38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentences in a string.  <br /></td></tr>
 <tr class="separator:a146896373a78c16daaf8f9b20334a38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a241e88692e5fc66b5f097a645d140189" id="r_a241e88692e5fc66b5f097a645d140189"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a241e88692e5fc66b5f097a645d140189">lipsum::CountParagraphs</a> (const std::string &amp;str, int format=0)</td></tr>
-<tr class="memdesc:a241e88692e5fc66b5f097a645d140189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of paragraphs or elements in a string.  <br /></td></tr>
-<tr class="separator:a241e88692e5fc66b5f097a645d140189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa031f26a230de40cbdfdfc42c7424ad2" id="r_aa031f26a230de40cbdfdfc42c7424ad2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#aa031f26a230de40cbdfdfc42c7424ad2">lipsum::CountParagraphs</a> (const std::string &amp;str, <a class="el" href="namespacelipsum.html#a491831a1fd8351be2442229ae8f4568d">CountParaMethod</a> format=CountParaMethod::Plain)</td></tr>
+<tr class="memdesc:aa031f26a230de40cbdfdfc42c7424ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of paragraphs or elements in a string.  <br /></td></tr>
+<tr class="separator:aa031f26a230de40cbdfdfc42c7424ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Miscellaneous functions of lipsum-cpp. </p>

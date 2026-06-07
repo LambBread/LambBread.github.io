@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
    </div>
-   <div id="projectbrief">A library written in C++ for generating sample text.</div>
+   <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
  </tr>
  </tbody>
@@ -76,6 +76,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">lipsum.h File Reference</div></div>
 </div><!--header-->
@@ -86,27 +88,22 @@ $(function() {
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="binded_8h_source.html">lipsumc/binded.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="sfuncs_8h_source.html">lipsumc/sfuncs.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for lipsum.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="lipsum_8h__incl.png" border="0" usemap="#asrc_2lipsum_8h" alt=""/></div>
 <map name="asrc_2lipsum_8h" id="asrc_2lipsum_8h">
-<area shape="rect" title="C wrapper over lipsum&#45;cpp." alt="" coords="129,5,231,31"/>
+<area shape="rect" title="C wrapper over lipsum&#45;cpp." alt="" coords="95,5,196,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,88,104"/>
-<area shape="poly" title=" " alt="" coords="160,33,82,74,79,70,157,28"/>
+<area shape="poly" title=" " alt="" coords="131,33,75,73,72,68,128,29"/>
 <area shape="rect" title=" " alt="" coords="112,79,179,104"/>
-<area shape="poly" title=" " alt="" coords="177,32,159,67,155,65,172,30"/>
-<area shape="rect" href="binded_8h.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="149,152,283,177"/>
-<area shape="poly" title=" " alt="" coords="186,30,212,138,207,139,180,32"/>
-<area shape="rect" href="sfuncs_8h.html" title="S functions of lipsum&#45;cpp C wrapper." alt="" coords="253,79,384,104"/>
-<area shape="poly" title=" " alt="" coords="203,28,285,70,283,75,201,33"/>
-<area shape="rect" href="core_8h.html" title="Core macros for lipsum&#45;cpp C wrapper." alt="" coords="237,225,299,251"/>
-<area shape="poly" title=" " alt="" coords="227,176,254,213,249,216,222,179"/>
-<area shape="rect" href="version_8h.html" title="Version macros for lipsum&#45;cpp." alt="" coords="227,299,309,324"/>
-<area shape="poly" title=" " alt="" coords="271,251,271,285,265,285,265,251"/>
-<area shape="poly" title=" " alt="" coords="304,106,246,146,243,142,301,102"/>
-<area shape="poly" title=" " alt="" coords="318,105,297,178,282,214,277,212,292,176,313,104"/>
+<area shape="poly" title=" " alt="" coords="148,31,148,65,143,65,143,31"/>
+<area shape="rect" href="binded_8h.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="203,79,336,104"/>
+<area shape="poly" title=" " alt="" coords="167,28,239,69,236,74,164,33"/>
+<area shape="rect" href="core_8h.html" title="Core macros for lipsum&#45;cpp C wrapper." alt="" coords="238,152,301,177"/>
+<area shape="poly" title=" " alt="" coords="272,104,272,138,267,138,267,104"/>
+<area shape="rect" href="version_8h.html" title="Version macros for lipsum&#45;cpp." alt="" coords="228,225,311,251"/>
+<area shape="poly" title=" " alt="" coords="272,178,272,212,267,212,267,178"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -122,32 +119,26 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="lipsum_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ad93aa0bf74b592c5d37340a88dca39e1" id="r_ad93aa0bf74b592c5d37340a88dca39e1"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="lipsum_8h.html#a6a962dcb20bc21fd90b1eeeb6568ea0e">lpsm_CountParaMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#ad93aa0bf74b592c5d37340a88dca39e1">lpsm_CountParaMethod</a></td></tr>
+<tr class="memdesc:ad93aa0bf74b592c5d37340a88dca39e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of methods used in <a class="el" href="lipsum_8h.html#a96741d1b4f4308ce0be2a1d2dc6ada06" title="Count the number of paragraphs or elements in a string.">lpsm_CountParagraphs()</a>  <br /></td></tr>
+<tr class="separator:ad93aa0bf74b592c5d37340a88dca39e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a6a962dcb20bc21fd90b1eeeb6568ea0e" id="r_a6a962dcb20bc21fd90b1eeeb6568ea0e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a6a962dcb20bc21fd90b1eeeb6568ea0e">lpsm_CountParaMethod</a> { <b>LPSM_CPM_PLAIN</b> = 0
+, <b>LPSM_CPM_MARKDOWN</b>
+, <b>LPSM_CPM_HTML</b>
+ }</td></tr>
+<tr class="memdesc:a6a962dcb20bc21fd90b1eeeb6568ea0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of methods used in <a class="el" href="lipsum_8h.html#a96741d1b4f4308ce0be2a1d2dc6ada06" title="Count the number of paragraphs or elements in a string.">lpsm_CountParagraphs()</a>  <a href="lipsum_8h.html#a6a962dcb20bc21fd90b1eeeb6568ea0e">More...</a><br /></td></tr>
+<tr class="separator:a6a962dcb20bc21fd90b1eeeb6568ea0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a437111c88ed8cc5c348dc5bb5f68b3b5" id="r_a437111c88ed8cc5c348dc5bb5f68b3b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a437111c88ed8cc5c348dc5bb5f68b3b5">lpsm_GenerateWords</a> (int wordCount, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a437111c88ed8cc5c348dc5bb5f68b3b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a specified number of random words.  <br /></td></tr>
-<tr class="separator:a437111c88ed8cc5c348dc5bb5f68b3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3840fb281a99782b3e583e4d8926bf2" id="r_ad3840fb281a99782b3e583e4d8926bf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#ad3840fb281a99782b3e583e4d8926bf2">lpsm_GenerateSentences</a> (int sentCount, int minWord, int maxWord, int minFrag, int maxFrag, bool useLipsum, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:ad3840fb281a99782b3e583e4d8926bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate multiple random sentences at once.  <br /></td></tr>
-<tr class="separator:ad3840fb281a99782b3e583e4d8926bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3778ff31885e16b0d363bd37647fbd5d" id="r_a3778ff31885e16b0d363bd37647fbd5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a3778ff31885e16b0d363bd37647fbd5d">lpsm_GenerateParagraphs</a> (int paraCount, int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a3778ff31885e16b0d363bd37647fbd5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate several random paragraphs at once.  <br /></td></tr>
-<tr class="separator:a3778ff31885e16b0d363bd37647fbd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61416be3b4a454794d82f1abf3f21381" id="r_a61416be3b4a454794d82f1abf3f21381"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a61416be3b4a454794d82f1abf3f21381">lpsm_GenerateDefaultLipsumSentence</a> (void)</td></tr>
 <tr class="memdesc:a61416be3b4a454794d82f1abf3f21381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the beginning Lorem Ipsum sentence.  <br /></td></tr>
 <tr class="separator:a61416be3b4a454794d82f1abf3f21381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a2c4c1fefbfaa4ad112c1ccdb2ac7e4" id="r_a3a2c4c1fefbfaa4ad112c1ccdb2ac7e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a3a2c4c1fefbfaa4ad112c1ccdb2ac7e4">lpsm_GenerateScramble</a> (int length, char min, char max)</td></tr>
-<tr class="memdesc:a3a2c4c1fefbfaa4ad112c1ccdb2ac7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random character scramble.  <br /></td></tr>
-<tr class="separator:a3a2c4c1fefbfaa4ad112c1ccdb2ac7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80508ce10d48e3adf6359faf636e39a1" id="r_a80508ce10d48e3adf6359faf636e39a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a80508ce10d48e3adf6359faf636e39a1">lpsm_GeneratePlainURL</a> (<a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a80508ce10d48e3adf6359faf636e39a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random plain URL.  <br /></td></tr>
-<tr class="separator:a80508ce10d48e3adf6359faf636e39a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afde941d33838f49265101be11462df49" id="r_afde941d33838f49265101be11462df49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#afde941d33838f49265101be11462df49">lpsm_GenerateURL</a> (int minWord, int maxWord, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:afde941d33838f49265101be11462df49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random URL.  <br /></td></tr>
-<tr class="separator:afde941d33838f49265101be11462df49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a842a4502d4e70b20e4b444a509dc7d09" id="r_a842a4502d4e70b20e4b444a509dc7d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a842a4502d4e70b20e4b444a509dc7d09">lpsm_GenerateSlug</a> (int minWord, int maxWord, char separator, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a842a4502d4e70b20e4b444a509dc7d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a slug joined by a specified character.  <br /></td></tr>
-<tr class="separator:a842a4502d4e70b20e4b444a509dc7d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a569d152d3cda5bd9cb4d006567a3b103" id="r_a569d152d3cda5bd9cb4d006567a3b103"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a569d152d3cda5bd9cb4d006567a3b103">lpsm_CountWords</a> (const char *str)</td></tr>
 <tr class="memdesc:a569d152d3cda5bd9cb4d006567a3b103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of words in a string.  <br /></td></tr>
 <tr class="separator:a569d152d3cda5bd9cb4d006567a3b103"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,66 +148,57 @@ Functions</h2></td></tr>
 <tr class="memitem:a452546ded8bc62c051d447a9d1d41f8d" id="r_a452546ded8bc62c051d447a9d1d41f8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a452546ded8bc62c051d447a9d1d41f8d">lpsm_CountSentences</a> (const char *str)</td></tr>
 <tr class="memdesc:a452546ded8bc62c051d447a9d1d41f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of sentences in a string.  <br /></td></tr>
 <tr class="separator:a452546ded8bc62c051d447a9d1d41f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e3009cec6844867dcf6985a9a62a1e" id="r_ac0e3009cec6844867dcf6985a9a62a1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#ac0e3009cec6844867dcf6985a9a62a1e">lpsm_CountParagraphs</a> (const char *str, int format)</td></tr>
-<tr class="memdesc:ac0e3009cec6844867dcf6985a9a62a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of paragraphs or elements in a string.  <br /></td></tr>
-<tr class="separator:ac0e3009cec6844867dcf6985a9a62a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96741d1b4f4308ce0be2a1d2dc6ada06" id="r_a96741d1b4f4308ce0be2a1d2dc6ada06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a96741d1b4f4308ce0be2a1d2dc6ada06">lpsm_CountParagraphs</a> (const char *str, <a class="el" href="lipsum_8h.html#a6a962dcb20bc21fd90b1eeeb6568ea0e">lpsm_CountParaMethod</a> format)</td></tr>
+<tr class="memdesc:a96741d1b4f4308ce0be2a1d2dc6ada06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of paragraphs or elements in a string.  <br /></td></tr>
+<tr class="separator:a96741d1b4f4308ce0be2a1d2dc6ada06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a315e803d2566be8e0a97389317fe620c" id="r_a315e803d2566be8e0a97389317fe620c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c">lpsm_DeleteString</a> (char *str)</td></tr>
 <tr class="memdesc:a315e803d2566be8e0a97389317fe620c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a string returned by a function.  <br /></td></tr>
 <tr class="separator:a315e803d2566be8e0a97389317fe620c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afba71f8286c75889c3cfae801a37c728" id="r_afba71f8286c75889c3cfae801a37c728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#afba71f8286c75889c3cfae801a37c728">lpsm_GenerateWord</a> (<a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:afba71f8286c75889c3cfae801a37c728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random word.  <br /></td></tr>
-<tr class="separator:afba71f8286c75889c3cfae801a37c728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfd492c2ce6e5954c5f24ac290f9a56f" id="r_acfd492c2ce6e5954c5f24ac290f9a56f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#acfd492c2ce6e5954c5f24ac290f9a56f">lpsm_GenerateSentenceFragment</a> (int minWord, int maxWord, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:acfd492c2ce6e5954c5f24ac290f9a56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random sentence fragment.  <br /></td></tr>
-<tr class="separator:acfd492c2ce6e5954c5f24ac290f9a56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd1a6c38d6bf59613618d27db0fa9e4d" id="r_afd1a6c38d6bf59613618d27db0fa9e4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#afd1a6c38d6bf59613618d27db0fa9e4d">lpsm_GenerateSentence</a> (int minWord, int maxWord, int minFrag, int maxFrag, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:afd1a6c38d6bf59613618d27db0fa9e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random sentence.  <br /></td></tr>
-<tr class="separator:afd1a6c38d6bf59613618d27db0fa9e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8e93f3486768be1e0bc8bdbe656e90" id="r_a7c8e93f3486768be1e0bc8bdbe656e90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a7c8e93f3486768be1e0bc8bdbe656e90">lpsm_GenerateParagraph</a> (int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, bool useLipsum, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a7c8e93f3486768be1e0bc8bdbe656e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random paragraph.  <br /></td></tr>
-<tr class="separator:a7c8e93f3486768be1e0bc8bdbe656e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130a927c4f82bae2a68348dffca33f1a" id="r_a130a927c4f82bae2a68348dffca33f1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a130a927c4f82bae2a68348dffca33f1a">lpsm_GenerateText</a> (int minWord, int maxWord, int minFrag, int maxFrag, int minSent, int maxSent, int minPara, int maxPara, bool useLipsum, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a130a927c4f82bae2a68348dffca33f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random number of random paragraphs.  <br /></td></tr>
-<tr class="separator:a130a927c4f82bae2a68348dffca33f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18a287a08e25845b4931e8f7f80a17e4" id="r_a18a287a08e25845b4931e8f7f80a17e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a18a287a08e25845b4931e8f7f80a17e4">lpsm_GenerateMarkdownHeader</a> (int level, int minWord, int maxWord, bool useHtml, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a18a287a08e25845b4931e8f7f80a17e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown header.  <br /></td></tr>
-<tr class="separator:a18a287a08e25845b4931e8f7f80a17e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac02bd5a31fa1bbb0e3ad5cb55631efde" id="r_ac02bd5a31fa1bbb0e3ad5cb55631efde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#ac02bd5a31fa1bbb0e3ad5cb55631efde">lpsm_GenerateMarkdownEmphasis</a> (bool isBold, int minWord, int maxWord, int minFrag, int maxFrag, bool useHtml, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:ac02bd5a31fa1bbb0e3ad5cb55631efde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random emphasized sentence.  <br /></td></tr>
-<tr class="separator:ac02bd5a31fa1bbb0e3ad5cb55631efde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5277eed274a83864ebb2e2ae7de60bc" id="r_ac5277eed274a83864ebb2e2ae7de60bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#ac5277eed274a83864ebb2e2ae7de60bc">lpsm_GenerateMarkdownLink</a> (int minWord, int maxWord, int minFrag, int maxFrag, int minWordURL, int maxWordURL, bool useHtml, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:ac5277eed274a83864ebb2e2ae7de60bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown link.  <br /></td></tr>
-<tr class="separator:ac5277eed274a83864ebb2e2ae7de60bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a412c568df05088ff4940e0ef9ea2028c" id="r_a412c568df05088ff4940e0ef9ea2028c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a412c568df05088ff4940e0ef9ea2028c">lpsm_GenerateMarkdownList</a> (bool ordered, int minWord, int maxWord, int minFrag, int maxFrag, int minPoint, int maxPoint, bool useHtml, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a412c568df05088ff4940e0ef9ea2028c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Markdown list.  <br /></td></tr>
-<tr class="separator:a412c568df05088ff4940e0ef9ea2028c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8141b3b03653621ca18d3ab9791bd1a1" id="r_a8141b3b03653621ca18d3ab9791bd1a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a8141b3b03653621ca18d3ab9791bd1a1">lpsm_GenerateXMLDocument</a> (int choices, int minWord, int maxWord, int minFrag, int maxFrag, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a8141b3b03653621ca18d3ab9791bd1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random XML document.  <br /></td></tr>
-<tr class="separator:a8141b3b03653621ca18d3ab9791bd1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cd010c5d6ce200324da0e50a45f8f04" id="r_a7cd010c5d6ce200324da0e50a45f8f04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a7cd010c5d6ce200324da0e50a45f8f04">lpsm_GenerateJSONString</a> (<a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a7cd010c5d6ce200324da0e50a45f8f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random JSON string.  <br /></td></tr>
-<tr class="separator:a7cd010c5d6ce200324da0e50a45f8f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f6ee7d115dcd65f6e9a330c0476561d" id="r_a0f6ee7d115dcd65f6e9a330c0476561d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a0f6ee7d115dcd65f6e9a330c0476561d">lpsm_GenerateJSONNumber</a> (void)</td></tr>
-<tr class="memdesc:a0f6ee7d115dcd65f6e9a330c0476561d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random JSON number.  <br /></td></tr>
-<tr class="separator:a0f6ee7d115dcd65f6e9a330c0476561d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46fea4205e495bc065fa7140cf1947b7" id="r_a46fea4205e495bc065fa7140cf1947b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a46fea4205e495bc065fa7140cf1947b7">lpsm_GenerateJSONObject</a> (int depth, int maxDepth, int minJsonLength, int maxJsonLength, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a46fea4205e495bc065fa7140cf1947b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random JSON object.  <br /></td></tr>
-<tr class="separator:a46fea4205e495bc065fa7140cf1947b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fb0a187878b91cdecebe2f3b34afeb3" id="r_a4fb0a187878b91cdecebe2f3b34afeb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#a4fb0a187878b91cdecebe2f3b34afeb3">lpsm_GenerateJSONArray</a> (int depth, int maxDepth, int minJsonLength, int maxJsonLength, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:a4fb0a187878b91cdecebe2f3b34afeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random JSON array.  <br /></td></tr>
-<tr class="separator:a4fb0a187878b91cdecebe2f3b34afeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af345030ad7ec8ac1e75d97166e978e70" id="r_af345030ad7ec8ac1e75d97166e978e70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lipsum_8h.html#af345030ad7ec8ac1e75d97166e978e70">lpsm_GenerateJSONValue</a> (int depth, int maxDepth, int minJsonLength, int maxJsonLength, <a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> source)</td></tr>
-<tr class="memdesc:af345030ad7ec8ac1e75d97166e978e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random JSON value.  <br /></td></tr>
-<tr class="separator:af345030ad7ec8ac1e75d97166e978e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>C wrapper over lipsum-cpp. </p>
 <p>This contains the C wrapper over lipsum-cpp. It requires being built as a static or shared library in order to function. This file is under the BSD Zero-Clause License.</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2026 LambBread</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>LambBread from github.com </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ac0e3009cec6844867dcf6985a9a62a1e" name="ac0e3009cec6844867dcf6985a9a62a1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0e3009cec6844867dcf6985a9a62a1e">&#9670;&#160;</a></span>lpsm_CountParagraphs()</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ad93aa0bf74b592c5d37340a88dca39e1" name="ad93aa0bf74b592c5d37340a88dca39e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93aa0bf74b592c5d37340a88dca39e1">&#9670;&#160;</a></span>lpsm_CountParaMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="lipsum_8h.html#a6a962dcb20bc21fd90b1eeeb6568ea0e">lpsm_CountParaMethod</a> <a class="el" href="lipsum_8h.html#a6a962dcb20bc21fd90b1eeeb6568ea0e">lpsm_CountParaMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Types of methods used in <a class="el" href="lipsum_8h.html#a96741d1b4f4308ce0be2a1d2dc6ada06" title="Count the number of paragraphs or elements in a string.">lpsm_CountParagraphs()</a> </p>
+<p>Types of methods used in <a class="el" href="lipsum_8h.html#a96741d1b4f4308ce0be2a1d2dc6ada06" title="Count the number of paragraphs or elements in a string.">lpsm_CountParagraphs()</a>. LPSM_CPM_PLAIN is counting plain text, LPSM_CPM_MARKDOWN is counting Markdown or HTML, and LPSM_CPM_HTML is counting HTML explicitly. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a6a962dcb20bc21fd90b1eeeb6568ea0e" name="a6a962dcb20bc21fd90b1eeeb6568ea0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a962dcb20bc21fd90b1eeeb6568ea0e">&#9670;&#160;</a></span>lpsm_CountParaMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="lipsum_8h.html#a6a962dcb20bc21fd90b1eeeb6568ea0e">lpsm_CountParaMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Types of methods used in <a class="el" href="lipsum_8h.html#a96741d1b4f4308ce0be2a1d2dc6ada06" title="Count the number of paragraphs or elements in a string.">lpsm_CountParagraphs()</a> </p>
+<p>Types of methods used in <a class="el" href="lipsum_8h.html#a96741d1b4f4308ce0be2a1d2dc6ada06" title="Count the number of paragraphs or elements in a string.">lpsm_CountParagraphs()</a>. LPSM_CPM_PLAIN is counting plain text, LPSM_CPM_MARKDOWN is counting Markdown or HTML, and LPSM_CPM_HTML is counting HTML explicitly. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a96741d1b4f4308ce0be2a1d2dc6ada06" name="a96741d1b4f4308ce0be2a1d2dc6ada06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96741d1b4f4308ce0be2a1d2dc6ada06">&#9670;&#160;</a></span>lpsm_CountParagraphs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +212,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="lipsum_8h.html#a6a962dcb20bc21fd90b1eeeb6568ea0e">lpsm_CountParaMethod</a>&#160;</td>
           <td class="paramname"><em>format</em>&#160;</td>
         </tr>
         <tr>
@@ -247,7 +229,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string inputted. </td></tr>
-    <tr><td class="paramname">format</td><td>The format the string is in. Valid options include 0 (non-formatted), 1 (Markdown/HTML), and 2. (HTML)</td></tr>
+    <tr><td class="paramname">format</td><td>The format the string is in.</td></tr>
   </table>
   </dd>
 </dl>
@@ -361,13 +343,14 @@ Functions</h2></td></tr>
 <p>Delete a string returned by a function. </p>
 <dl class="section since"><dt>Since</dt><dd>0.0.8</dd></dl>
 <p>Since pointers allocated with new[] cannot be deallocated with free(), this function handles the deallocation.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Do not call this function twice on the same string or use the string after deleting, as that would cause a double free or use-after-free and potentially crash the program.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string to delete. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CWrapper_8c-example.html#a13">CWrapper.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CWrapper_8c-example.html#a5">CWrapper.c</a>.</dd>
 </dl>
 
 </div>
@@ -392,1313 +375,8 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>0.0.5</dd></dl>
 <p>Returns the sentence "Lorem ipsum dolor sit amet, consectetur adipiscing
 elit."</p>
+<dl class="section note"><dt>Note</dt><dd>This function returns a heap-allocated char* which should be deleted with <a class="el" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c" title="Delete a string returned by a function.">lpsm_DeleteString()</a>.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>char* The default Lorem Ipsum sentence. </dd></dl>
-
-</div>
-</div>
-<a id="a4fb0a187878b91cdecebe2f3b34afeb3" name="a4fb0a187878b91cdecebe2f3b34afeb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fb0a187878b91cdecebe2f3b34afeb3">&#9670;&#160;</a></span>lpsm_GenerateJSONArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateJSONArray </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxDepth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minJsonLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxJsonLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random JSON array. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4</dd></dl>
-<p>Generate a random JSON array recursively.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">depth</td><td>The current level of recursion. </td></tr>
-    <tr><td class="paramname">maxDepth</td><td>The maximum level of recursion. </td></tr>
-    <tr><td class="paramname">minJsonLength</td><td>The minimum possible number of items in the array. </td></tr>
-    <tr><td class="paramname">maxJsonLength</td><td>The maximum possible number of items in the array. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random JSON array. </dd></dl>
-
-</div>
-</div>
-<a id="a0f6ee7d115dcd65f6e9a330c0476561d" name="a0f6ee7d115dcd65f6e9a330c0476561d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f6ee7d115dcd65f6e9a330c0476561d">&#9670;&#160;</a></span>lpsm_GenerateJSONNumber()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateJSONNumber </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random JSON number. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4</dd></dl>
-<p>Generate a random number from -1000 to 1000 and convert it to a string.</p>
-<dl class="section return"><dt>Returns</dt><dd>char* The random JSON number. </dd></dl>
-
-</div>
-</div>
-<a id="a46fea4205e495bc065fa7140cf1947b7" name="a46fea4205e495bc065fa7140cf1947b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46fea4205e495bc065fa7140cf1947b7">&#9670;&#160;</a></span>lpsm_GenerateJSONObject()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateJSONObject </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxDepth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minJsonLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxJsonLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random JSON object. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4</dd></dl>
-<p>Generate a random JSON object recursively.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">depth</td><td>The current level of recursion. </td></tr>
-    <tr><td class="paramname">maxDepth</td><td>The maximum level of recursion. </td></tr>
-    <tr><td class="paramname">minJsonLength</td><td>The minimum possible number of items in the object. </td></tr>
-    <tr><td class="paramname">maxJsonLength</td><td>The maximum possible number of items in the object. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random JSON object. </dd></dl>
-
-</div>
-</div>
-<a id="a7cd010c5d6ce200324da0e50a45f8f04" name="a7cd010c5d6ce200324da0e50a45f8f04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cd010c5d6ce200324da0e50a45f8f04">&#9670;&#160;</a></span>lpsm_GenerateJSONString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateJSONString </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random JSON string. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4</dd></dl>
-<p>Generate a word with quotes surrounding it.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random JSON string. </dd></dl>
-
-</div>
-</div>
-<a id="af345030ad7ec8ac1e75d97166e978e70" name="af345030ad7ec8ac1e75d97166e978e70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af345030ad7ec8ac1e75d97166e978e70">&#9670;&#160;</a></span>lpsm_GenerateJSONValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateJSONValue </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxDepth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minJsonLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxJsonLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random JSON value. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4</dd></dl>
-<p>Generate a random JSON value, which can be a string, a number, a bool, null, and if depth &lt;= maxDepth, an object or array.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">depth</td><td>The current level of recursion. </td></tr>
-    <tr><td class="paramname">maxDepth</td><td>The maximum level of recursion. </td></tr>
-    <tr><td class="paramname">minJsonLength</td><td>The minimum possible number of items in arrays and objects. </td></tr>
-    <tr><td class="paramname">maxJsonLength</td><td>The maximum possible number of items in arrays and objects. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random JSON value. </dd></dl>
-
-</div>
-</div>
-<a id="ac02bd5a31fa1bbb0e3ad5cb55631efde" name="ac02bd5a31fa1bbb0e3ad5cb55631efde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac02bd5a31fa1bbb0e3ad5cb55631efde">&#9670;&#160;</a></span>lpsm_GenerateMarkdownEmphasis()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateMarkdownEmphasis </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isBold</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random emphasized sentence. </p>
-<dl class="section since"><dt>Since</dt><dd>0.3.4</dd></dl>
-<p>Generate a random sentence in Markdown format that is either bold or italic.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">isBold</td><td>Whether the sentence is bold or italic. </td></tr>
-    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">minFrag</td><td>The minimum possible number of sentence fragments in the sentence. </td></tr>
-    <tr><td class="paramname">maxFrag</td><td>The maximum possible number of sentence fragments in the sentence. </td></tr>
-    <tr><td class="paramname">useHtml</td><td>Whether HTML should be outputted instead of Markdown. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random emphasized sentence. </dd></dl>
-
-</div>
-</div>
-<a id="a18a287a08e25845b4931e8f7f80a17e4" name="a18a287a08e25845b4931e8f7f80a17e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18a287a08e25845b4931e8f7f80a17e4">&#9670;&#160;</a></span>lpsm_GenerateMarkdownHeader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateMarkdownHeader </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random Markdown header. </p>
-<dl class="section since"><dt>Since</dt><dd>0.3.4</dd></dl>
-<p>Generate a random Markdown header.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>The level of the heading. </td></tr>
-    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in the heading. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in the heading. </td></tr>
-    <tr><td class="paramname">useHtml</td><td>Whether HTML should be outputted instead of Markdown. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random heading. </dd></dl>
-
-</div>
-</div>
-<a id="ac5277eed274a83864ebb2e2ae7de60bc" name="ac5277eed274a83864ebb2e2ae7de60bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5277eed274a83864ebb2e2ae7de60bc">&#9670;&#160;</a></span>lpsm_GenerateMarkdownLink()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateMarkdownLink </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWordURL</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWordURL</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random Markdown link. </p>
-<dl class="section since"><dt>Since</dt><dd>0.3.4</dd></dl>
-<p>Generate a random link in Markdown format.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">minFrag</td><td>The minimum possible number of sentence fragments in the sentence. </td></tr>
-    <tr><td class="paramname">maxFrag</td><td>The maximum possible number of sentence fragments in the sentence. </td></tr>
-    <tr><td class="paramname">minWordURL</td><td>The minimum possible number of words at the end of the URL. </td></tr>
-    <tr><td class="paramname">maxWordURL</td><td>The maximum possible number of words at the end of the URL. </td></tr>
-    <tr><td class="paramname">useHtml</td><td>Whether HTML should be outputted instead of Markdown. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random link. </dd></dl>
-
-</div>
-</div>
-<a id="a412c568df05088ff4940e0ef9ea2028c" name="a412c568df05088ff4940e0ef9ea2028c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a412c568df05088ff4940e0ef9ea2028c">&#9670;&#160;</a></span>lpsm_GenerateMarkdownList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateMarkdownList </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ordered</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random Markdown list. </p>
-<dl class="section since"><dt>Since</dt><dd>0.3.4</dd></dl>
-<p>Generate a random ordered or unordered list in Markdown format.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ordered</td><td>Whether the list is ordered or unordered. </td></tr>
-    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">minFrag</td><td>The minimum possible number of sentence fragments in a point. </td></tr>
-    <tr><td class="paramname">maxFrag</td><td>The maximum possible number of sentence fragments in a point. </td></tr>
-    <tr><td class="paramname">minPoint</td><td>The minimum possible number of points in the list. </td></tr>
-    <tr><td class="paramname">maxPoint</td><td>The maximum possible number of points in the list. </td></tr>
-    <tr><td class="paramname">useHtml</td><td>Whether HTML should be outputted instead of Markdown. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random Markdown list. </dd></dl>
-
-</div>
-</div>
-<a id="a7c8e93f3486768be1e0bc8bdbe656e90" name="a7c8e93f3486768be1e0bc8bdbe656e90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c8e93f3486768be1e0bc8bdbe656e90">&#9670;&#160;</a></span>lpsm_GenerateParagraph()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateParagraph </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minSent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxSent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useLipsum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random paragraph. </p>
-<dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
-<p>This function generates a random paragraph starting with a tab character and ending in a line break, with each sentence separated by a space.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">minSent</td><td>Minimum number of sentences in the paragraph. </td></tr>
-    <tr><td class="paramname">maxSent</td><td>Maximum number of sentences in the paragraph. </td></tr>
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in each sentence fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>Maximum number of words in each sentence fragment. </td></tr>
-    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
-    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
-    <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." text should start the paragraph. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random paragraph. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CWrapper_8c-example.html#a4">CWrapper.c</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a3778ff31885e16b0d363bd37647fbd5d" name="a3778ff31885e16b0d363bd37647fbd5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3778ff31885e16b0d363bd37647fbd5d">&#9670;&#160;</a></span>lpsm_GenerateParagraphs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateParagraphs </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>paraCount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minSent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxSent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useLipsum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate several random paragraphs at once. </p>
-<dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
-<p>This function generates several random paragraphs, each separated by a line break. Formerly known as lpsm_GenerateParagraphList().</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">paraCount</td><td>The number of paragraphs. </td></tr>
-    <tr><td class="paramname">minSent</td><td>Minimum number of sentences in each paragraph. </td></tr>
-    <tr><td class="paramname">maxSent</td><td>Maximum number of sentences in each paragraph. </td></tr>
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in each sentence fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>Maximum number of words in each sentence fragment. </td></tr>
-    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
-    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
-    <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." text should start the first paragraph. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random paragraphs. </dd></dl>
-
-</div>
-</div>
-<a id="a80508ce10d48e3adf6359faf636e39a1" name="a80508ce10d48e3adf6359faf636e39a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80508ce10d48e3adf6359faf636e39a1">&#9670;&#160;</a></span>lpsm_GeneratePlainURL()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GeneratePlainURL </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random plain URL. </p>
-<dl class="section since"><dt>Since</dt><dd>0.3.9</dd></dl>
-<p>Generate a URL with a random word followed by a random TLD.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The plain URL </dd></dl>
-
-</div>
-</div>
-<a id="a3a2c4c1fefbfaa4ad112c1ccdb2ac7e4" name="a3a2c4c1fefbfaa4ad112c1ccdb2ac7e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a2c4c1fefbfaa4ad112c1ccdb2ac7e4">&#9670;&#160;</a></span>lpsm_GenerateScramble()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateScramble </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>max</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random character scramble. </p>
-<dl class="section since"><dt>Since</dt><dd>0.3.9</dd></dl>
-<p>Generate a random string of text with random characters.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">length</td><td>The number of characters. </td></tr>
-    <tr><td class="paramname">min</td><td>The lowest-valued ASCII character that can appear. </td></tr>
-    <tr><td class="paramname">max</td><td>The highest-valued ASCII character than can appear.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The character scramble </dd></dl>
-
-</div>
-</div>
-<a id="afd1a6c38d6bf59613618d27db0fa9e4d" name="afd1a6c38d6bf59613618d27db0fa9e4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd1a6c38d6bf59613618d27db0fa9e4d">&#9670;&#160;</a></span>lpsm_GenerateSentence()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateSentence </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random sentence. </p>
-<dl class="section since"><dt>Since</dt><dd>0.0.2</dd></dl>
-<p>This function generates a sentence starting with a capital letter and ending with a period, sometimes containing a comma.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in the sentence fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>Maximum number of words in the sentence fragment. </td></tr>
-    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in the sentence. </td></tr>
-    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in the sentence. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random sentence. </dd></dl>
-
-</div>
-</div>
-<a id="acfd492c2ce6e5954c5f24ac290f9a56f" name="acfd492c2ce6e5954c5f24ac290f9a56f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfd492c2ce6e5954c5f24ac290f9a56f">&#9670;&#160;</a></span>lpsm_GenerateSentenceFragment()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateSentenceFragment </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random sentence fragment. </p>
-<dl class="section since"><dt>Since</dt><dd>0.1.0</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in the fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>Maximum number of words in the fragment. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random sentence fragment. </dd></dl>
-
-</div>
-</div>
-<a id="ad3840fb281a99782b3e583e4d8926bf2" name="ad3840fb281a99782b3e583e4d8926bf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3840fb281a99782b3e583e4d8926bf2">&#9670;&#160;</a></span>lpsm_GenerateSentences()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateSentences </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sentCount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useLipsum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate multiple random sentences at once. </p>
-<dl class="section since"><dt>Since</dt><dd>0.0.5</dd></dl>
-<p>Generate multiple random sentences separated with spaces. Does not add a tab character before the sentences nor a line break after.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sentCount</td><td>The number of sentences. </td></tr>
-    <tr><td class="paramname">minWord</td><td>Minimum number of words in each sentence fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>Maximum number of words in each sentence fragment. </td></tr>
-    <tr><td class="paramname">minFrag</td><td>Minimum number of sentence fragments in each sentence. </td></tr>
-    <tr><td class="paramname">maxFrag</td><td>Maximum number of sentence fragments in each sentence. </td></tr>
-    <tr><td class="paramname">useLipsum</td><td>Whether the default "Lorem ipsum..." sentence should be the first sentence. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random sentences. </dd></dl>
-
-</div>
-</div>
-<a id="a842a4502d4e70b20e4b444a509dc7d09" name="a842a4502d4e70b20e4b444a509dc7d09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a842a4502d4e70b20e4b444a509dc7d09">&#9670;&#160;</a></span>lpsm_GenerateSlug()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateSlug </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>separator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a slug joined by a specified character. </p>
-<dl class="section since"><dt>Since</dt><dd>0.3.6</dd></dl>
-<p>Generates a sentence fragment with spaces replaced with the specified separator character.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in the slug. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in the slug. </td></tr>
-    <tr><td class="paramname">separator</td><td>The separator character. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The slug. </dd></dl>
-
-</div>
-</div>
-<a id="a130a927c4f82bae2a68348dffca33f1a" name="a130a927c4f82bae2a68348dffca33f1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a130a927c4f82bae2a68348dffca33f1a">&#9670;&#160;</a></span>lpsm_GenerateText()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateText </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minSent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxSent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minPara</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxPara</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useLipsum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random number of random paragraphs. </p>
-<dl class="section since"><dt>Since</dt><dd>0.3.2</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">minWord</td><td>The minimum possible number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">minFrag</td><td>The minimum possible number of sentence fragments in a sentence. </td></tr>
-    <tr><td class="paramname">maxFrag</td><td>The maximum possible number of sentence fragments in a sentence. </td></tr>
-    <tr><td class="paramname">minSent</td><td>The minimum possible number of sentences in a paragraph. </td></tr>
-    <tr><td class="paramname">maxSent</td><td>The maximum possible number of sentences in a paragraph. </td></tr>
-    <tr><td class="paramname">minPara</td><td>The minimum possible number of paragraphs in the text. </td></tr>
-    <tr><td class="paramname">maxPara</td><td>The maximum possible number of paragraphs in the text. </td></tr>
-    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the first paragraph. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random text. </dd></dl>
-
-</div>
-</div>
-<a id="afde941d33838f49265101be11462df49" name="afde941d33838f49265101be11462df49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afde941d33838f49265101be11462df49">&#9670;&#160;</a></span>lpsm_GenerateURL()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateURL </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random URL. </p>
-<dl class="section since"><dt>Since</dt><dd>0.3.7</dd></dl>
-<p>Generate a URL starting in <a href="https://">https://</a>, followed by a random word, followed by a random TLD, followed by a slash and a random HTML id as a slug separated by hyphens.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">minWord</td><td>The minimum possible number of words at the end of the URL. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>The maximum possible number of words at the end of the URL. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The URL. </dd></dl>
-
-</div>
-</div>
-<a id="afba71f8286c75889c3cfae801a37c728" name="afba71f8286c75889c3cfae801a37c728"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afba71f8286c75889c3cfae801a37c728">&#9670;&#160;</a></span>lpsm_GenerateWord()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateWord </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random word. </p>
-<dl class="section since"><dt>Since</dt><dd>0.0.3</dd></dl>
-<p>This function generates a random word from a predefined list.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random word. </dd></dl>
-
-</div>
-</div>
-<a id="a437111c88ed8cc5c348dc5bb5f68b3b5" name="a437111c88ed8cc5c348dc5bb5f68b3b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a437111c88ed8cc5c348dc5bb5f68b3b5">&#9670;&#160;</a></span>lpsm_GenerateWords()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateWords </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>wordCount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a specified number of random words. </p>
-<dl class="section since"><dt>Since</dt><dd>0.2.2</dd></dl>
-<p>This function generates a sentence fragment with exactly wordCount words.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wordCount</td><td>The number of words. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The random words. </dd></dl>
-
-</div>
-</div>
-<a id="a8141b3b03653621ca18d3ab9791bd1a1" name="a8141b3b03653621ca18d3ab9791bd1a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8141b3b03653621ca18d3ab9791bd1a1">&#9670;&#160;</a></span>lpsm_GenerateXMLDocument()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_GenerateXMLDocument </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>choices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxWord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFrag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a>&#160;</td>
-          <td class="paramname"><em>source</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a random XML document. </p>
-<dl class="section since"><dt>Since</dt><dd>0.4.4</dd></dl>
-<p>Generate a random document in XML format starting with an XML metadata tag. Create a root element and make a number of choices to create a new tag, fill a tag, or close a tag. Afterwards, close all remaining tags.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">choices</td><td>The number of choices to make. </td></tr>
-    <tr><td class="paramname">minWord</td><td>The minimum total number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">maxWord</td><td>The maximum total number of words in a sentence fragment. </td></tr>
-    <tr><td class="paramname">minFrag</td><td>The minimum total number of sentence fragments in a sentence. </td></tr>
-    <tr><td class="paramname">maxFrag</td><td>The maximum total number of sentence fragments in a sentence. </td></tr>
-    <tr><td class="paramname">source</td><td>The source for words.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>char* The XML document. </dd></dl>
 
 </div>
 </div>

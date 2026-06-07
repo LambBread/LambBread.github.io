@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
    </div>
-   <div id="projectbrief">A library written in C++ for generating sample text.</div>
+   <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
  </tr>
  </tbody>
@@ -98,9 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:addcccd703e85d0c6d0224f06ec55bbf4" id="r_addcccd703e85d0c6d0224f06ec55bbf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Source.html#addcccd703e85d0c6d0224f06ec55bbf4">load</a> (const std::string &amp;path)</td></tr>
 <tr class="memdesc:addcccd703e85d0c6d0224f06ec55bbf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a source and fill the vector.  <br /></td></tr>
 <tr class="separator:addcccd703e85d0c6d0224f06ec55bbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eeae1cd56db60190503e2ab87eb2802" id="r_a2eeae1cd56db60190503e2ab87eb2802"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Source.html#a2eeae1cd56db60190503e2ab87eb2802">random_word</a> () const</td></tr>
-<tr class="memdesc:a2eeae1cd56db60190503e2ab87eb2802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a random word.  <br /></td></tr>
-<tr class="separator:a2eeae1cd56db60190503e2ab87eb2802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6997117265ffec7e55304fc95f3b5594" id="r_a6997117265ffec7e55304fc95f3b5594"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Source.html#a6997117265ffec7e55304fc95f3b5594">random_word</a> (std::mt19937 &amp;gen) const</td></tr>
+<tr class="memdesc:a6997117265ffec7e55304fc95f3b5594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a random word.  <br /></td></tr>
+<tr class="separator:a6997117265ffec7e55304fc95f3b5594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -115,8 +115,6 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 <div class="textblock"><p>Class for multi-source generation. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.0</dd></dl>
 <p>This class is for multi-source generation which exposes a function to generate a random word. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Source_8cpp-example.html#_a0">Source.cpp</a>.</dd>
-</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4b399e003e1e54400a28699648dfb025" name="a4b399e003e1e54400a28699648dfb025"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b399e003e1e54400a28699648dfb025">&#9670;&#160;</a></span>Source() <span class="overload">[1/2]</span></h2>
@@ -204,8 +202,8 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 
 </div>
 </div>
-<a id="a2eeae1cd56db60190503e2ab87eb2802" name="a2eeae1cd56db60190503e2ab87eb2802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eeae1cd56db60190503e2ab87eb2802">&#9670;&#160;</a></span>random_word()</h2>
+<a id="a6997117265ffec7e55304fc95f3b5594" name="a6997117265ffec7e55304fc95f3b5594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6997117265ffec7e55304fc95f3b5594">&#9670;&#160;</a></span>random_word()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +211,8 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
         <tr>
           <td class="memname">std::string lipsum::Source::random_word </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::mt19937 &amp;&#160;</td>
+          <td class="paramname"><em>gen</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -222,6 +221,12 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 <p>Select a random word. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.0</dd></dl>
 <p>Select a random word from m_Words unless m_Words is empty, in which it uses a built-in source from <a class="el" href="sample_8inl.html" title="File containing all of the words used by lipsum::Source.">sample.inl</a> as a fallback. Formerly known as lpsm::Source::RandomWord().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gen</td><td>The generator to use.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random word. </dd></dl>
 
 </div>

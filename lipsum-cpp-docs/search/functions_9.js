@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['random_5fword_0',['random_word',['../classlipsum_1_1Source.html#a2eeae1cd56db60190503e2ab87eb2802',1,'lipsum::Source']]],
-  ['randomnumber_1',['randomnumber',['../namespacelipsum_1_1internal.html#a37fc250e5668a7429596d04e60a4089e',1,'lipsum::internal::RandomNumber(T min, T max)'],['../namespacelipsum_1_1internal.html#a9836311a3550845e6f58418e34e04409',1,'lipsum::internal::RandomNumber(char min, char max)'],['../namespacelipsum_1_1internal.html#aa8d31ca7e199b92ede4459bdaf6308f1',1,'lipsum::internal::RandomNumber(bool min, bool max)']]],
-  ['roll_2',['roll',['../structlipsum_1_1ArgVec2.html#add4fa7eb2a8c099e73e74fd810be3b53',1,'lipsum::ArgVec2']]]
+  ['random_5fnumber_0',['random_number',['../classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625',1,'lipsum::Generator::random_number(T min, T max)'],['../classlipsum_1_1Generator.html#ad0f16f3d639e639a9b6dc01f9f3b75a9',1,'lipsum::Generator::random_number(char min, char max)'],['../classlipsum_1_1Generator.html#a5769dd0a94b46a965482e06e7316dd18',1,'lipsum::Generator::random_number(bool min, bool max)']]],
+  ['random_5fword_1',['random_word',['../classlipsum_1_1Source.html#a6997117265ffec7e55304fc95f3b5594',1,'lipsum::Source']]],
+  ['roll_2',['roll',['../structlipsum_1_1ArgVec2.html#aed6c96f9f7f39633a79507e4f9d7b449',1,'lipsum::ArgVec2']]]
 ];

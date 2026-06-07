@@ -1,13 +1,9 @@
 <map id="src/lipsumc/core.h" name="src/lipsumc/core.h">
-<area shape="rect" id="Node000001" title="Core macros for lipsum&#45;cpp C wrapper." alt="" coords="71,5,211,31"/>
+<area shape="rect" id="Node000001" title="Core macros for lipsum&#45;cpp C wrapper." alt="" coords="13,5,153,31"/>
 <area shape="rect" id="Node000002" href="$binded_8h.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="5,79,161,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,43,95,80,91,77,121,40"/>
-<area shape="rect" id="Node000005" href="$sfuncs_8h.html" title="S functions of lipsum&#45;cpp C wrapper." alt="" coords="121,152,275,177"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="158,41,176,78,190,118,198,151,193,152,185,119,172,80,153,44"/>
-<area shape="rect" id="Node000003" href="$lipsum_8h.html" title="C wrapper over lipsum&#45;cpp." alt="" coords="90,225,191,251"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,117,111,176,136,224,131,226,106,178,87,119"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="115,109,181,150,178,154,112,113"/>
-<area shape="rect" id="Node000004" href="$lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="75,299,206,324"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="143,264,143,299,138,299,138,264"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="182,190,152,227,148,224,178,186"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,44,86,79,81,79,81,44"/>
+<area shape="rect" id="Node000003" href="$lipsum_8h.html" title="C wrapper over lipsum&#45;cpp." alt="" coords="33,152,134,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="86,118,86,152,81,152,81,118"/>
+<area shape="rect" id="Node000004" href="$lipsum__h_8cpp.html" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="18,225,149,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="86,191,86,225,81,225,81,191"/>
 </map>

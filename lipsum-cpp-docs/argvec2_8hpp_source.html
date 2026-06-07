@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
    </div>
-   <div id="projectbrief">A library written in C++ for generating sample text.</div>
+   <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
  </tr>
  </tbody>
@@ -97,20 +97,20 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>(<span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        [[nodiscard]] <span class="keywordtype">int</span> roll() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structlipsum_1_1ArgVec2.html#a31f5a9414aa74cc4e743710c982cf8ae">   54</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structlipsum_1_1ArgVec2.html#a31f5a9414aa74cc4e743710c982cf8ae">min</a>; </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structlipsum_1_1ArgVec2.html#a1a0f60b6426be7554c4fa18fab100a3f">   55</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structlipsum_1_1ArgVec2.html#a1a0f60b6426be7554c4fa18fab100a3f">max</a>; </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    };</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        [[nodiscard]] <span class="keywordtype">int</span> roll(std::mt19937&amp; gen) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structlipsum_1_1ArgVec2.html#a31f5a9414aa74cc4e743710c982cf8ae">   56</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structlipsum_1_1ArgVec2.html#a31f5a9414aa74cc4e743710c982cf8ae">min</a>; </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structlipsum_1_1ArgVec2.html#a1a0f60b6426be7554c4fa18fab100a3f">   57</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="structlipsum_1_1ArgVec2.html#a1a0f60b6426be7554c4fa18fab100a3f">max</a>; </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    };</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <span class="comment">// namespace lipsum</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <span class="comment">// namespace lipsum</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acore_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Core macros for lipsum-cpp.</div></div>
 <div class="ttc" id="acore_8hpp_html_a7cba6c9f4b913ff7f5d2879fc6de6f35"><div class="ttname"><a href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a></div><div class="ttdeci">#define LIPSUM_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> core.hpp:44</div></div>
 <div class="ttc" id="anamespacelipsum_html"><div class="ttname"><a href="namespacelipsum.html">lipsum</a></div><div class="ttdoc">This is the main namespace of lipsum-cpp.</div></div>
 <div class="ttc" id="astructlipsum_1_1ArgVec2_html"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></div><div class="ttdoc">Store data for inputting into functions.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:31</div></div>
-<div class="ttc" id="astructlipsum_1_1ArgVec2_html_a1a0f60b6426be7554c4fa18fab100a3f"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html#a1a0f60b6426be7554c4fa18fab100a3f">lipsum::ArgVec2::max</a></div><div class="ttdeci">int max</div><div class="ttdoc">The maximum value.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:55</div></div>
-<div class="ttc" id="astructlipsum_1_1ArgVec2_html_a31f5a9414aa74cc4e743710c982cf8ae"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html#a31f5a9414aa74cc4e743710c982cf8ae">lipsum::ArgVec2::min</a></div><div class="ttdeci">int min</div><div class="ttdoc">The minimum value.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:54</div></div>
+<div class="ttc" id="astructlipsum_1_1ArgVec2_html_a1a0f60b6426be7554c4fa18fab100a3f"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html#a1a0f60b6426be7554c4fa18fab100a3f">lipsum::ArgVec2::max</a></div><div class="ttdeci">int max</div><div class="ttdoc">The maximum value.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:57</div></div>
+<div class="ttc" id="astructlipsum_1_1ArgVec2_html_a31f5a9414aa74cc4e743710c982cf8ae"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html#a31f5a9414aa74cc4e743710c982cf8ae">lipsum::ArgVec2::min</a></div><div class="ttdeci">int min</div><div class="ttdoc">The minimum value.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
    </div>
-   <div id="projectbrief">A library written in C++ for generating sample text.</div>
+   <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
  </tr>
  </tbody>
@@ -76,13 +76,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classlipsum_1_1Generator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">lipsum::Generator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>OOP layer over lipsum-cpp.  
+<p>Main class of lipsum-cpp.  
  <a href="classlipsum_1_1Generator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="generator_8hpp_source.html">generator.hpp</a>&gt;</code></p>
@@ -91,7 +92,7 @@ Collaboration diagram for lipsum::Generator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlipsum_1_1Generator__coll__graph.png" border="0" usemap="#alipsum_1_1Generator_coll__map" alt="Collaboration graph"/></div>
 <map name="alipsum_1_1Generator_coll__map" id="alipsum_1_1Generator_coll__map">
-<area shape="rect" title="OOP layer over lipsum&#45;cpp." alt="" coords="121,328,260,353"/>
+<area shape="rect" title="Main class of lipsum&#45;cpp." alt="" coords="121,328,260,353"/>
 <area shape="rect" href="structlipsum_1_1GeneratorSettings.html" title="Settings for lipsum::Generator." alt="" coords="5,240,197,265"/>
 <area shape="poly" title=" " alt="" coords="125,273,180,326,176,329,121,277"/>
 <area shape="rect" href="structlipsum_1_1ArgVec2.html" title="Store data for inputting into functions." alt="" coords="38,5,165,31"/>
@@ -103,37 +104,46 @@ Collaboration diagram for lipsum::Generator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a06bce7e2b6d946ae23844c2afee9249d" id="r_a06bce7e2b6d946ae23844c2afee9249d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a06bce7e2b6d946ae23844c2afee9249d">Generator</a> ()=default</td></tr>
-<tr class="memdesc:a06bce7e2b6d946ae23844c2afee9249d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>.  <br /></td></tr>
-<tr class="separator:a06bce7e2b6d946ae23844c2afee9249d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a511afc093c8e9720d06e605540a75613" id="r_a511afc093c8e9720d06e605540a75613"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a511afc093c8e9720d06e605540a75613">Generator</a> (const std::string &amp;path)</td></tr>
-<tr class="memdesc:a511afc093c8e9720d06e605540a75613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>.  <br /></td></tr>
+<tr class="memitem:aa4e0fa3b9b62e8bd269b4ab9b92bb156" id="r_aa4e0fa3b9b62e8bd269b4ab9b92bb156"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aa4e0fa3b9b62e8bd269b4ab9b92bb156">Generator</a> ()</td></tr>
+<tr class="memdesc:aa4e0fa3b9b62e8bd269b4ab9b92bb156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">Generator</a>.  <br /></td></tr>
+<tr class="separator:aa4e0fa3b9b62e8bd269b4ab9b92bb156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e9ddf0b7e54c49e73bfce89f778c9e" id="r_a61e9ddf0b7e54c49e73bfce89f778c9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a61e9ddf0b7e54c49e73bfce89f778c9e">Generator</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">seed</a>)</td></tr>
+<tr class="memdesc:a61e9ddf0b7e54c49e73bfce89f778c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">Generator</a>.  <br /></td></tr>
+<tr class="separator:a61e9ddf0b7e54c49e73bfce89f778c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c059e7e1774aa73261cff5a5556cfe6" id="r_a0c059e7e1774aa73261cff5a5556cfe6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a0c059e7e1774aa73261cff5a5556cfe6">Generator</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">path</a>, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">seed</a>)</td></tr>
+<tr class="memdesc:a0c059e7e1774aa73261cff5a5556cfe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">Generator</a>.  <br /></td></tr>
+<tr class="separator:a0c059e7e1774aa73261cff5a5556cfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511afc093c8e9720d06e605540a75613" id="r_a511afc093c8e9720d06e605540a75613"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a511afc093c8e9720d06e605540a75613">Generator</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">path</a>)</td></tr>
+<tr class="memdesc:a511afc093c8e9720d06e605540a75613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">Generator</a>.  <br /></td></tr>
 <tr class="separator:a511afc093c8e9720d06e605540a75613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8914f9f4960d0bc43d1021b6598423b0" id="r_a8914f9f4960d0bc43d1021b6598423b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a8914f9f4960d0bc43d1021b6598423b0">load_source</a> (const std::string &amp;path)</td></tr>
+<tr class="memitem:a8914f9f4960d0bc43d1021b6598423b0" id="r_a8914f9f4960d0bc43d1021b6598423b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a8914f9f4960d0bc43d1021b6598423b0">load_source</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">path</a>)</td></tr>
 <tr class="memdesc:a8914f9f4960d0bc43d1021b6598423b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload a source.  <br /></td></tr>
 <tr class="separator:a8914f9f4960d0bc43d1021b6598423b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03cc902bec04e1d3a7625e4c0035ff62" id="r_a03cc902bec04e1d3a7625e4c0035ff62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a03cc902bec04e1d3a7625e4c0035ff62">change_setting</a> (const std::string &amp;setting, const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;value)</td></tr>
+<tr class="memitem:a55fb8a834e0f9365a87791f9e52d1438" id="r_a55fb8a834e0f9365a87791f9e52d1438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a55fb8a834e0f9365a87791f9e52d1438">load_seed</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">seed</a>)</td></tr>
+<tr class="memdesc:a55fb8a834e0f9365a87791f9e52d1438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload a seed.  <br /></td></tr>
+<tr class="separator:a55fb8a834e0f9365a87791f9e52d1438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03cc902bec04e1d3a7625e4c0035ff62" id="r_a03cc902bec04e1d3a7625e4c0035ff62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a03cc902bec04e1d3a7625e4c0035ff62">change_setting</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">setting</a>, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">value</a>)</td></tr>
 <tr class="memdesc:a03cc902bec04e1d3a7625e4c0035ff62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a setting.  <br /></td></tr>
 <tr class="separator:a03cc902bec04e1d3a7625e4c0035ff62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca8dda71bcbb9ca93cc848c2ead384f" id="r_a9ca8dda71bcbb9ca93cc848c2ead384f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a9ca8dda71bcbb9ca93cc848c2ead384f">change_setting</a> (const std::string &amp;setting, int minValue, int maxValue)</td></tr>
+<tr class="memitem:a9ca8dda71bcbb9ca93cc848c2ead384f" id="r_a9ca8dda71bcbb9ca93cc848c2ead384f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a9ca8dda71bcbb9ca93cc848c2ead384f">change_setting</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">setting</a>, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">minValue</a>, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">maxValue</a>)</td></tr>
 <tr class="memdesc:a9ca8dda71bcbb9ca93cc848c2ead384f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a setting.  <br /></td></tr>
 <tr class="separator:a9ca8dda71bcbb9ca93cc848c2ead384f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68b5cb4d06b114f56fc66a37dea9f232" id="r_a68b5cb4d06b114f56fc66a37dea9f232"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a68b5cb4d06b114f56fc66a37dea9f232">word</a> (int num=1)</td></tr>
+<tr class="memitem:a68b5cb4d06b114f56fc66a37dea9f232" id="r_a68b5cb4d06b114f56fc66a37dea9f232"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a68b5cb4d06b114f56fc66a37dea9f232">word</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">num</a>=1)</td></tr>
 <tr class="memdesc:a68b5cb4d06b114f56fc66a37dea9f232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate words.  <br /></td></tr>
 <tr class="separator:a68b5cb4d06b114f56fc66a37dea9f232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae126e6208c7234db9059cbbb4c282c64" id="r_ae126e6208c7234db9059cbbb4c282c64"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ae126e6208c7234db9059cbbb4c282c64">fragment</a> ()</td></tr>
 <tr class="memdesc:ae126e6208c7234db9059cbbb4c282c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a sentence fragment.  <br /></td></tr>
 <tr class="separator:ae126e6208c7234db9059cbbb4c282c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b3ef2f529fbd6ac55c1d118d2187226" id="r_a4b3ef2f529fbd6ac55c1d118d2187226"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a4b3ef2f529fbd6ac55c1d118d2187226">sentence</a> (int num=1, bool useLipsum=true)</td></tr>
+<tr class="memitem:a4b3ef2f529fbd6ac55c1d118d2187226" id="r_a4b3ef2f529fbd6ac55c1d118d2187226"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a4b3ef2f529fbd6ac55c1d118d2187226">sentence</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">num</a>=1, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useLipsum</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a>)</td></tr>
 <tr class="memdesc:a4b3ef2f529fbd6ac55c1d118d2187226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate sentences.  <br /></td></tr>
 <tr class="separator:a4b3ef2f529fbd6ac55c1d118d2187226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe118671993dcce93ff04d9fb5a2c2d2" id="r_afe118671993dcce93ff04d9fb5a2c2d2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#afe118671993dcce93ff04d9fb5a2c2d2">paragraph</a> (int num=1, bool useLipsum=true)</td></tr>
+<tr class="memitem:afe118671993dcce93ff04d9fb5a2c2d2" id="r_afe118671993dcce93ff04d9fb5a2c2d2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#afe118671993dcce93ff04d9fb5a2c2d2">paragraph</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">num</a>=1, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useLipsum</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a>)</td></tr>
 <tr class="memdesc:afe118671993dcce93ff04d9fb5a2c2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate paragraphs.  <br /></td></tr>
 <tr class="separator:afe118671993dcce93ff04d9fb5a2c2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a898b4fca9157502e29aed476856f0981" id="r_a898b4fca9157502e29aed476856f0981"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a898b4fca9157502e29aed476856f0981">text</a> (bool useLipsum=true)</td></tr>
+<tr class="memitem:a898b4fca9157502e29aed476856f0981" id="r_a898b4fca9157502e29aed476856f0981"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a898b4fca9157502e29aed476856f0981">text</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useLipsum</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a>)</td></tr>
 <tr class="memdesc:a898b4fca9157502e29aed476856f0981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random number of random paragraphs.  <br /></td></tr>
 <tr class="separator:a898b4fca9157502e29aed476856f0981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42737d0f826cda0e71959b73755436fd" id="r_a42737d0f826cda0e71959b73755436fd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a42737d0f826cda0e71959b73755436fd">scramble</a> (int length=16, char minChar=' ', char maxChar='~')</td></tr>
+<tr class="memitem:a42737d0f826cda0e71959b73755436fd" id="r_a42737d0f826cda0e71959b73755436fd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a42737d0f826cda0e71959b73755436fd">scramble</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">length</a>=16, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">char</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">minChar</a>=' ', <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">char</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">maxChar</a>='~')</td></tr>
 <tr class="memdesc:a42737d0f826cda0e71959b73755436fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random character scramble.  <br /></td></tr>
 <tr class="separator:a42737d0f826cda0e71959b73755436fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab04645c27687a2ac37bce78a2aaaaea4" id="r_ab04645c27687a2ac37bce78a2aaaaea4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ab04645c27687a2ac37bce78a2aaaaea4">url</a> ()</td></tr>
@@ -142,33 +152,70 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f7a0f6314f35761d26a7d555eb314c8" id="r_a3f7a0f6314f35761d26a7d555eb314c8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a3f7a0f6314f35761d26a7d555eb314c8">plain_url</a> ()</td></tr>
 <tr class="memdesc:a3f7a0f6314f35761d26a7d555eb314c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a plain URL.  <br /></td></tr>
 <tr class="separator:a3f7a0f6314f35761d26a7d555eb314c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef423f23aa62a4b4349488c19f636ba" id="r_aeef423f23aa62a4b4349488c19f636ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aeef423f23aa62a4b4349488c19f636ba">slug</a> (char separator='-')</td></tr>
+<tr class="memitem:aeef423f23aa62a4b4349488c19f636ba" id="r_aeef423f23aa62a4b4349488c19f636ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aeef423f23aa62a4b4349488c19f636ba">slug</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">char</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">separator</a>='-')</td></tr>
 <tr class="memdesc:aeef423f23aa62a4b4349488c19f636ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a slug.  <br /></td></tr>
 <tr class="separator:aeef423f23aa62a4b4349488c19f636ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac007f0bf471ec7e24497d9253eaf6338" id="r_ac007f0bf471ec7e24497d9253eaf6338"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ac007f0bf471ec7e24497d9253eaf6338">md_paragraph</a> (int num=1, bool useLipsum=true, bool useHtml=false)</td></tr>
+<tr class="memitem:ac007f0bf471ec7e24497d9253eaf6338" id="r_ac007f0bf471ec7e24497d9253eaf6338"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ac007f0bf471ec7e24497d9253eaf6338">md_paragraph</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">num</a>=1, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useLipsum</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a>, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useHtml</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a>)</td></tr>
 <tr class="memdesc:ac007f0bf471ec7e24497d9253eaf6338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown paragraph.  <br /></td></tr>
 <tr class="separator:ac007f0bf471ec7e24497d9253eaf6338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a912ece12963edda6fa19fef61bd15fc2" id="r_a912ece12963edda6fa19fef61bd15fc2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a912ece12963edda6fa19fef61bd15fc2">md_text</a> (int numElements=15, bool useHtml=false)</td></tr>
+<tr class="memitem:a912ece12963edda6fa19fef61bd15fc2" id="r_a912ece12963edda6fa19fef61bd15fc2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a912ece12963edda6fa19fef61bd15fc2">md_text</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">numElements</a>=15, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useHtml</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a>)</td></tr>
 <tr class="memdesc:a912ece12963edda6fa19fef61bd15fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown document.  <br /></td></tr>
 <tr class="separator:a912ece12963edda6fa19fef61bd15fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae195070987aaee1d4e25ace259bb3421" id="r_ae195070987aaee1d4e25ace259bb3421"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ae195070987aaee1d4e25ace259bb3421">md_header</a> (int level=1, bool useHtml=false)</td></tr>
+<tr class="memitem:ae195070987aaee1d4e25ace259bb3421" id="r_ae195070987aaee1d4e25ace259bb3421"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ae195070987aaee1d4e25ace259bb3421">md_header</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> level=1, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useHtml</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a>)</td></tr>
 <tr class="memdesc:ae195070987aaee1d4e25ace259bb3421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown header.  <br /></td></tr>
 <tr class="separator:ae195070987aaee1d4e25ace259bb3421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af770e63132ac1c098baafa55528edaae" id="r_af770e63132ac1c098baafa55528edaae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#af770e63132ac1c098baafa55528edaae">md_emphasis</a> (bool isBold=true, bool useHtml=false)</td></tr>
+<tr class="memitem:af770e63132ac1c098baafa55528edaae" id="r_af770e63132ac1c098baafa55528edaae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#af770e63132ac1c098baafa55528edaae">md_emphasis</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">isBold</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a>, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useHtml</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a>)</td></tr>
 <tr class="memdesc:af770e63132ac1c098baafa55528edaae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an emphasized Markdown sentence.  <br /></td></tr>
 <tr class="separator:af770e63132ac1c098baafa55528edaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd27a60740a26c16063f1a73b56c1970" id="r_acd27a60740a26c16063f1a73b56c1970"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#acd27a60740a26c16063f1a73b56c1970">md_link</a> (bool useHtml=false)</td></tr>
+<tr class="memitem:acd27a60740a26c16063f1a73b56c1970" id="r_acd27a60740a26c16063f1a73b56c1970"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#acd27a60740a26c16063f1a73b56c1970">md_link</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useHtml</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a>)</td></tr>
 <tr class="memdesc:acd27a60740a26c16063f1a73b56c1970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown link.  <br /></td></tr>
 <tr class="separator:acd27a60740a26c16063f1a73b56c1970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e3b4ddae52e5c529dc53ea1a672038" id="r_ad0e3b4ddae52e5c529dc53ea1a672038"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ad0e3b4ddae52e5c529dc53ea1a672038">md_list</a> (bool ordered=false, bool useHtml=false)</td></tr>
+<tr class="memitem:ad0e3b4ddae52e5c529dc53ea1a672038" id="r_ad0e3b4ddae52e5c529dc53ea1a672038"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ad0e3b4ddae52e5c529dc53ea1a672038">md_list</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">ordered</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a>, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useHtml</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a>)</td></tr>
 <tr class="memdesc:ad0e3b4ddae52e5c529dc53ea1a672038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Markdown list.  <br /></td></tr>
 <tr class="separator:ad0e3b4ddae52e5c529dc53ea1a672038"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069c97c8c5a590394c003e4203e8c5d4" id="r_a069c97c8c5a590394c003e4203e8c5d4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a069c97c8c5a590394c003e4203e8c5d4">xml</a> (int choices=30)</td></tr>
+<tr class="memitem:a069c97c8c5a590394c003e4203e8c5d4" id="r_a069c97c8c5a590394c003e4203e8c5d4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a069c97c8c5a590394c003e4203e8c5d4">xml</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">choices</a>=30)</td></tr>
 <tr class="memdesc:a069c97c8c5a590394c003e4203e8c5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an XML document.  <br /></td></tr>
 <tr class="separator:a069c97c8c5a590394c003e4203e8c5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4997abb15f86f353cc4b97b49d67671" id="r_aa4997abb15f86f353cc4b97b49d67671"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aa4997abb15f86f353cc4b97b49d67671">json</a> (int maxDepth=3, bool isObject=true)</td></tr>
-<tr class="memdesc:aa4997abb15f86f353cc4b97b49d67671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a JSON object or array.  <br /></td></tr>
-<tr class="separator:aa4997abb15f86f353cc4b97b49d67671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6575a37ba2e901a96f1d6628ebfa0a" id="r_aee6575a37ba2e901a96f1d6628ebfa0a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aee6575a37ba2e901a96f1d6628ebfa0a">json</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">depth</a>=0, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">maxDepth</a>=3, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">isObject</a>=<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a>)</td></tr>
+<tr class="memdesc:aee6575a37ba2e901a96f1d6628ebfa0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a JSON object or array.  <br /></td></tr>
+<tr class="separator:aee6575a37ba2e901a96f1d6628ebfa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f02ed3613e7c650a2136a2701ea68c" id="r_a76f02ed3613e7c650a2136a2701ea68c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a76f02ed3613e7c650a2136a2701ea68c">json_value</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">depth</a>=0, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">maxDepth</a>=3)</td></tr>
+<tr class="memdesc:a76f02ed3613e7c650a2136a2701ea68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a JSON value.  <br /></td></tr>
+<tr class="separator:a76f02ed3613e7c650a2136a2701ea68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6bbd7a0ec09384a34227256f30ecf517" id="r_a6bbd7a0ec09384a34227256f30ecf517"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a6bbd7a0ec09384a34227256f30ecf517">single_sentence</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">wordArg</a>, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;frag)</td></tr>
+<tr class="memdesc:a6bbd7a0ec09384a34227256f30ecf517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a single sentence.  <br /></td></tr>
+<tr class="separator:a6bbd7a0ec09384a34227256f30ecf517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69a16da5e15a580c6fc65de467882cb" id="r_ae69a16da5e15a580c6fc65de467882cb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ae69a16da5e15a580c6fc65de467882cb">single_paragraph</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useLipsum</a>)</td></tr>
+<tr class="memdesc:ae69a16da5e15a580c6fc65de467882cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a single paragraph.  <br /></td></tr>
+<tr class="separator:ae69a16da5e15a580c6fc65de467882cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6adc77d505bd5512b529bbbac7665c76" id="r_a6adc77d505bd5512b529bbbac7665c76"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a6adc77d505bd5512b529bbbac7665c76">single_md_paragraph</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useLipsum</a>, <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a> <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">useHtml</a>)</td></tr>
+<tr class="memdesc:a6adc77d505bd5512b529bbbac7665c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a single Markdown paragraph.  <br /></td></tr>
+<tr class="separator:a6adc77d505bd5512b529bbbac7665c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92cb625c2ad2b1c705dc8f4f462c0b69" id="r_a92cb625c2ad2b1c705dc8f4f462c0b69"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a92cb625c2ad2b1c705dc8f4f462c0b69">json_string</a> ()</td></tr>
+<tr class="memdesc:a92cb625c2ad2b1c705dc8f4f462c0b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random JSON string.  <br /></td></tr>
+<tr class="separator:a92cb625c2ad2b1c705dc8f4f462c0b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5b102e9339514bea35e4e5227dad3d" id="r_aeb5b102e9339514bea35e4e5227dad3d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aeb5b102e9339514bea35e4e5227dad3d">json_number</a> ()</td></tr>
+<tr class="memdesc:aeb5b102e9339514bea35e4e5227dad3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random JSON number.  <br /></td></tr>
+<tr class="separator:aeb5b102e9339514bea35e4e5227dad3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc8d6244d216af43bdce62482d05625" id="r_aabc8d6244d216af43bdce62482d05625"><td class="memTemplParams" colspan="2">template&lt;internal::UniformDistributionType T&gt; </td></tr>
+<tr class="memitem:aabc8d6244d216af43bdce62482d05625"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">random_number</a> (T min, T max)</td></tr>
+<tr class="memdesc:aabc8d6244d216af43bdce62482d05625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random number.  <br /></td></tr>
+<tr class="separator:aabc8d6244d216af43bdce62482d05625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f16f3d639e639a9b6dc01f9f3b75a9" id="r_ad0f16f3d639e639a9b6dc01f9f3b75a9"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ad0f16f3d639e639a9b6dc01f9f3b75a9">random_number</a> (char min, char max)</td></tr>
+<tr class="memdesc:ad0f16f3d639e639a9b6dc01f9f3b75a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625" title="Generate a random number.">random_number()</a> for char.  <br /></td></tr>
+<tr class="separator:ad0f16f3d639e639a9b6dc01f9f3b75a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5769dd0a94b46a965482e06e7316dd18" id="r_a5769dd0a94b46a965482e06e7316dd18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a5769dd0a94b46a965482e06e7316dd18">random_number</a> (bool min, bool max)</td></tr>
+<tr class="memdesc:a5769dd0a94b46a965482e06e7316dd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625" title="Generate a random number.">random_number()</a> for bool.  <br /></td></tr>
+<tr class="separator:a5769dd0a94b46a965482e06e7316dd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa445b077bae84e524a7b6ec3bc129541" id="r_aa445b077bae84e524a7b6ec3bc129541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#aa445b077bae84e524a7b6ec3bc129541">weighted_random_idx</a> (<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::vector&lt; <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> &gt; &amp;<a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">weights</a>)</td></tr>
+<tr class="memdesc:aa445b077bae84e524a7b6ec3bc129541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose a random index based off weights.  <br /></td></tr>
+<tr class="separator:aa445b077bae84e524a7b6ec3bc129541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17f0d17f105b502d2fb5d6cf61da2de" id="r_ae17f0d17f105b502d2fb5d6cf61da2de"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#ae17f0d17f105b502d2fb5d6cf61da2de">tld</a> ()</td></tr>
+<tr class="memdesc:ae17f0d17f105b502d2fb5d6cf61da2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pick a random TLD.  <br /></td></tr>
+<tr class="separator:ae17f0d17f105b502d2fb5d6cf61da2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -176,25 +223,26 @@ Private Attributes</h2></td></tr>
 <a class="el" href="structlipsum_1_1GeneratorSettings.html">GeneratorSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Settings</b></td></tr>
 <tr class="memdesc:a2e6aab7907c23bf00b1ef6076b247486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for generation. <br /></td></tr>
 <tr class="separator:a2e6aab7907c23bf00b1ef6076b247486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cc88a09361289e1e375b6322618dfe" id="r_af1cc88a09361289e1e375b6322618dfe"><td class="memItemLeft" align="right" valign="top"><a id="af1cc88a09361289e1e375b6322618dfe" name="af1cc88a09361289e1e375b6322618dfe"></a>
+std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><b>m_Gen</b></td></tr>
+<tr class="memdesc:af1cc88a09361289e1e375b6322618dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random number generator. <br /></td></tr>
+<tr class="separator:af1cc88a09361289e1e375b6322618dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99f03adc413d1df93456be8597ef4e48" id="r_a99f03adc413d1df93456be8597ef4e48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlipsum_1_1Source.html">Source</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html#a99f03adc413d1df93456be8597ef4e48">m_Source</a></td></tr>
 <tr class="memdesc:a99f03adc413d1df93456be8597ef4e48"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classlipsum_1_1Source.html" title="Class for multi-source generation.">Source</a> used for generation.  <br /></td></tr>
 <tr class="separator:a99f03adc413d1df93456be8597ef4e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>OOP layer over lipsum-cpp. </p>
+<div class="textblock"><p>Main class of lipsum-cpp. </p>
 <dl class="section since"><dt>Since</dt><dd>0.2.0</dd></dl>
-<p>This provides a more user-friendly object-oriented layer over lipsum-cpp. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#_a0">Advanced.cpp</a>, <a class="el" href="Generator_8cpp-example.html#_a0">Generator.cpp</a>, <a class="el" href="GeneratorFormats_8cpp-example.html#_a0">GeneratorFormats.cpp</a>, <a class="el" href="Markdown_8cpp-example.html#_a0">Markdown.cpp</a>, <a class="el" href="Misc_8cpp-example.html#_a0">Misc.cpp</a>, and <a class="el" href="Source_8cpp-example.html#_a3">Source.cpp</a>.</dd>
+<p>This is the main class for generation using lipsum-cpp. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#_a0">Advanced.cpp</a>, <a class="el" href="CompressionBenchmarks_8cpp-example.html#_a0">CompressionBenchmarks.cpp</a>, <a class="el" href="Generator_8cpp-example.html#_a0">Generator.cpp</a>, <a class="el" href="GeneratorFormats_8cpp-example.html#_a0">GeneratorFormats.cpp</a>, <a class="el" href="Markdown_8cpp-example.html#_a0">Markdown.cpp</a>, <a class="el" href="Misc_8cpp-example.html#_a0">Misc.cpp</a>, <a class="el" href="ParserStressTest_8cpp-example.html#_a0">ParserStressTest.cpp</a>, and <a class="el" href="Source_8cpp-example.html#_a0">Source.cpp</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a06bce7e2b6d946ae23844c2afee9249d" name="a06bce7e2b6d946ae23844c2afee9249d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06bce7e2b6d946ae23844c2afee9249d">&#9670;&#160;</a></span>Generator() <span class="overload">[1/2]</span></h2>
+<a id="aa4e0fa3b9b62e8bd269b4ab9b92bb156" name="aa4e0fa3b9b62e8bd269b4ab9b92bb156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e0fa3b9b62e8bd269b4ab9b92bb156">&#9670;&#160;</a></span>Generator() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">lipsum::Generator::Generator </td>
@@ -203,21 +251,16 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Default constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>. </p>
+<p>Default constructor for <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">Generator</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>0.2.0</dd></dl>
-<p>Load the default lorem ipsum source. </p>
+<p>Load the default lorem ipsum source and choose a random seed. </p>
 
 </div>
 </div>
-<a id="a511afc093c8e9720d06e605540a75613" name="a511afc093c8e9720d06e605540a75613"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a511afc093c8e9720d06e605540a75613">&#9670;&#160;</a></span>Generator() <span class="overload">[2/2]</span></h2>
+<a id="a61e9ddf0b7e54c49e73bfce89f778c9e" name="a61e9ddf0b7e54c49e73bfce89f778c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e9ddf0b7e54c49e73bfce89f778c9e">&#9670;&#160;</a></span>Generator() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,14 +268,82 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">lipsum::Generator::Generator </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
+          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">Generator</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Load the default lorem ipsum source and the specified seed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seed</td><td>The seed specified. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0c059e7e1774aa73261cff5a5556cfe6" name="a0c059e7e1774aa73261cff5a5556cfe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c059e7e1774aa73261cff5a5556cfe6">&#9670;&#160;</a></span>Generator() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lipsum::Generator::Generator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
+          <td class="paramname"><em>seed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">Generator</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Load the specified lorem ipsum source and the specified seed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The filepath or name of the lorem ipsum source. </td></tr>
+    <tr><td class="paramname">seed</td><td>The seed specified.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlipsum_1_1Source.html#addcccd703e85d0c6d0224f06ec55bbf4" title="Load a source and fill the vector.">lipsum::Source::load</a> </dd></dl>
+
+</div>
+</div>
+<a id="a511afc093c8e9720d06e605540a75613" name="a511afc093c8e9720d06e605540a75613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511afc093c8e9720d06e605540a75613">&#9670;&#160;</a></span>Generator() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lipsum::Generator::Generator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">Generator</a>. </p>
+<p>Constructor for <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">Generator</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.1</dd></dl>
 <p>Load the specified lorem ipsum source into m_Source. If path is invalid, it will print a warning and default to the standard lorem-ipsum source.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -253,15 +364,15 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void lipsum::Generator::change_setting </td>
+          <td class="memname"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">void</a> lipsum::Generator::change_setting </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;&#160;</td>
           <td class="paramname"><em>setting</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -282,7 +393,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a1">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a1">Advanced.cpp</a>, <a class="el" href="GeneratorFormats_8cpp-example.html#a1">GeneratorFormats.cpp</a>, <a class="el" href="Markdown_8cpp-example.html#a1">Markdown.cpp</a>, and <a class="el" href="ParserStressTest_8cpp-example.html#a1">ParserStressTest.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -294,21 +405,21 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void lipsum::Generator::change_setting </td>
+          <td class="memname"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">void</a> lipsum::Generator::change_setting </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;&#160;</td>
           <td class="paramname"><em>setting</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>minValue</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>maxValue</em>&#160;</td>
         </tr>
         <tr>
@@ -350,15 +461,15 @@ Private Attributes</h2></td></tr>
 
 <p>Generate a sentence fragment. </p>
 <dl class="section since"><dt>Since</dt><dd>0.2.0</dd></dl>
-<p>Generate a sentence fragment. Formerly known as sentence_fragment().</p>
+<p>Generate a sentence fragment. Formerly known as <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625" title="Generate a random number.">sentence_fragment()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random sentence fragment. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Generator_8cpp-example.html#a2">Generator.cpp</a>.</dd>
 </dl>
 
 </div>
 </div>
-<a id="aa4997abb15f86f353cc4b97b49d67671" name="aa4997abb15f86f353cc4b97b49d67671"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4997abb15f86f353cc4b97b49d67671">&#9670;&#160;</a></span>json()</h2>
+<a id="aee6575a37ba2e901a96f1d6628ebfa0a" name="aee6575a37ba2e901a96f1d6628ebfa0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6575a37ba2e901a96f1d6628ebfa0a">&#9670;&#160;</a></span>json()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,14 +477,20 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::json </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
+          <td class="paramname"><em>depth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>maxDepth</em> = <code>3</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isObject</em> = <code>true</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>isObject</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -388,13 +505,144 @@ Private Attributes</h2></td></tr>
 <p>Generate an object or array in JSON format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">depth</td><td>The current depth of recursion. By default 0. </td></tr>
     <tr><td class="paramname">maxDepth</td><td>The maximum level of recursion. By default 3. </td></tr>
     <tr><td class="paramname">isObject</td><td>Whether to output an object (true) or an array (false). By default true.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random JSON object or array. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a13">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a13">GeneratorFormats.cpp</a>, and <a class="el" href="ParserStressTest_8cpp-example.html#a3">ParserStressTest.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="aeb5b102e9339514bea35e4e5227dad3d" name="aeb5b102e9339514bea35e4e5227dad3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb5b102e9339514bea35e4e5227dad3d">&#9670;&#160;</a></span>json_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::json_number </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a random JSON number. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Generate a random number, surrounded by quotes. This function is private.</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random JSON number. </dd></dl>
+
+</div>
+</div>
+<a id="a92cb625c2ad2b1c705dc8f4f462c0b69" name="a92cb625c2ad2b1c705dc8f4f462c0b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92cb625c2ad2b1c705dc8f4f462c0b69">&#9670;&#160;</a></span>json_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::json_string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a random JSON string. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Generate a random word, surrounded by quotes. This function is private.</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random JSON string. </dd></dl>
+
+</div>
+</div>
+<a id="a76f02ed3613e7c650a2136a2701ea68c" name="a76f02ed3613e7c650a2136a2701ea68c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f02ed3613e7c650a2136a2701ea68c">&#9670;&#160;</a></span>json_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::json_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
+          <td class="paramname"><em>depth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
+          <td class="paramname"><em>maxDepth</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a JSON value. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Generate an object, array, number, string, boolean, or null in JSON format.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depth</td><td>The current depth of recursion. By default 0. </td></tr>
+    <tr><td class="paramname">maxDepth</td><td>The maximum level of recursion. By default 3.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random JSON value. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a14">GeneratorFormats.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a55fb8a834e0f9365a87791f9e52d1438" name="a55fb8a834e0f9365a87791f9e52d1438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fb8a834e0f9365a87791f9e52d1438">&#9670;&#160;</a></span>load_seed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">void</a> lipsum::Generator::load_seed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
+          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reload a seed. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Reload the seed of m_Gen.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seed</td><td>The seed specified. </td></tr>
+  </table>
+  </dd>
 </dl>
 
 </div>
@@ -406,9 +654,9 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void lipsum::Generator::load_source </td>
+          <td class="memname"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">void</a> lipsum::Generator::load_source </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::string &amp;&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
@@ -437,14 +685,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::md_emphasis </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isBold</em> = <code>true</code>, </td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>isBold</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em> = <code>false</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useHtml</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -479,14 +727,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::md_header </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>level</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em> = <code>false</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useHtml</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -507,7 +755,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown header. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a8">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a2">Advanced.cpp</a>, and <a class="el" href="GeneratorFormats_8cpp-example.html#a8">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -521,8 +769,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::md_link </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em> = <code>false</code></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useHtml</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -538,7 +786,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown link. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a10">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a6">Advanced.cpp</a>, and <a class="el" href="GeneratorFormats_8cpp-example.html#a10">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -552,14 +800,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::md_list </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ordered</em> = <code>false</code>, </td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>ordered</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em> = <code>false</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useHtml</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -580,7 +828,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown list. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a11">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a4">Advanced.cpp</a>, and <a class="el" href="GeneratorFormats_8cpp-example.html#a11">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -594,20 +842,20 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::md_paragraph </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>num</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useLipsum</em> = <code>true</code>, </td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useLipsum</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em> = <code>false</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useHtml</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -628,8 +876,8 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown paragraph. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a2">Advanced.cpp</a>, and <a class="el" href="GeneratorFormats_8cpp-example.html#a6">GeneratorFormats.cpp</a>.</dd>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown paragraphs. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a3">Advanced.cpp</a>, and <a class="el" href="GeneratorFormats_8cpp-example.html#a6">GeneratorFormats.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -643,14 +891,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::md_text </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>numElements</em> = <code>15</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useHtml</em> = <code>false</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useHtml</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">false</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -671,7 +919,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown document. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a7">GeneratorFormats.cpp</a>, <a class="el" href="Misc_8cpp-example.html#a9">Misc.cpp</a>, and <a class="el" href="Source_8cpp-example.html#a4">Source.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CompressionBenchmarks_8cpp-example.html#a1">CompressionBenchmarks.cpp</a>, <a class="el" href="GeneratorFormats_8cpp-example.html#a7">GeneratorFormats.cpp</a>, <a class="el" href="Markdown_8cpp-example.html#a2">Markdown.cpp</a>, <a class="el" href="Misc_8cpp-example.html#a11">Misc.cpp</a>, and <a class="el" href="Source_8cpp-example.html#a1">Source.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -685,14 +933,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::paragraph </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>num</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useLipsum</em> = <code>true</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useLipsum</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -713,7 +961,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random paragraph(s). </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Generator_8cpp-example.html#a4">Generator.cpp</a>, and <a class="el" href="Misc_8cpp-example.html#a10">Misc.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a7">Advanced.cpp</a>, <a class="el" href="Generator_8cpp-example.html#a4">Generator.cpp</a>, and <a class="el" href="Misc_8cpp-example.html#a12">Misc.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -742,6 +990,158 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5769dd0a94b46a965482e06e7316dd18" name="a5769dd0a94b46a965482e06e7316dd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5769dd0a94b46a965482e06e7316dd18">&#9670;&#160;</a></span>random_number() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lipsum::Generator::random_number </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overload of <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625" title="Generate a random number.">random_number()</a> for bool. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>The minimum value. </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool The random character. </dd></dl>
+
+</div>
+</div>
+<a id="ad0f16f3d639e639a9b6dc01f9f3b75a9" name="ad0f16f3d639e639a9b6dc01f9f3b75a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f16f3d639e639a9b6dc01f9f3b75a9">&#9670;&#160;</a></span>random_number() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char lipsum::Generator::random_number </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overload of <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625" title="Generate a random number.">random_number()</a> for char. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>The minimum value. </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char The random character. </dd></dl>
+
+</div>
+</div>
+<a id="aabc8d6244d216af43bdce62482d05625" name="aabc8d6244d216af43bdce62482d05625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc8d6244d216af43bdce62482d05625">&#9670;&#160;</a></span>random_number() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;internal::UniformDistributionType T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T lipsum::Generator::random_number </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a random number. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Generate a random number between min and max, inclusive. If T is an integer, use std::uniform_int_distribution. Else, use std::uniform_real_distribution.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the random number. Must be a uniform-distribution type, i.e. ints (excluding chars and bool) and floats.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>The minimum value. </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>T The random number. </dd></dl>
+
+</div>
+</div>
 <a id="a42737d0f826cda0e71959b73755436fd" name="a42737d0f826cda0e71959b73755436fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42737d0f826cda0e71959b73755436fd">&#9670;&#160;</a></span>scramble()</h2>
 
@@ -751,19 +1151,19 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::scramble </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>length</em> = <code>16</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">char</a>&#160;</td>
           <td class="paramname"><em>minChar</em> = <code>'&#160;'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">char</a>&#160;</td>
           <td class="paramname"><em>maxChar</em> = <code>'~'</code>&#160;</td>
         </tr>
         <tr>
@@ -800,14 +1200,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::sentence </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>num</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useLipsum</em> = <code>true</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useLipsum</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -828,8 +1228,141 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random sentence(s). </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Generator_8cpp-example.html#a3">Generator.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a8">Advanced.cpp</a>, and <a class="el" href="Generator_8cpp-example.html#a3">Generator.cpp</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="a6adc77d505bd5512b529bbbac7665c76" name="a6adc77d505bd5512b529bbbac7665c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6adc77d505bd5512b529bbbac7665c76">&#9670;&#160;</a></span>single_md_paragraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::single_md_paragraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useLipsum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useHtml</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a single Markdown paragraph. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Generate a single paragraph in Markdown or HTML format. This function is private.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the paragraph. </td></tr>
+    <tr><td class="paramname">useHtml</td><td>Whether HTML should be outputted instead of Markdown.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random Markdown paragraph. </dd></dl>
+
+</div>
+</div>
+<a id="ae69a16da5e15a580c6fc65de467882cb" name="ae69a16da5e15a580c6fc65de467882cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69a16da5e15a580c6fc65de467882cb">&#9670;&#160;</a></span>single_paragraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::single_paragraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useLipsum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a single paragraph. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Generate a single paragraph. This function is private.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useLipsum</td><td>Whether "Lorem ipsum..." should start the paragraph.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The paragraph. </dd></dl>
+
+</div>
+</div>
+<a id="a6bbd7a0ec09384a34227256f30ecf517" name="a6bbd7a0ec09384a34227256f30ecf517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbd7a0ec09384a34227256f30ecf517">&#9670;&#160;</a></span>single_sentence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::single_sentence </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>wordArg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;&#160;</td>
+          <td class="paramname"><em>frag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate a single sentence. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>Generate a single sentence. This function is private.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wordArg</td><td>The minimum and maximum possible number of words in a sentence fragment. </td></tr>
+    <tr><td class="paramname">frag</td><td>The minimum and maximum possible number of sentence fragments in the sentence.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string The sentence. </dd></dl>
 
 </div>
 </div>
@@ -842,7 +1375,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::slug </td>
           <td>(</td>
-          <td class="paramtype">char&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">char</a>&#160;</td>
           <td class="paramname"><em>separator</em> = <code>'-'</code></td><td>)</td>
           <td></td>
         </tr>
@@ -873,8 +1406,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::text </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useLipsum</em> = <code>true</code></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">bool</a>&#160;</td>
+          <td class="paramname"><em>useLipsum</em> = <code><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">true</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -892,6 +1425,36 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random text. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Generator_8cpp-example.html#a5">Generator.cpp</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="ae17f0d17f105b502d2fb5d6cf61da2de" name="ae17f0d17f105b502d2fb5d6cf61da2de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17f0d17f105b502d2fb5d6cf61da2de">&#9670;&#160;</a></span>tld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string lipsum::Generator::tld </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pick a random TLD. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>This function picks a random TLD out of .com, .org, .net, .edu, .io, .ca, and .co.uk, each with chances of 70%, 10%, 7%, 5%, 5%, 2%, and 1% respectively.</p>
+<dl class="section return"><dt>Returns</dt><dd>std::string The random TLD. </dd></dl>
 
 </div>
 </div>
@@ -919,6 +1482,43 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aa445b077bae84e524a7b6ec3bc129541" name="aa445b077bae84e524a7b6ec3bc129541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa445b077bae84e524a7b6ec3bc129541">&#9670;&#160;</a></span>weighted_random_idx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> lipsum::Generator::weighted_random_idx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">const</a> std::vector&lt; <a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>weights</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Choose a random index based off weights. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.0</dd></dl>
+<p>This function chooses a random index of weights, with higher valued weights being more likely. To do this, it passes the weights into an std::discrete_distribution.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weights</td><td>The weights.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int The random index. </dd></dl>
+
+</div>
+</div>
 <a id="a68b5cb4d06b114f56fc66a37dea9f232" name="a68b5cb4d06b114f56fc66a37dea9f232"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68b5cb4d06b114f56fc66a37dea9f232">&#9670;&#160;</a></span>word()</h2>
 
@@ -928,7 +1528,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::word </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>num</em> = <code>1</code></td><td>)</td>
           <td></td>
         </tr>
@@ -945,7 +1545,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random word. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Generator_8cpp-example.html#a1">Generator.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Advanced_8cpp-example.html#a5">Advanced.cpp</a>, and <a class="el" href="Generator_8cpp-example.html#a1">Generator.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -959,7 +1559,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">std::string lipsum::Generator::xml </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classlipsum_1_1Generator.html#aabc8d6244d216af43bdce62482d05625">int</a>&#160;</td>
           <td class="paramname"><em>choices</em> = <code>30</code></td><td>)</td>
           <td></td>
         </tr>
@@ -976,7 +1576,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string The random XML document. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a12">GeneratorFormats.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="GeneratorFormats_8cpp-example.html#a12">GeneratorFormats.cpp</a>, and <a class="el" href="ParserStressTest_8cpp-example.html#a2">ParserStressTest.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -1011,6 +1611,8 @@ Private Attributes</h2></td></tr>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/lipsum/<a class="el" href="generator_8hpp_source.html">generator.hpp</a></li>
 <li>src/lipsum/<a class="el" href="generator_8inl.html">generator.inl</a></li>
+<li>src/lipsum/<a class="el" href="generatorcore_8inl_source.html">generatorcore.inl</a></li>
+<li>src/lipsum/<a class="el" href="generatorformats_8inl_source.html">generatorformats.inl</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

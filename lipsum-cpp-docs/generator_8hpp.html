@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
    </div>
-   <div id="projectbrief">A library written in C++ for generating sample text.</div>
+   <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
  </tr>
  </tbody>
@@ -77,12 +77,13 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">generator.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Declaration of <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">lipsum::Generator</a>.  
+<p>Declaration of <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">lipsum::Generator</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="argvec2_8hpp_source.html">core/argvec2.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="core_8hpp_source.html">core/core.hpp</a>&quot;</code><br />
@@ -93,19 +94,20 @@ Include dependency graph for generator.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="generator_8hpp__incl.png" border="0" usemap="#asrc_2lipsum_2generator_8hpp" alt=""/></div>
 <map name="asrc_2lipsum_2generator_8hpp" id="asrc_2lipsum_2generator_8hpp">
-<area shape="rect" title="Declaration of lipsum::Generator." alt="" coords="136,5,319,31"/>
-<area shape="rect" href="argvec2_8hpp.html" title="Declaration of lipsum::ArgVec2." alt="" coords="5,79,140,104"/>
-<area shape="poly" title=" " alt="" coords="204,33,111,75,109,70,201,28"/>
-<area shape="rect" href="core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="139,152,217,177"/>
-<area shape="poly" title=" " alt="" coords="225,32,206,80,187,139,182,138,201,78,220,30"/>
-<area shape="rect" href="source_8hpp.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="215,79,341,104"/>
-<area shape="poly" title=" " alt="" coords="238,29,264,66,260,69,234,33"/>
-<area shape="rect" href="generatorsettings_8hpp.html" title="Struct lipsum::GeneratorSettings." alt="" coords="365,79,530,104"/>
-<area shape="poly" title=" " alt="" coords="263,28,400,72,398,77,262,33"/>
-<area shape="poly" title=" " alt="" coords="91,102,151,142,148,147,88,106"/>
-<area shape="rect" href="version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="129,225,227,251"/>
-<area shape="poly" title=" " alt="" coords="181,178,181,212,175,212,175,178"/>
-<area shape="poly" title=" " alt="" coords="263,106,207,146,204,142,260,102"/>
+<area shape="rect" title="Declaration of lipsum::Generator." alt="" coords="74,5,257,31"/>
+<area shape="rect" href="argvec2_8hpp.html" title="Declaration of lipsum::ArgVec2." alt="" coords="38,152,173,177"/>
+<area shape="poly" title=" " alt="" coords="87,33,45,51,28,64,13,80,9,89,9,98,19,115,38,131,63,144,60,149,36,135,15,119,3,99,3,88,8,77,24,60,43,46,85,28"/>
+<area shape="rect" href="core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="186,225,265,251"/>
+<area shape="poly" title=" " alt="" coords="176,30,190,51,203,78,220,150,227,211,222,212,215,151,198,80,185,54,172,32"/>
+<area shape="rect" href="source_8hpp.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="263,152,388,177"/>
+<area shape="poly" title=" " alt="" coords="184,29,246,77,308,140,304,143,242,81,181,33"/>
+<area shape="rect" href="generatorsettings_8hpp.html" title="Struct lipsum::GeneratorSettings." alt="" coords="23,79,188,104"/>
+<area shape="poly" title=" " alt="" coords="157,33,126,70,122,66,153,29"/>
+<area shape="poly" title=" " alt="" coords="126,175,195,216,192,220,123,180"/>
+<area shape="rect" href="version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="176,299,275,324"/>
+<area shape="poly" title=" " alt="" coords="228,251,228,285,223,285,223,251"/>
+<area shape="poly" title=" " alt="" coords="311,180,254,219,251,215,308,175"/>
+<area shape="poly" title=" " alt="" coords="108,104,108,138,103,138,103,104"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -130,7 +132,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlipsum_1_1Generator.html">lipsum::Generator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">OOP layer over lipsum-cpp.  <a href="classlipsum_1_1Generator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main class of lipsum-cpp.  <a href="classlipsum_1_1Generator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -138,10 +140,30 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacelipsum" id="r_namespacelipsum"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html">lipsum</a></td></tr>
 <tr class="memdesc:namespacelipsum"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the main namespace of lipsum-cpp. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a3777f25db453303490fd53b6923f852e" id="r_a3777f25db453303490fd53b6923f852e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a3777f25db453303490fd53b6923f852e">lipsum::GeneratorFlags</a> : bool { <br />
+&#160;&#160;<b>USELIPSUM</b> = true
+, <b>NO_USELIPSUM</b> = false
+, <b>HTML</b> = true
+, <b>MARKDOWN</b> = false
+, <br />
+&#160;&#160;<b>OBJECT</b> = true
+, <b>ARRAY</b> = false
+, <b>BOLD</b> = true
+, <b>ITALIC</b> = false
+, <br />
+&#160;&#160;<b>ORDERED</b> = true
+, <b>UNORDERED</b> = false
+<br />
+ }</td></tr>
+<tr class="memdesc:a3777f25db453303490fd53b6923f852e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for lipsum-cpp.  <a href="namespacelipsum.html#a3777f25db453303490fd53b6923f852e">More...</a><br /></td></tr>
+<tr class="separator:a3777f25db453303490fd53b6923f852e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">lipsum::Generator</a>. </p>
-<p>This declares the functions in <a class="el" href="classlipsum_1_1Generator.html" title="OOP layer over lipsum-cpp.">lipsum::Generator</a>. This file is under the BSD Zero-Clause License.</p>
+<div class="textblock"><p>Declaration of <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">lipsum::Generator</a>. </p>
+<p>This declares the functions in <a class="el" href="classlipsum_1_1Generator.html" title="Main class of lipsum-cpp.">lipsum::Generator</a>. This file is under the BSD Zero-Clause License.</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2026 LambBread</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>LambBread from github.com </dd></dl>
 </div></div><!-- contents -->

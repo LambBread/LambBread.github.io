@@ -1,5 +1,5 @@
 <map id="src/lipsum/core/argvec2.inl" name="src/lipsum/core/argvec2.inl">
-<area shape="rect" id="Node000001" title="Definition of lipsum::ArgVec2." alt="" coords="356,5,553,31"/>
+<area shape="rect" id="Node000001" title="Definition of lipsum::ArgVec2 and internal functions." alt="" coords="356,5,553,31"/>
 <area shape="rect" id="Node000002" href="$internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="405,79,505,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="457,31,457,65,452,65,452,31"/>
 <area shape="rect" id="Node000003" href="$core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="353,152,431,177"/>

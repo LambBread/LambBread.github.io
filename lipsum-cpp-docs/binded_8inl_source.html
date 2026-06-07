@@ -21,9 +21,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.4.6</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
    </div>
-   <div id="projectbrief">A library written in C++ for generating sample text.</div>
+   <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
  </tr>
  </tbody>
@@ -94,287 +94,254 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="binded_8h.html#acb986fb452a40b19c1cb0092dc32f0f5">   24</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <a class="code hl_typedef" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> <a class="code hl_function" href="binded_8inl.html#a828eeeaf8e202b7d806d5ddf1a8aabba">lpsm_Source</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="binded_8h.html#a687b82f025bdee2eb05c3a238371bf11">   24</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> <a class="code hl_function" href="binded_8inl.html#a4844d073e7be619487c760d95358eb3d">lpsm_Generator</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path)</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_typedef" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> ret;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    ret = <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a><span class="keyword">&gt;</span>(<span class="keyword">new</span> <a class="code hl_class" href="classlipsum_1_1Source.html">lpsm::Source</a>(path));</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">auto</span>* gen = <span class="keyword">new</span> <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>(path, 0);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    gen-&gt;load_seed(std::random_device{}());</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> (<span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a><span class="keyword">&gt;</span>(gen));</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="binded_8h.html#aca15419e9306e5f16ba065158b0ade34">   31</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="binded_8inl.html#a43971c21d968b71382f9a9de46c3a0c9">lpsm_SourceDestroy</a>(<a class="code hl_typedef" href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a> handle)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="binded_8h.html#a417d7cf1ae9c8afafe902a60663561e3">   31</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> <a class="code hl_function" href="binded_8inl.html#ad299861653d9b84f376386334cb4e97d">lpsm_GeneratorSeeded</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">int</span> seed)</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// auto* realSource = reinterpret_cast&lt;lpsm::Source*&gt;(handle);</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span>* realSource = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Source.html">lpsm::Source</a>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">delete</span> realSource;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">auto</span>* gen = <span class="keyword">new</span> <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>(path, seed);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a><span class="keyword">&gt;</span>(gen);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="binded_8h.html#ad40697fbee942bbffc560a35ee260ac6">   38</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <a class="code hl_typedef" href="binded_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a> <a class="code hl_function" href="binded_8inl.html#a35395fceee3743bf755901e0e308118a">lpsm_ArgVec2</a>(<span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="binded_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a><span class="keyword">&gt;</span>(<span class="keyword">new</span> <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>(min, max));</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="binded_8h.html#ab23f995957998769a3bea7b27832f77e">   37</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="binded_8inl.html#aec02e5b60032162a573cee8667049d14">lpsm_GeneratorDestroy</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">auto</span>* realSource = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">delete</span> realSource;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="binded_8h.html#a155963f2ec55428e6aa615df73f4d8cb">   43</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="binded_8inl.html#afc8c76c5aa0ed98c60944abbef54edd5">lpsm_ArgVec2Destroy</a>(<a class="code hl_typedef" href="binded_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a> av2)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// auto* realAv2 = reinterpret_cast&lt;lpsm::ArgVec2*&gt;(av2);</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">auto</span>* realAv2 = LPSM_CPPIFY(av2, <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">delete</span> realAv2;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="binded_8h.html#a56f03ae59ae4147712701725c092fb8c">   43</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="binded_8inl.html#a200ed74f9544589497bb21e8146ac5f8">lpsm_Generator_load_source</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                           <span class="keyword">const</span> <span class="keywordtype">char</span>*          path)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;load_source(path);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="binded_8h.html#a8cdc763187f176ccd8a40b9faa78885d">   50</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">int</span> <a class="code hl_function" href="binded_8inl.html#ad8b0c5f6440b908f868e229ee51b1606">lpsm_ArgVec2_roll</a>(<a class="code hl_typedef" href="binded_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a> av2)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> LPSM_CPPIFY(av2, <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>)-&gt;roll();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="binded_8h.html#a1b071f9bb804f804c8b1ef60040fb966">   49</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="binded_8inl.html#a65704b75d399fe54c93bdbc15d4ea4cb">lpsm_Generator_load_seed</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> seed)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;load_seed(seed);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="binded_8h.html#af94314ab577788c1bd1bbc8e85b708e7">   55</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">int</span> <a class="code hl_function" href="binded_8inl.html#a6ecd680b38e03bda28855cb41f81d827">lpsm_ArgVec2_min</a>(<a class="code hl_typedef" href="binded_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a> av2)</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> LPSM_CPPIFY(av2, <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>)-&gt;min;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="binded_8h.html#ae6c0142b3bf21fa86d77af7fb49466b0">   54</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="binded_8inl.html#a6d6d04aa91ab502f8ef767afa113bd76">lpsm_Generator_change_setting</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                                              <span class="keyword">const</span> <span class="keywordtype">char</span>*          setting,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                              <span class="keywordtype">int</span>                  minValue,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                                              <span class="keywordtype">int</span>                  maxValue)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            -&gt;change_setting(setting, minValue, maxValue);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="binded_8h.html#a094170f9b84e45bc4d5b5427be2eec62">   60</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">int</span> <a class="code hl_function" href="binded_8inl.html#accad11ca11b128b43119f668e72c8da7">lpsm_ArgVec2_max</a>(<a class="code hl_typedef" href="binded_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a> av2)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> LPSM_CPPIFY(av2, <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">lpsm::ArgVec2</a>)-&gt;max;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="binded_8h.html#a9d04d55f5b9c7f60451356e1fa052b2b">   63</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a862898cb9f071fef899d452da59e7e14">lpsm_Generator_word</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> num)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;word(num);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="binded_8h.html#a687b82f025bdee2eb05c3a238371bf11">   65</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> <a class="code hl_function" href="binded_8inl.html#a4844d073e7be619487c760d95358eb3d">lpsm_Generator</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> (<span class="keyword">reinterpret_cast&lt;</span><a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a><span class="keyword">&gt;</span>(<span class="keyword">new</span> <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>(path)));</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="binded_8h.html#aa02c6ce4990eb9b3d0493065f539c011">   69</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a56a8f1bc714c9aed66346057354ecd1c">lpsm_Generator_fragment</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;fragment();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
 </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="binded_8h.html#ab23f995957998769a3bea7b27832f77e">   70</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="binded_8inl.html#aec02e5b60032162a573cee8667049d14">lpsm_GeneratorDestroy</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">auto</span>* realSource = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">delete</span> realSource;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
-</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
 <div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="binded_8h.html#a56f03ae59ae4147712701725c092fb8c">   76</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="binded_8inl.html#a200ed74f9544589497bb21e8146ac5f8">lpsm_Generator_load_source</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                           <span class="keyword">const</span> <span class="keywordtype">char</span>*          path)</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;load_source(path);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="binded_8h.html#a35b82cfe2289bbaa79ac30ea05d248b4">   76</a></span><a class="code hl_function" href="binded_8inl.html#a1c0ffe5fb27d003692290d5637b18e35">lpsm_Generator_sentence</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> num, <span class="keywordtype">bool</span> useLipsum)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;sentence(num, useLipsum);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
 </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="binded_8h.html#ae6c0142b3bf21fa86d77af7fb49466b0">   82</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="binded_8inl.html#a6d6d04aa91ab502f8ef767afa113bd76">lpsm_Generator_change_setting</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                                              <span class="keyword">const</span> <span class="keywordtype">char</span>*          setting,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                                              <span class="keywordtype">int</span>                  minValue,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                              <span class="keywordtype">int</span>                  maxValue)</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>{</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            -&gt;change_setting(setting, minValue, maxValue);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="binded_8h.html#a7bb26c67b1350ad489525e9f92fbc549">   83</a></span><a class="code hl_function" href="binded_8inl.html#adef6a5efb9aa63c5328cadacaa1228ed">lpsm_Generator_paragraph</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> num, <span class="keywordtype">bool</span> useLipsum)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;paragraph(num, useLipsum);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="binded_8h.html#a9d04d55f5b9c7f60451356e1fa052b2b">   91</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a862898cb9f071fef899d452da59e7e14">lpsm_Generator_word</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> num)</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;word(num);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="binded_8h.html#ac8a10799dbed5c6eb5e7edc3037e8bbd">   89</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#af911f6d07ab9f482f2d1cf96020ceeab">lpsm_Generator_text</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                     <span class="keywordtype">bool</span>                 useLipsum)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;text(useLipsum);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
 </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="binded_8h.html#aa02c6ce4990eb9b3d0493065f539c011">   97</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a56a8f1bc714c9aed66346057354ecd1c">lpsm_Generator_fragment</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>{</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;fragment();</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="binded_8h.html#aea83056e34ce559d6427c336f9702e75">   96</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a053ddbc96872e3c7fda5d9eb7fba2dba">lpsm_Generator_scramble</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                                         <span class="keywordtype">int</span>                  length,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                                         <span class="keywordtype">char</span>                 minChar,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                                         <span class="keywordtype">char</span>                 maxChar)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>{</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                       -&gt;scramble(length, minChar, maxChar);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
 </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
-<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="binded_8h.html#a35b82cfe2289bbaa79ac30ea05d248b4">  104</a></span><a class="code hl_function" href="binded_8inl.html#a1c0ffe5fb27d003692290d5637b18e35">lpsm_Generator_sentence</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> num, <span class="keywordtype">bool</span> useLipsum)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>{</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;sentence(num, useLipsum);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="binded_8h.html#a2a98ab16fad4cd246ba3e05cf4faa907">  106</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#ad7db376e00f762f7dfbb411005cda7be">lpsm_Generator_url</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;url();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
 </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
-<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="binded_8h.html#a7bb26c67b1350ad489525e9f92fbc549">  111</a></span><a class="code hl_function" href="binded_8inl.html#adef6a5efb9aa63c5328cadacaa1228ed">lpsm_Generator_paragraph</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> num, <span class="keywordtype">bool</span> useLipsum)</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;paragraph(num, useLipsum);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="binded_8h.html#afd534957c26b6ef7f2f1824dfc1d5ffd">  112</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a6a88961bf3ef343003ef1954d84a4762">lpsm_Generator_plain_url</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>{</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;plain_url();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
 </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="binded_8h.html#ac8a10799dbed5c6eb5e7edc3037e8bbd">  117</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#af911f6d07ab9f482f2d1cf96020ceeab">lpsm_Generator_text</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                                     <span class="keywordtype">bool</span>                 useLipsum)</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>{</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;text(useLipsum);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="binded_8h.html#a165d9fd2dffe9ea942624c88fb0622f2">  118</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a4252e70fddc11a2d9bad82d0428e0e46">lpsm_Generator_slug</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                                     <span class="keywordtype">char</span>                 separator)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;slug(separator);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
 </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="binded_8h.html#aea83056e34ce559d6427c336f9702e75">  124</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a053ddbc96872e3c7fda5d9eb7fba2dba">lpsm_Generator_scramble</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                                         <span class="keywordtype">int</span>                  length,</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                                         <span class="keywordtype">char</span>                 minChar,</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                                         <span class="keywordtype">char</span>                 maxChar)</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                       -&gt;scramble(length, minChar, maxChar);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="binded_8h.html#a56821f083dbe98cea0550c3921fce858">  125</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a4ab7b42e28b9cb54bccd954c7197d74a">lpsm_Generator_md_paragraph</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                                             <span class="keywordtype">int</span>                  num,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                                             <span class="keywordtype">bool</span>                 useLipsum,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                                             <span class="keywordtype">bool</span>                 useHtml)</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>{</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                       -&gt;md_paragraph(num, useLipsum, useHtml);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
 </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="binded_8h.html#a2a98ab16fad4cd246ba3e05cf4faa907">  134</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#ad7db376e00f762f7dfbb411005cda7be">lpsm_Generator_url</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>{</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;url();</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="foldopen" id="foldopen00135" data-start="{" data-end="}">
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="binded_8h.html#a6933cc03b951e81a7aafcfa43338933c">  135</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#ad79aa0827c82ad017e7054ec67cffcbb">lpsm_Generator_md_text</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                                        <span class="keywordtype">int</span>                  numElements,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                                        <span class="keywordtype">bool</span>                 useHtml)</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>{</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keyword">auto</span> ret =</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_text(numElements, useHtml);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}</div>
 </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="foldopen" id="foldopen00140" data-start="{" data-end="}">
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="binded_8h.html#afd534957c26b6ef7f2f1824dfc1d5ffd">  140</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a6a88961bf3ef343003ef1954d84a4762">lpsm_Generator_plain_url</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>{</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;plain_url();</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
+<div class="foldopen" id="foldopen00145" data-start="{" data-end="}">
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="binded_8h.html#a36fce981481bb4d949530f006eb9d3e3">  145</a></span><a class="code hl_function" href="binded_8inl.html#a2bd4068e3082311eb81edb21376b839f">lpsm_Generator_md_header</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> level, <span class="keywordtype">bool</span> useHtml)</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>{</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_header(level, useHtml);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>}</div>
 </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="foldopen" id="foldopen00146" data-start="{" data-end="}">
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="binded_8h.html#a165d9fd2dffe9ea942624c88fb0622f2">  146</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a4252e70fddc11a2d9bad82d0428e0e46">lpsm_Generator_slug</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                                     <span class="keywordtype">char</span>                 separator)</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>{</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;slug(separator);</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="binded_8h.html#a1a3d69a971ff73a870ed4963297ede75">  151</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#afb2fc93b4d30764efe20990df9f70a9f">lpsm_Generator_md_emphasis</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                                            <span class="keywordtype">bool</span>                 isBold,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                                            <span class="keywordtype">bool</span>                 useHtml)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">auto</span> ret =</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_emphasis(isBold, useHtml);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
 </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="binded_8h.html#a56821f083dbe98cea0550c3921fce858">  153</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a4ab7b42e28b9cb54bccd954c7197d74a">lpsm_Generator_md_paragraph</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                                             <span class="keywordtype">int</span>                  num,</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                                             <span class="keywordtype">bool</span>                 useLipsum,</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                                             <span class="keywordtype">bool</span>                 useHtml)</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>{</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                       -&gt;md_paragraph(num, useLipsum, useHtml);</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="binded_8h.html#af6346ac268a02be421a39d9b167d1e8a">  160</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#af063b1680e3792484d1e0fb1984ba0cd">lpsm_Generator_md_link</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                                        <span class="keywordtype">bool</span>                 useHtml)</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>{</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_link(useHtml);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
 </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="binded_8h.html#a6933cc03b951e81a7aafcfa43338933c">  163</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#ad79aa0827c82ad017e7054ec67cffcbb">lpsm_Generator_md_text</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                                        <span class="keywordtype">int</span>                  numElements,</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                                        <span class="keywordtype">bool</span>                 useHtml)</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>{</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keyword">auto</span> ret =</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_text(numElements, useHtml);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="binded_8h.html#aa7ee0f1c528a1c5653dc9949676eecad">  168</a></span><a class="code hl_function" href="binded_8inl.html#afcb061fcabfb206af145c02f638bef39">lpsm_Generator_md_list</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">bool</span> ordered, <span class="keywordtype">bool</span> useHtml)</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>{</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_list(ordered, useHtml);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>}</div>
 </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
-<div class="foldopen" id="foldopen00173" data-start="{" data-end="}">
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="binded_8h.html#a36fce981481bb4d949530f006eb9d3e3">  173</a></span><a class="code hl_function" href="binded_8inl.html#a2bd4068e3082311eb81edb21376b839f">lpsm_Generator_md_header</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> level, <span class="keywordtype">bool</span> useHtml)</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>{</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_header(level, useHtml);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="foldopen" id="foldopen00174" data-start="{" data-end="}">
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="binded_8h.html#af352af2b612bbf0354a0ec4c426020ab">  174</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#ad43708f349a61fb6222670f10e58d2b6">lpsm_Generator_xml</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> choices)</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>{</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;xml(choices);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
 </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="foldopen" id="foldopen00179" data-start="{" data-end="}">
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="binded_8h.html#a1a3d69a971ff73a870ed4963297ede75">  179</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#afb2fc93b4d30764efe20990df9f70a9f">lpsm_Generator_md_emphasis</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                                            <span class="keywordtype">bool</span>                 isBold,</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                                            <span class="keywordtype">bool</span>                 useHtml)</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>{</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keyword">auto</span> ret =</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_emphasis(isBold, useHtml);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>}</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="foldopen" id="foldopen00180" data-start="{" data-end="}">
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="binded_8h.html#ad885ebbf059afd2d2bae4e3bac581023">  180</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#a97776b70728edb1c56a6f907424410d2">lpsm_Generator_json</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                                     <span class="keywordtype">int</span>                  depth,</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                                     <span class="keywordtype">int</span>                  maxDepth,</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                                     <span class="keywordtype">bool</span>                 isObject)</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>{</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                       -&gt;json(depth, maxDepth, isObject);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
 </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="foldopen" id="foldopen00188" data-start="{" data-end="}">
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="binded_8h.html#af6346ac268a02be421a39d9b167d1e8a">  188</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#af063b1680e3792484d1e0fb1984ba0cd">lpsm_Generator_md_link</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle,</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                                        <span class="keywordtype">bool</span>                 useHtml)</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>{</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_link(useHtml);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>}</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
+<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="binded_8h.html#a206aedf9de01c9dc7a26d848bc0ad7b0">  191</a></span><a class="code hl_function" href="binded_8inl.html#a2383e9e9b806d354c6b1d6930d47bd3b">lpsm_Generator_json_value</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> depth, <span class="keywordtype">int</span> maxDepth)</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keyword">auto</span> ret =</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;json_value(depth, maxDepth);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
 </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
-<div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="binded_8h.html#aa7ee0f1c528a1c5653dc9949676eecad">  196</a></span><a class="code hl_function" href="binded_8inl.html#afcb061fcabfb206af145c02f638bef39">lpsm_Generator_md_list</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">bool</span> ordered, <span class="keywordtype">bool</span> useHtml)</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>{</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;md_list(ordered, useHtml);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
-</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="foldopen" id="foldopen00202" data-start="{" data-end="}">
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="binded_8h.html#af352af2b612bbf0354a0ec4c426020ab">  202</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="binded_8inl.html#ad43708f349a61fb6222670f10e58d2b6">lpsm_Generator_xml</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> choices)</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>{</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;xml(choices);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>}</div>
-</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">char</span>*</div>
-<div class="foldopen" id="foldopen00209" data-start="{" data-end="}">
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="binded_8h.html#a97e27a48c323d313beed8929ae04b582">  209</a></span><a class="code hl_function" href="binded_8inl.html#aee3b5dbbc01a5d4caa3e8904bb804c5d">lpsm_Generator_json</a>(<a class="code hl_typedef" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <span class="keywordtype">int</span> maxDepth, <span class="keywordtype">bool</span> isObject)</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>{</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keyword">auto</span> ret = LPSM_CPPIFY(handle, <a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a>)-&gt;json(maxDepth, isObject);</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordflow">return</span> ConvertToCstr(ret);</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>}</div>
-</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="abinded_8h_html_a4a0fc50acb3e4afa16fe2f53f52044db"><div class="ttname"><a href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a></div><div class="ttdeci">void * lpsm_GeneratorHandle</div><div class="ttdoc">A handle to a lipsum::Generator.</div><div class="ttdef"><b>Definition</b> binded.h:47</div></div>
-<div class="ttc" id="abinded_8h_html_a6e3fdebaa30c4b033a1e8d60ca3ceeba"><div class="ttname"><a href="binded_8h.html#a6e3fdebaa30c4b033a1e8d60ca3ceeba">lpsm_SourceHandle</a></div><div class="ttdeci">void * lpsm_SourceHandle</div><div class="ttdoc">A handle to a lipsum::Source.</div><div class="ttdef"><b>Definition</b> binded.h:38</div></div>
-<div class="ttc" id="abinded_8h_html_a90d797a502256bad1dbed06a68175016"><div class="ttname"><a href="binded_8h.html#a90d797a502256bad1dbed06a68175016">lpsm_ArgVec2Handle</a></div><div class="ttdeci">void * lpsm_ArgVec2Handle</div><div class="ttdoc">A handle to a lipsum::ArgVec2.</div><div class="ttdef"><b>Definition</b> binded.h:29</div></div>
-<div class="ttc" id="abinded_8inl_html_a053ddbc96872e3c7fda5d9eb7fba2dba"><div class="ttname"><a href="binded_8inl.html#a053ddbc96872e3c7fda5d9eb7fba2dba">lpsm_Generator_scramble</a></div><div class="ttdeci">char * lpsm_Generator_scramble(lpsm_GeneratorHandle handle, int length, char minChar, char maxChar)</div><div class="ttdoc">Generate a random character scramble.</div><div class="ttdef"><b>Definition</b> binded.inl:124</div></div>
-<div class="ttc" id="abinded_8inl_html_a1c0ffe5fb27d003692290d5637b18e35"><div class="ttname"><a href="binded_8inl.html#a1c0ffe5fb27d003692290d5637b18e35">lpsm_Generator_sentence</a></div><div class="ttdeci">char * lpsm_Generator_sentence(lpsm_GeneratorHandle handle, int num, bool useLipsum)</div><div class="ttdoc">Generate sentences.</div><div class="ttdef"><b>Definition</b> binded.inl:104</div></div>
-<div class="ttc" id="abinded_8inl_html_a200ed74f9544589497bb21e8146ac5f8"><div class="ttname"><a href="binded_8inl.html#a200ed74f9544589497bb21e8146ac5f8">lpsm_Generator_load_source</a></div><div class="ttdeci">void lpsm_Generator_load_source(lpsm_GeneratorHandle handle, const char *path)</div><div class="ttdoc">Reload a source.</div><div class="ttdef"><b>Definition</b> binded.inl:76</div></div>
-<div class="ttc" id="abinded_8inl_html_a2bd4068e3082311eb81edb21376b839f"><div class="ttname"><a href="binded_8inl.html#a2bd4068e3082311eb81edb21376b839f">lpsm_Generator_md_header</a></div><div class="ttdeci">char * lpsm_Generator_md_header(lpsm_GeneratorHandle handle, int level, bool useHtml)</div><div class="ttdoc">Generate a Markdown header.</div><div class="ttdef"><b>Definition</b> binded.inl:173</div></div>
-<div class="ttc" id="abinded_8inl_html_a35395fceee3743bf755901e0e308118a"><div class="ttname"><a href="binded_8inl.html#a35395fceee3743bf755901e0e308118a">lpsm_ArgVec2</a></div><div class="ttdeci">lpsm_ArgVec2Handle lpsm_ArgVec2(int min, int max)</div><div class="ttdoc">Create a lipsum::ArgVec2.</div><div class="ttdef"><b>Definition</b> binded.inl:38</div></div>
-<div class="ttc" id="abinded_8inl_html_a4252e70fddc11a2d9bad82d0428e0e46"><div class="ttname"><a href="binded_8inl.html#a4252e70fddc11a2d9bad82d0428e0e46">lpsm_Generator_slug</a></div><div class="ttdeci">char * lpsm_Generator_slug(lpsm_GeneratorHandle handle, char separator)</div><div class="ttdoc">Generate a slug.</div><div class="ttdef"><b>Definition</b> binded.inl:146</div></div>
-<div class="ttc" id="abinded_8inl_html_a43971c21d968b71382f9a9de46c3a0c9"><div class="ttname"><a href="binded_8inl.html#a43971c21d968b71382f9a9de46c3a0c9">lpsm_SourceDestroy</a></div><div class="ttdeci">void lpsm_SourceDestroy(lpsm_SourceHandle handle)</div><div class="ttdoc">Delete a lipsum::Source.</div><div class="ttdef"><b>Definition</b> binded.inl:31</div></div>
-<div class="ttc" id="abinded_8inl_html_a4844d073e7be619487c760d95358eb3d"><div class="ttname"><a href="binded_8inl.html#a4844d073e7be619487c760d95358eb3d">lpsm_Generator</a></div><div class="ttdeci">lpsm_GeneratorHandle lpsm_Generator(const char *path)</div><div class="ttdoc">Create a lipsum::Generator.</div><div class="ttdef"><b>Definition</b> binded.inl:65</div></div>
-<div class="ttc" id="abinded_8inl_html_a4ab7b42e28b9cb54bccd954c7197d74a"><div class="ttname"><a href="binded_8inl.html#a4ab7b42e28b9cb54bccd954c7197d74a">lpsm_Generator_md_paragraph</a></div><div class="ttdeci">char * lpsm_Generator_md_paragraph(lpsm_GeneratorHandle handle, int num, bool useLipsum, bool useHtml)</div><div class="ttdoc">Generate a Markdown paragraph.</div><div class="ttdef"><b>Definition</b> binded.inl:153</div></div>
-<div class="ttc" id="abinded_8inl_html_a56a8f1bc714c9aed66346057354ecd1c"><div class="ttname"><a href="binded_8inl.html#a56a8f1bc714c9aed66346057354ecd1c">lpsm_Generator_fragment</a></div><div class="ttdeci">char * lpsm_Generator_fragment(lpsm_GeneratorHandle handle)</div><div class="ttdoc">Generate a sentence fragment.</div><div class="ttdef"><b>Definition</b> binded.inl:97</div></div>
-<div class="ttc" id="abinded_8inl_html_a6a88961bf3ef343003ef1954d84a4762"><div class="ttname"><a href="binded_8inl.html#a6a88961bf3ef343003ef1954d84a4762">lpsm_Generator_plain_url</a></div><div class="ttdeci">char * lpsm_Generator_plain_url(lpsm_GeneratorHandle handle)</div><div class="ttdoc">Generate a plain URL.</div><div class="ttdef"><b>Definition</b> binded.inl:140</div></div>
-<div class="ttc" id="abinded_8inl_html_a6d6d04aa91ab502f8ef767afa113bd76"><div class="ttname"><a href="binded_8inl.html#a6d6d04aa91ab502f8ef767afa113bd76">lpsm_Generator_change_setting</a></div><div class="ttdeci">void lpsm_Generator_change_setting(lpsm_GeneratorHandle handle, const char *setting, int minValue, int maxValue)</div><div class="ttdoc">Change a setting.</div><div class="ttdef"><b>Definition</b> binded.inl:82</div></div>
-<div class="ttc" id="abinded_8inl_html_a6ecd680b38e03bda28855cb41f81d827"><div class="ttname"><a href="binded_8inl.html#a6ecd680b38e03bda28855cb41f81d827">lpsm_ArgVec2_min</a></div><div class="ttdeci">int lpsm_ArgVec2_min(lpsm_ArgVec2Handle av2)</div><div class="ttdoc">Get lipsum::ArgVec2::min.</div><div class="ttdef"><b>Definition</b> binded.inl:55</div></div>
-<div class="ttc" id="abinded_8inl_html_a828eeeaf8e202b7d806d5ddf1a8aabba"><div class="ttname"><a href="binded_8inl.html#a828eeeaf8e202b7d806d5ddf1a8aabba">lpsm_Source</a></div><div class="ttdeci">lpsm_SourceHandle lpsm_Source(const char *path)</div><div class="ttdoc">Create a lipsum::Source.</div><div class="ttdef"><b>Definition</b> binded.inl:24</div></div>
-<div class="ttc" id="abinded_8inl_html_a862898cb9f071fef899d452da59e7e14"><div class="ttname"><a href="binded_8inl.html#a862898cb9f071fef899d452da59e7e14">lpsm_Generator_word</a></div><div class="ttdeci">char * lpsm_Generator_word(lpsm_GeneratorHandle handle, int num)</div><div class="ttdoc">Generate words.</div><div class="ttdef"><b>Definition</b> binded.inl:91</div></div>
-<div class="ttc" id="abinded_8inl_html_accad11ca11b128b43119f668e72c8da7"><div class="ttname"><a href="binded_8inl.html#accad11ca11b128b43119f668e72c8da7">lpsm_ArgVec2_max</a></div><div class="ttdeci">int lpsm_ArgVec2_max(lpsm_ArgVec2Handle av2)</div><div class="ttdoc">Get lipsum::ArgVec2::max.</div><div class="ttdef"><b>Definition</b> binded.inl:60</div></div>
-<div class="ttc" id="abinded_8inl_html_ad43708f349a61fb6222670f10e58d2b6"><div class="ttname"><a href="binded_8inl.html#ad43708f349a61fb6222670f10e58d2b6">lpsm_Generator_xml</a></div><div class="ttdeci">char * lpsm_Generator_xml(lpsm_GeneratorHandle handle, int choices)</div><div class="ttdoc">Generate an XML document.</div><div class="ttdef"><b>Definition</b> binded.inl:202</div></div>
-<div class="ttc" id="abinded_8inl_html_ad79aa0827c82ad017e7054ec67cffcbb"><div class="ttname"><a href="binded_8inl.html#ad79aa0827c82ad017e7054ec67cffcbb">lpsm_Generator_md_text</a></div><div class="ttdeci">char * lpsm_Generator_md_text(lpsm_GeneratorHandle handle, int numElements, bool useHtml)</div><div class="ttdoc">Generate a Markdown document.</div><div class="ttdef"><b>Definition</b> binded.inl:163</div></div>
-<div class="ttc" id="abinded_8inl_html_ad7db376e00f762f7dfbb411005cda7be"><div class="ttname"><a href="binded_8inl.html#ad7db376e00f762f7dfbb411005cda7be">lpsm_Generator_url</a></div><div class="ttdeci">char * lpsm_Generator_url(lpsm_GeneratorHandle handle)</div><div class="ttdoc">Generate a URL.</div><div class="ttdef"><b>Definition</b> binded.inl:134</div></div>
-<div class="ttc" id="abinded_8inl_html_ad8b0c5f6440b908f868e229ee51b1606"><div class="ttname"><a href="binded_8inl.html#ad8b0c5f6440b908f868e229ee51b1606">lpsm_ArgVec2_roll</a></div><div class="ttdeci">int lpsm_ArgVec2_roll(lpsm_ArgVec2Handle av2)</div><div class="ttdoc">Run lipsum::ArgVec2::roll.</div><div class="ttdef"><b>Definition</b> binded.inl:50</div></div>
-<div class="ttc" id="abinded_8inl_html_adef6a5efb9aa63c5328cadacaa1228ed"><div class="ttname"><a href="binded_8inl.html#adef6a5efb9aa63c5328cadacaa1228ed">lpsm_Generator_paragraph</a></div><div class="ttdeci">char * lpsm_Generator_paragraph(lpsm_GeneratorHandle handle, int num, bool useLipsum)</div><div class="ttdoc">Generate paragraphs.</div><div class="ttdef"><b>Definition</b> binded.inl:111</div></div>
-<div class="ttc" id="abinded_8inl_html_aec02e5b60032162a573cee8667049d14"><div class="ttname"><a href="binded_8inl.html#aec02e5b60032162a573cee8667049d14">lpsm_GeneratorDestroy</a></div><div class="ttdeci">void lpsm_GeneratorDestroy(lpsm_GeneratorHandle handle)</div><div class="ttdoc">Delete a lipsum::Generator.</div><div class="ttdef"><b>Definition</b> binded.inl:70</div></div>
-<div class="ttc" id="abinded_8inl_html_aee3b5dbbc01a5d4caa3e8904bb804c5d"><div class="ttname"><a href="binded_8inl.html#aee3b5dbbc01a5d4caa3e8904bb804c5d">lpsm_Generator_json</a></div><div class="ttdeci">char * lpsm_Generator_json(lpsm_GeneratorHandle handle, int maxDepth, bool isObject)</div><div class="ttdoc">Generate a JSON object or array.</div><div class="ttdef"><b>Definition</b> binded.inl:209</div></div>
-<div class="ttc" id="abinded_8inl_html_af063b1680e3792484d1e0fb1984ba0cd"><div class="ttname"><a href="binded_8inl.html#af063b1680e3792484d1e0fb1984ba0cd">lpsm_Generator_md_link</a></div><div class="ttdeci">char * lpsm_Generator_md_link(lpsm_GeneratorHandle handle, bool useHtml)</div><div class="ttdoc">Generate a Markdown link.</div><div class="ttdef"><b>Definition</b> binded.inl:188</div></div>
-<div class="ttc" id="abinded_8inl_html_af911f6d07ab9f482f2d1cf96020ceeab"><div class="ttname"><a href="binded_8inl.html#af911f6d07ab9f482f2d1cf96020ceeab">lpsm_Generator_text</a></div><div class="ttdeci">char * lpsm_Generator_text(lpsm_GeneratorHandle handle, bool useLipsum)</div><div class="ttdoc">Generate a random number of random paragraphs.</div><div class="ttdef"><b>Definition</b> binded.inl:117</div></div>
-<div class="ttc" id="abinded_8inl_html_afb2fc93b4d30764efe20990df9f70a9f"><div class="ttname"><a href="binded_8inl.html#afb2fc93b4d30764efe20990df9f70a9f">lpsm_Generator_md_emphasis</a></div><div class="ttdeci">char * lpsm_Generator_md_emphasis(lpsm_GeneratorHandle handle, bool isBold, bool useHtml)</div><div class="ttdoc">Generate an emphasized Markdown sentence.</div><div class="ttdef"><b>Definition</b> binded.inl:179</div></div>
-<div class="ttc" id="abinded_8inl_html_afc8c76c5aa0ed98c60944abbef54edd5"><div class="ttname"><a href="binded_8inl.html#afc8c76c5aa0ed98c60944abbef54edd5">lpsm_ArgVec2Destroy</a></div><div class="ttdeci">void lpsm_ArgVec2Destroy(lpsm_ArgVec2Handle av2)</div><div class="ttdoc">Delete a lipsum::ArgVec2.</div><div class="ttdef"><b>Definition</b> binded.inl:43</div></div>
-<div class="ttc" id="abinded_8inl_html_afcb061fcabfb206af145c02f638bef39"><div class="ttname"><a href="binded_8inl.html#afcb061fcabfb206af145c02f638bef39">lpsm_Generator_md_list</a></div><div class="ttdeci">char * lpsm_Generator_md_list(lpsm_GeneratorHandle handle, bool ordered, bool useHtml)</div><div class="ttdoc">Generate a Markdown list.</div><div class="ttdef"><b>Definition</b> binded.inl:196</div></div>
-<div class="ttc" id="aclasslipsum_1_1Generator_html"><div class="ttname"><a href="classlipsum_1_1Generator.html">lipsum::Generator</a></div><div class="ttdoc">OOP layer over lipsum-cpp.</div><div class="ttdef"><b>Definition</b> generator.hpp:35</div></div>
-<div class="ttc" id="aclasslipsum_1_1Source_html"><div class="ttname"><a href="classlipsum_1_1Source.html">lipsum::Source</a></div><div class="ttdoc">Class for multi-source generation.</div><div class="ttdef"><b>Definition</b> source.hpp:30</div></div>
-<div class="ttc" id="astructlipsum_1_1ArgVec2_html"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></div><div class="ttdoc">Store data for inputting into functions.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:31</div></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abinded_8h_html_a4a0fc50acb3e4afa16fe2f53f52044db"><div class="ttname"><a href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a></div><div class="ttdeci">void * lpsm_GeneratorHandle</div><div class="ttdoc">A handle to a lipsum::Generator.</div><div class="ttdef"><b>Definition</b> binded.h:42</div></div>
+<div class="ttc" id="abinded_8inl_html_a053ddbc96872e3c7fda5d9eb7fba2dba"><div class="ttname"><a href="binded_8inl.html#a053ddbc96872e3c7fda5d9eb7fba2dba">lpsm_Generator_scramble</a></div><div class="ttdeci">char * lpsm_Generator_scramble(lpsm_GeneratorHandle handle, int length, char minChar, char maxChar)</div><div class="ttdoc">Generate a random character scramble.</div><div class="ttdef"><b>Definition</b> binded.inl:96</div></div>
+<div class="ttc" id="abinded_8inl_html_a1c0ffe5fb27d003692290d5637b18e35"><div class="ttname"><a href="binded_8inl.html#a1c0ffe5fb27d003692290d5637b18e35">lpsm_Generator_sentence</a></div><div class="ttdeci">char * lpsm_Generator_sentence(lpsm_GeneratorHandle handle, int num, bool useLipsum)</div><div class="ttdoc">Generate sentences.</div><div class="ttdef"><b>Definition</b> binded.inl:76</div></div>
+<div class="ttc" id="abinded_8inl_html_a200ed74f9544589497bb21e8146ac5f8"><div class="ttname"><a href="binded_8inl.html#a200ed74f9544589497bb21e8146ac5f8">lpsm_Generator_load_source</a></div><div class="ttdeci">void lpsm_Generator_load_source(lpsm_GeneratorHandle handle, const char *path)</div><div class="ttdoc">Reload a source.</div><div class="ttdef"><b>Definition</b> binded.inl:43</div></div>
+<div class="ttc" id="abinded_8inl_html_a2383e9e9b806d354c6b1d6930d47bd3b"><div class="ttname"><a href="binded_8inl.html#a2383e9e9b806d354c6b1d6930d47bd3b">lpsm_Generator_json_value</a></div><div class="ttdeci">char * lpsm_Generator_json_value(lpsm_GeneratorHandle handle, int depth, int maxDepth)</div><div class="ttdoc">Generate a JSON value.</div><div class="ttdef"><b>Definition</b> binded.inl:191</div></div>
+<div class="ttc" id="abinded_8inl_html_a2bd4068e3082311eb81edb21376b839f"><div class="ttname"><a href="binded_8inl.html#a2bd4068e3082311eb81edb21376b839f">lpsm_Generator_md_header</a></div><div class="ttdeci">char * lpsm_Generator_md_header(lpsm_GeneratorHandle handle, int level, bool useHtml)</div><div class="ttdoc">Generate a Markdown header.</div><div class="ttdef"><b>Definition</b> binded.inl:145</div></div>
+<div class="ttc" id="abinded_8inl_html_a4252e70fddc11a2d9bad82d0428e0e46"><div class="ttname"><a href="binded_8inl.html#a4252e70fddc11a2d9bad82d0428e0e46">lpsm_Generator_slug</a></div><div class="ttdeci">char * lpsm_Generator_slug(lpsm_GeneratorHandle handle, char separator)</div><div class="ttdoc">Generate a slug.</div><div class="ttdef"><b>Definition</b> binded.inl:118</div></div>
+<div class="ttc" id="abinded_8inl_html_a4844d073e7be619487c760d95358eb3d"><div class="ttname"><a href="binded_8inl.html#a4844d073e7be619487c760d95358eb3d">lpsm_Generator</a></div><div class="ttdeci">lpsm_GeneratorHandle lpsm_Generator(const char *path)</div><div class="ttdoc">Create a lipsum::Generator.</div><div class="ttdef"><b>Definition</b> binded.inl:24</div></div>
+<div class="ttc" id="abinded_8inl_html_a4ab7b42e28b9cb54bccd954c7197d74a"><div class="ttname"><a href="binded_8inl.html#a4ab7b42e28b9cb54bccd954c7197d74a">lpsm_Generator_md_paragraph</a></div><div class="ttdeci">char * lpsm_Generator_md_paragraph(lpsm_GeneratorHandle handle, int num, bool useLipsum, bool useHtml)</div><div class="ttdoc">Generate a Markdown paragraph.</div><div class="ttdef"><b>Definition</b> binded.inl:125</div></div>
+<div class="ttc" id="abinded_8inl_html_a56a8f1bc714c9aed66346057354ecd1c"><div class="ttname"><a href="binded_8inl.html#a56a8f1bc714c9aed66346057354ecd1c">lpsm_Generator_fragment</a></div><div class="ttdeci">char * lpsm_Generator_fragment(lpsm_GeneratorHandle handle)</div><div class="ttdoc">Generate a sentence fragment.</div><div class="ttdef"><b>Definition</b> binded.inl:69</div></div>
+<div class="ttc" id="abinded_8inl_html_a65704b75d399fe54c93bdbc15d4ea4cb"><div class="ttname"><a href="binded_8inl.html#a65704b75d399fe54c93bdbc15d4ea4cb">lpsm_Generator_load_seed</a></div><div class="ttdeci">void lpsm_Generator_load_seed(lpsm_GeneratorHandle handle, int seed)</div><div class="ttdoc">Reload a seed.</div><div class="ttdef"><b>Definition</b> binded.inl:49</div></div>
+<div class="ttc" id="abinded_8inl_html_a6a88961bf3ef343003ef1954d84a4762"><div class="ttname"><a href="binded_8inl.html#a6a88961bf3ef343003ef1954d84a4762">lpsm_Generator_plain_url</a></div><div class="ttdeci">char * lpsm_Generator_plain_url(lpsm_GeneratorHandle handle)</div><div class="ttdoc">Generate a plain URL.</div><div class="ttdef"><b>Definition</b> binded.inl:112</div></div>
+<div class="ttc" id="abinded_8inl_html_a6d6d04aa91ab502f8ef767afa113bd76"><div class="ttname"><a href="binded_8inl.html#a6d6d04aa91ab502f8ef767afa113bd76">lpsm_Generator_change_setting</a></div><div class="ttdeci">void lpsm_Generator_change_setting(lpsm_GeneratorHandle handle, const char *setting, int minValue, int maxValue)</div><div class="ttdoc">Change a setting.</div><div class="ttdef"><b>Definition</b> binded.inl:54</div></div>
+<div class="ttc" id="abinded_8inl_html_a862898cb9f071fef899d452da59e7e14"><div class="ttname"><a href="binded_8inl.html#a862898cb9f071fef899d452da59e7e14">lpsm_Generator_word</a></div><div class="ttdeci">char * lpsm_Generator_word(lpsm_GeneratorHandle handle, int num)</div><div class="ttdoc">Generate words.</div><div class="ttdef"><b>Definition</b> binded.inl:63</div></div>
+<div class="ttc" id="abinded_8inl_html_a97776b70728edb1c56a6f907424410d2"><div class="ttname"><a href="binded_8inl.html#a97776b70728edb1c56a6f907424410d2">lpsm_Generator_json</a></div><div class="ttdeci">char * lpsm_Generator_json(lpsm_GeneratorHandle handle, int depth, int maxDepth, bool isObject)</div><div class="ttdoc">Generate a JSON object or array.</div><div class="ttdef"><b>Definition</b> binded.inl:180</div></div>
+<div class="ttc" id="abinded_8inl_html_ad299861653d9b84f376386334cb4e97d"><div class="ttname"><a href="binded_8inl.html#ad299861653d9b84f376386334cb4e97d">lpsm_GeneratorSeeded</a></div><div class="ttdeci">lpsm_GeneratorHandle lpsm_GeneratorSeeded(const char *path, int seed)</div><div class="ttdoc">Create a lipsum::Generator.</div><div class="ttdef"><b>Definition</b> binded.inl:31</div></div>
+<div class="ttc" id="abinded_8inl_html_ad43708f349a61fb6222670f10e58d2b6"><div class="ttname"><a href="binded_8inl.html#ad43708f349a61fb6222670f10e58d2b6">lpsm_Generator_xml</a></div><div class="ttdeci">char * lpsm_Generator_xml(lpsm_GeneratorHandle handle, int choices)</div><div class="ttdoc">Generate an XML document.</div><div class="ttdef"><b>Definition</b> binded.inl:174</div></div>
+<div class="ttc" id="abinded_8inl_html_ad79aa0827c82ad017e7054ec67cffcbb"><div class="ttname"><a href="binded_8inl.html#ad79aa0827c82ad017e7054ec67cffcbb">lpsm_Generator_md_text</a></div><div class="ttdeci">char * lpsm_Generator_md_text(lpsm_GeneratorHandle handle, int numElements, bool useHtml)</div><div class="ttdoc">Generate a Markdown document.</div><div class="ttdef"><b>Definition</b> binded.inl:135</div></div>
+<div class="ttc" id="abinded_8inl_html_ad7db376e00f762f7dfbb411005cda7be"><div class="ttname"><a href="binded_8inl.html#ad7db376e00f762f7dfbb411005cda7be">lpsm_Generator_url</a></div><div class="ttdeci">char * lpsm_Generator_url(lpsm_GeneratorHandle handle)</div><div class="ttdoc">Generate a URL.</div><div class="ttdef"><b>Definition</b> binded.inl:106</div></div>
+<div class="ttc" id="abinded_8inl_html_adef6a5efb9aa63c5328cadacaa1228ed"><div class="ttname"><a href="binded_8inl.html#adef6a5efb9aa63c5328cadacaa1228ed">lpsm_Generator_paragraph</a></div><div class="ttdeci">char * lpsm_Generator_paragraph(lpsm_GeneratorHandle handle, int num, bool useLipsum)</div><div class="ttdoc">Generate paragraphs.</div><div class="ttdef"><b>Definition</b> binded.inl:83</div></div>
+<div class="ttc" id="abinded_8inl_html_aec02e5b60032162a573cee8667049d14"><div class="ttname"><a href="binded_8inl.html#aec02e5b60032162a573cee8667049d14">lpsm_GeneratorDestroy</a></div><div class="ttdeci">void lpsm_GeneratorDestroy(lpsm_GeneratorHandle handle)</div><div class="ttdoc">Delete a lipsum::Generator.</div><div class="ttdef"><b>Definition</b> binded.inl:37</div></div>
+<div class="ttc" id="abinded_8inl_html_af063b1680e3792484d1e0fb1984ba0cd"><div class="ttname"><a href="binded_8inl.html#af063b1680e3792484d1e0fb1984ba0cd">lpsm_Generator_md_link</a></div><div class="ttdeci">char * lpsm_Generator_md_link(lpsm_GeneratorHandle handle, bool useHtml)</div><div class="ttdoc">Generate a Markdown link.</div><div class="ttdef"><b>Definition</b> binded.inl:160</div></div>
+<div class="ttc" id="abinded_8inl_html_af911f6d07ab9f482f2d1cf96020ceeab"><div class="ttname"><a href="binded_8inl.html#af911f6d07ab9f482f2d1cf96020ceeab">lpsm_Generator_text</a></div><div class="ttdeci">char * lpsm_Generator_text(lpsm_GeneratorHandle handle, bool useLipsum)</div><div class="ttdoc">Generate a random number of random paragraphs.</div><div class="ttdef"><b>Definition</b> binded.inl:89</div></div>
+<div class="ttc" id="abinded_8inl_html_afb2fc93b4d30764efe20990df9f70a9f"><div class="ttname"><a href="binded_8inl.html#afb2fc93b4d30764efe20990df9f70a9f">lpsm_Generator_md_emphasis</a></div><div class="ttdeci">char * lpsm_Generator_md_emphasis(lpsm_GeneratorHandle handle, bool isBold, bool useHtml)</div><div class="ttdoc">Generate an emphasized Markdown sentence.</div><div class="ttdef"><b>Definition</b> binded.inl:151</div></div>
+<div class="ttc" id="abinded_8inl_html_afcb061fcabfb206af145c02f638bef39"><div class="ttname"><a href="binded_8inl.html#afcb061fcabfb206af145c02f638bef39">lpsm_Generator_md_list</a></div><div class="ttdeci">char * lpsm_Generator_md_list(lpsm_GeneratorHandle handle, bool ordered, bool useHtml)</div><div class="ttdoc">Generate a Markdown list.</div><div class="ttdef"><b>Definition</b> binded.inl:168</div></div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html"><div class="ttname"><a href="classlipsum_1_1Generator.html">lipsum::Generator</a></div><div class="ttdoc">Main class of lipsum-cpp.</div><div class="ttdef"><b>Definition</b> generator.hpp:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
