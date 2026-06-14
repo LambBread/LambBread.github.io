@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['generatedefaultlipsumsentence_0',['GenerateDefaultLipsumSentence',['../namespacelipsum.html#acb9f05ef38b7b4e53fba81b239459ddb',1,'lipsum']]],
-  ['generator_1',['generator',['../classlipsum_1_1Generator.html#aa4e0fa3b9b62e8bd269b4ab9b92bb156',1,'lipsum::Generator::Generator()'],['../classlipsum_1_1Generator.html#a61e9ddf0b7e54c49e73bfce89f778c9e',1,'lipsum::Generator::Generator(int seed)'],['../classlipsum_1_1Generator.html#a0c059e7e1774aa73261cff5a5556cfe6',1,'lipsum::Generator::Generator(const std::string &amp;path, int seed)'],['../classlipsum_1_1Generator.html#a511afc093c8e9720d06e605540a75613',1,'lipsum::Generator::Generator(const std::string &amp;path)']]]
+  ['fmt_5femphasis_0',['fmt_emphasis',['../classlipsum_1_1Generator.html#a129d17e25814a41b2bc5608ad951881b',1,'lipsum::Generator']]],
+  ['fmt_5fheader_1',['fmt_header',['../classlipsum_1_1Generator.html#a5b15cd79f64f885afdf628f4a66b13ae',1,'lipsum::Generator']]],
+  ['fmt_5flink_2',['fmt_link',['../classlipsum_1_1Generator.html#aae2572e0adb45e5e2c878dd7b6e5e86a',1,'lipsum::Generator']]],
+  ['fmt_5flist_3',['fmt_list',['../classlipsum_1_1Generator.html#a79e2c958ad8ffb20ba4a6b0853a4623c',1,'lipsum::Generator']]],
+  ['fmt_5fparagraph_4',['fmt_paragraph',['../classlipsum_1_1Generator.html#a495bb9a41de4d47ada11cb17e2f7aefb',1,'lipsum::Generator']]],
+  ['fmt_5ftext_5',['fmt_text',['../classlipsum_1_1Generator.html#aca7eb13aa0b800c94b1dbac42ffa7b88',1,'lipsum::Generator']]],
+  ['fragment_6',['fragment',['../classlipsum_1_1Generator.html#ae126e6208c7234db9059cbbb4c282c64',1,'lipsum::Generator']]]
 ];

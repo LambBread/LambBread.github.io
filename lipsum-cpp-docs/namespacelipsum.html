@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.1</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -122,6 +122,23 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a3777f25db453303490fd53b6923f852e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for lipsum-cpp.  <a href="namespacelipsum.html#a3777f25db453303490fd53b6923f852e">More...</a><br /></td></tr>
 <tr class="separator:a3777f25db453303490fd53b6923f852e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7edcf64bcffffd3309888456c9cd8b" id="r_aee7edcf64bcffffd3309888456c9cd8b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#aee7edcf64bcffffd3309888456c9cd8b">CaseSlugCase</a> : int { <br />
+&#160;&#160;<b>CamelCase</b> = 0
+, <b>PascalCase</b>
+, <b>SnakeCase</b>
+, <b>ShoutyCase</b>
+, <br />
+&#160;&#160;<b>KebabCase</b>
+, <b>TrainCase</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:aee7edcf64bcffffd3309888456c9cd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cases used by <a class="el" href="classlipsum_1_1Generator.html#afa0eae52d499eed914ad71dad85416aa" title="Generate a case slug.">lipsum::Generator::case_slug()</a>  <a href="namespacelipsum.html#aee7edcf64bcffffd3309888456c9cd8b">More...</a><br /></td></tr>
+<tr class="separator:aee7edcf64bcffffd3309888456c9cd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bff53b8cadab37d4860ad135b704e7c" id="r_a0bff53b8cadab37d4860ad135b704e7c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a0bff53b8cadab37d4860ad135b704e7c">CodeLanguage</a> : int { <b>Cpp</b> = 0
+, <b>Python</b>
+ }</td></tr>
+<tr class="memdesc:a0bff53b8cadab37d4860ad135b704e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Languages used by <a class="el" href="classlipsum_1_1Generator.html#aee420ad848b0f746004c81bcdd813135" title="Generate a code block.">lipsum::Generator::code()</a>  <a href="namespacelipsum.html#a0bff53b8cadab37d4860ad135b704e7c">More...</a><br /></td></tr>
+<tr class="separator:a0bff53b8cadab37d4860ad135b704e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a491831a1fd8351be2442229ae8f4568d" id="r_a491831a1fd8351be2442229ae8f4568d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum.html#a491831a1fd8351be2442229ae8f4568d">CountParaMethod</a> : int { <b>Plain</b> = 0
 , <b>Markdown</b>
 , <b>HTML</b>
@@ -151,6 +168,58 @@ Functions</h2></td></tr>
 <div class="textblock"><p>This is the main namespace of lipsum-cpp. </p>
 <p>This namespace contains all the code for the C++ usage of lipsum-cpp. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aee7edcf64bcffffd3309888456c9cd8b" name="aee7edcf64bcffffd3309888456c9cd8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7edcf64bcffffd3309888456c9cd8b">&#9670;&#160;</a></span>CaseSlugCase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacelipsum.html#aee7edcf64bcffffd3309888456c9cd8b">lipsum::CaseSlugCase</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cases used by <a class="el" href="classlipsum_1_1Generator.html#afa0eae52d499eed914ad71dad85416aa" title="Generate a case slug.">lipsum::Generator::case_slug()</a> </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.1</dd></dl>
+<p>Types of cases used by <a class="el" href="classlipsum_1_1Generator.html#afa0eae52d499eed914ad71dad85416aa" title="Generate a case slug.">lipsum::Generator::case_slug()</a>. Includes various types such as camel case, snake case, etc. </p>
+
+</div>
+</div>
+<a id="a0bff53b8cadab37d4860ad135b704e7c" name="a0bff53b8cadab37d4860ad135b704e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bff53b8cadab37d4860ad135b704e7c">&#9670;&#160;</a></span>CodeLanguage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacelipsum.html#a0bff53b8cadab37d4860ad135b704e7c">lipsum::CodeLanguage</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Languages used by <a class="el" href="classlipsum_1_1Generator.html#aee420ad848b0f746004c81bcdd813135" title="Generate a code block.">lipsum::Generator::code()</a> </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.1</dd></dl>
+<p>Programming languages that <a class="el" href="classlipsum_1_1Generator.html#aee420ad848b0f746004c81bcdd813135" title="Generate a code block.">lipsum::Generator::code()</a> can generate, such as C++ and Python. </p>
+
+</div>
+</div>
 <a id="a491831a1fd8351be2442229ae8f4568d" name="a491831a1fd8351be2442229ae8f4568d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a491831a1fd8351be2442229ae8f4568d">&#9670;&#160;</a></span>CountParaMethod</h2>
 
@@ -255,7 +324,7 @@ Functions</h2></td></tr>
 
 <p>Count the number of sentence fragments in a string. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.6</dd></dl>
-<p>Count the number of commas, semicolons, and hyphens in a string, excluding usage in Markdown. (i.e. hyphen at start of line, or in parentheses)</p>
+<p>Count the number of commas, semicolons, hyphens, and colons in a string, excluding usage in Markdown. (i.e. hyphen at start of line, or in parentheses)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string inputted.</td></tr>
@@ -286,7 +355,7 @@ Functions</h2></td></tr>
 
 <p>Count the number of sentences in a string. </p>
 <dl class="section since"><dt>Since</dt><dd>0.3.0</dd></dl>
-<p>Count the number of periods in a string, ignoring usage in Markdown URLs. (i.e. in parentheses)</p>
+<p>Count the number of periods, exclamation marks, and question marks in a string, ignoring usage in Markdown URLs. (i.e. in parentheses)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string inputted.</td></tr>

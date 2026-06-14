@@ -11,5 +11,4 @@ These are live examples for [the lipsum-cpp repo](https://github.com/LambBread/l
 - [JSBinding](https://lambbread.github.io/lipsumcpp-example/JSBinding.html)
 - [Markdown](https://lambbread.github.io/lipsumcpp-example/Markdown.html)
 - [Misc](https://lambbread.github.io/lipsumcpp-example/Misc.html)
-- [Source](https://lambbread.github.io/lipsumcpp-example/Source.html)
 - [WebInterface](https://lambbread.github.io/lipsumcpp-example/WebInterface.html)

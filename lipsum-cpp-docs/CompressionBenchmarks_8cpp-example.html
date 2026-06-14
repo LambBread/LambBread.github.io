@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.1</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -82,7 +82,7 @@ $(function() {
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <a id="_a0" name="_a0"></a><a class="code hl_class" href="classlipsum_1_1Generator.html">lpsm::Generator</a> gen;</div>
-<div class="line">    std::string     text = gen.<a id="a1" name="a1"></a><a class="code hl_function" href="classlipsum_1_1Generator.html#a912ece12963edda6fa19fef61bd15fc2">md_text</a>(100000);</div>
+<div class="line">    std::string     text = gen.<a id="a1" name="a1"></a><a class="code hl_function" href="classlipsum_1_1Generator.html#aca7eb13aa0b800c94b1dbac42ffa7b88">fmt_text</a>(100000);</div>
 <div class="line">    <span class="comment">// std::string text;</span></div>
 <div class="line">    <span class="comment">// text.reserve(1000000);</span></div>
 <div class="line">    <span class="comment">// for(int i = 0; i &lt; 1000; ++i)</span></div>
@@ -116,8 +116,8 @@ $(function() {
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Compressed size: &quot;</span> &lt;&lt; comp.size() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclasslipsum_1_1Generator_html"><div class="ttname"><a href="classlipsum_1_1Generator.html">lipsum::Generator</a></div><div class="ttdoc">Main class of lipsum-cpp.</div><div class="ttdef"><b>Definition</b> generator.hpp:56</div></div>
-<div class="ttc" id="aclasslipsum_1_1Generator_html_a912ece12963edda6fa19fef61bd15fc2"><div class="ttname"><a href="classlipsum_1_1Generator.html#a912ece12963edda6fa19fef61bd15fc2">lipsum::Generator::md_text</a></div><div class="ttdeci">std::string md_text(int numElements=15, bool useHtml=false)</div><div class="ttdoc">Generate a Markdown document.</div><div class="ttdef"><b>Definition</b> generatorformats.inl:53</div></div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html"><div class="ttname"><a href="classlipsum_1_1Generator.html">lipsum::Generator</a></div><div class="ttdoc">Main class of lipsum-cpp.</div><div class="ttdef"><b>Definition</b> generator.hpp:88</div></div>
+<div class="ttc" id="aclasslipsum_1_1Generator_html_aca7eb13aa0b800c94b1dbac42ffa7b88"><div class="ttname"><a href="classlipsum_1_1Generator.html#aca7eb13aa0b800c94b1dbac42ffa7b88">lipsum::Generator::fmt_text</a></div><div class="ttdeci">std::string fmt_text(int numElements=15, bool useHtml=false)</div><div class="ttdoc">Generate a Markdown or HTML document.</div><div class="ttdef"><b>Definition</b> generatorformats.inl:53</div></div>
 <div class="ttc" id="alipsum_8hpp_html"><div class="ttname"><a href="lipsum_8hpp.html">lipsum.hpp</a></div><div class="ttdoc">Main header of lipsum-cpp.</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->

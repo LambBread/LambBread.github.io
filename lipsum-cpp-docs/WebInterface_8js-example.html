@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.1</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -92,7 +92,7 @@ $(function() {
 <div class="line">        const maxChar = $(&quot;#maxChar&quot;).value.charCodeAt(0);</div>
 <div class="line">        const useLipsum = $(&quot;#useLipsum&quot;).checked;</div>
 <div class="line">        const useHtml = $(&quot;#useHtml&quot;).checked;</div>
-<div class="line">        console.log(useLipsum)</div>
+<div class="line">        //console.log(useLipsum)</div>
 <div class="line">        if(funcSelect.value === &quot;slug&quot;)</div>
 <div class="line">        {</div>
 <div class="line">            output.value = gen.slug(separator);</div>
@@ -101,13 +101,13 @@ $(function() {
 <div class="line">        {</div>
 <div class="line">            output.value = gen.scramble(num, separator, maxChar);</div>
 <div class="line">        }</div>
-<div class="line">        else if(funcSelect.value === &quot;md_paragraph&quot;)</div>
+<div class="line">        else if(funcSelect.value === &quot;fmt_paragraph&quot;)</div>
 <div class="line">        {</div>
-<div class="line">            output.value = gen.md_paragraph(num, useLipsum, useHtml);</div>
+<div class="line">            output.value = gen.fmt_paragraph(num, useLipsum, useHtml);</div>
 <div class="line">        }</div>
-<div class="line">        else if(funcSelect.value === &quot;md_link&quot;)</div>
+<div class="line">        else if(funcSelect.value === &quot;fmt_link&quot;)</div>
 <div class="line">        {</div>
-<div class="line">            output.value = gen.md_link(useHtml);</div>
+<div class="line">            output.value = gen.fmt_link(useHtml);</div>
 <div class="line">        }</div>
 <div class="line">        else if(funcSelect.value === &quot;text&quot;)</div>
 <div class="line">        {</div>
@@ -117,17 +117,70 @@ $(function() {
 <div class="line">        {</div>
 <div class="line">            output.value = gen[funcSelect.value](0, num, useLipsum);</div>
 <div class="line">        }</div>
+<div class="line">        else if(funcSelect.value == &quot;code&quot;)</div>
+<div class="line">        {</div>
+<div class="line">            //console.log(num)</div>
+<div class="line">            //console.log(num === &quot;1&quot;)</div>
+<div class="line">            if(num === &quot;1&quot;)</div>
+<div class="line">            {</div>
+<div class="line">                output.value = gen.code(Module.lpsm_CodeLanguage.Python);</div>
+<div class="line">            }</div>
+<div class="line">            else</div>
+<div class="line">            {</div>
+<div class="line">                output.value = gen.code(Module.lpsm_CodeLanguage.Cpp);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        else if(funcSelect.value == &quot;case_slug&quot;)</div>
+<div class="line">        {</div>
+<div class="line">            let asEnum = Module.lpsm_CaseSlugCase.CamelCase;</div>
+<div class="line">        </div>
+<div class="line">            switch(num)</div>
+<div class="line">            {</div>
+<div class="line">                case &quot;0&quot;:</div>
+<div class="line">                {</div>
+<div class="line">                    asEnum = Module.lpsm_CaseSlugCase.CamelCase;</div>
+<div class="line">                    break;</div>
+<div class="line">                }</div>
+<div class="line">                case &quot;1&quot;:</div>
+<div class="line">                {</div>
+<div class="line">                    asEnum = Module.lpsm_CaseSlugCase.PascalCase;</div>
+<div class="line">                    break;</div>
+<div class="line">                }</div>
+<div class="line">                case &quot;2&quot;:</div>
+<div class="line">                {</div>
+<div class="line">                    asEnum = Module.lpsm_CaseSlugCase.SnakeCase;</div>
+<div class="line">                    break;</div>
+<div class="line">                }</div>
+<div class="line">                case &quot;3&quot;:</div>
+<div class="line">                {</div>
+<div class="line">                    asEnum = Module.lpsm_CaseSlugCase.ShoutyCase;</div>
+<div class="line">                    break;</div>
+<div class="line">                }</div>
+<div class="line">                case &quot;4&quot;:</div>
+<div class="line">                {</div>
+<div class="line">                    asEnum = Module.lpsm_CaseSlugCase.KebabCase;</div>
+<div class="line">                    break;</div>
+<div class="line">                }</div>
+<div class="line">                case &quot;5&quot;:</div>
+<div class="line">                {</div>
+<div class="line">                    asEnum = Module.lpsm_CaseSlugCase.TrainCase;</div>
+<div class="line">                    break;</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">            output.value = gen.case_slug(asEnum);</div>
+<div class="line">        }</div>
 <div class="line">        else if([&quot;word&quot;, &quot;fragment&quot;, &quot;sentence&quot;,</div>
-<div class="line">            &quot;paragraph&quot;, &quot;url&quot;, &quot;plain_url&quot;, &quot;xml&quot;].includes(funcSelect.value))</div>
+<div class="line">            &quot;paragraph&quot;, &quot;url&quot;, &quot;plain_url&quot;, &quot;xml&quot;, </div>
+<div class="line">            &quot;email&quot;].includes(funcSelect.value))</div>
 <div class="line">        {</div>
 <div class="line">            //console.log(funcSelect.value);</div>
 <div class="line">            output.value = gen[funcSelect.value](num, useLipsum);</div>
 <div class="line">        }</div>
-<div class="line">        else if([&quot;md_text&quot;, &quot;md_header&quot;].includes(funcSelect.value))</div>
+<div class="line">        else if([&quot;fmt_text&quot;, &quot;fmt_header&quot;].includes(funcSelect.value))</div>
 <div class="line">        {</div>
 <div class="line">            output.value = gen[funcSelect.value](num, useHtml);</div>
 <div class="line">        }</div>
-<div class="line">        else if([&quot;md_emphasis&quot;, &quot;md_list&quot;].includes(funcSelect.value))</div>
+<div class="line">        else if([&quot;fmt_emphasis&quot;, &quot;fmt_list&quot;].includes(funcSelect.value))</div>
 <div class="line">        {</div>
 <div class="line">            output.value = gen[funcSelect.value](useLipsum, useHtml);</div>
 <div class="line">        }</div>

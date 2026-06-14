@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.1</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -88,9 +88,9 @@ $(function() {
 <div class="line">            {</div>
 <div class="line">                console.log(Module.LIPSUM_CPP_VERSION_FULL);</div>
 <div class="line">                const gen = new Module.lpsm_Generator();</div>
-<div class="line">                console.log(gen.md_text(20, Module.lpsm_GeneratorFlags.MARKDOWN.value));</div>
+<div class="line">                console.log(gen.fmt_text(20, Module.lpsm_GeneratorFlags.MARKDOWN.value));</div>
 <div class="line">                console.log(Module.lpsm_CountSentences(&quot;Yes this is a test. Testing 123. Testing 123. Foobar test.&quot;));</div>
-<div class="line">                const text = gen.md_text(15, Module.lpsm_GeneratorFlags.HTML.value);</div>
+<div class="line">                const text = gen.fmt_text(15, Module.lpsm_GeneratorFlags.HTML.value);</div>
 <div class="line">                console.log(text);</div>
 <div class="line">                document.querySelector(&quot;#content&quot;).innerHTML = text;</div>
 <div class="line">            });</div>

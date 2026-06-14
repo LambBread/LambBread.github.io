@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fragment_0',['fragment',['../classlipsum_1_1Generator.html#ae126e6208c7234db9059cbbb4c282c64',1,'lipsum::Generator']]]
+  ['email_0',['email',['../classlipsum_1_1Generator.html#abe0771709ad4a3ab9db7b825db720f73',1,'lipsum::Generator']]]
 ];
