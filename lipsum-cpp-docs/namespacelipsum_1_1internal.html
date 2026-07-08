@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.2</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -76,6 +76,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#concepts">Concepts</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">lipsum::internal Namespace Reference</div></div>
 </div><!--header-->
@@ -99,15 +100,29 @@ Concepts</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can std::uniform_int_distribution or std::uniform_real_distribution be constructed with T? <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a63087ed83678f925b2a30424891c7100" id="r_a63087ed83678f925b2a30424891c7100"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a63087ed83678f925b2a30424891c7100">LogType</a> : int { <br />
+&#160;&#160;<b>Trace</b> = 0
+, <b>Info</b>
+, <b>Warn</b>
+, <b>Error</b>
+, <br />
+&#160;&#160;<b>Critical</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a63087ed83678f925b2a30424891c7100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log types for <a class="el" href="namespacelipsum_1_1internal.html#a836331134b59e3ebac2c0aef533f495f" title="Log a warning.">lipsum::internal::LogWarn()</a>  <a href="namespacelipsum_1_1internal.html#a63087ed83678f925b2a30424891c7100">More...</a><br /></td></tr>
+<tr class="separator:a63087ed83678f925b2a30424891c7100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9563955f371ff9dbf5a50a29c9e1f854" id="r_a9563955f371ff9dbf5a50a29c9e1f854"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a9563955f371ff9dbf5a50a29c9e1f854">HandleHTMLEntity</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:a9563955f371ff9dbf5a50a29c9e1f854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle HTML entities.  <br /></td></tr>
 <tr class="separator:a9563955f371ff9dbf5a50a29c9e1f854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d8e625c3de86178028328f52432698d" id="r_a8d8e625c3de86178028328f52432698d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a8d8e625c3de86178028328f52432698d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a8d8e625c3de86178028328f52432698d">LogWarn</a> (const Args &amp;... args)</td></tr>
-<tr class="memdesc:a8d8e625c3de86178028328f52432698d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a warning.  <br /></td></tr>
-<tr class="separator:a8d8e625c3de86178028328f52432698d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836331134b59e3ebac2c0aef533f495f" id="r_a836331134b59e3ebac2c0aef533f495f"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a836331134b59e3ebac2c0aef533f495f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#a836331134b59e3ebac2c0aef533f495f">LogWarn</a> (<a class="el" href="namespacelipsum_1_1internal.html#a63087ed83678f925b2a30424891c7100">LogType</a> type, const Args &amp;... args)</td></tr>
+<tr class="memdesc:a836331134b59e3ebac2c0aef533f495f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a warning.  <br /></td></tr>
+<tr class="separator:a836331134b59e3ebac2c0aef533f495f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac08bc68d8b0434edc0c6382c15e7c413" id="r_ac08bc68d8b0434edc0c6382c15e7c413"><td class="memTemplParams" colspan="2">template&lt;Streamable T&gt; </td></tr>
 <tr class="memitem:ac08bc68d8b0434edc0c6382c15e7c413"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelipsum_1_1internal.html#ac08bc68d8b0434edc0c6382c15e7c413">ToString</a> (const T &amp;param)</td></tr>
 <tr class="memdesc:ac08bc68d8b0434edc0c6382c15e7c413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an object to a string.  <br /></td></tr>
@@ -120,7 +135,33 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This namespace contains functions only used internally by other functions. </p>
 <p>This namespace's functions are not intended for public use and are not exposed in the C wrapper. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a63087ed83678f925b2a30424891c7100" name="a63087ed83678f925b2a30424891c7100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63087ed83678f925b2a30424891c7100">&#9670;&#160;</a></span>LogType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacelipsum_1_1internal.html#a63087ed83678f925b2a30424891c7100">lipsum::internal::LogType</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Log types for <a class="el" href="namespacelipsum_1_1internal.html#a836331134b59e3ebac2c0aef533f495f" title="Log a warning.">lipsum::internal::LogWarn()</a> </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.2 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a9563955f371ff9dbf5a50a29c9e1f854" name="a9563955f371ff9dbf5a50a29c9e1f854"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9563955f371ff9dbf5a50a29c9e1f854">&#9670;&#160;</a></span>HandleHTMLEntity()</h2>
 
@@ -150,8 +191,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8d8e625c3de86178028328f52432698d" name="a8d8e625c3de86178028328f52432698d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d8e625c3de86178028328f52432698d">&#9670;&#160;</a></span>LogWarn()</h2>
+<a id="a836331134b59e3ebac2c0aef533f495f" name="a836331134b59e3ebac2c0aef533f495f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836331134b59e3ebac2c0aef533f495f">&#9670;&#160;</a></span>LogWarn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,16 +202,26 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="memname">void lipsum::internal::LogWarn </td>
           <td>(</td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacelipsum_1_1internal.html#a63087ed83678f925b2a30424891c7100">LogType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Log a warning. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.2</dd></dl>
-<p>Log a warning to the console coloured yellow using ANSI escape codes, starting with "lipsum-cpp WARNING -- " and the message, ending in a newline. If in Emscripten environment, use JavaScript console.warn() instead. If in Windows environment, use SetConsoleTextAttribute() instead.</p>
+<p>Log to the console coloured using ANSI escape codes with a message, ending in a newline. If in Emscripten environment, use JavaScript console functions instead. If in Windows environment, use SetConsoleTextAttribute() instead. If doing a minimum build, skip colouring text or logging in JS console. If doing a quiet build, do not print.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Args</td><td>The arguments' types. All must be printable with std::ostream, or else the code will fail to compile.</td></tr>
@@ -179,6 +230,7 @@ template&lt;typename... Args&gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">type</td><td>The log type of the message. </td></tr>
     <tr><td class="paramname">args</td><td>The arguments to print. </td></tr>
   </table>
   </dd>

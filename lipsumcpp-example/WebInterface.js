@@ -40,20 +40,38 @@ createLipsumCpp().then(Module =>
         }
         else if(["json", "json_value"].includes(funcSelect.value))
         {
-            output.value = gen[funcSelect.value](0, num, useLipsum);
+            output.value = gen[funcSelect.value](num, useLipsum);
         }
         else if(funcSelect.value == "code")
         {
             //console.log(num)
             //console.log(num === "1")
-            if(num === "1")
+            let val = Module.lpsm_CodeLanguage.Cpp;
+            switch(num)
             {
-                output.value = gen.code(Module.lpsm_CodeLanguage.Python);
+                case "1":
+                {
+                    val = Module.lpsm_CodeLanguage.Python;
+                    break;
+                }
+                case "2":
+                {
+                    val = Module.lpsm_CodeLanguage.Rust;
+                    break;
+                }
+                case "3":
+                {
+                    val = Module.lpsm_CodeLanguage.C;
+                    break;
+                }
+                case "4":
+                {
+                    val = Module.lpsm_CodeLanguage.JavaScript;
+                    break;
+                }
             }
-            else
-            {
-                output.value = gen.code(Module.lpsm_CodeLanguage.Cpp);
-            }
+            //console.log(val);
+            output.value = gen.code(val);
         }
         else if(funcSelect.value == "case_slug")
         {
@@ -96,7 +114,7 @@ createLipsumCpp().then(Module =>
         }
         else if(["word", "fragment", "sentence",
             "paragraph", "url", "plain_url", "xml", 
-            "email"].includes(funcSelect.value))
+            "email", "csv"].includes(funcSelect.value))
         {
             //console.log(funcSelect.value);
             output.value = gen[funcSelect.value](num, useLipsum);

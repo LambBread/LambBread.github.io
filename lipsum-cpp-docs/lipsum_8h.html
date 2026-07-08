@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.2</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -375,7 +375,8 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>0.0.5</dd></dl>
 <p>Returns the sentence "Lorem ipsum dolor sit amet, consectetur adipiscing
 elit."</p>
-<dl class="section note"><dt>Note</dt><dd>This function returns a heap-allocated char* which should be deleted with <a class="el" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c" title="Delete a string returned by a function.">lpsm_DeleteString()</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function returns a heap-allocated char* which should be deleted with <a class="el" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c" title="Delete a string returned by a function.">lpsm_DeleteString()</a>. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Do not use a string returned from this function after deleting it with <a class="el" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c" title="Delete a string returned by a function.">lpsm_DeleteString()</a> or call <a class="el" href="lipsum_8h.html#a315e803d2566be8e0a97389317fe620c" title="Delete a string returned by a function.">lpsm_DeleteString()</a> on it twice, as this will cause a use-after-free or double-free and potentially crash your program.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>char* The default Lorem Ipsum sentence. </dd></dl>
 
 </div>

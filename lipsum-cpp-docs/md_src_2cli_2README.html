@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.2</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -73,12 +73,18 @@ $(function() {
   <div class="headertitle"><div class="title">lipsum-cpp CLI</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> This is a CLI tool for lipsum-cpp. It contains subcommands for every <code>lpsm::Generator</code> function. For more info, type <code>lpsmcpp-cli help</code>.</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> This is a CLI tool for lipsum-cpp. It contains subcommands for every <code>lpsm::Generator</code> function. For more info, type <code>lpsmcpp-cli help</code>. There is also an interactive CLI tool, <code>lpsmcpp-interactive</code>.</p>
 <div class="fragment"><div class="line">Usage: lpsmcpp-cli &lt;subcommand&gt; [&lt;arguments&gt;] [&lt;options&gt;]</div>
 <div class="line"> </div>
 <div class="line">Options include:</div>
 <div class="line">  --help, -h - Show this help</div>
 <div class="line">  --version, -v - Show the current version of lipsum-cpp.</div>
+<div class="line">  --seed=&lt;seed&gt;, -E - Load specified seed.</div>
+<div class="line">  --output=&lt;file&gt;, -o - Output to the specified file.</div>
+<div class="line">  --source=&lt;source&gt;, -S - Load specified source.</div>
+<div class="line">      &lt;source&gt; may be a path to a file or a built-in source.</div>
+<div class="line">      Built in sources include: default/lorem, cat, dog/doggo, corpo/corporate.</div>
+<div class="line"> </div>
 <div class="line">  --word=&lt;min,max&gt;, -w - The min and max words per sentence fragment.</div>
 <div class="line">  --frag=&lt;min,max&gt;, -f - The min and max sentence fragments per sentence.</div>
 <div class="line">  --sent=&lt;min,max&gt;, -s - The min and max sentences per paragraph.</div>
@@ -89,16 +95,13 @@ $(function() {
 <div class="line">  --fragFmt=&lt;min,max&gt;, -F - The min and max sentence fragments per formatted sentence.</div>
 <div class="line">  --level=&lt;min,max&gt;, -l - The min and max levels of headings.</div>
 <div class="line">  --jsonLength=&lt;min,max&gt;, -j - The min and max amount of items in JSON objects.</div>
-<div class="line">  --seed=&lt;seed&gt;, -E - Load specified seed.</div>
-<div class="line">  --source=&lt;source&gt;, -S - Load specified source.</div>
-<div class="line">      &lt;source&gt; may be a path to a file or a built-in source.</div>
-<div class="line">      Built in sources include: default/lorem, cat, dog/doggo, corpo/corporate.</div>
-<div class="line"> </div>
+<div class="line">  --csvRows=&lt;min,max&gt;, -R - The min and max number of rows in CSV documents.</div>
+<div class="line">  --csvCols=&lt;min,max&gt;, -C - The min and max number of columns in CSV documents.</div>
 <div class="line">Subcommands include:</div>
 <div class="line">  help, word, fragment, sentence, paragraph, text,</div>
 <div class="line">  url, plain_url, email, slug, case_slug, code, fmt_paragraph, </div>
 <div class="line">  fmt_text, fmt_header, fmt_emphasis, fmt_link, fmt_list, </div>
-<div class="line">  xml, json, json_value</div>
+<div class="line">  xml, json, json_value, csv</div>
 <div class="line"> </div>
 <div class="line">For more information, type lpsmcpp-cli help &lt;subcommand&gt;.</div>
 </div><!-- fragment --> </div></div><!-- contents -->

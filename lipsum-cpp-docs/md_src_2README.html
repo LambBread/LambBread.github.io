@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.2</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -84,6 +84,8 @@ Overview of folders</h1>
 </ul>
 </li>
 <li><a href="./jsbind/">jsbind</a>: the JavaScript binding</li>
+<li><a href="./cli/">cli</a>: the CLI tool</li>
+<li><a href="./test/">test</a>: unit tests</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Naming convention</h1>
@@ -107,8 +109,11 @@ C wrapper</h2>
 </ul>
 </li>
 <li>Binded class handles are the name of the class with <code>Handle</code> appended at the end</li>
-<li>Binded class destructors are the name of the class with <code>Destroy</code> appended at the end </li>
+<li>Binded class destructors are the name of the class with <code>Destroy</code> appended at the end</li>
 </ul>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Minimum &amp; Quiet build modes</h1>
+<p>The changes between "minimum build" mode and normal mode is that all format generation functions return an empty string, and commas and periods are the only punctuation symbols available. Multi-source lorem-ipsum functionality is stripped and log messages do not contain colour. Quiet mode disables logging from <code>lpsm::internal::LogWarn()</code>. Verbose mode enables verbose log messages from lipsum-cpp, and is technically not incompatible with quiet mode. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

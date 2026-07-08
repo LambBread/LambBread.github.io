@@ -19,5 +19,8 @@ var searchData=
   ['cpp_20cli_16',['lipsum-cpp CLI',['../md_src_2cli_2README.html',1,'']]],
   ['cpp_20js_20binding_17',['lipsum-cpp JS binding',['../md_src_2jsbind_2README.html',1,'']]],
   ['cpp_20source_20code_18',['lipsum-cpp source code',['../md_src_2README.html',1,'']]],
-  ['currentloaded_19',['currentLoaded',['../classlipsum_1_1Source.html#a783ff8175058090925fc9eef197f125f',1,'lipsum::Source']]]
+  ['csv_19',['csv',['../classlipsum_1_1Generator.html#ae29bde905f24e2e5626daa5ee8d2d1f1',1,'lipsum::Generator']]],
+  ['csvcols_20',['csvCols',['../structlipsum_1_1GeneratorSettings.html#a26f3c4cbc358203ee2c6d11376a6e6ed',1,'lipsum::GeneratorSettings']]],
+  ['csvrows_21',['csvRows',['../structlipsum_1_1GeneratorSettings.html#ad42a9f8a5a29390bb96e3abad823f60a',1,'lipsum::GeneratorSettings']]],
+  ['currentloaded_22',['currentLoaded',['../classlipsum_1_1Source.html#a783ff8175058090925fc9eef197f125f',1,'lipsum::Source']]]
 ];

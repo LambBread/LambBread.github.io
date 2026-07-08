@@ -12,5 +12,6 @@ var searchData=
   ['lipsum_5fcpp_5fversion_5ftime_5fc_9',['LIPSUM_CPP_VERSION_TIME_C',['../version_8h.html#acb5cee524af77cc6d6f8435f993f95b6',1,'version.h']]],
   ['lipsumc_5fapi_10',['LIPSUMC_API',['../core_8h.html#aa6df47d8e0eec07ea4c022e71554048a',1,'core.h']]],
   ['lpsm_5fflip_5fcoin_11',['LPSM_FLIP_COIN',['../core_8hpp.html#a4cf7f83baedc66a4b69d1927675f1f5d',1,'core.hpp']]],
-  ['lpsm_5fsafe_5fcctype_12',['LPSM_SAFE_CCTYPE',['../core_8hpp.html#a0513d85d0d1b8d6c92dcd64830d499dd',1,'core.hpp']]]
+  ['lpsm_5fsafe_5fcctype_12',['LPSM_SAFE_CCTYPE',['../core_8hpp.html#a0513d85d0d1b8d6c92dcd64830d499dd',1,'core.hpp']]],
+  ['lpsm_5fverbose_5flog_13',['LPSM_VERBOSE_LOG',['../core_8hpp.html#ae42f43b7d9e63c47e5e641e65a309788',1,'core.hpp']]]
 ];

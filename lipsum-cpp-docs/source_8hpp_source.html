@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.1</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.2</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -85,39 +85,35 @@ $(document).ready(function() { init_codefold(0); });
 <a href="source_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef LIPSUM_CORE_SOURCE_HPP</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#    define LIPSUM_CORE_SOURCE_HPP</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#    include &quot;<a class="code" href="core_8hpp.html">core.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelipsum.html">lipsum</a></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classlipsum_1_1Source.html">   29</a></span>    <span class="keyword">class </span><a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <a class="code hl_class" href="classlipsum_1_1Source.html">Source</a></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classlipsum_1_1Source.html#a4b399e003e1e54400a28699648dfb025">   40</a></span>        <a class="code hl_function" href="classlipsum_1_1Source.html#a4b399e003e1e54400a28699648dfb025">Source</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_class" href="classlipsum_1_1Source.html">Source</a>(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">void</span> load(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        [[nodiscard]] std::string random_word(std::mt19937&amp; gen) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classlipsum_1_1Source.html#a783ff8175058090925fc9eef197f125f">   86</a></span>        std::string <a class="code hl_variable" href="classlipsum_1_1Source.html#a783ff8175058090925fc9eef197f125f">currentLoaded</a>; </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        std::vector&lt;std::string&gt;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classlipsum_1_1Source.html#ad5637ed0d73fdfa824262e44237ac93b">   89</a></span>                <a class="code hl_variable" href="classlipsum_1_1Source.html#ad5637ed0d73fdfa824262e44237ac93b">m_Words</a>; </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    };</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="core_8hpp.html">core.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelipsum.html">lipsum</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classlipsum_1_1Source.html">   26</a></span>    <span class="keyword">class </span><a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <a class="code hl_class" href="classlipsum_1_1Source.html">Source</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classlipsum_1_1Source.html#a4b399e003e1e54400a28699648dfb025">   37</a></span>        <a class="code hl_function" href="classlipsum_1_1Source.html#a4b399e003e1e54400a28699648dfb025">Source</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_class" href="classlipsum_1_1Source.html">Source</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">void</span> load([[maybe_unused]] <span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        [[nodiscard]] std::string random_word(std::mt19937&amp; gen) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classlipsum_1_1Source.html#a783ff8175058090925fc9eef197f125f">   83</a></span>        std::string <a class="code hl_variable" href="classlipsum_1_1Source.html#a783ff8175058090925fc9eef197f125f">currentLoaded</a>; </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        std::vector&lt;std::string&gt;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classlipsum_1_1Source.html#ad5637ed0d73fdfa824262e44237ac93b">   86</a></span>                <a class="code hl_variable" href="classlipsum_1_1Source.html#ad5637ed0d73fdfa824262e44237ac93b">m_Words</a>; </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    };</div>
 </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>} <span class="comment">// namespace lipsum</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclasslipsum_1_1Source_html"><div class="ttname"><a href="classlipsum_1_1Source.html">lipsum::Source</a></div><div class="ttdoc">Class for multi-source generation.</div><div class="ttdef"><b>Definition</b> source.hpp:30</div></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>} <span class="comment">// namespace lipsum</span></div>
+<div class="ttc" id="aclasslipsum_1_1Source_html"><div class="ttname"><a href="classlipsum_1_1Source.html">lipsum::Source</a></div><div class="ttdoc">Class for multi-source generation.</div><div class="ttdef"><b>Definition</b> source.hpp:27</div></div>
 <div class="ttc" id="aclasslipsum_1_1Source_html_a4b399e003e1e54400a28699648dfb025"><div class="ttname"><a href="classlipsum_1_1Source.html#a4b399e003e1e54400a28699648dfb025">lipsum::Source::Source</a></div><div class="ttdeci">Source()=default</div><div class="ttdoc">Default constructor.</div></div>
-<div class="ttc" id="aclasslipsum_1_1Source_html_a783ff8175058090925fc9eef197f125f"><div class="ttname"><a href="classlipsum_1_1Source.html#a783ff8175058090925fc9eef197f125f">lipsum::Source::currentLoaded</a></div><div class="ttdeci">std::string currentLoaded</div><div class="ttdef"><b>Definition</b> source.hpp:86</div></div>
-<div class="ttc" id="aclasslipsum_1_1Source_html_ad5637ed0d73fdfa824262e44237ac93b"><div class="ttname"><a href="classlipsum_1_1Source.html#ad5637ed0d73fdfa824262e44237ac93b">lipsum::Source::m_Words</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_Words</div><div class="ttdoc">The internal list of words stored.</div><div class="ttdef"><b>Definition</b> source.hpp:89</div></div>
+<div class="ttc" id="aclasslipsum_1_1Source_html_a783ff8175058090925fc9eef197f125f"><div class="ttname"><a href="classlipsum_1_1Source.html#a783ff8175058090925fc9eef197f125f">lipsum::Source::currentLoaded</a></div><div class="ttdeci">std::string currentLoaded</div><div class="ttdef"><b>Definition</b> source.hpp:83</div></div>
+<div class="ttc" id="aclasslipsum_1_1Source_html_ad5637ed0d73fdfa824262e44237ac93b"><div class="ttname"><a href="classlipsum_1_1Source.html#ad5637ed0d73fdfa824262e44237ac93b">lipsum::Source::m_Words</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_Words</div><div class="ttdoc">The internal list of words stored.</div><div class="ttdef"><b>Definition</b> source.hpp:86</div></div>
 <div class="ttc" id="acore_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Core macros for lipsum-cpp.</div></div>
-<div class="ttc" id="acore_8hpp_html_a7cba6c9f4b913ff7f5d2879fc6de6f35"><div class="ttname"><a href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a></div><div class="ttdeci">#define LIPSUM_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> core.hpp:56</div></div>
+<div class="ttc" id="acore_8hpp_html_a7cba6c9f4b913ff7f5d2879fc6de6f35"><div class="ttname"><a href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a></div><div class="ttdeci">#define LIPSUM_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> core.hpp:66</div></div>
 <div class="ttc" id="anamespacelipsum_html"><div class="ttname"><a href="namespacelipsum.html">lipsum</a></div><div class="ttdoc">This is the main namespace of lipsum-cpp.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

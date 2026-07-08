@@ -6,5 +6,6 @@ var searchData=
   ['countparagraphs_3',['CountParagraphs',['../namespacelipsum.html#aa031f26a230de40cbdfdfc42c7424ad2',1,'lipsum']]],
   ['countsentencefragments_4',['CountSentenceFragments',['../namespacelipsum.html#a1ac473d7ec4215a6b1eda5e3df5b4411',1,'lipsum']]],
   ['countsentences_5',['CountSentences',['../namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f',1,'lipsum']]],
-  ['countwords_6',['CountWords',['../namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e',1,'lipsum']]]
+  ['countwords_6',['CountWords',['../namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e',1,'lipsum']]],
+  ['csv_7',['csv',['../classlipsum_1_1Generator.html#ae29bde905f24e2e5626daa5ee8d2d1f1',1,'lipsum::Generator']]]
 ];
