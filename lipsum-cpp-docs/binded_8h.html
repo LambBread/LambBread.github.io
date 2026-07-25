@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.2</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.3</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -148,6 +148,18 @@ Macros</h2></td></tr>
 <tr class="memitem:ae1915a77812810087f1b484f092ebdd1" id="r_ae1915a77812810087f1b484f092ebdd1"><td class="memItemLeft" align="right" valign="top"><a id="ae1915a77812810087f1b484f092ebdd1" name="ae1915a77812810087f1b484f092ebdd1"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>LPSM_UNORDERED</b>&#160;&#160;&#160;false</td></tr>
 <tr class="separator:ae1915a77812810087f1b484f092ebdd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f3279fd9e7f9eb640807a5f3a3b66c" id="r_a49f3279fd9e7f9eb640807a5f3a3b66c"><td class="memItemLeft" align="right" valign="top"><a id="a49f3279fd9e7f9eb640807a5f3a3b66c" name="a49f3279fd9e7f9eb640807a5f3a3b66c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LPSM_IPV4</b>&#160;&#160;&#160;false</td></tr>
+<tr class="separator:a49f3279fd9e7f9eb640807a5f3a3b66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25814113be894d72b59fcddd10104ee1" id="r_a25814113be894d72b59fcddd10104ee1"><td class="memItemLeft" align="right" valign="top"><a id="a25814113be894d72b59fcddd10104ee1" name="a25814113be894d72b59fcddd10104ee1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LPSM_IPV6</b>&#160;&#160;&#160;true</td></tr>
+<tr class="separator:a25814113be894d72b59fcddd10104ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ddc5499dd3eee319a8f18d7bb524af" id="r_a22ddc5499dd3eee319a8f18d7bb524af"><td class="memItemLeft" align="right" valign="top"><a id="a22ddc5499dd3eee319a8f18d7bb524af" name="a22ddc5499dd3eee319a8f18d7bb524af"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LPSM_NOPORT</b>&#160;&#160;&#160;false</td></tr>
+<tr class="separator:a22ddc5499dd3eee319a8f18d7bb524af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748800f8c9584e5e96a03170dbb966de" id="r_a748800f8c9584e5e96a03170dbb966de"><td class="memItemLeft" align="right" valign="top"><a id="a748800f8c9584e5e96a03170dbb966de" name="a748800f8c9584e5e96a03170dbb966de"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LPSM_PORT</b>&#160;&#160;&#160;true</td></tr>
+<tr class="separator:a748800f8c9584e5e96a03170dbb966de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -207,6 +219,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae6c0142b3bf21fa86d77af7fb49466b0" id="r_ae6c0142b3bf21fa86d77af7fb49466b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8h.html#ae6c0142b3bf21fa86d77af7fb49466b0">lpsm_Generator_change_setting</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, const char *setting, int minValue, int maxValue)</td></tr>
 <tr class="memdesc:ae6c0142b3bf21fa86d77af7fb49466b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a setting.  <br /></td></tr>
 <tr class="separator:ae6c0142b3bf21fa86d77af7fb49466b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bff8982a41109179faab157417865a" id="r_af5bff8982a41109179faab157417865a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8h.html#af5bff8982a41109179faab157417865a">lpsm_Generator_toggle_lazy</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</td></tr>
+<tr class="memdesc:af5bff8982a41109179faab157417865a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the lazy flag.  <br /></td></tr>
+<tr class="separator:af5bff8982a41109179faab157417865a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d04d55f5b9c7f60451356e1fa052b2b" id="r_a9d04d55f5b9c7f60451356e1fa052b2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8h.html#a9d04d55f5b9c7f60451356e1fa052b2b">lpsm_Generator_word</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, int num)</td></tr>
 <tr class="memdesc:a9d04d55f5b9c7f60451356e1fa052b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate words.  <br /></td></tr>
 <tr class="separator:a9d04d55f5b9c7f60451356e1fa052b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,6 +258,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a3bd28ad0190ac799a9c250d97457d78b" id="r_a3bd28ad0190ac799a9c250d97457d78b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8h.html#a3bd28ad0190ac799a9c250d97457d78b">lpsm_Generator_code</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, <a class="el" href="binded_8h.html#ab00449b3698fc6a39fe15df12c11aa38">lpsm_CodeLanguage</a> lang)</td></tr>
 <tr class="memdesc:a3bd28ad0190ac799a9c250d97457d78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a code block.  <br /></td></tr>
 <tr class="separator:a3bd28ad0190ac799a9c250d97457d78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9de154cfb7b1c2304c012724ddcf422" id="r_aa9de154cfb7b1c2304c012724ddcf422"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8h.html#aa9de154cfb7b1c2304c012724ddcf422">lpsm_Generator_ip_addr</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, bool useIpv6, bool usePort)</td></tr>
+<tr class="memdesc:aa9de154cfb7b1c2304c012724ddcf422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an IP address.  <br /></td></tr>
+<tr class="separator:aa9de154cfb7b1c2304c012724ddcf422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630faedf0094a1c37d2cf9d4ce60a986" id="r_a630faedf0094a1c37d2cf9d4ce60a986"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8h.html#a630faedf0094a1c37d2cf9d4ce60a986">lpsm_Generator_phone_number</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle)</td></tr>
+<tr class="memdesc:a630faedf0094a1c37d2cf9d4ce60a986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a phone number.  <br /></td></tr>
+<tr class="separator:a630faedf0094a1c37d2cf9d4ce60a986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad23b56aa83fa71c37879c39e7d84487d" id="r_ad23b56aa83fa71c37879c39e7d84487d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binded_8h.html#ad23b56aa83fa71c37879c39e7d84487d">lpsm_Generator_fmt_paragraph</a> (<a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a> handle, int num, bool useLipsum, bool useHtml)</td></tr>
 <tr class="memdesc:ad23b56aa83fa71c37879c39e7d84487d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate Markdown or HTML paragraphs.  <br /></td></tr>
 <tr class="separator:ad23b56aa83fa71c37879c39e7d84487d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -487,7 +508,7 @@ Functions</h2></td></tr>
 
 <p>Change a setting. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.5</dd></dl>
-<p>Change a setting for generation. Valid setting names include "word", "frag", "sent", "para", "point", "wordFmt", "fragFmt", "wordURL", "level", and "jsonLength". If an invalid setting name is used, raise a warning and ignore.</p>
+<p>Call <a class="el" href="classlipsum_1_1Generator.html#a03cc902bec04e1d3a7625e4c0035ff62" title="Change a setting.">lipsum::Generator::change_setting()</a> on the specified handle.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use. </td></tr>
@@ -931,6 +952,53 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa9de154cfb7b1c2304c012724ddcf422" name="aa9de154cfb7b1c2304c012724ddcf422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9de154cfb7b1c2304c012724ddcf422">&#9670;&#160;</a></span>lpsm_Generator_ip_addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_Generator_ip_addr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useIpv6</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>usePort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate an IP address. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.3</dd></dl>
+<p>Call <a class="el" href="classlipsum_1_1Generator.html#a0d1648ca4558008f4be61da67813b51c" title="Generate an IP address.">lipsum::Generator::ip_addr()</a> on the specified handle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use. </td></tr>
+    <tr><td class="paramname">useIpv6</td><td>Whether to use IPv6. </td></tr>
+    <tr><td class="paramname">usePort</td><td>Whether to add a port.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The IP address. </dd></dl>
+
+</div>
+</div>
 <a id="a97e27a48c323d313beed8929ae04b582" name="a97e27a48c323d313beed8929ae04b582"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97e27a48c323d313beed8929ae04b582">&#9670;&#160;</a></span>lpsm_Generator_json()</h2>
 
@@ -1147,6 +1215,35 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>char* The random paragraph(s). </dd></dl>
+
+</div>
+</div>
+<a id="a630faedf0094a1c37d2cf9d4ce60a986" name="a630faedf0094a1c37d2cf9d4ce60a986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630faedf0094a1c37d2cf9d4ce60a986">&#9670;&#160;</a></span>lpsm_Generator_phone_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> char * lpsm_Generator_phone_number </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a phone number. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.3</dd></dl>
+<p>Call <a class="el" href="classlipsum_1_1Generator.html#ab65e5556ac0e4f6c18062a376a56f10c" title="Generate a phone number.">lipsum::Generator::phone_number()</a> on the specified handle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* The phone number. </dd></dl>
 
 </div>
 </div>
@@ -1367,6 +1464,34 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>char* The random text. </dd></dl>
+
+</div>
+</div>
+<a id="af5bff8982a41109179faab157417865a" name="af5bff8982a41109179faab157417865a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5bff8982a41109179faab157417865a">&#9670;&#160;</a></span>lpsm_Generator_toggle_lazy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#aa6df47d8e0eec07ea4c022e71554048a">LIPSUMC_API</a> void lpsm_Generator_toggle_lazy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="binded_8h.html#a4a0fc50acb3e4afa16fe2f53f52044db">lpsm_GeneratorHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Toggle the lazy flag. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.3</dd></dl>
+<p>Call <a class="el" href="classlipsum_1_1Generator.html#a6861bb062a80bcc3361aede802e03094" title="Toggle the lazy flag.">lipsum::Generator::toggle_lazy()</a> on the specified handle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>The lpsm_GeneratorHandle to use. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

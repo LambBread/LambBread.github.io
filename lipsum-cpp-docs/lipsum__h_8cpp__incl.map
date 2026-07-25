@@ -1,77 +1,75 @@
 <map id="src/lipsum_h.cpp" name="src/lipsum_h.cpp">
-<area shape="rect" id="Node000001" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="1061,5,1192,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="917,79,984,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1099,33,993,76,991,71,1097,28"/>
-<area shape="rect" id="Node000003" href="$lipsum_8h.html" title="C wrapper over lipsum&#45;cpp." alt="" coords="1009,79,1087,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1116,33,1073,71,1069,68,1112,29"/>
-<area shape="rect" id="Node000009" href="$lipsum_8hpp.html" title="Main header of lipsum&#45;cpp." alt="" coords="1159,79,1254,104"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1141,29,1185,68,1182,72,1138,33"/>
-<area shape="rect" id="Node000034" href="$binded_8inl.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="1279,79,1420,104"/>
-<area shape="poly" id="edge41_Node000001_Node000034" title=" " alt="" coords="1163,28,1301,72,1300,77,1162,33"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="1007,152,1089,177"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1051,104,1051,138,1045,138,1045,104"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="759,152,825,177"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="1009,106,839,153,838,148,1008,101"/>
-<area shape="rect" id="Node000006" href="$binded_8h.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="849,152,983,177"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="1028,106,951,148,948,143,1026,102"/>
-<area shape="rect" id="Node000007" href="$core_8h.html" title="Core macros for lipsum&#45;cpp C wrapper." alt="" coords="555,225,618,251"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="864,180,632,230,631,224,863,175"/>
+<area shape="rect" id="Node000001" title="Contains the definitions of all the C wrapper&#39;s functions." alt="" coords="996,5,1127,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="852,79,919,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1034,33,928,76,926,71,1032,28"/>
+<area shape="rect" id="Node000003" href="$lipsum_8h.html" title="C wrapper over lipsum&#45;cpp." alt="" coords="943,79,1022,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1050,33,1007,71,1004,68,1047,29"/>
+<area shape="rect" id="Node000009" href="$lipsum_8hpp.html" title="Main header of lipsum&#45;cpp." alt="" coords="1094,79,1189,104"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1076,29,1120,68,1116,72,1072,33"/>
+<area shape="rect" id="Node000033" href="$binded_8inl.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="1213,79,1355,104"/>
+<area shape="poly" id="edge40_Node000001_Node000033" title=" " alt="" coords="1098,28,1236,72,1234,77,1096,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="941,152,1024,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="985,104,985,138,980,138,980,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="693,152,760,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="944,106,774,153,772,148,943,101"/>
+<area shape="rect" id="Node000006" href="$binded_8h.html" title="Binded classes of lipsum&#45;cpp C wrapper." alt="" coords="784,152,917,177"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="963,106,885,148,883,143,960,102"/>
+<area shape="rect" id="Node000007" href="$core_8h.html" title="Core macros for lipsum&#45;cpp C wrapper." alt="" coords="382,225,445,251"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="784,179,459,232,458,227,783,174"/>
 <area shape="rect" id="Node000008" href="$version_8h.html" title="Version macros for lipsum&#45;cpp." alt="" coords="5,299,88,324"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="555,245,368,265,102,301,102,296,367,259,555,240"/>
-<area shape="rect" id="Node000010" href="$internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="1165,152,1345,177"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1217,103,1242,139,1237,142,1212,106"/>
-<area shape="rect" id="Node000013" href="$stdincludes_8hpp.html" title="Standard library includes of lipsum&#45;cpp." alt="" coords="854,225,978,251"/>
-<area shape="poly" id="edge28_Node000009_Node000013" title=" " alt="" coords="1197,106,1157,142,1103,180,1042,206,983,224,981,219,1040,201,1100,175,1154,138,1194,102"/>
-<area shape="rect" id="Node000029" href="$generator_8hpp.html" title="Declaration of lipsum::Generator." alt="" coords="1707,152,1867,177"/>
-<area shape="poly" id="edge29_Node000009_Node000029" title=" " alt="" coords="1255,99,1267,101,1496,131,1693,152,1692,157,1496,137,1266,107,1254,105"/>
-<area shape="rect" id="Node000033" href="$misc_8hpp.html" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="1995,225,2125,251"/>
-<area shape="poly" id="edge37_Node000009_Node000033" title=" " alt="" coords="1255,100,1267,101,1360,111,1439,114,1575,113,1640,113,1710,118,1788,129,1879,149,1922,163,1963,181,2031,216,2028,221,1961,186,1920,168,1878,155,1787,134,1709,123,1640,118,1575,118,1439,120,1360,116,1266,107,1254,105"/>
-<area shape="rect" id="Node000011" href="$core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="1765,372,1843,397"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1284,175,1592,296,1764,365,1762,369,1590,301,1282,180"/>
-<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="1201,180,984,225,983,220,1200,175"/>
-<area shape="rect" id="Node000012" href="$version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="1755,445,1853,471"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1807,398,1807,432,1801,432,1801,398"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="1493,299,1579,324"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="978,241,1196,261,1336,276,1480,296,1479,301,1335,281,1195,266,978,246"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="382,248,102,301,101,296,381,242"/>
+<area shape="rect" id="Node000010" href="$internal_8hpp.html" title="Declaration of lipsum::internal." alt="" coords="1099,152,1279,177"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1151,103,1176,139,1172,142,1147,106"/>
+<area shape="rect" id="Node000013" href="$stdincludes_8hpp.html" title="Standard library includes of lipsum&#45;cpp." alt="" coords="791,225,915,251"/>
+<area shape="poly" id="edge27_Node000009_Node000013" title=" " alt="" coords="1132,106,1092,142,1037,180,978,206,919,224,917,219,976,201,1035,175,1089,138,1128,102"/>
+<area shape="rect" id="Node000028" href="$generator_8hpp.html" title="Declaration of lipsum::Generator." alt="" coords="1553,152,1713,177"/>
+<area shape="poly" id="edge28_Node000009_Node000028" title=" " alt="" coords="1190,99,1202,101,1540,149,1539,154,1201,107,1189,105"/>
+<area shape="rect" id="Node000032" href="$misc_8hpp.html" title="Miscellaneous functions of lipsum&#45;cpp." alt="" coords="1911,225,2041,251"/>
+<area shape="poly" id="edge36_Node000009_Node000032" title=" " alt="" coords="1189,99,1202,101,1349,116,1465,119,1580,126,1647,135,1726,149,1842,182,1937,218,1935,223,1840,187,1725,155,1646,140,1579,131,1464,125,1349,121,1201,107,1189,105"/>
+<area shape="rect" id="Node000011" href="$core_8hpp.html" title="Core macros for lipsum&#45;cpp." alt="" coords="1681,372,1759,397"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1218,175,1680,364,1678,369,1216,180"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="1136,180,922,225,921,220,1135,175"/>
+<area shape="rect" id="Node000012" href="$version_8hpp.html" title="Version constants for lipsum&#45;cpp." alt="" coords="1671,445,1769,471"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1723,398,1723,432,1717,432,1717,398"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1409,299,1495,324"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="916,242,1125,261,1396,296,1395,301,1124,266,915,247"/>
 <area shape="rect" id="Node000015" title=" " alt="" coords="112,299,168,324"/>
-<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="854,245,519,267,330,283,182,302,181,296,329,278,518,262,854,240"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="791,244,529,258,358,275,182,301,181,296,358,270,529,253,791,238"/>
 <area shape="rect" id="Node000016" title=" " alt="" coords="193,299,258,324"/>
-<area shape="poly" id="edge15_Node000013_Node000016" title=" " alt="" coords="854,244,603,261,440,277,273,301,272,296,440,272,603,255,853,239"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="282,299,363,324"/>
-<area shape="poly" id="edge16_Node000013_Node000017" title=" " alt="" coords="854,247,647,266,377,301,377,296,646,261,854,241"/>
-<area shape="rect" id="Node000018" title=" " alt="" coords="388,299,468,324"/>
-<area shape="poly" id="edge17_Node000013_Node000018" title=" " alt="" coords="854,249,690,269,482,301,481,296,689,264,853,244"/>
-<area shape="rect" id="Node000019" title=" " alt="" coords="492,299,572,324"/>
-<area shape="poly" id="edge18_Node000013_Node000019" title=" " alt="" coords="854,252,586,301,585,296,853,247"/>
-<area shape="rect" id="Node000020" title=" " alt="" coords="597,299,667,324"/>
-<area shape="poly" id="edge19_Node000013_Node000020" title=" " alt="" coords="871,253,681,300,680,295,870,248"/>
-<area shape="rect" id="Node000021" title=" " alt="" coords="692,299,764,324"/>
-<area shape="poly" id="edge20_Node000013_Node000021" title=" " alt="" coords="887,253,772,296,771,291,885,248"/>
-<area shape="rect" id="Node000022" title=" " alt="" coords="788,299,863,324"/>
-<area shape="poly" id="edge21_Node000013_Node000022" title=" " alt="" coords="903,253,853,292,849,288,900,249"/>
-<area shape="rect" id="Node000023" title=" " alt="" coords="887,299,945,324"/>
-<area shape="poly" id="edge22_Node000013_Node000023" title=" " alt="" coords="919,251,919,285,913,285,913,251"/>
-<area shape="rect" id="Node000024" title=" " alt="" coords="970,299,1062,324"/>
-<area shape="poly" id="edge23_Node000013_Node000024" title=" " alt="" coords="934,249,990,288,987,293,931,253"/>
-<area shape="rect" id="Node000025" title=" " alt="" coords="1086,299,1146,324"/>
-<area shape="poly" id="edge24_Node000013_Node000025" title=" " alt="" coords="949,248,1074,292,1072,297,947,253"/>
-<area shape="rect" id="Node000026" title=" " alt="" coords="1170,299,1233,324"/>
-<area shape="poly" id="edge25_Node000013_Node000026" title=" " alt="" coords="965,248,1157,296,1156,301,963,253"/>
-<area shape="rect" id="Node000027" title=" " alt="" coords="1257,299,1330,324"/>
-<area shape="poly" id="edge26_Node000013_Node000027" title=" " alt="" coords="979,247,1243,296,1242,301,978,252"/>
-<area shape="rect" id="Node000028" title=" " alt="" coords="1355,299,1469,324"/>
-<area shape="poly" id="edge27_Node000013_Node000028" title=" " alt="" coords="979,245,1342,296,1341,301,978,250"/>
-<area shape="poly" id="edge32_Node000029_Node000011" title=" " alt="" coords="1754,180,1721,198,1706,211,1694,226,1692,238,1695,250,1706,289,1727,322,1750,345,1774,363,1771,367,1746,349,1723,326,1701,291,1689,251,1686,238,1690,224,1702,208,1718,194,1751,175"/>
-<area shape="rect" id="Node000030" href="$argvec2_8hpp.html" title="Declaration of lipsum::ArgVec2." alt="" coords="1737,299,1871,324"/>
-<area shape="poly" id="edge30_Node000029_Node000030" title=" " alt="" coords="1822,175,1856,194,1871,208,1884,224,1887,245,1878,264,1862,281,1842,294,1839,290,1858,276,1874,261,1882,244,1879,226,1868,211,1853,198,1819,180"/>
-<area shape="rect" id="Node000031" href="$source_8hpp.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="1896,299,2021,324"/>
-<area shape="poly" id="edge33_Node000029_Node000031" title=" " alt="" coords="1820,175,1861,195,1903,223,1930,254,1949,285,1945,288,1925,257,1900,227,1859,199,1817,180"/>
-<area shape="rect" id="Node000032" href="$generatorsettings_8hpp.html" title="Struct lipsum::GeneratorSettings." alt="" coords="1704,225,1869,251"/>
-<area shape="poly" id="edge35_Node000029_Node000032" title=" " alt="" coords="1789,178,1789,212,1784,212,1784,178"/>
-<area shape="poly" id="edge31_Node000030_Node000011" title=" " alt="" coords="1807,324,1807,358,1801,358,1801,324"/>
-<area shape="poly" id="edge34_Node000031_Node000011" title=" " alt="" coords="1935,326,1843,369,1841,364,1933,322"/>
-<area shape="poly" id="edge36_Node000032_Node000030" title=" " alt="" coords="1792,250,1801,285,1795,286,1787,252"/>
-<area shape="poly" id="edge39_Node000033_Node000011" title=" " alt="" coords="2062,251,2056,288,2048,308,2035,326,1994,354,1948,372,1900,382,1858,386,1857,381,1900,377,1946,367,1992,350,2031,322,2044,306,2051,286,2057,251"/>
-<area shape="poly" id="edge38_Node000033_Node000030" title=" " alt="" coords="2020,253,1859,298,1858,292,2018,248"/>
-<area shape="poly" id="edge40_Node000033_Node000031" title=" " alt="" coords="2045,253,1988,293,1985,288,2042,248"/>
+<area shape="poly" id="edge15_Node000013_Node000016" title=" " alt="" coords="791,245,566,263,422,279,272,301,272,296,421,274,566,258,791,240"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="283,299,363,324"/>
+<area shape="poly" id="edge16_Node000013_Node000017" title=" " alt="" coords="791,248,609,268,376,301,376,296,609,263,791,243"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="387,299,467,324"/>
+<area shape="poly" id="edge17_Node000013_Node000018" title=" " alt="" coords="791,251,653,272,481,301,480,296,652,266,790,245"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="491,299,562,324"/>
+<area shape="poly" id="edge18_Node000013_Node000019" title=" " alt="" coords="799,253,576,301,575,296,798,248"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="587,299,659,324"/>
+<area shape="poly" id="edge19_Node000013_Node000020" title=" " alt="" coords="817,253,672,298,671,292,815,248"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="683,299,757,324"/>
+<area shape="poly" id="edge20_Node000013_Node000021" title=" " alt="" coords="833,253,755,294,753,290,831,248"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="781,299,840,324"/>
+<area shape="poly" id="edge21_Node000013_Node000022" title=" " alt="" coords="849,252,827,288,822,286,844,250"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="865,299,927,324"/>
+<area shape="poly" id="edge22_Node000013_Node000023" title=" " alt="" coords="863,250,884,286,880,288,858,252"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="951,299,1033,324"/>
+<area shape="poly" id="edge23_Node000013_Node000024" title=" " alt="" coords="877,248,958,290,956,295,874,253"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1057,299,1130,324"/>
+<area shape="poly" id="edge24_Node000013_Node000025" title=" " alt="" coords="893,248,1044,293,1042,298,891,253"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="1154,299,1246,324"/>
+<area shape="poly" id="edge25_Node000013_Node000026" title=" " alt="" coords="910,248,1141,295,1140,301,908,253"/>
+<area shape="rect" id="Node000027" title=" " alt="" coords="1271,299,1385,324"/>
+<area shape="poly" id="edge26_Node000013_Node000027" title=" " alt="" coords="916,245,1258,296,1257,301,915,251"/>
+<area shape="poly" id="edge31_Node000028_Node000011" title=" " alt="" coords="1633,178,1629,205,1627,243,1631,284,1644,323,1662,346,1685,363,1682,367,1658,349,1639,325,1625,285,1622,243,1624,205,1628,177"/>
+<area shape="rect" id="Node000029" href="$argvec2_8hpp.html" title="Declaration of lipsum::ArgVec2." alt="" coords="1653,299,1787,324"/>
+<area shape="poly" id="edge29_Node000028_Node000029" title=" " alt="" coords="1638,177,1645,211,1661,249,1677,270,1695,288,1692,292,1673,274,1656,252,1640,213,1632,178"/>
+<area shape="rect" id="Node000030" href="$source_8hpp.html" title="Mutli&#45;source generation for lipsum&#45;cpp." alt="" coords="1812,299,1937,324"/>
+<area shape="poly" id="edge32_Node000028_Node000030" title=" " alt="" coords="1714,167,1749,174,1785,184,1820,201,1850,223,1861,237,1868,253,1876,284,1870,285,1863,255,1856,240,1846,227,1817,205,1783,189,1748,179,1713,172"/>
+<area shape="rect" id="Node000031" href="$generatorsettings_8hpp.html" title="Struct lipsum::GeneratorSettings." alt="" coords="1671,225,1836,251"/>
+<area shape="poly" id="edge34_Node000028_Node000031" title=" " alt="" coords="1654,175,1723,216,1720,220,1651,180"/>
+<area shape="poly" id="edge30_Node000029_Node000011" title=" " alt="" coords="1723,324,1723,358,1717,358,1717,324"/>
+<area shape="poly" id="edge33_Node000030_Node000011" title=" " alt="" coords="1851,326,1759,369,1757,364,1849,322"/>
+<area shape="poly" id="edge35_Node000031_Node000029" title=" " alt="" coords="1750,252,1734,287,1729,285,1745,250"/>
+<area shape="poly" id="edge38_Node000032_Node000011" title=" " alt="" coords="1978,251,1972,288,1964,308,1951,326,1910,354,1864,372,1816,382,1774,386,1773,381,1816,377,1862,367,1908,350,1947,322,1960,306,1967,286,1973,251"/>
+<area shape="poly" id="edge37_Node000032_Node000029" title=" " alt="" coords="1936,253,1775,298,1774,292,1934,248"/>
+<area shape="poly" id="edge39_Node000032_Node000030" title=" " alt="" coords="1961,253,1904,293,1901,288,1958,248"/>
 </map>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.2</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.3</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -102,9 +102,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d48059c4ac7ce9639793de4065c7649" id="r_a3d48059c4ac7ce9639793de4065c7649"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlipsum_1_1GeneratorSettings.html#a3d48059c4ac7ce9639793de4065c7649">change_setting</a> (const std::string &amp;setting, const <a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> &amp;value)</td></tr>
 <tr class="memdesc:a3d48059c4ac7ce9639793de4065c7649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change a setting.  <br /></td></tr>
 <tr class="separator:a3d48059c4ac7ce9639793de4065c7649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef4aebaa93782829ad07ded1ac88c33" id="r_aeef4aebaa93782829ad07ded1ac88c33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlipsum_1_1GeneratorSettings.html#aeef4aebaa93782829ad07ded1ac88c33">toggle_lazy</a> ()</td></tr>
+<tr class="memdesc:aeef4aebaa93782829ad07ded1ac88c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the lazy flag.  <br /></td></tr>
+<tr class="separator:aeef4aebaa93782829ad07ded1ac88c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a01f14de679bbb641328692cc66240800" id="r_a01f14de679bbb641328692cc66240800"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlipsum_1_1GeneratorSettings.html#a01f14de679bbb641328692cc66240800">lazy</a> = false</td></tr>
+<tr class="memdesc:a01f14de679bbb641328692cc66240800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether generation will be "lazy".  <br /></td></tr>
+<tr class="separator:a01f14de679bbb641328692cc66240800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dcba101a69d76e300a5e844af20eaeb" id="r_a5dcba101a69d76e300a5e844af20eaeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlipsum_1_1GeneratorSettings.html#a5dcba101a69d76e300a5e844af20eaeb">word</a> {4, 9}</td></tr>
 <tr class="memdesc:a5dcba101a69d76e300a5e844af20eaeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum and maximum possible number of words in a sentence fragment.  <br /></td></tr>
 <tr class="separator:a5dcba101a69d76e300a5e844af20eaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +189,27 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aeef4aebaa93782829ad07ded1ac88c33" name="aeef4aebaa93782829ad07ded1ac88c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef4aebaa93782829ad07ded1ac88c33">&#9670;&#160;</a></span>toggle_lazy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lipsum::GeneratorSettings::toggle_lazy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Toggle the lazy flag. </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.3</dd></dl>
+<p>Toggle the lazy flag. If "lazy" is false, set it to true; else, set it to false. </p>
 
 </div>
 </div>
@@ -269,6 +296,23 @@ Public Attributes</h2></td></tr>
 
 <p>The minimum and maximum possible number of items in JSON objects and arrays. </p>
 <dl class="section since"><dt>Since</dt><dd>0.4.5 </dd></dl>
+
+</div>
+</div>
+<a id="a01f14de679bbb641328692cc66240800" name="a01f14de679bbb641328692cc66240800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f14de679bbb641328692cc66240800">&#9670;&#160;</a></span>lazy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lipsum::GeneratorSettings::lazy = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether generation will be "lazy". </p>
+<dl class="section since"><dt>Since</dt><dd>0.5.3 </dd></dl>
 
 </div>
 </div>

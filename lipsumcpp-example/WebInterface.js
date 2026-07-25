@@ -113,7 +113,7 @@ createLipsumCpp().then(Module =>
             output.value = gen.case_slug(asEnum);
         }
         else if(["word", "fragment", "sentence",
-            "paragraph", "url", "plain_url", "xml", 
+            "paragraph", "url", "plain_url", "phone_number", "xml", 
             "email", "csv"].includes(funcSelect.value))
         {
             //console.log(funcSelect.value);
@@ -123,7 +123,7 @@ createLipsumCpp().then(Module =>
         {
             output.value = gen[funcSelect.value](num, useHtml);
         }
-        else if(["fmt_emphasis", "fmt_list"].includes(funcSelect.value))
+        else if(["fmt_emphasis", "fmt_list", "ip_addr"].includes(funcSelect.value))
         {
             output.value = gen[funcSelect.value](useLipsum, useHtml);
         }

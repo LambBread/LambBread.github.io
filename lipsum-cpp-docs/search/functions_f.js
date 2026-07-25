@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7egenerator_0',['~Generator',['../classlipsum_1_1Generator.html#af9d589a8969084ca363a5142868bb9c2',1,'lipsum::Generator']]]
+  ['xml_0',['xml',['../classlipsum_1_1Generator.html#a069c97c8c5a590394c003e4203e8c5d4',1,'lipsum::Generator']]]
 ];

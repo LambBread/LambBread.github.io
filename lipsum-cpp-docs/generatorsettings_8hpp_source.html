@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.2</span>
+   <div id="projectname">lipsum-cpp<span id="projectnumber">&#160;0.5.3</span>
    </div>
    <div id="projectbrief">A basic library written in C++ for generating placeholder Lorem Ipsum text.</div>
   </td>
@@ -92,36 +92,43 @@ $(document).ready(function() { init_codefold(0); });
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html">   26</a></span>    <span class="keyword">struct </span><a class="code hl_define" href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a> <a class="code hl_struct" href="structlipsum_1_1GeneratorSettings.html">GeneratorSettings</a></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a5dcba101a69d76e300a5e844af20eaeb">   34</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> word{4, 9};</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a5cbc3128d186c6fb5734cb8e4b9ef975">   42</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> frag{1, 3};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a5489643d33f28028a081575d3107326b">   50</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> sent{5, 8};</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a584274677ce1a406f39d52bc052811b5">   58</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> para{1, 4};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a4f756f11ed32676e40f44f5a80d1c4a3">   66</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> point{3, 5};</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a609e9439d7dea6244e5dd4cd85b99875">   75</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> wordURL{2, 5};</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a9838113ca79795dcf7cd2007dad10020">   83</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> wordFmt{4, 8};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a01f14de679bbb641328692cc66240800">   33</a></span>        <span class="keywordtype">bool</span> lazy = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a5dcba101a69d76e300a5e844af20eaeb">   41</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> word{4, 9};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a5cbc3128d186c6fb5734cb8e4b9ef975">   49</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> frag{1, 3};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a5489643d33f28028a081575d3107326b">   57</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> sent{5, 8};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a584274677ce1a406f39d52bc052811b5">   65</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> para{1, 4};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#ifndef LIPSUM_MIN_BUILD</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a4f756f11ed32676e40f44f5a80d1c4a3">   74</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> point{3, 5};</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a609e9439d7dea6244e5dd4cd85b99875">   83</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> wordURL{2, 5};</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a47601942f022b4318f040ac8b9abec2f">   91</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> fragFmt{1, 2};</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a9838113ca79795dcf7cd2007dad10020">   91</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> wordFmt{4, 8};</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#acf247d7c471c6117dfc6ee05f97a1e09">   99</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> level{2, 4};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a47601942f022b4318f040ac8b9abec2f">   99</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> fragFmt{1, 2};</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#abcd546c6cdaf5e5aefea9035fefb660e">  107</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> jsonLength{2, 5};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#acf247d7c471c6117dfc6ee05f97a1e09">  107</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> level{2, 4};</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#ad42a9f8a5a29390bb96e3abad823f60a">  114</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> csvRows{10, 15};</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a26f3c4cbc358203ee2c6d11376a6e6ed">  122</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> csvCols{5, 8};</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#abcd546c6cdaf5e5aefea9035fefb660e">  115</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> jsonLength{2, 5};</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#ad42a9f8a5a29390bb96e3abad823f60a">  122</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> csvRows{10, 15};</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordtype">void</span> change_setting(<span class="keyword">const</span> std::string&amp; setting, <span class="keyword">const</span> <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&amp; value);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    };</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="structlipsum_1_1GeneratorSettings.html#a26f3c4cbc358203ee2c6d11376a6e6ed">  130</a></span>        <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a> csvCols{5, 8};</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordtype">void</span> change_setting(<span class="keyword">const</span> std::string&amp; setting, <span class="keyword">const</span> <a class="code hl_struct" href="structlipsum_1_1ArgVec2.html">ArgVec2</a>&amp; value);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordtype">void</span> toggle_lazy();</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    };</div>
 </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>} <span class="comment">// namespace lipsum</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>} <span class="comment">// namespace lipsum</span></div>
 <div class="ttc" id="aargvec2_8hpp_html"><div class="ttname"><a href="argvec2_8hpp.html">argvec2.hpp</a></div><div class="ttdoc">Declaration of lipsum::ArgVec2.</div></div>
-<div class="ttc" id="acore_8hpp_html_a7cba6c9f4b913ff7f5d2879fc6de6f35"><div class="ttname"><a href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a></div><div class="ttdeci">#define LIPSUM_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> core.hpp:66</div></div>
+<div class="ttc" id="acore_8hpp_html_a7cba6c9f4b913ff7f5d2879fc6de6f35"><div class="ttname"><a href="core_8hpp.html#a7cba6c9f4b913ff7f5d2879fc6de6f35">LIPSUM_API</a></div><div class="ttdeci">#define LIPSUM_API</div><div class="ttdoc">Macro for shared libraries.</div><div class="ttdef"><b>Definition</b> core.hpp:71</div></div>
 <div class="ttc" id="anamespacelipsum_html"><div class="ttname"><a href="namespacelipsum.html">lipsum</a></div><div class="ttdoc">This is the main namespace of lipsum-cpp.</div></div>
 <div class="ttc" id="astructlipsum_1_1ArgVec2_html"><div class="ttname"><a href="structlipsum_1_1ArgVec2.html">lipsum::ArgVec2</a></div><div class="ttdoc">Store data for inputting into functions.</div><div class="ttdef"><b>Definition</b> argvec2.hpp:28</div></div>
 <div class="ttc" id="astructlipsum_1_1GeneratorSettings_html"><div class="ttname"><a href="structlipsum_1_1GeneratorSettings.html">lipsum::GeneratorSettings</a></div><div class="ttdoc">Settings for lipsum::Generator.</div><div class="ttdef"><b>Definition</b> generatorsettings.hpp:27</div></div>
