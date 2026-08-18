@@ -4,5 +4,6 @@ var searchData=
   ['paragraph_1',['paragraph',['../classlipsum_1_1Generator.html#afe118671993dcce93ff04d9fb5a2c2d2',1,'lipsum::Generator']]],
   ['phone_5fnumber_2',['phone_number',['../classlipsum_1_1Generator.html#ab65e5556ac0e4f6c18062a376a56f10c',1,'lipsum::Generator']]],
   ['plain_5furl_3',['plain_url',['../classlipsum_1_1Generator.html#a3f7a0f6314f35761d26a7d555eb314c8',1,'lipsum::Generator']]],
-  ['point_4',['point',['../structlipsum_1_1GeneratorSettings.html#a4f756f11ed32676e40f44f5a80d1c4a3',1,'lipsum::GeneratorSettings']]]
+  ['point_4',['point',['../structlipsum_1_1GeneratorSettings.html#a4f756f11ed32676e40f44f5a80d1c4a3',1,'lipsum::GeneratorSettings']]],
+  ['python_20wrapper_5',['lipsum-cpp Python wrapper',['../dir_72e95d5d71e9c0565fe91c0c49a2f78d.html#autotoc_md3',1,'']]]
 ];

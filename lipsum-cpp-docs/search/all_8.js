@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['js_20binding_0',['lipsum-cpp JS binding',['../md_src_2jsbind_2README.html',1,'']]],
+  ['js_20binding_0',['lipsum-cpp JS binding',['../dir_fdc1e5375e2cd0eaf335ffdfc5467670.html#autotoc_md1',1,'']]],
   ['json_1',['json',['../classlipsum_1_1Generator.html#aa4997abb15f86f353cc4b97b49d67671',1,'lipsum::Generator']]],
   ['json_5fnumber_2',['json_number',['../classlipsum_1_1Generator.html#aeb5b102e9339514bea35e4e5227dad3d',1,'lipsum::Generator']]],
   ['json_5fstring_3',['json_string',['../classlipsum_1_1Generator.html#a92cb625c2ad2b1c705dc8f4f462c0b69',1,'lipsum::Generator']]],

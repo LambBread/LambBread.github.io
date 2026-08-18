@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['generator_0',['Generator',['../classlipsum_1_1Generator.html',1,'lipsum']]],
-  ['generatorsettings_1',['GeneratorSettings',['../structlipsum_1_1GeneratorSettings.html',1,'lipsum']]]
+  ['caseslugcase_0',['CaseSlugCase',['../classlipsum__cpp_1_1CaseSlugCase.html',1,'lipsum_cpp']]],
+  ['codelanguage_1',['CodeLanguage',['../classlipsum__cpp_1_1CodeLanguage.html',1,'lipsum_cpp']]]
 ];

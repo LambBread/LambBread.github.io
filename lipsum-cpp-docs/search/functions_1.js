@@ -3,9 +3,10 @@ var searchData=
   ['case_5fslug_0',['case_slug',['../classlipsum_1_1Generator.html#afa0eae52d499eed914ad71dad85416aa',1,'lipsum::Generator']]],
   ['change_5fsetting_1',['change_setting',['../classlipsum_1_1Generator.html#a03cc902bec04e1d3a7625e4c0035ff62',1,'lipsum::Generator::change_setting(const std::string &amp;setting, const ArgVec2 &amp;value)'],['../classlipsum_1_1Generator.html#a9ca8dda71bcbb9ca93cc848c2ead384f',1,'lipsum::Generator::change_setting(const std::string &amp;setting, int minValue, int maxValue)'],['../structlipsum_1_1GeneratorSettings.html#a3d48059c4ac7ce9639793de4065c7649',1,'lipsum::GeneratorSettings::change_setting()']]],
   ['code_2',['code',['../classlipsum_1_1Generator.html#aee420ad848b0f746004c81bcdd813135',1,'lipsum::Generator']]],
-  ['countparagraphs_3',['CountParagraphs',['../namespacelipsum.html#aa031f26a230de40cbdfdfc42c7424ad2',1,'lipsum']]],
-  ['countsentencefragments_4',['CountSentenceFragments',['../namespacelipsum.html#a1ac473d7ec4215a6b1eda5e3df5b4411',1,'lipsum']]],
-  ['countsentences_5',['CountSentences',['../namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f',1,'lipsum']]],
-  ['countwords_6',['CountWords',['../namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e',1,'lipsum']]],
-  ['csv_7',['csv',['../classlipsum_1_1Generator.html#ae29bde905f24e2e5626daa5ee8d2d1f1',1,'lipsum::Generator']]]
+  ['convertformat_3',['ConvertFormat',['../namespacelipsum.html#a88b372bd01e9c7e932a56125ebe64382',1,'lipsum']]],
+  ['countparagraphs_4',['CountParagraphs',['../namespacelipsum.html#aaa89fddfcbe6abc9a1a83395da2d8ceb',1,'lipsum']]],
+  ['countsentencefragments_5',['CountSentenceFragments',['../namespacelipsum.html#a1ac473d7ec4215a6b1eda5e3df5b4411',1,'lipsum']]],
+  ['countsentences_6',['CountSentences',['../namespacelipsum.html#a146896373a78c16daaf8f9b20334a38f',1,'lipsum']]],
+  ['countwords_7',['CountWords',['../namespacelipsum.html#a3674a1f6d0c8ec15826ba174e7cab97e',1,'lipsum']]],
+  ['csv_8',['csv',['../classlipsum_1_1Generator.html#ae29bde905f24e2e5626daa5ee8d2d1f1',1,'lipsum::Generator']]]
 ];

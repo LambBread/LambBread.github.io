@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['source_0',['Source',['../classlipsum_1_1Source.html',1,'lipsum']]]
+  ['format_0',['Format',['../classlipsum__cpp_1_1Format.html',1,'lipsum_cpp']]]
 ];
